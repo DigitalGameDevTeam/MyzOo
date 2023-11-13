@@ -24,5 +24,11 @@ namespace MyzOo
             this.Hide();
             start_Menu.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //minimize the form
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }
