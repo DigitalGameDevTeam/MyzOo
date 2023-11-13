@@ -10,21 +10,20 @@ using System.Windows.Forms;
 
 namespace MyzOo
 {
-    public partial class Form1 : Form
+    public partial class Main_Menu : Form
     {
-        public Form1()
+        public Main_Menu()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            button1.Text = "Ok, goodbie";
+            //close Start_Menu and open Main_Menu
+            Main_Menu main_Menu = new Main_Menu();
+            Start_Menu start_Menu = new Start_Menu();
+            main_Menu.Close();
+            start_Menu.Show();
         }
     }
 }
