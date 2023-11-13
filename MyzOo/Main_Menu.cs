@@ -20,9 +20,8 @@ namespace MyzOo
         private void button1_Click(object sender, EventArgs e)
         {
             //close Start_Menu and open Main_Menu
-            Main_Menu main_Menu = new Main_Menu();
             Start_Menu start_Menu = new Start_Menu();
-            main_Menu.Close();
+            this.Hide();
             start_Menu.Show();
         }
     }

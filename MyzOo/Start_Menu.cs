@@ -13,6 +13,7 @@ namespace MyzOo
 {
     public partial class Start_Menu : Form
     {
+        
         public Start_Menu()
         {
             InitializeComponent();
@@ -44,9 +45,8 @@ namespace MyzOo
         {
             //close Start_Menu and open Main_Menu
             Main_Menu main_Menu = new Main_Menu();
-            Start_Menu start_Menu = new Start_Menu();
             main_Menu.Show();
-            start_Menu.Close();
+            this.Hide();
         }
     }
 }
