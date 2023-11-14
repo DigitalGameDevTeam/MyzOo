@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Animal.cs" />
+    <Compile Include="Classes\Cell.cs" />
+    <Compile Include="Classes\Event.cs" />
+    <Compile Include="Classes\Food.cs" />
+    <Compile Include="Classes\Location.cs" />
+    <Compile Include="Classes\Typefood.cs" />
     <Compile Include="Main_Menu.cs">
       <SubType>Form</SubType>
     </Compile>
