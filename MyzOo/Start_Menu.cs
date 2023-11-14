@@ -20,8 +20,7 @@ namespace MyzOo
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            Color puta = Color.FromArgb(0, 255, 255);
-            panel1.BackColor = puta;
+           
         }
         private void button3_Click(object sender, EventArgs e)
         {
