@@ -20,7 +20,7 @@ namespace MyzOo
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-
+           
         }
         private void button3_Click(object sender, EventArgs e)
         {
@@ -29,7 +29,7 @@ namespace MyzOo
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Environment.Exit(0);
         }
 
         private void button3_Click_1(object sender, EventArgs e)
