@@ -43,8 +43,9 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(343, 66);
+            this.panel1.Size = new System.Drawing.Size(457, 81);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -53,9 +54,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Window;
-            this.label1.Location = new System.Drawing.Point(73, 0);
+            this.label1.Location = new System.Drawing.Point(97, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(202, 60);
+            this.label1.Size = new System.Drawing.Size(255, 74);
             this.label1.TabIndex = 0;
             this.label1.Text = "My zOo";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -68,9 +70,10 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button3.Location = new System.Drawing.Point(92, 246);
+            this.button3.Location = new System.Drawing.Point(123, 303);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(156, 59);
+            this.button3.Size = new System.Drawing.Size(208, 73);
             this.button3.TabIndex = 3;
             this.button3.Text = "Sair";
             this.button3.UseVisualStyleBackColor = true;
@@ -84,9 +87,10 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button1.Location = new System.Drawing.Point(92, 116);
+            this.button1.Location = new System.Drawing.Point(123, 143);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(156, 59);
+            this.button1.Size = new System.Drawing.Size(208, 73);
             this.button1.TabIndex = 4;
             this.button1.Text = "Entrar";
             this.button1.UseVisualStyleBackColor = true;
@@ -100,9 +104,10 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button2.Location = new System.Drawing.Point(92, 181);
+            this.button2.Location = new System.Drawing.Point(123, 223);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(156, 59);
+            this.button2.Size = new System.Drawing.Size(208, 73);
             this.button2.TabIndex = 5;
             this.button2.Text = "Sei lá";
             this.button2.UseVisualStyleBackColor = true;
@@ -110,16 +115,17 @@
             // 
             // Start_Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(343, 358);
+            this.ClientSize = new System.Drawing.Size(457, 441);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "Start_Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
