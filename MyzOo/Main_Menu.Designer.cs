@@ -118,8 +118,9 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(200, 35);
             this.button3.TabIndex = 5;
-            this.button3.Text = "Botao lateral";
+            this.button3.Text = "Ver Animal";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Main_Menu
             // 
@@ -134,6 +135,7 @@
             this.Name = "Main_Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main_Menu";
+            this.Load += new System.EventHandler(this.Main_Menu_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

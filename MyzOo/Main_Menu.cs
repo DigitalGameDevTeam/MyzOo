@@ -30,5 +30,19 @@ namespace MyzOo
             //minimize the form
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void Main_Menu_Load(object sender, EventArgs e)
+        {
+            //set Menu Colors
+            panel1.BackColor = Color.DeepSkyBlue;
+            label1.ForeColor = Color.White;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //open Animal_Menu
+            Animal_Menu animal_Menu = new Animal_Menu();
+            animal_Menu.Show();
+        }
     }
 }

@@ -20,7 +20,11 @@ namespace MyzOo
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-           
+            panel1.BackColor = Color.DeepSkyBlue;
+            button1.ForeColor = Color.DeepSkyBlue;
+            button2.ForeColor = Color.DeepSkyBlue;
+            button3.ForeColor = Color.DeepSkyBlue;
+            label1.ForeColor = Color.White;
         }
         private void button3_Click(object sender, EventArgs e)
         {

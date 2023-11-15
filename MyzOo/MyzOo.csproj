@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Animal_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Animal_Menu.Designer.cs">
+      <DependentUpon>Animal_Menu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Classes\Animal.cs" />
     <Compile Include="Classes\Cell.cs" />
     <Compile Include="Classes\Event.cs" />
@@ -66,6 +72,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Animal_Menu.resx">
+      <DependentUpon>Animal_Menu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main_Menu.resx">
       <DependentUpon>Main_Menu.cs</DependentUpon>
     </EmbeddedResource>
