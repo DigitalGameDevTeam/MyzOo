@@ -19,7 +19,7 @@ namespace MyzOo
         }
         private void Animal_Menu_Load(object sender, EventArgs e)
         {
-            Animal animal = new Animal();
+            //Animal animal = new Animal();
         }
         private void button1_Click(object sender, EventArgs e)
         {
