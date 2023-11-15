@@ -20,10 +20,6 @@ namespace MyzOo
         private void Animal_Menu_Load(object sender, EventArgs e)
         {
             //Animal animal = new Animal();
-<<<<<<< HEAD:MyzOo/Animal_Menu.cs
-
-=======
->>>>>>> 9578fe4c5ec49e60d4c95e917e49744714eb8316:MyzOo/View/Animal_Menu.cs
         }
         private void Exit_button_Click(object sender, EventArgs e)
         {
@@ -57,6 +53,7 @@ namespace MyzOo
 
         private void Regist_button_Click(object sender, EventArgs e)
         {
+            string name = Name_Box.Text;
 
         }
     }
