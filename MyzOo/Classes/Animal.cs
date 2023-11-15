@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http.Headers;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -17,5 +18,20 @@ namespace MyzOo.Classes
         // Reference to Cell and Food
         public Cell AnimalCell { get; set; }
         public Food AnimalFood { get; set; }
+
+        public Animal(int id, string name, DateTime birthday, bool checkup, Cell animalCell, Food animalFood)
+        {
+            Id = id;
+            Name = name;
+            Birthday = birthday;
+            Checkup = checkup;
+            AnimalCell = animalCell;
+            AnimalFood = animalFood;
+        }
+
+        public void ShowData()
+        {
+            Console.Write("", Id, Name, Birthday, Checkup, AnimalCell.Id, AnimalFood.Id);
+        }
     }
 }

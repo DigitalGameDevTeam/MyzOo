@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyzOo.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -17,6 +18,8 @@ namespace MyzOo
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Start_Menu());
+
+            
         }
     }
 }
