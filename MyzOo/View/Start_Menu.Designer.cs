@@ -31,9 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Start_Menu));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Close_button = new System.Windows.Forms.Button();
+            this.Login_button = new System.Windows.Forms.Button();
+            this.Seila_button = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,55 +58,54 @@
             this.label1.Size = new System.Drawing.Size(202, 60);
             this.label1.TabIndex = 0;
             this.label1.Text = "My zOo";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // button3
+            // Close_button
             // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.button3.Location = new System.Drawing.Point(92, 246);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(156, 59);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Sair";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            this.Close_button.FlatAppearance.BorderSize = 0;
+            this.Close_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.Close_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.Close_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Close_button.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Close_button.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.Close_button.Location = new System.Drawing.Point(92, 246);
+            this.Close_button.Name = "Close_button";
+            this.Close_button.Size = new System.Drawing.Size(156, 59);
+            this.Close_button.TabIndex = 3;
+            this.Close_button.Text = "Sair";
+            this.Close_button.UseVisualStyleBackColor = true;
+            this.Close_button.Click += new System.EventHandler(this.Close_button_Click);
             // 
-            // button1
+            // Login_button
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.button1.Location = new System.Drawing.Point(92, 116);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(156, 59);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Entrar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Login_button.FlatAppearance.BorderSize = 0;
+            this.Login_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.Login_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.Login_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Login_button.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Login_button.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.Login_button.Location = new System.Drawing.Point(92, 116);
+            this.Login_button.Name = "Login_button";
+            this.Login_button.Size = new System.Drawing.Size(156, 59);
+            this.Login_button.TabIndex = 4;
+            this.Login_button.Text = "Login";
+            this.Login_button.UseVisualStyleBackColor = true;
+            this.Login_button.Click += new System.EventHandler(this.Login_button_Click);
             // 
-            // button2
+            // Seila_button
             // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.button2.Location = new System.Drawing.Point(92, 181);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(156, 59);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Sei lá";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.Seila_button.FlatAppearance.BorderSize = 0;
+            this.Seila_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.Seila_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.Seila_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Seila_button.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Seila_button.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.Seila_button.Location = new System.Drawing.Point(92, 181);
+            this.Seila_button.Name = "Seila_button";
+            this.Seila_button.Size = new System.Drawing.Size(156, 59);
+            this.Seila_button.TabIndex = 5;
+            this.Seila_button.Text = "Sei lá";
+            this.Seila_button.UseVisualStyleBackColor = true;
+            this.Seila_button.Click += new System.EventHandler(this.Seila_button_Click);
             // 
             // Start_Menu
             // 
@@ -114,9 +113,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(343, 358);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.Seila_button);
+            this.Controls.Add(this.Login_button);
+            this.Controls.Add(this.Close_button);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -135,9 +134,9 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Close_button;
+        private System.Windows.Forms.Button Login_button;
+        private System.Windows.Forms.Button Seila_button;
     }
 }
 

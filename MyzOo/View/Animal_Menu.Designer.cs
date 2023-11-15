@@ -31,18 +31,18 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Animal_Menu));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.exit_button = new System.Windows.Forms.Button();
+            this.Exit_button = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.name_Box = new System.Windows.Forms.TextBox();
+            this.Name_Box = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.food_list = new System.Windows.Forms.DomainUpDown();
-            this.checkup_Box = new System.Windows.Forms.CheckBox();
-            this.cell_list = new System.Windows.Forms.DomainUpDown();
+            this.Food_list = new System.Windows.Forms.DomainUpDown();
+            this.Checkup_Box = new System.Windows.Forms.CheckBox();
+            this.Cell_list = new System.Windows.Forms.DomainUpDown();
             this.label7 = new System.Windows.Forms.Label();
-            this.regist_button = new System.Windows.Forms.Button();
-            this.birthday_Calendar = new System.Windows.Forms.MonthCalendar();
+            this.Regist_button = new System.Windows.Forms.Button();
+            this.Birthday_Calendar = new System.Windows.Forms.MonthCalendar();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -51,7 +51,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.exit_button);
+            this.panel1.Controls.Add(this.Exit_button);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -70,21 +70,21 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "My zOo";
             // 
-            // exit_button
+            // Exit_button
             // 
-            this.exit_button.BackColor = System.Drawing.Color.Transparent;
-            this.exit_button.FlatAppearance.BorderSize = 0;
-            this.exit_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.exit_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exit_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exit_button.ForeColor = System.Drawing.SystemColors.Window;
-            this.exit_button.Location = new System.Drawing.Point(543, 0);
-            this.exit_button.Name = "exit_button";
-            this.exit_button.Size = new System.Drawing.Size(56, 57);
-            this.exit_button.TabIndex = 3;
-            this.exit_button.Text = "X";
-            this.exit_button.UseVisualStyleBackColor = false;
-            this.exit_button.Click += new System.EventHandler(this.exit_button_Click);
+            this.Exit_button.BackColor = System.Drawing.Color.Transparent;
+            this.Exit_button.FlatAppearance.BorderSize = 0;
+            this.Exit_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Exit_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Exit_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Exit_button.ForeColor = System.Drawing.SystemColors.Window;
+            this.Exit_button.Location = new System.Drawing.Point(543, 0);
+            this.Exit_button.Name = "Exit_button";
+            this.Exit_button.Size = new System.Drawing.Size(56, 57);
+            this.Exit_button.TabIndex = 3;
+            this.Exit_button.Text = "X";
+            this.Exit_button.UseVisualStyleBackColor = false;
+            this.Exit_button.Click += new System.EventHandler(this.Exit_button_Click);
             // 
             // pictureBox1
             // 
@@ -105,13 +105,13 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Nome do Animal >>> ";
             // 
-            // name_Box
+            // Name_Box
             // 
-            this.name_Box.Location = new System.Drawing.Point(344, 72);
-            this.name_Box.Name = "name_Box";
-            this.name_Box.Size = new System.Drawing.Size(227, 20);
-            this.name_Box.TabIndex = 3;
-            this.name_Box.TextChanged += new System.EventHandler(this.name_Box_TextChanged);
+            this.Name_Box.Location = new System.Drawing.Point(344, 72);
+            this.Name_Box.Name = "Name_Box";
+            this.Name_Box.Size = new System.Drawing.Size(227, 20);
+            this.Name_Box.TabIndex = 3;
+            this.Name_Box.TextChanged += new System.EventHandler(this.Name_Box_TextChanged);
             // 
             // label3
             // 
@@ -131,45 +131,43 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "Cela do Animal >>> ";
             // 
-            // food_list
+            // Food_list
             // 
-            this.food_list.Items.Add("Cela 1");
-            this.food_list.Items.Add("Cela 2");
-            this.food_list.Items.Add("Cela 3");
-            this.food_list.Items.Add("Cela 4");
-            this.food_list.Location = new System.Drawing.Point(358, 281);
-            this.food_list.Name = "food_list";
-            this.food_list.ReadOnly = true;
-            this.food_list.Size = new System.Drawing.Size(213, 20);
-            this.food_list.TabIndex = 11;
-            this.food_list.Text = "...";
-            this.food_list.SelectedItemChanged += new System.EventHandler(this.food_list_SelectedItemChanged);
+            this.Food_list.Items.Add("Cela 1");
+            this.Food_list.Items.Add("Cela 2");
+            this.Food_list.Items.Add("Cela 3");
+            this.Food_list.Items.Add("Cela 4");
+            this.Food_list.Location = new System.Drawing.Point(358, 281);
+            this.Food_list.Name = "Food_list";
+            this.Food_list.ReadOnly = true;
+            this.Food_list.Size = new System.Drawing.Size(213, 20);
+            this.Food_list.TabIndex = 11;
+            this.Food_list.SelectedItemChanged += new System.EventHandler(this.Food_list_SelectedItemChanged);
             // 
-            // checkup_Box
+            // Checkup_Box
             // 
-            this.checkup_Box.AutoSize = true;
-            this.checkup_Box.Location = new System.Drawing.Point(79, 273);
-            this.checkup_Box.Name = "checkup_Box";
-            this.checkup_Box.Size = new System.Drawing.Size(69, 17);
-            this.checkup_Box.TabIndex = 12;
-            this.checkup_Box.Text = "Checkup";
-            this.checkup_Box.UseVisualStyleBackColor = true;
-            this.checkup_Box.CheckedChanged += new System.EventHandler(this.checkup_Box_CheckedChanged);
+            this.Checkup_Box.AutoSize = true;
+            this.Checkup_Box.Location = new System.Drawing.Point(79, 273);
+            this.Checkup_Box.Name = "Checkup_Box";
+            this.Checkup_Box.Size = new System.Drawing.Size(69, 17);
+            this.Checkup_Box.TabIndex = 12;
+            this.Checkup_Box.Text = "Checkup";
+            this.Checkup_Box.UseVisualStyleBackColor = true;
+            this.Checkup_Box.CheckedChanged += new System.EventHandler(this.Checkup_Box_CheckedChanged);
             // 
-            // cell_list
+            // Cell_list
             // 
-            this.cell_list.Items.Add("Frango");
-            this.cell_list.Items.Add("Pizza");
-            this.cell_list.Items.Add("Batatas Fritas");
-            this.cell_list.Items.Add("Relva");
-            this.cell_list.Items.Add("Erva");
-            this.cell_list.Location = new System.Drawing.Point(358, 316);
-            this.cell_list.Name = "cell_list";
-            this.cell_list.ReadOnly = true;
-            this.cell_list.Size = new System.Drawing.Size(213, 20);
-            this.cell_list.TabIndex = 14;
-            this.cell_list.Text = "...";
-            this.cell_list.SelectedItemChanged += new System.EventHandler(this.cell_list_SelectedItemChanged);
+            this.Cell_list.Items.Add("Frango");
+            this.Cell_list.Items.Add("Pizza");
+            this.Cell_list.Items.Add("Batatas Fritas");
+            this.Cell_list.Items.Add("Relva");
+            this.Cell_list.Items.Add("Erva");
+            this.Cell_list.Location = new System.Drawing.Point(358, 316);
+            this.Cell_list.Name = "Cell_list";
+            this.Cell_list.ReadOnly = true;
+            this.Cell_list.Size = new System.Drawing.Size(213, 20);
+            this.Cell_list.TabIndex = 14;
+            this.Cell_list.SelectedItemChanged += new System.EventHandler(this.Cell_list_SelectedItemChanged);
             // 
             // label7
             // 
@@ -180,37 +178,39 @@
             this.label7.TabIndex = 13;
             this.label7.Text = "Comida do Animal >>> ";
             // 
-            // regist_button
+            // Regist_button
             // 
-            this.regist_button.Location = new System.Drawing.Point(510, 355);
-            this.regist_button.Name = "regist_button";
-            this.regist_button.Size = new System.Drawing.Size(75, 23);
-            this.regist_button.TabIndex = 17;
-            this.regist_button.Text = "Registrar";
-            this.regist_button.UseVisualStyleBackColor = true;
-            this.regist_button.Click += new System.EventHandler(this.regist_button_Click);
+            this.Regist_button.Location = new System.Drawing.Point(510, 355);
+            this.Regist_button.Name = "Regist_button";
+            this.Regist_button.Size = new System.Drawing.Size(75, 23);
+            this.Regist_button.TabIndex = 17;
+            this.Regist_button.Text = "Registrar";
+            this.Regist_button.UseVisualStyleBackColor = true;
+            this.Regist_button.Click += new System.EventHandler(this.Regist_button_Click);
             // 
-            // birthday_Calendar
+            // Birthday_Calendar
             // 
-            this.birthday_Calendar.Location = new System.Drawing.Point(344, 101);
-            this.birthday_Calendar.Name = "birthday_Calendar";
-            this.birthday_Calendar.TabIndex = 18;
-            this.birthday_Calendar.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.birthday_Calendar_DateChanged);
+            this.Birthday_Calendar.Location = new System.Drawing.Point(344, 101);
+            this.Birthday_Calendar.Name = "Birthday_Calendar";
+            this.Birthday_Calendar.SelectionRange = new System.Windows.Forms.SelectionRange(new System.DateTime(2023, 11, 15, 0, 0, 0, 0), new System.DateTime(2023, 11, 21, 0, 0, 0, 0));
+            this.Birthday_Calendar.ShowToday = false;
+            this.Birthday_Calendar.TabIndex = 18;
+            this.Birthday_Calendar.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.Birthday_Calendar_DateChanged);
             // 
             // Animal_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(599, 417);
-            this.Controls.Add(this.birthday_Calendar);
-            this.Controls.Add(this.regist_button);
-            this.Controls.Add(this.cell_list);
+            this.Controls.Add(this.Birthday_Calendar);
+            this.Controls.Add(this.Regist_button);
+            this.Controls.Add(this.Cell_list);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.checkup_Box);
-            this.Controls.Add(this.food_list);
+            this.Controls.Add(this.Checkup_Box);
+            this.Controls.Add(this.Food_list);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.name_Box);
+            this.Controls.Add(this.Name_Box);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
@@ -231,18 +231,18 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button exit_button;
+        private System.Windows.Forms.Button Exit_button;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox name_Box;
+        private System.Windows.Forms.TextBox Name_Box;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DomainUpDown food_list;
-        private System.Windows.Forms.CheckBox checkup_Box;
-        private System.Windows.Forms.DomainUpDown cell_list;
+        private System.Windows.Forms.DomainUpDown Food_list;
+        private System.Windows.Forms.CheckBox Checkup_Box;
+        private System.Windows.Forms.DomainUpDown Cell_list;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button regist_button;
-        private System.Windows.Forms.MonthCalendar birthday_Calendar;
+        private System.Windows.Forms.Button Regist_button;
+        private System.Windows.Forms.MonthCalendar Birthday_Calendar;
     }
 }

@@ -22,32 +22,24 @@ namespace MyzOo
         }
         private void Form1_Load(object sender, EventArgs e)
         {
+            //set form colors
             panel1.BackColor = Color.DeepSkyBlue;
-            button1.ForeColor = Color.DeepSkyBlue;
-            button2.ForeColor = Color.DeepSkyBlue;
-            button3.ForeColor = Color.DeepSkyBlue;
+            Login_button.ForeColor = Color.DeepSkyBlue;
+            Seila_button.ForeColor = Color.DeepSkyBlue;
+            Close_button.ForeColor = Color.DeepSkyBlue;
             label1.ForeColor = Color.White;
         }
-        private void button3_Click(object sender, EventArgs e)
+        private void Seila_button_Click(object sender, EventArgs e)
         {
-            
+
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void button3_Click_1(object sender, EventArgs e)
+        private void Close_button_Click(object sender, EventArgs e)
         {
             //Close the app
             Environment.Exit(0);
         }
-        private void label1_Click(object sender, EventArgs e)
-        {
-        
-        }
-        private void button1_Click(object sender, EventArgs e)
+        private void Login_button_Click(object sender, EventArgs e)
         {
             //close Start_Menu and open Main_Menu
             Main_Menu main_Menu = new Main_Menu();

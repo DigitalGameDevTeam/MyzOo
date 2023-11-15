@@ -30,11 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main_Menu));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.minimize_button = new System.Windows.Forms.Button();
-            this.exit_button = new System.Windows.Forms.Button();
+            this.Minimize_button = new System.Windows.Forms.Button();
+            this.Exit_button = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.AnimalMenu_button = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -42,8 +44,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel1.Controls.Add(this.minimize_button);
-            this.panel1.Controls.Add(this.exit_button);
+            this.panel1.Controls.Add(this.Minimize_button);
+            this.panel1.Controls.Add(this.Exit_button);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -51,37 +53,37 @@
             this.panel1.Size = new System.Drawing.Size(800, 57);
             this.panel1.TabIndex = 0;
             // 
-            // minimize_button
+            // Minimize_button
             // 
-            this.minimize_button.BackColor = System.Drawing.Color.Transparent;
-            this.minimize_button.FlatAppearance.BorderSize = 0;
-            this.minimize_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
-            this.minimize_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.minimize_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.minimize_button.ForeColor = System.Drawing.SystemColors.Window;
-            this.minimize_button.Location = new System.Drawing.Point(688, 0);
-            this.minimize_button.Name = "minimize_button";
-            this.minimize_button.Size = new System.Drawing.Size(56, 57);
-            this.minimize_button.TabIndex = 3;
-            this.minimize_button.Text = "-";
-            this.minimize_button.UseVisualStyleBackColor = false;
-            this.minimize_button.Click += new System.EventHandler(this.minimize_button_Click);
+            this.Minimize_button.BackColor = System.Drawing.Color.Transparent;
+            this.Minimize_button.FlatAppearance.BorderSize = 0;
+            this.Minimize_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
+            this.Minimize_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Minimize_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Minimize_button.ForeColor = System.Drawing.SystemColors.Window;
+            this.Minimize_button.Location = new System.Drawing.Point(688, 0);
+            this.Minimize_button.Name = "Minimize_button";
+            this.Minimize_button.Size = new System.Drawing.Size(56, 57);
+            this.Minimize_button.TabIndex = 3;
+            this.Minimize_button.Text = "-";
+            this.Minimize_button.UseVisualStyleBackColor = false;
+            this.Minimize_button.Click += new System.EventHandler(this.Minimize_button_Click);
             // 
-            // exit_button
+            // Exit_button
             // 
-            this.exit_button.BackColor = System.Drawing.Color.Transparent;
-            this.exit_button.FlatAppearance.BorderSize = 0;
-            this.exit_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.exit_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exit_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exit_button.ForeColor = System.Drawing.SystemColors.Window;
-            this.exit_button.Location = new System.Drawing.Point(744, 0);
-            this.exit_button.Name = "exit_button";
-            this.exit_button.Size = new System.Drawing.Size(56, 57);
-            this.exit_button.TabIndex = 2;
-            this.exit_button.Text = "X";
-            this.exit_button.UseVisualStyleBackColor = false;
-            this.exit_button.Click += new System.EventHandler(this.exit_button_Click);
+            this.Exit_button.BackColor = System.Drawing.Color.Transparent;
+            this.Exit_button.FlatAppearance.BorderSize = 0;
+            this.Exit_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Exit_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Exit_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Exit_button.ForeColor = System.Drawing.SystemColors.Window;
+            this.Exit_button.Location = new System.Drawing.Point(744, 0);
+            this.Exit_button.Name = "Exit_button";
+            this.Exit_button.Size = new System.Drawing.Size(56, 57);
+            this.Exit_button.TabIndex = 2;
+            this.Exit_button.Text = "X";
+            this.Exit_button.UseVisualStyleBackColor = false;
+            this.Exit_button.Click += new System.EventHandler(this.Exit_button_Click);
             // 
             // label1
             // 
@@ -98,29 +100,63 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.GrayText;
-            this.panel2.Controls.Add(this.button3);
+            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.AnimalMenu_button);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 57);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(200, 393);
             this.panel2.TabIndex = 1;
             // 
-            // button3
+            // button2
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.Window;
-            this.button3.Location = new System.Drawing.Point(0, 30);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(200, 35);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Ver Animal";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.Window;
+            this.button2.Location = new System.Drawing.Point(0, 83);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(200, 35);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "(Botão Lateral)";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.Window;
+            this.button1.Location = new System.Drawing.Point(0, 138);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(200, 35);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "(Botão Lateral)";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // AnimalMenu_button
+            // 
+            this.AnimalMenu_button.BackColor = System.Drawing.Color.Transparent;
+            this.AnimalMenu_button.FlatAppearance.BorderSize = 0;
+            this.AnimalMenu_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.AnimalMenu_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.AnimalMenu_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AnimalMenu_button.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AnimalMenu_button.ForeColor = System.Drawing.SystemColors.Window;
+            this.AnimalMenu_button.Location = new System.Drawing.Point(0, 30);
+            this.AnimalMenu_button.Name = "AnimalMenu_button";
+            this.AnimalMenu_button.Size = new System.Drawing.Size(200, 35);
+            this.AnimalMenu_button.TabIndex = 5;
+            this.AnimalMenu_button.Text = "Ver Animal";
+            this.AnimalMenu_button.UseVisualStyleBackColor = false;
+            this.AnimalMenu_button.Click += new System.EventHandler(this.AnimalMenu_button_Click);
             // 
             // Main_Menu
             // 
@@ -148,8 +184,10 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button exit_button;
-        private System.Windows.Forms.Button minimize_button;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button Exit_button;
+        private System.Windows.Forms.Button Minimize_button;
+        private System.Windows.Forms.Button AnimalMenu_button;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }
