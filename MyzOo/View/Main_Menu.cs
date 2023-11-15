@@ -17,7 +17,7 @@ namespace MyzOo
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Exit_button_Click(object sender, EventArgs e)
         {
             //close Start_Menu and open Main_Menu
             Start_Menu start_Menu = new Start_Menu();
@@ -25,7 +25,7 @@ namespace MyzOo
             start_Menu.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Minimize_button_Click(object sender, EventArgs e)
         {
             //minimize the form
             this.WindowState = FormWindowState.Minimized;
@@ -38,7 +38,7 @@ namespace MyzOo
             label1.ForeColor = Color.White;
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void AnimalMenu_button_Click(object sender, EventArgs e)
         {
             //open Animal_Menu
             Animal_Menu animal_Menu = new Animal_Menu();

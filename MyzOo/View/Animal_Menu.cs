@@ -20,42 +20,44 @@ namespace MyzOo
         private void Animal_Menu_Load(object sender, EventArgs e)
         {
             //Animal animal = new Animal();
+<<<<<<< HEAD:MyzOo/Animal_Menu.cs
 
+=======
+>>>>>>> 9578fe4c5ec49e60d4c95e917e49744714eb8316:MyzOo/View/Animal_Menu.cs
         }
-        private void button1_Click(object sender, EventArgs e)
+        private void Exit_button_Click(object sender, EventArgs e)
         {
             //hide this Menu
             this.Hide();
         }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
+        private void Food_list_SelectedItemChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        private void Checkup_Box_CheckedChanged(object sender, EventArgs e)
         {
-
+            
         }
 
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void domainUpDown1_SelectedItemChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void Name_Box_TextChanged(object sender, EventArgs e)
         {
              
+        }
+
+        private void Birthday_Calendar_DateChanged(object sender, DateRangeEventArgs e)
+        {
+
+        }
+
+        private void Cell_list_SelectedItemChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Regist_button_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
