@@ -41,8 +41,6 @@
             this.checkup_Box = new System.Windows.Forms.CheckBox();
             this.cell_list = new System.Windows.Forms.DomainUpDown();
             this.label7 = new System.Windows.Forms.Label();
-            this.id_box = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.regist_button = new System.Windows.Forms.Button();
             this.birthday_Calendar = new System.Windows.Forms.MonthCalendar();
             this.panel1.SuspendLayout();
@@ -101,7 +99,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(232, 102);
+            this.label2.Location = new System.Drawing.Point(230, 75);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(108, 13);
             this.label2.TabIndex = 2;
@@ -109,7 +107,7 @@
             // 
             // name_Box
             // 
-            this.name_Box.Location = new System.Drawing.Point(346, 99);
+            this.name_Box.Location = new System.Drawing.Point(344, 72);
             this.name_Box.Name = "name_Box";
             this.name_Box.Size = new System.Drawing.Size(227, 20);
             this.name_Box.TabIndex = 3;
@@ -118,7 +116,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(232, 128);
+            this.label3.Location = new System.Drawing.Point(230, 101);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(103, 13);
             this.label3.TabIndex = 4;
@@ -127,7 +125,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(239, 308);
+            this.label6.Location = new System.Drawing.Point(237, 281);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(101, 13);
             this.label6.TabIndex = 10;
@@ -139,7 +137,7 @@
             this.food_list.Items.Add("Cela 2");
             this.food_list.Items.Add("Cela 3");
             this.food_list.Items.Add("Cela 4");
-            this.food_list.Location = new System.Drawing.Point(360, 308);
+            this.food_list.Location = new System.Drawing.Point(358, 281);
             this.food_list.Name = "food_list";
             this.food_list.ReadOnly = true;
             this.food_list.Size = new System.Drawing.Size(213, 20);
@@ -165,7 +163,7 @@
             this.cell_list.Items.Add("Batatas Fritas");
             this.cell_list.Items.Add("Relva");
             this.cell_list.Items.Add("Erva");
-            this.cell_list.Location = new System.Drawing.Point(360, 343);
+            this.cell_list.Location = new System.Drawing.Point(358, 316);
             this.cell_list.Name = "cell_list";
             this.cell_list.ReadOnly = true;
             this.cell_list.Size = new System.Drawing.Size(213, 20);
@@ -176,32 +174,15 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(239, 345);
+            this.label7.Location = new System.Drawing.Point(237, 318);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(115, 13);
             this.label7.TabIndex = 13;
             this.label7.Text = "Comida do Animal >>> ";
             // 
-            // id_box
-            // 
-            this.id_box.Location = new System.Drawing.Point(346, 73);
-            this.id_box.Name = "id_box";
-            this.id_box.Size = new System.Drawing.Size(227, 20);
-            this.id_box.TabIndex = 16;
-            this.id_box.TextChanged += new System.EventHandler(this.id_Box_TextChanged);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(232, 76);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(91, 13);
-            this.label8.TabIndex = 15;
-            this.label8.Text = "ID do Animal >>> ";
-            // 
             // regist_button
             // 
-            this.regist_button.Location = new System.Drawing.Point(512, 382);
+            this.regist_button.Location = new System.Drawing.Point(510, 355);
             this.regist_button.Name = "regist_button";
             this.regist_button.Size = new System.Drawing.Size(75, 23);
             this.regist_button.TabIndex = 17;
@@ -211,7 +192,7 @@
             // 
             // birthday_Calendar
             // 
-            this.birthday_Calendar.Location = new System.Drawing.Point(346, 128);
+            this.birthday_Calendar.Location = new System.Drawing.Point(344, 101);
             this.birthday_Calendar.Name = "birthday_Calendar";
             this.birthday_Calendar.TabIndex = 18;
             this.birthday_Calendar.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.birthday_Calendar_DateChanged);
@@ -223,8 +204,6 @@
             this.ClientSize = new System.Drawing.Size(599, 417);
             this.Controls.Add(this.birthday_Calendar);
             this.Controls.Add(this.regist_button);
-            this.Controls.Add(this.id_box);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.cell_list);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.checkup_Box);
@@ -263,8 +242,6 @@
         private System.Windows.Forms.CheckBox checkup_Box;
         private System.Windows.Forms.DomainUpDown cell_list;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox id_box;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button regist_button;
         private System.Windows.Forms.MonthCalendar birthday_Calendar;
     }

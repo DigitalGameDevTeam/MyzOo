@@ -41,11 +41,6 @@ namespace MyzOo
              
         }
 
-        private void id_Box_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void birthday_Calendar_DateChanged(object sender, DateRangeEventArgs e)
         {
 
