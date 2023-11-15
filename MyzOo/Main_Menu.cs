@@ -17,7 +17,7 @@ namespace MyzOo
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void exit_button_Click(object sender, EventArgs e)
         {
             //close Start_Menu and open Main_Menu
             Start_Menu start_Menu = new Start_Menu();
@@ -25,7 +25,7 @@ namespace MyzOo
             start_Menu.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void minimize_button_Click(object sender, EventArgs e)
         {
             //minimize the form
             this.WindowState = FormWindowState.Minimized;

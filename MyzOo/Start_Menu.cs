@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Drawing.Text;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -34,30 +35,7 @@ namespace MyzOo
 
         private void button2_Click(object sender, EventArgs e)
         {
-            DateTime dt = new DateTime(2015, 10, 12);
-
-            // Cell
-            Cell cellInstance = new Cell
-            {
-                Id = 1,
-                Cleaning = true
-            };
-
-            // Food
-            Food foodInstance = new Food
-            {
-                Id = 1,
-                Typefood = "Carnivore",
-                Description = "Meat-based diet",
-                Stock = 10
-            };
-
-            // animal
-            Animal animal = new Animal(1, "Leão", DateTime.Now, false, cellInstance, foodInstance);
-
-            string nome = animal.Name;
-
-            button2.Text = nome;
+            
         }
 
         private void button3_Click_1(object sender, EventArgs e)
