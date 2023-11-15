@@ -99,40 +99,54 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(230, 75);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
+            this.label2.Location = new System.Drawing.Point(230, 71);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(108, 13);
+            this.label2.Size = new System.Drawing.Size(110, 15);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Nome do Animal >>> ";
+            this.label2.Text = "Nome do Animal :";
             // 
             // Name_Box
             // 
-            this.Name_Box.Location = new System.Drawing.Point(344, 72);
+            this.Name_Box.BackColor = System.Drawing.Color.LightGray;
+            this.Name_Box.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Name_Box.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
+            this.Name_Box.ForeColor = System.Drawing.Color.Black;
+            this.Name_Box.Location = new System.Drawing.Point(344, 71);
             this.Name_Box.Name = "Name_Box";
-            this.Name_Box.Size = new System.Drawing.Size(227, 20);
+            this.Name_Box.Size = new System.Drawing.Size(227, 14);
             this.Name_Box.TabIndex = 3;
             this.Name_Box.TextChanged += new System.EventHandler(this.Name_Box_TextChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
             this.label3.Location = new System.Drawing.Point(230, 101);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(103, 13);
+            this.label3.Size = new System.Drawing.Size(104, 15);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Data do Animal >>> ";
+            this.label3.Text = "Data do Animal :";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
             this.label6.Location = new System.Drawing.Point(237, 281);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(101, 13);
+            this.label6.Size = new System.Drawing.Size(103, 15);
             this.label6.TabIndex = 10;
-            this.label6.Text = "Cela do Animal >>> ";
+            this.label6.Text = "Cela do Animal :";
             // 
             // Food_list
             // 
+            this.Food_list.BackColor = System.Drawing.Color.LightGray;
+            this.Food_list.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Food_list.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
+            this.Food_list.ForeColor = System.Drawing.Color.Black;
             this.Food_list.Items.Add("Cela 1");
             this.Food_list.Items.Add("Cela 2");
             this.Food_list.Items.Add("Cela 3");
@@ -140,23 +154,29 @@
             this.Food_list.Location = new System.Drawing.Point(358, 281);
             this.Food_list.Name = "Food_list";
             this.Food_list.ReadOnly = true;
-            this.Food_list.Size = new System.Drawing.Size(213, 20);
+            this.Food_list.Size = new System.Drawing.Size(213, 17);
             this.Food_list.TabIndex = 11;
             this.Food_list.SelectedItemChanged += new System.EventHandler(this.Food_list_SelectedItemChanged);
             // 
             // Checkup_Box
             // 
             this.Checkup_Box.AutoSize = true;
+            this.Checkup_Box.BackColor = System.Drawing.Color.Transparent;
+            this.Checkup_Box.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
             this.Checkup_Box.Location = new System.Drawing.Point(79, 273);
             this.Checkup_Box.Name = "Checkup_Box";
-            this.Checkup_Box.Size = new System.Drawing.Size(69, 17);
+            this.Checkup_Box.Size = new System.Drawing.Size(76, 19);
             this.Checkup_Box.TabIndex = 12;
             this.Checkup_Box.Text = "Checkup";
-            this.Checkup_Box.UseVisualStyleBackColor = true;
+            this.Checkup_Box.UseVisualStyleBackColor = false;
             this.Checkup_Box.CheckedChanged += new System.EventHandler(this.Checkup_Box_CheckedChanged);
             // 
             // Cell_list
             // 
+            this.Cell_list.BackColor = System.Drawing.Color.LightGray;
+            this.Cell_list.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Cell_list.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
+            this.Cell_list.ForeColor = System.Drawing.Color.Black;
             this.Cell_list.Items.Add("Frango");
             this.Cell_list.Items.Add("Pizza");
             this.Cell_list.Items.Add("Batatas Fritas");
@@ -165,31 +185,40 @@
             this.Cell_list.Location = new System.Drawing.Point(358, 316);
             this.Cell_list.Name = "Cell_list";
             this.Cell_list.ReadOnly = true;
-            this.Cell_list.Size = new System.Drawing.Size(213, 20);
+            this.Cell_list.Size = new System.Drawing.Size(213, 17);
             this.Cell_list.TabIndex = 14;
             this.Cell_list.SelectedItemChanged += new System.EventHandler(this.Cell_list_SelectedItemChanged);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
             this.label7.Location = new System.Drawing.Point(237, 318);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(115, 13);
+            this.label7.Size = new System.Drawing.Size(121, 15);
             this.label7.TabIndex = 13;
-            this.label7.Text = "Comida do Animal >>> ";
+            this.label7.Text = "Comida do Animal :";
             // 
             // Regist_button
             // 
+            this.Regist_button.BackColor = System.Drawing.Color.Transparent;
+            this.Regist_button.FlatAppearance.BorderSize = 0;
+            this.Regist_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.Regist_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
+            this.Regist_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Regist_button.ForeColor = System.Drawing.Color.Black;
             this.Regist_button.Location = new System.Drawing.Point(510, 355);
             this.Regist_button.Name = "Regist_button";
             this.Regist_button.Size = new System.Drawing.Size(75, 23);
             this.Regist_button.TabIndex = 17;
             this.Regist_button.Text = "Registrar";
-            this.Regist_button.UseVisualStyleBackColor = true;
+            this.Regist_button.UseVisualStyleBackColor = false;
             this.Regist_button.Click += new System.EventHandler(this.Regist_button_Click);
             // 
             // Birthday_Calendar
             // 
+            this.Birthday_Calendar.BackColor = System.Drawing.Color.LightGray;
             this.Birthday_Calendar.Location = new System.Drawing.Point(344, 101);
             this.Birthday_Calendar.Name = "Birthday_Calendar";
             this.Birthday_Calendar.SelectionRange = new System.Windows.Forms.SelectionRange(new System.DateTime(2023, 11, 15, 0, 0, 0, 0), new System.DateTime(2023, 11, 21, 0, 0, 0, 0));
@@ -201,6 +230,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(599, 417);
             this.Controls.Add(this.Birthday_Calendar);
             this.Controls.Add(this.Regist_button);
