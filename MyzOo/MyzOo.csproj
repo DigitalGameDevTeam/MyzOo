@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\Job.cs" />
     <Compile Include="View\Animal_Menu.cs">
       <SubType>Form</SubType>
     </Compile>
