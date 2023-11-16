@@ -55,9 +55,16 @@ namespace MyzOo
 
         private void Cell_Menu_button_Click(object sender, EventArgs e)
         {
-            //pone Cell_Menu
+            //open Cell_Menu
             Cell_Menu cell_Menu = new Cell_Menu();
             cell_Menu.Show();
+        }
+
+        private void Ver_Animal_Menu_button_Click(object sender, EventArgs e)
+        {
+            //open Ver_Animal_Menu
+            Ver_Animal_Menu ver_Animal_Menu = new Ver_Animal_Menu();
+            ver_Animal_Menu.Show();
         }
     }
 }

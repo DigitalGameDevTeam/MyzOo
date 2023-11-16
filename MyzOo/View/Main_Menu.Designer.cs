@@ -38,6 +38,7 @@
             this.AnimalMenu_button = new System.Windows.Forms.Button();
             this.Food_Menu_button = new System.Windows.Forms.Button();
             this.Cell_Menu_button = new System.Windows.Forms.Button();
+            this.Ver_Animal_Menu_button = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Perfil_image_picture)).BeginInit();
             this.SuspendLayout();
@@ -169,12 +170,30 @@
             this.Cell_Menu_button.UseVisualStyleBackColor = false;
             this.Cell_Menu_button.Click += new System.EventHandler(this.Cell_Menu_button_Click);
             // 
+            // Ver_Animal_Menu_button
+            // 
+            this.Ver_Animal_Menu_button.BackColor = System.Drawing.Color.Silver;
+            this.Ver_Animal_Menu_button.FlatAppearance.BorderSize = 0;
+            this.Ver_Animal_Menu_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Ver_Animal_Menu_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Ver_Animal_Menu_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Ver_Animal_Menu_button.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ver_Animal_Menu_button.ForeColor = System.Drawing.Color.Black;
+            this.Ver_Animal_Menu_button.Location = new System.Drawing.Point(515, 229);
+            this.Ver_Animal_Menu_button.Name = "Ver_Animal_Menu_button";
+            this.Ver_Animal_Menu_button.Size = new System.Drawing.Size(215, 128);
+            this.Ver_Animal_Menu_button.TabIndex = 8;
+            this.Ver_Animal_Menu_button.Text = "Menu Inspecionar Animal";
+            this.Ver_Animal_Menu_button.UseVisualStyleBackColor = false;
+            this.Ver_Animal_Menu_button.Click += new System.EventHandler(this.Ver_Animal_Menu_button_Click);
+            // 
             // Main_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Ver_Animal_Menu_button);
             this.Controls.Add(this.Cell_Menu_button);
             this.Controls.Add(this.Food_Menu_button);
             this.Controls.Add(this.AnimalMenu_button);
@@ -204,5 +223,6 @@
         private System.Windows.Forms.PictureBox Perfil_image_picture;
         private System.Windows.Forms.Button Food_Menu_button;
         private System.Windows.Forms.Button Cell_Menu_button;
+        private System.Windows.Forms.Button Ver_Animal_Menu_button;
     }
 }

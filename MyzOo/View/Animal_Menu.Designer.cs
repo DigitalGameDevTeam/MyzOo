@@ -66,9 +66,9 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(12, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(202, 60);
+            this.label1.Size = new System.Drawing.Size(429, 60);
             this.label1.TabIndex = 2;
-            this.label1.Text = "My zOo";
+            this.label1.Text = "Adicionar Animal";
             // 
             // Exit_button
             // 
