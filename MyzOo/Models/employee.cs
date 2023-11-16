@@ -12,15 +12,16 @@ namespace MyzOo.Models
         public string Name { get; set; }
         public DateTime Birthday { get; set; }
         public bool Checkup { get; set; }
-
+        public string Password { get; set; }
         public string Adminlevel { get; set; }  
         public Job EmployeeJob { get; set; }
-        public Employee(int id, string name, DateTime birthday, bool checkup, string adminlevel)
+        public Employee(int id, string name, DateTime birthday, bool checkup,string password, string adminlevel)
         {
             Id = id;
             Name = name;
             Birthday = birthday;
             Checkup = checkup;
+            Password = password;
             Adminlevel = adminlevel;
         }
     }

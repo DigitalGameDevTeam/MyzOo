@@ -30,17 +30,20 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main_Menu));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Perfil_image_picture = new System.Windows.Forms.PictureBox();
             this.Minimize_button = new System.Windows.Forms.Button();
             this.Exit_button = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.AnimalMenu_button = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Perfil_image_picture)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel1.Controls.Add(this.Perfil_image_picture);
             this.panel1.Controls.Add(this.Minimize_button);
             this.panel1.Controls.Add(this.Exit_button);
             this.panel1.Controls.Add(this.label1);
@@ -49,6 +52,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 57);
             this.panel1.TabIndex = 0;
+            // 
+            // Perfil_image_picture
+            // 
+            this.Perfil_image_picture.Image = ((System.Drawing.Image)(resources.GetObject("Perfil_image_picture.Image")));
+            this.Perfil_image_picture.Location = new System.Drawing.Point(3, 0);
+            this.Perfil_image_picture.Name = "Perfil_image_picture";
+            this.Perfil_image_picture.Size = new System.Drawing.Size(56, 57);
+            this.Perfil_image_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Perfil_image_picture.TabIndex = 6;
+            this.Perfil_image_picture.TabStop = false;
             // 
             // Minimize_button
             // 
@@ -88,7 +101,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Window;
-            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Location = new System.Drawing.Point(65, -3);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(202, 60);
             this.label1.TabIndex = 1;
@@ -105,16 +118,16 @@
             // 
             // AnimalMenu_button
             // 
-            this.AnimalMenu_button.BackColor = System.Drawing.Color.Transparent;
+            this.AnimalMenu_button.BackColor = System.Drawing.Color.Silver;
             this.AnimalMenu_button.FlatAppearance.BorderSize = 0;
             this.AnimalMenu_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.AnimalMenu_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.AnimalMenu_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AnimalMenu_button.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AnimalMenu_button.ForeColor = System.Drawing.Color.Black;
-            this.AnimalMenu_button.Location = new System.Drawing.Point(206, 63);
+            this.AnimalMenu_button.Location = new System.Drawing.Point(221, 79);
             this.AnimalMenu_button.Name = "AnimalMenu_button";
-            this.AnimalMenu_button.Size = new System.Drawing.Size(200, 35);
+            this.AnimalMenu_button.Size = new System.Drawing.Size(215, 128);
             this.AnimalMenu_button.TabIndex = 5;
             this.AnimalMenu_button.Text = "Ver Animal";
             this.AnimalMenu_button.UseVisualStyleBackColor = false;
@@ -137,6 +150,7 @@
             this.Load += new System.EventHandler(this.Main_Menu_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Perfil_image_picture)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -149,5 +163,6 @@
         private System.Windows.Forms.Button Exit_button;
         private System.Windows.Forms.Button Minimize_button;
         private System.Windows.Forms.Button AnimalMenu_button;
+        private System.Windows.Forms.PictureBox Perfil_image_picture;
     }
 }
