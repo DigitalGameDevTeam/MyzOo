@@ -12,12 +12,19 @@ namespace MyzOo.View
 {
     public partial class Ver_Animal_Menu : Form
     {
-        int op = 1;
+        int op = 1;//variable used to alternate between "Inspecionar" and "Editar"
         public Ver_Animal_Menu()
         {
             InitializeComponent();
         }
-
+        private void Ver_Animal_Menu_Load(object sender, EventArgs e)
+        {
+            Name_Box.Enabled = false;
+            Birthday_Calendar.Enabled = false;
+            Cell_listbox.Enabled = false;
+            Food_listbox.Enabled = false;
+            Checkup_Box.Enabled = false;
+        }
         private void Edit_button_Click(object sender, EventArgs e)
         {
            
@@ -52,5 +59,7 @@ namespace MyzOo.View
             //hide this menu 
             this.Hide();
         }
+
+        
     }
 }

@@ -250,6 +250,7 @@
             this.Name = "Ver_Animal_Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ver_Animal_Menu";
+            this.Load += new System.EventHandler(this.Ver_Animal_Menu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
