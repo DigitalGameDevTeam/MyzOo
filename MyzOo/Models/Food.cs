@@ -12,12 +12,12 @@ namespace MyzOo.Classes
         public string Typefood { get; set; }
         public string Description { get; set; }
         public int Stock { get; set; }
-        public Food (int id, string typefood, string description)
+        public Food (int id, string typefood, string description, int stock)
         {
             Id = id;
             Typefood = typefood;
             Description = description;
-            Stock = Stock;
+            Stock = stock;
 
         }
     }

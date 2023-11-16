@@ -11,12 +11,12 @@ namespace MyzOo.Classes
     {
         public int Id {  get; set; }
         public bool Cleaning { get; set; }
-        public int Numero {  get; set; }
-        public Cell (int id,bool cleaning, int numero)
+        public int Number {  get; set; }
+        public Cell (int id,bool cleaning, int number)
         {
             Id = id;
             Cleaning = cleaning;
-            Numero = numero;
+            Number = number;
         }
 
     }
