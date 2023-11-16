@@ -37,12 +37,12 @@
             this.Name_Box = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.Food_list = new System.Windows.Forms.DomainUpDown();
             this.Checkup_Box = new System.Windows.Forms.CheckBox();
-            this.Cell_list = new System.Windows.Forms.DomainUpDown();
             this.label7 = new System.Windows.Forms.Label();
             this.Regist_button = new System.Windows.Forms.Button();
             this.Birthday_Calendar = new System.Windows.Forms.MonthCalendar();
+            this.Cell_listbox = new System.Windows.Forms.ComboBox();
+            this.Food_listbox = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -141,53 +141,19 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "Cela do Animal :";
             // 
-            // Food_list
-            // 
-            this.Food_list.BackColor = System.Drawing.Color.LightGray;
-            this.Food_list.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Food_list.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.Food_list.ForeColor = System.Drawing.Color.Black;
-            this.Food_list.Items.Add("Cela 1");
-            this.Food_list.Items.Add("Cela 2");
-            this.Food_list.Items.Add("Cela 3");
-            this.Food_list.Items.Add("Cela 4");
-            this.Food_list.Location = new System.Drawing.Point(358, 281);
-            this.Food_list.Name = "Food_list";
-            this.Food_list.ReadOnly = true;
-            this.Food_list.Size = new System.Drawing.Size(213, 17);
-            this.Food_list.TabIndex = 11;
-            this.Food_list.SelectedItemChanged += new System.EventHandler(this.Food_list_SelectedItemChanged);
-            // 
             // Checkup_Box
             // 
             this.Checkup_Box.AutoSize = true;
             this.Checkup_Box.BackColor = System.Drawing.Color.Transparent;
+            this.Checkup_Box.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Checkup_Box.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
             this.Checkup_Box.Location = new System.Drawing.Point(79, 273);
             this.Checkup_Box.Name = "Checkup_Box";
-            this.Checkup_Box.Size = new System.Drawing.Size(76, 19);
+            this.Checkup_Box.Size = new System.Drawing.Size(73, 19);
             this.Checkup_Box.TabIndex = 12;
             this.Checkup_Box.Text = "Checkup";
             this.Checkup_Box.UseVisualStyleBackColor = false;
             this.Checkup_Box.CheckedChanged += new System.EventHandler(this.Checkup_Box_CheckedChanged);
-            // 
-            // Cell_list
-            // 
-            this.Cell_list.BackColor = System.Drawing.Color.LightGray;
-            this.Cell_list.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Cell_list.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.Cell_list.ForeColor = System.Drawing.Color.Black;
-            this.Cell_list.Items.Add("Frango");
-            this.Cell_list.Items.Add("Pizza");
-            this.Cell_list.Items.Add("Batatas Fritas");
-            this.Cell_list.Items.Add("Relva");
-            this.Cell_list.Items.Add("Erva");
-            this.Cell_list.Location = new System.Drawing.Point(358, 316);
-            this.Cell_list.Name = "Cell_list";
-            this.Cell_list.ReadOnly = true;
-            this.Cell_list.Size = new System.Drawing.Size(213, 17);
-            this.Cell_list.TabIndex = 14;
-            this.Cell_list.SelectedItemChanged += new System.EventHandler(this.Cell_list_SelectedItemChanged);
             // 
             // label7
             // 
@@ -226,18 +192,40 @@
             this.Birthday_Calendar.TabIndex = 18;
             this.Birthday_Calendar.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.Birthday_Calendar_DateChanged);
             // 
+            // Cell_listbox
+            // 
+            this.Cell_listbox.BackColor = System.Drawing.Color.LightGray;
+            this.Cell_listbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Cell_listbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cell_listbox.FormattingEnabled = true;
+            this.Cell_listbox.Location = new System.Drawing.Point(347, 281);
+            this.Cell_listbox.Name = "Cell_listbox";
+            this.Cell_listbox.Size = new System.Drawing.Size(224, 21);
+            this.Cell_listbox.TabIndex = 19;
+            // 
+            // Food_listbox
+            // 
+            this.Food_listbox.BackColor = System.Drawing.Color.LightGray;
+            this.Food_listbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Food_listbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Food_listbox.FormattingEnabled = true;
+            this.Food_listbox.Location = new System.Drawing.Point(361, 316);
+            this.Food_listbox.Name = "Food_listbox";
+            this.Food_listbox.Size = new System.Drawing.Size(210, 21);
+            this.Food_listbox.TabIndex = 20;
+            // 
             // Animal_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(599, 417);
+            this.Controls.Add(this.Food_listbox);
+            this.Controls.Add(this.Cell_listbox);
             this.Controls.Add(this.Birthday_Calendar);
             this.Controls.Add(this.Regist_button);
-            this.Controls.Add(this.Cell_list);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.Checkup_Box);
-            this.Controls.Add(this.Food_list);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.Name_Box);
@@ -268,11 +256,11 @@
         private System.Windows.Forms.TextBox Name_Box;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DomainUpDown Food_list;
         private System.Windows.Forms.CheckBox Checkup_Box;
-        private System.Windows.Forms.DomainUpDown Cell_list;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button Regist_button;
         private System.Windows.Forms.MonthCalendar Birthday_Calendar;
+        private System.Windows.Forms.ComboBox Cell_listbox;
+        private System.Windows.Forms.ComboBox Food_listbox;
     }
 }
