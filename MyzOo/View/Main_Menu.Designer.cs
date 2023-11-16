@@ -36,6 +36,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.AnimalMenu_button = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Perfil_image_picture)).BeginInit();
             this.SuspendLayout();
@@ -129,9 +130,26 @@
             this.AnimalMenu_button.Name = "AnimalMenu_button";
             this.AnimalMenu_button.Size = new System.Drawing.Size(215, 128);
             this.AnimalMenu_button.TabIndex = 5;
-            this.AnimalMenu_button.Text = "Ver Animal";
+            this.AnimalMenu_button.Text = "Menu_Animal";
             this.AnimalMenu_button.UseVisualStyleBackColor = false;
             this.AnimalMenu_button.Click += new System.EventHandler(this.AnimalMenu_button_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Silver;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(473, 79);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(215, 128);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Menu_Comida";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Main_Menu
             // 
@@ -139,6 +157,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.AnimalMenu_button);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -164,5 +183,6 @@
         private System.Windows.Forms.Button Minimize_button;
         private System.Windows.Forms.Button AnimalMenu_button;
         private System.Windows.Forms.PictureBox Perfil_image_picture;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -60,6 +60,12 @@
     <Compile Include="Models\Food.cs" />
     <Compile Include="Models\Location.cs" />
     <Compile Include="Models\Typefood.cs" />
+    <Compile Include="View\Food_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Food_Menu.Designer.cs">
+      <DependentUpon>Food_Menu.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Main_Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +82,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="View\Animal_Menu.resx">
       <DependentUpon>Animal_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Food_Menu.resx">
+      <DependentUpon>Food_Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Main_Menu.resx">
       <DependentUpon>Main_Menu.cs</DependentUpon>

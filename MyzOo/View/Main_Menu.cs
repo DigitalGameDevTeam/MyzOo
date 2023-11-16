@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyzOo.View;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -43,6 +44,13 @@ namespace MyzOo
             //open Animal_Menu
             Animal_Menu animal_Menu = new Animal_Menu();
             animal_Menu.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //open Food_Menu
+            Food_Menu food_Menu = new Food_Menu();
+            food_Menu.Show();
         }
     }
 }
