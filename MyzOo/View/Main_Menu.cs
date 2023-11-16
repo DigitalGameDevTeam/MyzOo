@@ -46,11 +46,18 @@ namespace MyzOo
             animal_Menu.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Food_Menu_button_Click(object sender, EventArgs e)
         {
             //open Food_Menu
             Food_Menu food_Menu = new Food_Menu();
             food_Menu.Show();
+        }
+
+        private void Cell_Menu_button_Click(object sender, EventArgs e)
+        {
+            //pone Cell_Menu
+            Cell_Menu cell_Menu = new Cell_Menu();
+            cell_Menu.Show();
         }
     }
 }

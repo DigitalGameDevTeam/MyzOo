@@ -36,7 +36,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.AnimalMenu_button = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Food_Menu_button = new System.Windows.Forms.Button();
+            this.Cell_Menu_button = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Perfil_image_picture)).BeginInit();
             this.SuspendLayout();
@@ -126,30 +127,47 @@
             this.AnimalMenu_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AnimalMenu_button.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AnimalMenu_button.ForeColor = System.Drawing.Color.Black;
-            this.AnimalMenu_button.Location = new System.Drawing.Point(221, 79);
+            this.AnimalMenu_button.Location = new System.Drawing.Point(261, 79);
             this.AnimalMenu_button.Name = "AnimalMenu_button";
             this.AnimalMenu_button.Size = new System.Drawing.Size(215, 128);
             this.AnimalMenu_button.TabIndex = 5;
-            this.AnimalMenu_button.Text = "Menu_Animal";
+            this.AnimalMenu_button.Text = "Menu Animal";
             this.AnimalMenu_button.UseVisualStyleBackColor = false;
             this.AnimalMenu_button.Click += new System.EventHandler(this.AnimalMenu_button_Click);
             // 
-            // button1
+            // Food_Menu_button
             // 
-            this.button1.BackColor = System.Drawing.Color.Silver;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(473, 79);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(215, 128);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Menu_Comida";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Food_Menu_button.BackColor = System.Drawing.Color.Silver;
+            this.Food_Menu_button.FlatAppearance.BorderSize = 0;
+            this.Food_Menu_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Food_Menu_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Food_Menu_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Food_Menu_button.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Food_Menu_button.ForeColor = System.Drawing.Color.Black;
+            this.Food_Menu_button.Location = new System.Drawing.Point(515, 79);
+            this.Food_Menu_button.Name = "Food_Menu_button";
+            this.Food_Menu_button.Size = new System.Drawing.Size(215, 128);
+            this.Food_Menu_button.TabIndex = 6;
+            this.Food_Menu_button.Text = "Menu Comida";
+            this.Food_Menu_button.UseVisualStyleBackColor = false;
+            this.Food_Menu_button.Click += new System.EventHandler(this.Food_Menu_button_Click);
+            // 
+            // Cell_Menu_button
+            // 
+            this.Cell_Menu_button.BackColor = System.Drawing.Color.Silver;
+            this.Cell_Menu_button.FlatAppearance.BorderSize = 0;
+            this.Cell_Menu_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Cell_Menu_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Cell_Menu_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cell_Menu_button.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cell_Menu_button.ForeColor = System.Drawing.Color.Black;
+            this.Cell_Menu_button.Location = new System.Drawing.Point(261, 229);
+            this.Cell_Menu_button.Name = "Cell_Menu_button";
+            this.Cell_Menu_button.Size = new System.Drawing.Size(215, 128);
+            this.Cell_Menu_button.TabIndex = 7;
+            this.Cell_Menu_button.Text = "Menu Celas";
+            this.Cell_Menu_button.UseVisualStyleBackColor = false;
+            this.Cell_Menu_button.Click += new System.EventHandler(this.Cell_Menu_button_Click);
             // 
             // Main_Menu
             // 
@@ -157,7 +175,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Cell_Menu_button);
+            this.Controls.Add(this.Food_Menu_button);
             this.Controls.Add(this.AnimalMenu_button);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -183,6 +202,7 @@
         private System.Windows.Forms.Button Minimize_button;
         private System.Windows.Forms.Button AnimalMenu_button;
         private System.Windows.Forms.PictureBox Perfil_image_picture;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Food_Menu_button;
+        private System.Windows.Forms.Button Cell_Menu_button;
     }
 }

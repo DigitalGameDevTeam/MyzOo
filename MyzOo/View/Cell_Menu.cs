@@ -10,27 +10,27 @@ using System.Windows.Forms;
 
 namespace MyzOo.View
 {
-    public partial class Food_Menu : Form
+    public partial class Cell_Menu : Form
     {
-        public Food_Menu()
+        public Cell_Menu()
         {
             InitializeComponent();
         }
 
+        private void Animallist_textbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Cellnumber_Box_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void Exit_button_Click(object sender, EventArgs e)
         {
-            //hide this Menu
+            //hide this form
             this.Hide();
-        }
-
-        private void Food_desciption_textbox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Stock_textbox_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
