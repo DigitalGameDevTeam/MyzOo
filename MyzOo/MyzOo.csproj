@@ -74,6 +74,12 @@
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\Firebase.cs" />
     <Compile Include="Models\Job.cs" />
+    <Compile Include="View\AnimalList_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AnimalList_Menu.Designer.cs">
+      <DependentUpon>AnimalList_Menu.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Animal_Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +130,9 @@
     <Compile Include="View\Ver_Animal_Menu.Designer.cs">
       <DependentUpon>Ver_Animal_Menu.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\AnimalList_Menu.resx">
+      <DependentUpon>AnimalList_Menu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Animal_Menu.resx">
       <DependentUpon>Animal_Menu.cs</DependentUpon>
     </EmbeddedResource>

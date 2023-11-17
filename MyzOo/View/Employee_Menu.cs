@@ -26,9 +26,6 @@ namespace MyzOo.View
         {
             this.Hide();
         }
-
-        
-
         private void Employee_Menu_Load(object sender, EventArgs e)
         {
           
@@ -44,16 +41,6 @@ namespace MyzOo.View
         }
 
         private void Birthday_Calendar_DateChanged(object sender, DateRangeEventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
