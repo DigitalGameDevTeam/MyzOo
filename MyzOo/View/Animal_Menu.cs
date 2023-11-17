@@ -83,11 +83,11 @@ namespace MyzOo
 
             // Animal Info
             string name = Name_Box.Text;
-            DateTime date = Birthday_Calendar.SelectionRange.Start;
+            DateTime date = Birthday_Calendar.SelectionRange.Start; 
 
             if (Name_Box != null)
             {
-                Animal animal = new Animal(id, name, date, false, 1, 1, false);
+                Animal animal = new Animal(id, name, date, false, 1, 1, false, Animal.Gender.Male);
             }
         }
 

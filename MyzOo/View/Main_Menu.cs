@@ -45,7 +45,7 @@ namespace MyzOo
         {
             //open Animal_Menu
 
-            List<Animal> animal = Animal.AnimalsList;
+            List<Animal> animal = Animal.AnimalList;
             List<Food> food = Food.FoodList;
             List<Cell> cell = Cell.CellList;
 

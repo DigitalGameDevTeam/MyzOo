@@ -8,8 +8,6 @@ using System.Threading.Tasks;
 
 namespace MyzOo.Classes
 {
-
-
     internal class Animal
     {
         public int Id { get; set; }
@@ -17,6 +15,8 @@ namespace MyzOo.Classes
         public DateTime Birthday { get; set; }
         public bool Checkup { get; set; }
         public bool IsDeceased { get; set; }
+
+        public static List<Animal> AnimalList = new List<Animal>();
 
         internal enum Gender
         {

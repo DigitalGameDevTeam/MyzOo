@@ -60,6 +60,9 @@ namespace MyzOo.View
             this.Hide();
         }
 
-        
+        private void Regist_button_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
