@@ -32,5 +32,10 @@ namespace MyzOo.View
         {
 
         }
+
+        private void Regist_button_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

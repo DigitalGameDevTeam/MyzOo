@@ -35,7 +35,7 @@ namespace MyzOo.Classes
         public int AnimalCell {  get; set; }
 
 
-        public Animal(int id, string name, DateTime birthday, bool checkup, Cell animalCell, Food animalFood, bool isDeceased, Gender animalGender)
+        public Animal(int id, string name, DateTime birthday, bool checkup, int animalCell, int animalFood, bool isDeceased, Gender animalGender)
         {
             Id = id;
             Name = name;
