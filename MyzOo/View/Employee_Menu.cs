@@ -23,8 +23,11 @@ namespace MyzOo.View
             this.WindowState = FormWindowState.Minimized;
         }
         private void Exit_button_Click(object sender, EventArgs e)
-        {
+        { //Hide this Menu and open Main_Men
+            Main_Menu main_Menu = new Main_Menu();
+            main_Menu.Show();
             this.Hide();
+
         }
         private void Employee_Menu_Load(object sender, EventArgs e)
         {
