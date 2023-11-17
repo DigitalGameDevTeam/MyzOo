@@ -154,9 +154,9 @@
             this.label3.Location = new System.Drawing.Point(291, 138);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(160, 18);
+            this.label3.Size = new System.Drawing.Size(157, 18);
             this.label3.TabIndex = 38;
-            this.label3.Text = "Data do Funcionário :";
+            this.label3.Text = "Data de Aniversário :";
             // 
             // Name_Box
             // 
