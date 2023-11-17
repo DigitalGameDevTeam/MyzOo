@@ -19,6 +19,7 @@ namespace MyzOo.View
         }
         private void Ver_Animal_Menu_Load(object sender, EventArgs e)
         {
+            //prevents user from interact with objects when open the form
             Name_Box.Enabled = false;
             Birthday_Calendar.Enabled = false;
             Cell_listbox.Enabled = false;
@@ -30,7 +31,7 @@ namespace MyzOo.View
            
             switch (op)
             {
-                //trocar para Menu Editar
+                //change Menu to Editar
                 case 1:
                     op = 2;
                     label1.Text = "Editar Animal";
@@ -41,6 +42,7 @@ namespace MyzOo.View
                     Food_listbox.Enabled = true;
                     Checkup_Box.Enabled = true;
                     break;
+                //change Menu to Inspecionar
                 case 2:
                     op = 1;
                     label1.Text = "Inspecionar Animal";

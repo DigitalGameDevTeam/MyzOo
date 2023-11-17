@@ -13,6 +13,7 @@ namespace MyzOo
 {
     public partial class Main_Menu : Form
     {
+        int st = 1;
         public Main_Menu()
         {
             InitializeComponent();
@@ -66,6 +67,23 @@ namespace MyzOo
             Ver_Animal_Menu ver_Animal_Menu = new Ver_Animal_Menu();
             ver_Animal_Menu.Show();
         }
+
+        private void Maximize_button_Click(object sender, EventArgs e)
+        {
+            switch (st)
+            {
+                case 1: //Set form to Mazimize Size
+                    st = 2;
+                    this.WindowState = FormWindowState.Maximized;
+
+                break;
+                case 2: //Set form to Normal Size
+                    st = 1;
+                    this.WindowState = FormWindowState.Normal;
+
+                break;
+
+            }
+        }
     }
 }
-
