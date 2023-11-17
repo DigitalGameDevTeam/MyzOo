@@ -52,9 +52,10 @@
             this.Regist_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
             this.Regist_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Regist_button.ForeColor = System.Drawing.Color.Black;
-            this.Regist_button.Location = new System.Drawing.Point(495, 310);
+            this.Regist_button.Location = new System.Drawing.Point(660, 382);
+            this.Regist_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Regist_button.Name = "Regist_button";
-            this.Regist_button.Size = new System.Drawing.Size(75, 23);
+            this.Regist_button.Size = new System.Drawing.Size(100, 28);
             this.Regist_button.TabIndex = 29;
             this.Regist_button.Text = "Registrar";
             this.Regist_button.UseVisualStyleBackColor = false;
@@ -65,9 +66,10 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label6.Location = new System.Drawing.Point(427, 260);
+            this.label6.Location = new System.Drawing.Point(569, 320);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(44, 15);
+            this.label6.Size = new System.Drawing.Size(54, 18);
             this.label6.TabIndex = 26;
             this.label6.Text = "Stock:";
             // 
@@ -76,9 +78,10 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label3.Location = new System.Drawing.Point(229, 101);
+            this.label3.Location = new System.Drawing.Point(305, 124);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(134, 15);
+            this.label3.Size = new System.Drawing.Size(160, 18);
             this.label3.TabIndex = 25;
             this.label3.Text = "Descrição da Comida:";
             // 
@@ -88,9 +91,10 @@
             this.Name_Box.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Name_Box.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
             this.Name_Box.ForeColor = System.Drawing.Color.Black;
-            this.Name_Box.Location = new System.Drawing.Point(343, 71);
+            this.Name_Box.Location = new System.Drawing.Point(457, 87);
+            this.Name_Box.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name_Box.Name = "Name_Box";
-            this.Name_Box.Size = new System.Drawing.Size(227, 14);
+            this.Name_Box.Size = new System.Drawing.Size(303, 17);
             this.Name_Box.TabIndex = 24;
             // 
             // label2
@@ -98,18 +102,20 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label2.Location = new System.Drawing.Point(229, 71);
+            this.label2.Location = new System.Drawing.Point(305, 87);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(115, 15);
+            this.label2.Size = new System.Drawing.Size(138, 18);
             this.label2.TabIndex = 23;
             this.label2.Text = "Nome da Comida :";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(11, 63);
+            this.pictureBox1.Location = new System.Drawing.Point(15, 78);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
+            this.pictureBox1.Size = new System.Drawing.Size(267, 246);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
@@ -121,8 +127,9 @@
             this.panel1.Controls.Add(this.Exit_button);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(599, 57);
+            this.panel1.Size = new System.Drawing.Size(799, 70);
             this.panel1.TabIndex = 21;
             // 
             // label1
@@ -131,9 +138,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(12, 0);
+            this.label1.Location = new System.Drawing.Point(16, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(446, 60);
+            this.label1.Size = new System.Drawing.Size(555, 74);
             this.label1.TabIndex = 2;
             this.label1.Text = "Adicionar Comida";
             // 
@@ -145,9 +153,10 @@
             this.Exit_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Exit_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Exit_button.ForeColor = System.Drawing.SystemColors.Window;
-            this.Exit_button.Location = new System.Drawing.Point(543, 0);
+            this.Exit_button.Location = new System.Drawing.Point(724, 0);
+            this.Exit_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Exit_button.Name = "Exit_button";
-            this.Exit_button.Size = new System.Drawing.Size(56, 57);
+            this.Exit_button.Size = new System.Drawing.Size(75, 70);
             this.Exit_button.TabIndex = 3;
             this.Exit_button.Text = "X";
             this.Exit_button.UseVisualStyleBackColor = false;
@@ -159,10 +168,11 @@
             this.Food_desciption_textbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Food_desciption_textbox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
             this.Food_desciption_textbox.ForeColor = System.Drawing.Color.Black;
-            this.Food_desciption_textbox.Location = new System.Drawing.Point(239, 119);
+            this.Food_desciption_textbox.Location = new System.Drawing.Point(319, 146);
+            this.Food_desciption_textbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Food_desciption_textbox.Multiline = true;
             this.Food_desciption_textbox.Name = "Food_desciption_textbox";
-            this.Food_desciption_textbox.Size = new System.Drawing.Size(331, 121);
+            this.Food_desciption_textbox.Size = new System.Drawing.Size(441, 149);
             this.Food_desciption_textbox.TabIndex = 33;
             this.Food_desciption_textbox.TextChanged += new System.EventHandler(this.Food_desciption_textbox_TextChanged);
             // 
@@ -172,17 +182,18 @@
             this.Stock_textbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Stock_textbox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
             this.Stock_textbox.ForeColor = System.Drawing.Color.Black;
-            this.Stock_textbox.Location = new System.Drawing.Point(477, 260);
+            this.Stock_textbox.Location = new System.Drawing.Point(636, 320);
+            this.Stock_textbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Stock_textbox.Name = "Stock_textbox";
-            this.Stock_textbox.Size = new System.Drawing.Size(93, 14);
+            this.Stock_textbox.Size = new System.Drawing.Size(124, 17);
             this.Stock_textbox.TabIndex = 34;
             this.Stock_textbox.TextChanged += new System.EventHandler(this.Stock_textbox_TextChanged);
             // 
             // Food_Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(599, 359);
+            this.ClientSize = new System.Drawing.Size(799, 442);
             this.Controls.Add(this.Stock_textbox);
             this.Controls.Add(this.Food_desciption_textbox);
             this.Controls.Add(this.Regist_button);
@@ -193,6 +204,8 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Food_Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Food_Menu";
