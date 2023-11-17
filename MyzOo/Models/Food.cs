@@ -15,13 +15,13 @@ namespace MyzOo.Classes
 
         public static List<Food> FoodList = new List<Food>();
         
-        public Food (int id, string typefood, string description, int stock)
+        /*public Food (int id, string typefood, string description, int stock)
         {
             Id = id;
             Typefood = typefood;
             Description = description;
             Stock = stock;
-        }
+        }*/
         public static bool VerifyFood(List<Food> foods)
         {
             if (foods.Count > 0)

@@ -71,6 +71,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Methods\AnimalCrud.cs" />
+    <Compile Include="Methods\FoodCrud.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\Firebase.cs" />
     <Compile Include="Models\Job.cs" />
