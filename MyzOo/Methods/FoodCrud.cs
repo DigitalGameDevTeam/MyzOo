@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using static MyzOo.Classes.Animal;
 
 namespace MyzOo.Methods
+
 {
     internal class FoodCrud
     {
@@ -92,5 +93,6 @@ namespace MyzOo.Methods
                 return null;
             }
         }
+        
     }
 }

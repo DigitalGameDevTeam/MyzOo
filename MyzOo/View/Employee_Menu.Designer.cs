@@ -45,12 +45,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.Exit_button = new System.Windows.Forms.Button();
             this.Regist_button = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.profilePicture = new System.Windows.Forms.PictureBox();
+            this.insertImage_Button = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.profilePicture)).BeginInit();
             this.SuspendLayout();
             // 
             // button2
@@ -79,7 +80,7 @@
             this.Food_listbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Food_listbox.FormattingEnabled = true;
             this.Food_listbox.Location = new System.Drawing.Point(481, 400);
-            this.Food_listbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Food_listbox.Margin = new System.Windows.Forms.Padding(4);
             this.Food_listbox.Name = "Food_listbox";
             this.Food_listbox.Size = new System.Drawing.Size(279, 24);
             this.Food_listbox.TabIndex = 45;
@@ -91,7 +92,7 @@
             this.Cell_listbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Cell_listbox.FormattingEnabled = true;
             this.Cell_listbox.Location = new System.Drawing.Point(463, 369);
-            this.Cell_listbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Cell_listbox.Margin = new System.Windows.Forms.Padding(4);
             this.Cell_listbox.Name = "Cell_listbox";
             this.Cell_listbox.Size = new System.Drawing.Size(297, 24);
             this.Cell_listbox.TabIndex = 44;
@@ -125,8 +126,8 @@
             this.Checkup_Box.BackColor = System.Drawing.Color.Transparent;
             this.Checkup_Box.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Checkup_Box.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.Checkup_Box.Location = new System.Drawing.Point(16, 366);
-            this.Checkup_Box.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Checkup_Box.Location = new System.Drawing.Point(16, 460);
+            this.Checkup_Box.Margin = new System.Windows.Forms.Padding(4);
             this.Checkup_Box.Name = "Checkup_Box";
             this.Checkup_Box.Size = new System.Drawing.Size(86, 22);
             this.Checkup_Box.TabIndex = 40;
@@ -166,7 +167,7 @@
             this.Name_Box.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
             this.Name_Box.ForeColor = System.Drawing.Color.Black;
             this.Name_Box.Location = new System.Drawing.Point(459, 111);
-            this.Name_Box.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name_Box.Margin = new System.Windows.Forms.Padding(4);
             this.Name_Box.Name = "Name_Box";
             this.Name_Box.Size = new System.Drawing.Size(303, 17);
             this.Name_Box.TabIndex = 37;
@@ -192,7 +193,7 @@
             this.panel1.Controls.Add(this.Exit_button);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(799, 70);
             this.panel1.TabIndex = 34;
@@ -206,7 +207,7 @@
             this.Minimize_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Minimize_button.ForeColor = System.Drawing.SystemColors.Window;
             this.Minimize_button.Location = new System.Drawing.Point(641, 0);
-            this.Minimize_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Minimize_button.Margin = new System.Windows.Forms.Padding(4);
             this.Minimize_button.Name = "Minimize_button";
             this.Minimize_button.Size = new System.Drawing.Size(75, 70);
             this.Minimize_button.TabIndex = 49;
@@ -236,7 +237,7 @@
             this.Exit_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Exit_button.ForeColor = System.Drawing.SystemColors.Window;
             this.Exit_button.Location = new System.Drawing.Point(724, 0);
-            this.Exit_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Exit_button.Margin = new System.Windows.Forms.Padding(4);
             this.Exit_button.Name = "Exit_button";
             this.Exit_button.Size = new System.Drawing.Size(75, 70);
             this.Exit_button.TabIndex = 3;
@@ -253,23 +254,12 @@
             this.Regist_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Regist_button.ForeColor = System.Drawing.Color.Black;
             this.Regist_button.Location = new System.Drawing.Point(680, 460);
-            this.Regist_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Regist_button.Margin = new System.Windows.Forms.Padding(4);
             this.Regist_button.Name = "Regist_button";
             this.Regist_button.Size = new System.Drawing.Size(100, 28);
             this.Regist_button.TabIndex = 42;
             this.Regist_button.Text = "Registrar";
             this.Regist_button.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(16, 101);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(267, 246);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 35;
-            this.pictureBox1.TabStop = false;
             // 
             // textBox1
             // 
@@ -279,7 +269,7 @@
             this.textBox1.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
             this.textBox1.ForeColor = System.Drawing.Color.Black;
             this.textBox1.Location = new System.Drawing.Point(463, 434);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(303, 17);
             this.textBox1.TabIndex = 48;
@@ -306,11 +296,34 @@
             this.button1.Text = "Registar funcionário";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // profilePicture
+            // 
+            this.profilePicture.Image = ((System.Drawing.Image)(resources.GetObject("profilePicture.Image")));
+            this.profilePicture.Location = new System.Drawing.Point(40, 119);
+            this.profilePicture.Name = "profilePicture";
+            this.profilePicture.Size = new System.Drawing.Size(229, 234);
+            this.profilePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.profilePicture.TabIndex = 49;
+            this.profilePicture.TabStop = false;
+            this.profilePicture.Click += new System.EventHandler(this.profilePicture_Click);
+            // 
+            // insertImage_Button
+            // 
+            this.insertImage_Button.Location = new System.Drawing.Point(50, 364);
+            this.insertImage_Button.Name = "insertImage_Button";
+            this.insertImage_Button.Size = new System.Drawing.Size(113, 28);
+            this.insertImage_Button.TabIndex = 50;
+            this.insertImage_Button.Text = "Inserir Imagem";
+            this.insertImage_Button.UseVisualStyleBackColor = true;
+            this.insertImage_Button.Click += new System.EventHandler(this.insertImage_Button_Click);
+            // 
             // Employee_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(799, 513);
+            this.Controls.Add(this.insertImage_Button);
+            this.Controls.Add(this.profilePicture);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
@@ -323,7 +336,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.Name_Box);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Regist_button);
             this.Controls.Add(this.label1);
@@ -337,7 +349,7 @@
             this.Load += new System.EventHandler(this.Employee_Menu_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.profilePicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -359,10 +371,11 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button Exit_button;
         private System.Windows.Forms.Button Regist_button;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button Minimize_button;
+        private System.Windows.Forms.PictureBox profilePicture;
+        private System.Windows.Forms.Button insertImage_Button;
     }
 }
