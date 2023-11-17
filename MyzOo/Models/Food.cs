@@ -10,14 +10,16 @@ namespace MyzOo.Classes
     {
         public int Id { get; set; }
         public string Description { get; set; }
+        public string Name { get; set; }
         public int Stock { get; set; }
 
         public static List<Food> FoodList = new List<Food>();
         
-        public Food (int id, string description, int stock)
+        public Food (int id, string description,string name, int stock)
         {
             Id = id;
             Description = description;
+            Name = name;
             Stock = stock;
         }
         public static bool VerifyFood(List<Food> foods)
