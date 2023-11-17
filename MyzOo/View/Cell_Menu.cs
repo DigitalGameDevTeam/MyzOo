@@ -44,5 +44,10 @@ namespace MyzOo.View
 
             MessageBox.Show("Registo realizado com sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void Cell_Menu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
