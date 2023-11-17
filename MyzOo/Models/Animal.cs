@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyzOo.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http.Headers;
@@ -35,7 +36,7 @@ namespace MyzOo.Classes
         public int AnimalCell {  get; set; }
 
 
-        public Animal(int id, string name, DateTime birthday, bool checkup, int animalCell, int animalFood, bool isDeceased, Gender animalGender)
+        /*public Animal(int id, string name, DateTime birthday, bool checkup, int animalCell, int animalFood, bool isDeceased, Gender animalGender)
         {
             Id = id;
             Name = name;
@@ -45,7 +46,7 @@ namespace MyzOo.Classes
             AnimalFood = animalFood;
             IsDeceased = isDeceased;
             AnimalGender = animalGender;
-        }
+        }*/
 
         public void ShowData()
         {

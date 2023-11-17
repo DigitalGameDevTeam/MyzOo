@@ -1,4 +1,6 @@
 ﻿using MyzOo.Classes;
+using MyzOo.Methods;
+using MyzOo.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -75,6 +77,8 @@ namespace MyzOo
 
         private void Regist_button_Click(object sender, EventArgs e)
         {
+            Firebase conn = new Firebase();
+
             // Create an instance of the Random class
             Random random = new Random();
 
@@ -83,12 +87,11 @@ namespace MyzOo
 
             // Animal Info
             string name = Name_Box.Text;
-            DateTime date = Birthday_Calendar.SelectionRange.Start; 
+            DateTime date = Birthday_Calendar.SelectionRange.Start;
 
-            if (Name_Box != null)
-            {
-                Animal animal = new Animal(id, name, date, false, 1, 1, false, Animal.Gender.Male);
-            }
+            AnimalCrud animal = new AnimalCrud();
+
+            animal.SetData(id, name, date, false, 1, 1, false, Animal.Gender.Male);
         }
 
         private void Cell_listbox_SelectedIndexChanged(object sender, EventArgs e)
