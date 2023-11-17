@@ -108,12 +108,19 @@ namespace MyzOo
                 break;
             }
         }
-        private void button1_Click(object sender, EventArgs e)
+        private void Employee_Menu_button_Click(object sender, EventArgs e)
         {
             //Open Employee_Menu
             Employee_Menu employee_Menu = new Employee_Menu();
             employee_Menu.Show();
             
+        }
+
+        private void AnimalList_Menu_button_Click(object sender, EventArgs e)
+        {
+            //open animallist_menu
+            AnimalList_Menu animalList_Menu = new AnimalList_Menu();
+            animalList_Menu.Show();
         }
     }
 }

@@ -16,5 +16,10 @@ namespace MyzOo.View
         {
             InitializeComponent();
         }
+
+        private void Animal_ListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
