@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -42,8 +43,16 @@ namespace MyzOo
         private void AnimalMenu_button_Click(object sender, EventArgs e)
         {
             //open Animal_Menu
-            Animal_Menu animal_Menu = new Animal_Menu();
-            animal_Menu.Show();
+
+            List<Animal> animal = Animal.AnimalsList;
+
+            bool verify = Animal.VerifyAnimal(animal);
+
+            if (verify)
+            {
+                Animal_Menu animal_Menu = new Animal_Menu();
+                animal_Menu.Show();
+            }
         }
 
         private void Food_Menu_button_Click(object sender, EventArgs e)

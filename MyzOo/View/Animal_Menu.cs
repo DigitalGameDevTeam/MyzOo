@@ -53,7 +53,18 @@ namespace MyzOo
 
         private void Regist_button_Click(object sender, EventArgs e)
         {
+            // Create an instance of the Random class
+            Random random = new Random();
+
+            // Generate a random ID with 4 numbers
+            int id = random.Next(1000, 10000);
+
+            // Animal Info
             string name = Name_Box.Text;
+            DateTime date = Birthday_Calendar.SelectionRange.Start;
+
+
+            Animal animal = new Animal(id, name, date, false, 1, 1);
 
         }
     }

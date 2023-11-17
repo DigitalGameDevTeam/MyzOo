@@ -16,10 +16,17 @@ namespace MyzOo.Classes
         public bool Checkup { get; set; }
 
         // Reference to Cell and Food
+        /*
         public Cell AnimalCell { get; set; }
         public Food AnimalFood { get; set; }
+        */
 
-        public Animal(int id, string name, DateTime birthday, bool checkup, Cell animalCell, Food animalFood)
+        public int AnimalFood { get; set; }
+        public int AnimalCell {  get; set; }
+
+        public static List<Animal> AnimalsList = new List<Animal>();
+
+        public Animal(int id, string name, DateTime birthday, bool checkup, int animalCell, int animalFood)
         {
             Id = id;
             Name = name;
@@ -31,7 +38,14 @@ namespace MyzOo.Classes
 
         public void ShowData()
         {
-            Console.Write("", Id, Name, Birthday, Checkup, AnimalCell.Id, AnimalFood.Id);
+            Console.Write("", Id, Name, Birthday, Checkup, AnimalCell, AnimalFood);
+        }
+
+        public static bool VerifyAnimal(List<Animal> existingAnimals)
+        {
+            if (existingAnimals.Count > 0)
+                return true;
+            else return false;
         }
     }
 }
