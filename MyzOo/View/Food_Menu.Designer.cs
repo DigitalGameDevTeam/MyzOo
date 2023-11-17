@@ -58,6 +58,7 @@
             this.Regist_button.TabIndex = 29;
             this.Regist_button.Text = "Registrar";
             this.Regist_button.UseVisualStyleBackColor = false;
+            this.Regist_button.Click += new System.EventHandler(this.Regist_button_Click);
             // 
             // label6
             // 
@@ -69,6 +70,7 @@
             this.label6.Size = new System.Drawing.Size(44, 15);
             this.label6.TabIndex = 26;
             this.label6.Text = "Stock:";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label3
             // 

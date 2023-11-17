@@ -1,10 +1,12 @@
-﻿using MyzOo.View;
+﻿using MyzOo.Classes;
+using MyzOo.View;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -43,8 +45,30 @@ namespace MyzOo
         private void AnimalMenu_button_Click(object sender, EventArgs e)
         {
             //open Animal_Menu
+
+            List<Animal> animal = Animal.AnimalList;
+            List<Food> food = Food.FoodList;
+            List<Cell> cell = Cell.CellList;
+
+            bool verifyFood = Food.VerifyFood(food);
+            bool verifyCell = Cell.VerifyCell(cell);
+
             Animal_Menu animal_Menu = new Animal_Menu();
             animal_Menu.Show();
+
+            /* Verification
+            if (verifyFood)
+            {
+                if (verifyCell)
+                {
+                    Animal_Menu animal_Menu = new Animal_Menu();
+                    animal_Menu.Show();
+
+                }
+                else MessageBox.Show("Tens que adicionar uma Cela", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else MessageBox.Show("Tens que adicionar Comida", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning); */
+
         }
 
         private void Food_Menu_button_Click(object sender, EventArgs e)

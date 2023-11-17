@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyzOo.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -31,6 +32,17 @@ namespace MyzOo.View
         {
             //hide this form
             this.Hide();
+        }
+
+        private void Regist_button_Click(object sender, EventArgs e)
+        {
+
+            int number = Convert.ToInt32(Cellnumber_Box.Text);
+            bool cleaning = Checkup_Box.Checked;
+
+            Cell cell= new Cell(number, cleaning);
+
+            MessageBox.Show("Registo realizado com sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

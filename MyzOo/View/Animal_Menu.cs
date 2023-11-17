@@ -19,6 +19,28 @@ namespace MyzOo
         }
         private void Animal_Menu_Load(object sender, EventArgs e)
         {
+            List<Cell> cell = Cell.CellList;
+            List<Food> food = MyzOo.Classes.Food.FoodList;
+
+            if (food != null)
+            {
+                foreach (Food foods in food)
+                {
+                    Food_listbox.Items.Add(foods.Typefood);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vazio", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+            // Add cell
+            foreach (Cell cells in cell)
+            {
+                Cell_listbox.Items.Add(cells.Number);
+            }
+
+
             //Animal animal = new Animal();
         }
         private void Exit_button_Click(object sender, EventArgs e)
@@ -53,7 +75,24 @@ namespace MyzOo
 
         private void Regist_button_Click(object sender, EventArgs e)
         {
+            // Create an instance of the Random class
+            Random random = new Random();
+
+            // Generate a random ID with 4 numbers
+            int id = random.Next(1000, 10000);
+
+            // Animal Info
             string name = Name_Box.Text;
+            DateTime date = Birthday_Calendar.SelectionRange.Start; 
+
+            if (Name_Box != null)
+            {
+                Animal animal = new Animal(id, name, date, false, 1, 1, false, Animal.Gender.Male);
+            }
+        }
+
+        private void Cell_listbox_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }

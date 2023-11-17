@@ -202,6 +202,7 @@
             this.Cell_listbox.Name = "Cell_listbox";
             this.Cell_listbox.Size = new System.Drawing.Size(224, 21);
             this.Cell_listbox.TabIndex = 19;
+            this.Cell_listbox.SelectedIndexChanged += new System.EventHandler(this.Cell_listbox_SelectedIndexChanged);
             // 
             // Food_listbox
             // 

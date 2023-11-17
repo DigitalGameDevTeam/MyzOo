@@ -9,15 +9,22 @@ namespace MyzOo.Classes
 {
     internal class Cell
     {
-        public int Id {  get; set; }
+        public int Number {  get; set; }
         public bool Cleaning { get; set; }
-        public int Numero {  get; set; }
-        public Cell (int id,bool cleaning, int numero)
+
+
+        public static List<Cell> CellList = new List<Cell>();
+        public Cell (int number, bool cleaning)
         {
-            Id = id;
+            Number = number;
             Cleaning = cleaning;
-            Numero = numero;
         }
 
+        public static bool VerifyCell(List<Cell> cells)
+        {
+            if (cells.Count > 0)
+                return true;
+            else return false;
+        }
     }
 }
