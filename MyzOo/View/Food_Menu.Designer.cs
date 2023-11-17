@@ -70,7 +70,6 @@
             this.label6.Size = new System.Drawing.Size(44, 15);
             this.label6.TabIndex = 26;
             this.label6.Text = "Stock:";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label3
             // 

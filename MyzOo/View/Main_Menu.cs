@@ -106,7 +106,6 @@ namespace MyzOo
                     this.WindowState = FormWindowState.Normal;
 
                 break;
-
             }
         }
     }

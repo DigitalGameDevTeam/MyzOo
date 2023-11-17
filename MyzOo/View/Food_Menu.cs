@@ -51,11 +51,8 @@ namespace MyzOo.View
             Food.FoodList.Add(food);
 
             MessageBox.Show($"Registo realizado com sucesso '{name} {description}' ", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
 
-        private void label6_Click(object sender, EventArgs e)
-        {
-
+            this.Hide();
         }
     }
 }

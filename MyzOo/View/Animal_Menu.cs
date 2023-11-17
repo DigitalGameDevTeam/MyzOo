@@ -89,6 +89,8 @@ namespace MyzOo
             {
                 Animal animal = new Animal(id, name, date, false, 1, 1, false, Animal.Gender.Male);
             }
+
+            this.Hide();
         }
 
         private void Cell_listbox_SelectedIndexChanged(object sender, EventArgs e)

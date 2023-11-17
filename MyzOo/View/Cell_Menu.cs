@@ -43,6 +43,8 @@ namespace MyzOo.View
             Cell cell= new Cell(number, cleaning);
 
             MessageBox.Show("Registo realizado com sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            this.Hide();
         }
     }
 }

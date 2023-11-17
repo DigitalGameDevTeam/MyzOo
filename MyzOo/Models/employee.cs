@@ -13,9 +13,9 @@ namespace MyzOo.Models
         public DateTime Birthday { get; set; }
         public bool Checkup { get; set; }
         public string Password { get; set; }
-        public string Adminlevel { get; set; }  
+        public int Adminlevel { get; set; }  
         public Job EmployeeJob { get; set; }
-        public Employee(int id, string name, DateTime birthday, bool checkup,string password, string adminlevel)
+        public Employee(int id, string name, DateTime birthday, bool checkup,string password, int adminlevel)
         {
             Id = id;
             Name = name;
