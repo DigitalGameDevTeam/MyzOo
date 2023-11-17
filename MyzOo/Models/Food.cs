@@ -12,6 +12,7 @@ namespace MyzOo.Classes
         public string Description { get; set; }
         public string Name { get; set; }
         public int Stock { get; set; }
+        public string Typefood { get; set; }
 
         public static List<Food> FoodList = new List<Food>();
         
