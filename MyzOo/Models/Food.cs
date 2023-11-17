@@ -12,13 +12,21 @@ namespace MyzOo.Classes
         public string Typefood { get; set; }
         public string Description { get; set; }
         public int Stock { get; set; }
+
+        public static List<Food> CellList = new List<Food>();
+
         public Food (int id, string typefood, string description, int stock)
         {
             Id = id;
             Typefood = typefood;
             Description = description;
             Stock = stock;
-
+        }
+        public static bool VerifyFood(List<Food> foods)
+        {
+            if (foods.Count > 0)
+                return true;
+            else return false;
         }
     }
 }
