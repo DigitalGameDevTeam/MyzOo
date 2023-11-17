@@ -46,5 +46,10 @@ namespace MyzOo.View
 
             this.Hide();
         }
+
+        private void Cell_Menu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -108,5 +108,12 @@ namespace MyzOo
                 break;
             }
         }
+        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //Open Employee_Menu
+            Employee_Menu employee_Menu = new Employee_Menu();
+            employee_Menu.Show();
+        }
     }
 }
