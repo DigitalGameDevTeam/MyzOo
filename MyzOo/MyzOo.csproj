@@ -92,7 +92,6 @@
     <Compile Include="Models\Event.cs" />
     <Compile Include="Models\Food.cs" />
     <Compile Include="Models\Location.cs" />
-    <Compile Include="Models\Typefood.cs" />
     <Compile Include="View\Cell_Menu.cs">
       <SubType>Form</SubType>
     </Compile>

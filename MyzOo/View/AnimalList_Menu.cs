@@ -16,5 +16,25 @@ namespace MyzOo.View
         {
             InitializeComponent();
         }
+
+        private void Animal_ListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Exit_button_Click(object sender, EventArgs e)
+        {
+            //Hide this Menu and open Main_Men
+            Main_Menu main_Menu = new Main_Menu();
+            main_Menu.Show();
+            this.Hide();
+
+        }
+
+        private void Minimize_button_Click(object sender, EventArgs e)
+        {
+            //minimize the form
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }

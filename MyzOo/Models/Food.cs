@@ -9,8 +9,8 @@ namespace MyzOo.Classes
     internal class Food
     {
         public int Id { get; set; }
-        public string Typefood { get; set; }
         public string Description { get; set; }
+        public string Name { get; set; }
         public int Stock { get; set; }
 
         public static List<Food> FoodList = new List<Food>();
@@ -18,8 +18,8 @@ namespace MyzOo.Classes
         /*public Food (int id, string typefood, string description, int stock)
         {
             Id = id;
-            Typefood = typefood;
             Description = description;
+            Name = name;
             Stock = stock;
         }*/
         public static bool VerifyFood(List<Food> foods)

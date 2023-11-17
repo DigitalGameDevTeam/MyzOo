@@ -76,6 +76,7 @@ namespace MyzOo
             //open Food_Menu
             Food_Menu food_Menu = new Food_Menu();
             food_Menu.Show();
+            this.Hide();
         }
 
         private void Cell_Menu_button_Click(object sender, EventArgs e)
@@ -83,6 +84,7 @@ namespace MyzOo
             //open Cell_Menu
             Cell_Menu cell_Menu = new Cell_Menu();
             cell_Menu.Show();
+            this.Hide();
         }
 
         private void Ver_Animal_Menu_button_Click(object sender, EventArgs e)
@@ -90,6 +92,7 @@ namespace MyzOo
             //open Ver_Animal_Menu
             Ver_Animal_Menu ver_Animal_Menu = new Ver_Animal_Menu();
             ver_Animal_Menu.Show();
+            this.Hide();
         }
 
         private void Maximize_button_Click(object sender, EventArgs e)
@@ -108,12 +111,21 @@ namespace MyzOo
                 break;
             }
         }
-        private void button1_Click(object sender, EventArgs e)
+        private void Employee_Menu_button_Click(object sender, EventArgs e)
         {
             //Open Employee_Menu
             Employee_Menu employee_Menu = new Employee_Menu();
             employee_Menu.Show();
+            this.Hide();
             
+        }
+
+        private void AnimalList_Menu_button_Click(object sender, EventArgs e)
+        {
+            //open animallist_menu
+            AnimalList_Menu animalList_Menu = new AnimalList_Menu();
+            animalList_Menu.Show();
+            this.Hide();
         }
     }
 }

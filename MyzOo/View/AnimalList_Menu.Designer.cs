@@ -32,6 +32,7 @@
             this.Minimize_button = new System.Windows.Forms.Button();
             this.Exit_button = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.Animal_ListBox = new System.Windows.Forms.ListBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,6 +62,7 @@
             this.Minimize_button.TabIndex = 3;
             this.Minimize_button.Text = "-";
             this.Minimize_button.UseVisualStyleBackColor = false;
+            this.Minimize_button.Click += new System.EventHandler(this.Minimize_button_Click);
             // 
             // Exit_button
             // 
@@ -76,6 +78,7 @@
             this.Exit_button.TabIndex = 2;
             this.Exit_button.Text = "X";
             this.Exit_button.UseVisualStyleBackColor = false;
+            this.Exit_button.Click += new System.EventHandler(this.Exit_button_Click);
             // 
             // label1
             // 
@@ -89,11 +92,25 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Animalius";
             // 
+            // Animal_ListBox
+            // 
+            this.Animal_ListBox.FormattingEnabled = true;
+            this.Animal_ListBox.Items.AddRange(new object[] {
+            "Elefante ",
+            "Bixu Feio",
+            "Rato"});
+            this.Animal_ListBox.Location = new System.Drawing.Point(12, 85);
+            this.Animal_ListBox.Name = "Animal_ListBox";
+            this.Animal_ListBox.Size = new System.Drawing.Size(228, 290);
+            this.Animal_ListBox.TabIndex = 2;
+            this.Animal_ListBox.SelectedIndexChanged += new System.EventHandler(this.Animal_ListBox_SelectedIndexChanged);
+            // 
             // AnimalList_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Animal_ListBox);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AnimalList_Menu";
@@ -111,5 +128,6 @@
         private System.Windows.Forms.Button Minimize_button;
         private System.Windows.Forms.Button Exit_button;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ListBox Animal_ListBox;
     }
 }
