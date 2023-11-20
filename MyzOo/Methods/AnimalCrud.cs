@@ -1,5 +1,5 @@
 ﻿using FireSharp.Response;
-using MyzOo.Classes;
+using MyzOo.Models;
 using MyzOo.Models;
 using Newtonsoft.Json;
 using System;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
-using static MyzOo.Classes.Animal;
+using static MyzOo.Models.Animal;
 
 namespace MyzOo.Methods
 {
@@ -17,7 +17,7 @@ namespace MyzOo.Methods
         Firebase conn = new Firebase();
 
         //set datas to database
-        public void SetData(int id, string name, DateTime birthday, bool checkup, int animalCell, int animalFood, bool isDeceased, Gender animalGender)
+        public void SetData(int id, string name, DateTime birthday, bool checkup, bool isDeceased, Gender animalGender, Cell animalCell, Food animalFood)
         {
             try
             {
@@ -27,10 +27,10 @@ namespace MyzOo.Methods
                     Name = name,
                     Birthday = birthday,
                     Checkup = checkup,
-                    AnimalCell = animalCell,
-                    AnimalFood = animalFood,
                     IsDeceased = isDeceased,
-                    AnimalGender = animalGender
+                    AnimalGender = animalGender,
+                    AnimalCell = animalCell,
+                    AnimalFood = animalFood
                 };
                 var SetData = conn.client.Set("animals/" + name, set);
             }
@@ -41,7 +41,7 @@ namespace MyzOo.Methods
         }
 
         //Update datas
-        public void UpdateData(int id, string name, DateTime birthday, bool checkup, int animalCell, int animalFood, bool isDeceased, Gender animalGender)
+        public void UpdateData(int id, string name, DateTime birthday, bool checkup, bool isDeceased, Gender animalGender, Cell animalCell, Food animalFood)
         {
             try
             {

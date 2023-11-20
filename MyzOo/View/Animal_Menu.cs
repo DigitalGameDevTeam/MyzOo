@@ -1,6 +1,5 @@
-﻿using MyzOo.Classes;
+﻿using MyzOo.Models;
 using MyzOo.Methods;
-using MyzOo.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,19 +21,19 @@ namespace MyzOo
         private void Animal_Menu_Load(object sender, EventArgs e)
         {
             List<Cell> cell = Cell.CellList;
-            List<Food> food = MyzOo.Classes.Food.FoodList;
+            List<Food> food = MyzOo.Models.Food.FoodList;
 
-            if (food != null)
+            /*if (food != null)
             {
                 foreach (Food foods in food)
                 {
-                    Food_listbox.Items.Add(foods.Typefood);
+                    Food_listbox.Items.Add(foods.Id);
                 }
             }
             else
             {
                 MessageBox.Show("Vazio", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
+            }*/
 
             // Add cell
             foreach (Cell cells in cell)
@@ -78,23 +77,47 @@ namespace MyzOo
         private void Regist_button_Click(object sender, EventArgs e)
         {
             Firebase conn = new Firebase();
+            Animal animal = new Animal();
 
             // Create an instance of the Random class
             Random random = new Random();
 
             // Generate a random ID with 4 numbers
-            int id = random.Next(1000, 10000);
+            int Id = random.Next(1000, 10000);
 
             // Animal Info
-            string name = Name_Box.Text;
-            DateTime date = Birthday_Calendar.SelectionRange.Start;
+            string Name = Name_Box.Text;
+            DateTime Date = Birthday_Calendar.SelectionRange.Start;
+            bool Checkup = Checkup_Box.Checked;
+            bool IsDeceased = Decease_Box.Checked;
+            Animal.Gender gender;
+            Enum.TryParse(Gender_listbox.Text, out gender);
 
-            AnimalCrud animal = new AnimalCrud();
+            // Retrieve selected cell and food values
 
-            animal.SetData(id, name, date, false, 1, 1, false, Animal.Gender.Male);
+            int selectedCellNumber = Convert.ToInt32(Cell_listbox.SelectedItem);
+            Cell selectedCell = Cell.CellList.FirstOrDefault(cell => cell.Number == selectedCellNumber);
+
+            // Assuming Food has an 'Id' property
+            int selectedFoodId = Convert.ToInt32(Food_listbox.SelectedItem);
+            Food selectedFood = Food.FoodList.FirstOrDefault(food => food.Id == selectedFoodId);
+
+
+            animal.SetData(Id, Name, Date, Checkup, IsDeceased, gender, selectedCell, selectedFood);
+
         }
 
         private void Cell_listbox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
         {
 
         }

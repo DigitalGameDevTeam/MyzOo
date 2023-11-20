@@ -1,13 +1,16 @@
-﻿using MyzOo.Models;
+﻿using MyzOo.Methods;
+using MyzOo.Models;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Net.Http.Headers;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
-namespace MyzOo.Classes
+namespace MyzOo.Models
 {
     internal class Animal
     {
@@ -17,8 +20,6 @@ namespace MyzOo.Classes
         public bool Checkup { get; set; }
         public bool IsDeceased { get; set; }
 
-        public static List<Animal> AnimalList = new List<Animal>();
-
         internal enum Gender
         {
             Male,
@@ -27,37 +28,18 @@ namespace MyzOo.Classes
         public Gender AnimalGender { get; set; }
 
         // Reference to Cell and Food
-        /*
         public Cell AnimalCell { get; set; }
         public Food AnimalFood { get; set; }
-        */
+        
 
-        public int AnimalFood { get; set; }
-        public int AnimalCell {  get; set; }
+        public static List<Animal> AnimalList = new List<Animal>();
 
-
-        /*public Animal(int id, string name, DateTime birthday, bool checkup, int animalCell, int animalFood, bool isDeceased, Gender animalGender)
+        // Save animal data
+        public void SetData(int Id, string Name, DateTime Date, bool Checkup, bool IsDecease, Gender gender, Cell cell, Food food)
         {
-            Id = id;
-            Name = name;
-            Birthday = birthday;
-            Checkup = checkup;
-            AnimalCell = animalCell;
-            AnimalFood = animalFood;
-            IsDeceased = isDeceased;
-            AnimalGender = animalGender;
-        }*/
+            AnimalCrud animal = new AnimalCrud();
+            animal.SetData(Id, Name, Date, Checkup, IsDecease, gender, cell, food);
 
-        public void ShowData()
-        {
-            Console.Write("", Id, Name, Birthday, Checkup, AnimalCell, AnimalFood);
-        }
-
-        public static bool VerifyAnimal(List<Animal> existingAnimals)
-        {
-            if (existingAnimals.Count > 0)
-                return true;
-            else return false;
         }
     }
 }
