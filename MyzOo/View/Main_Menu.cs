@@ -1,4 +1,4 @@
-﻿using MyzOo.Classes;
+﻿using MyzOo.Models;
 using MyzOo.View;
 using System;
 using System.Collections.Generic;
