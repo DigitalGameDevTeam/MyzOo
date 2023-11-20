@@ -79,10 +79,10 @@
             this.Food_listbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Food_listbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Food_listbox.FormattingEnabled = true;
-            this.Food_listbox.Location = new System.Drawing.Point(481, 400);
+            this.Food_listbox.Location = new System.Drawing.Point(463, 400);
             this.Food_listbox.Margin = new System.Windows.Forms.Padding(4);
             this.Food_listbox.Name = "Food_listbox";
-            this.Food_listbox.Size = new System.Drawing.Size(279, 24);
+            this.Food_listbox.Size = new System.Drawing.Size(297, 24);
             this.Food_listbox.TabIndex = 45;
             // 
             // Cell_listbox
@@ -113,12 +113,13 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label7.Location = new System.Drawing.Point(291, 402);
+            this.label7.Location = new System.Drawing.Point(281, 402);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(177, 18);
             this.label7.TabIndex = 41;
             this.label7.Text = "Nivel de Administração :";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // Checkup_Box
             // 
@@ -140,12 +141,12 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label6.Location = new System.Drawing.Point(397, 375);
+            this.label6.Location = new System.Drawing.Point(389, 374);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(69, 18);
+            this.label6.Size = new System.Drawing.Size(74, 18);
             this.label6.TabIndex = 39;
-            this.label6.Text = "Função: ";
+            this.label6.Text = "Função : ";
             // 
             // label3
             // 
@@ -166,7 +167,7 @@
             this.Name_Box.Enabled = false;
             this.Name_Box.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
             this.Name_Box.ForeColor = System.Drawing.Color.Black;
-            this.Name_Box.Location = new System.Drawing.Point(459, 111);
+            this.Name_Box.Location = new System.Drawing.Point(457, 112);
             this.Name_Box.Margin = new System.Windows.Forms.Padding(4);
             this.Name_Box.Name = "Name_Box";
             this.Name_Box.Size = new System.Drawing.Size(303, 17);
@@ -271,7 +272,7 @@
             this.textBox1.Location = new System.Drawing.Point(463, 434);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(303, 17);
+            this.textBox1.Size = new System.Drawing.Size(297, 17);
             this.textBox1.TabIndex = 48;
             // 
             // label5
@@ -279,12 +280,12 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label5.Location = new System.Drawing.Point(347, 434);
+            this.label5.Location = new System.Drawing.Point(345, 434);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(108, 18);
+            this.label5.Size = new System.Drawing.Size(113, 18);
             this.label5.TabIndex = 47;
-            this.label5.Text = "Palavra Passe:";
+            this.label5.Text = "Palavra Passe :";
             // 
             // button1
             // 
@@ -309,7 +310,7 @@
             // 
             // insertImage_Button
             // 
-            this.insertImage_Button.Location = new System.Drawing.Point(50, 364);
+            this.insertImage_Button.Location = new System.Drawing.Point(40, 364);
             this.insertImage_Button.Name = "insertImage_Button";
             this.insertImage_Button.Size = new System.Drawing.Size(113, 28);
             this.insertImage_Button.TabIndex = 50;
