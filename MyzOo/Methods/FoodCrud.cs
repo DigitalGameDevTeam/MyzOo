@@ -1,14 +1,10 @@
 ﻿using FireSharp.Response;
-using MyzOo.Classes;
+using MyzOo.Models;
 using MyzOo.Models;
 using MyzOo.View;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static MyzOo.Classes.Animal;
 
 namespace MyzOo.Methods
 {
@@ -17,22 +13,18 @@ namespace MyzOo.Methods
         Firebase conn = new Firebase();
 
         //set datas to database
-        public void SetData(int id, string name, DateTime birthday, bool checkup, int animalCell, int animalFood, bool isDeceased, Gender animalGender)
+        public void SetData(int id, string description, TypeFood typefood, int stock)
         {
             try
             {
                 Food set = new Food()
                 {
-                    Id = id,
-                    Name = name,
-                    Birthday = birthday,
-                    Checkup = checkup,
-                    AnimalCell = animalCell,
-                    AnimalFood = animalFood,
-                    IsDeceased = isDeceased,
-                    AnimalGender = animalGender
+                    Id = id,               
+                    Description = description,
+                    TypeFood = typefood,
+                    Stock = stock
                 };
-                var SetData = conn.client.Set("foods/" + name, set);
+                var SetData = conn.client.Set("foods/" + description, set);
             }
             catch (Exception)
             {
@@ -41,22 +33,18 @@ namespace MyzOo.Methods
         }
 
         //Update datas
-        public void UpdateData(int id, string name, DateTime birthday, bool checkup, int animalCell, int animalFood, bool isDeceased, Gender animalGender)
+        public void UpdateData(int id, string description, TypeFood typefood, int stock)
         {
             try
             {
-                Animal set = new Animal()
+                Food set = new Food()
                 {
                     Id = id,
-                    Name = name,
-                    Birthday = birthday,
-                    Checkup = checkup,
-                    AnimalCell = animalCell,
-                    AnimalFood = animalFood,
-                    IsDeceased = isDeceased,
-                    AnimalGender = animalGender
+                    Description = description,
+                    TypeFood = typefood,
+                    Stock= stock
                 };
-                var SetData = conn.client.Set("animals/" + name, set);
+                var SetData = conn.client.Set("foods/" + description, set);
             }
             catch (Exception)
             {
@@ -65,11 +53,11 @@ namespace MyzOo.Methods
         }
 
         //Delete datas
-        public void DeleteTeam(string Name)
+        public void DeleteTeam(string Description)
         {
             try
             {
-                var SetData = conn.client.Delete("people/" + Name);
+                var SetData = conn.client.Delete("food/" + Description);
             }
             catch (Exception)
             {
@@ -78,17 +66,17 @@ namespace MyzOo.Methods
         }
 
         //List of the datas
-        public Dictionary<string, Animal> LoadData()
+        public Dictionary<string, Food> LoadData()
         {
             try
             {
-                FirebaseResponse al = conn.client.Get("people");
-                Dictionary<string, Animal> ListData = JsonConvert.DeserializeObject<Dictionary<string, Animal>>(al.Body.ToString());
+                FirebaseResponse al = conn.client.Get("foods");
+                Dictionary<string, Food> ListData = JsonConvert.DeserializeObject<Dictionary<string, Food>>(al.Body.ToString());
                 return ListData;
             }
             catch (Exception)
             {
-                Console.WriteLine("bir hata ile karşılaşıldı");
+                Console.WriteLine("Error");
                 return null;
             }
         }

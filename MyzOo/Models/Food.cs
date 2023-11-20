@@ -1,33 +1,29 @@
-﻿using System;
+﻿using MyzOo.Methods;
+using MyzOo.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static MyzOo.Models.Animal;
 
-namespace MyzOo.Classes
+namespace MyzOo.Models
 {
     internal class Food
     {
         public int Id { get; set; }
         public string Description { get; set; }
-        public string Name { get; set; }
+        public TypeFood TypeFood { get; set; }
         public int Stock { get; set; }
-        public string Typefood { get; set; }
 
         public static List<Food> FoodList = new List<Food>();
-        
-        /*public Food (int id, string typefood, string description, int stock)
+
+        // Save animal data
+        public void SetData(int Id, string Description, TypeFood typeFood, int Stock)
         {
-            Id = id;
-            Description = description;
-            Name = name;
-            Stock = stock;
-        }*/
-        public static bool VerifyFood(List<Food> foods)
-        {
-            if (foods.Count > 0)
-                return true;
-            else return false;
+            FoodCrud food = new FoodCrud();
+            food.SetData(Id, Description, typeFood, Stock);
+
         }
     }
 }

@@ -1,4 +1,6 @@
-﻿using MyzOo.Classes;
+﻿using MyzOo.Models;
+using MyzOo.Methods;
+using MyzOo.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace MyzOo.View
 {
@@ -18,9 +21,12 @@ namespace MyzOo.View
         {
             InitializeComponent();
         }
-
+        private void Food_Menu_Load(object sender, EventArgs e)
+        {
+            
+        }
         private void Exit_button_Click(object sender, EventArgs e)
-        {//hide this Menu and open Main Menu
+        {
             Main_Menu main_Menu = new Main_Menu();
             main_Menu.Show();
             this.Hide();
@@ -38,20 +44,22 @@ namespace MyzOo.View
 
         private void Regist_button_Click(object sender, EventArgs e)
         {
-            string name = Name_Box.Text;
-            string description = Food_desciption_textbox.Text;
-            int stock = Convert.ToInt32(Stock_textbox.Text);
+            string Name = Name_Box.Text;
+            string Desciption = Food_desciption_textbox.Text;
+            TypeFood typeFood = (TypeFood)Enum.Parse(typeof(TypeFood), TypeFood_listbox.SelectedItem.ToString()); 
+            int Stock = Convert.ToInt32(Stock_textbox.Text);
 
             // Create an instance of the Random class
             Random random = new Random();
 
             // Generate a random ID with 4 numbers
-            int id = random.Next(1000, 10000);
+            int Id = random.Next(1000, 10000);
 
-            Food food = new Food(id, name, description, stock);
-            Food.FoodList.Add(food);
+            FoodCrud food = new FoodCrud();
+            food.SetData(Id, Desciption, typeFood, Stock);
 
-            MessageBox.Show($"Registo realizado com sucesso '{name} {description}' ", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            MessageBox.Show($"Registo realizado com sucesso '{Name} {Desciption}' ", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             this.Hide();
         }
