@@ -61,11 +61,6 @@ namespace MyzOo.View
         {
 
         }
-
-        private void password_textbox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
 
