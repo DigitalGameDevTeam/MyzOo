@@ -144,6 +144,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Employee_Menu.resx">
       <DependentUpon>Employee_Menu.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Food_Menu.resx">
       <DependentUpon>Food_Menu.cs</DependentUpon>
