@@ -47,6 +47,26 @@ namespace MyzOo.View
         {
 
         }
+
+        private void insertImage_Button_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            if (openFileDialog.ShowDialog()== DialogResult.OK)
+            {
+                profilePicture.Image = new Bitmap(openFileDialog.FileName);
+            }
+        }
+
+        private void profilePicture_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+
 

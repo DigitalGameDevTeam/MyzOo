@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cell_Menu));
-            this.Animallist_textbox = new System.Windows.Forms.TextBox();
+            this.CellDescription_textbox = new System.Windows.Forms.TextBox();
             this.Regist_button = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.Cellnumber_Box = new System.Windows.Forms.TextBox();
@@ -39,23 +39,24 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Exit_button = new System.Windows.Forms.Button();
             this.Checkup_Box = new System.Windows.Forms.CheckBox();
+            this.Cell_listbox = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // Animallist_textbox
+            // CellDescription_textbox
             // 
-            this.Animallist_textbox.BackColor = System.Drawing.Color.LightGray;
-            this.Animallist_textbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Animallist_textbox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.Animallist_textbox.ForeColor = System.Drawing.Color.Black;
-            this.Animallist_textbox.Location = new System.Drawing.Point(319, 162);
-            this.Animallist_textbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Animallist_textbox.Multiline = true;
-            this.Animallist_textbox.Name = "Animallist_textbox";
-            this.Animallist_textbox.Size = new System.Drawing.Size(441, 149);
-            this.Animallist_textbox.TabIndex = 42;
-            this.Animallist_textbox.TextChanged += new System.EventHandler(this.Animallist_textbox_TextChanged);
+            this.CellDescription_textbox.BackColor = System.Drawing.Color.LightGray;
+            this.CellDescription_textbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.CellDescription_textbox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
+            this.CellDescription_textbox.ForeColor = System.Drawing.Color.Black;
+            this.CellDescription_textbox.Location = new System.Drawing.Point(239, 162);
+            this.CellDescription_textbox.Multiline = true;
+            this.CellDescription_textbox.Name = "CellDescription_textbox";
+            this.CellDescription_textbox.Size = new System.Drawing.Size(331, 121);
+            this.CellDescription_textbox.TabIndex = 42;
+            this.CellDescription_textbox.TextChanged += new System.EventHandler(this.Animallist_textbox_TextChanged);
             // 
             // Regist_button
             // 
@@ -65,10 +66,9 @@
             this.Regist_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
             this.Regist_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Regist_button.ForeColor = System.Drawing.Color.Black;
-            this.Regist_button.Location = new System.Drawing.Point(660, 398);
-            this.Regist_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Regist_button.Location = new System.Drawing.Point(495, 323);
             this.Regist_button.Name = "Regist_button";
-            this.Regist_button.Size = new System.Drawing.Size(100, 28);
+            this.Regist_button.Size = new System.Drawing.Size(75, 23);
             this.Regist_button.TabIndex = 41;
             this.Regist_button.Text = "Registrar";
             this.Regist_button.UseVisualStyleBackColor = false;
@@ -79,10 +79,9 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label3.Location = new System.Drawing.Point(305, 140);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(229, 144);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(137, 18);
+            this.label3.Size = new System.Drawing.Size(116, 15);
             this.label3.TabIndex = 39;
             this.label3.Text = "Descrição da Cela:";
             // 
@@ -92,10 +91,9 @@
             this.Cellnumber_Box.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Cellnumber_Box.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
             this.Cellnumber_Box.ForeColor = System.Drawing.Color.Black;
-            this.Cellnumber_Box.Location = new System.Drawing.Point(457, 103);
-            this.Cellnumber_Box.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Cellnumber_Box.Location = new System.Drawing.Point(343, 114);
             this.Cellnumber_Box.Name = "Cellnumber_Box";
-            this.Cellnumber_Box.Size = new System.Drawing.Size(65, 17);
+            this.Cellnumber_Box.Size = new System.Drawing.Size(70, 14);
             this.Cellnumber_Box.TabIndex = 38;
             this.Cellnumber_Box.TextChanged += new System.EventHandler(this.Cellnumber_Box_TextChanged);
             // 
@@ -104,20 +102,18 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label2.Location = new System.Drawing.Point(305, 103);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(229, 114);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 18);
+            this.label2.Size = new System.Drawing.Size(109, 15);
             this.label2.TabIndex = 37;
             this.label2.Text = "Número da Cela :";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(15, 94);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(11, 76);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(267, 246);
+            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 36;
             this.pictureBox1.TabStop = false;
@@ -129,9 +125,8 @@
             this.panel1.Controls.Add(this.Exit_button);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(799, 70);
+            this.panel1.Size = new System.Drawing.Size(599, 57);
             this.panel1.TabIndex = 35;
             // 
             // label1
@@ -140,12 +135,11 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(16, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(12, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(286, 74);
+            this.label1.Size = new System.Drawing.Size(369, 60);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Ver Cela";
+            this.label1.Text = "Adicionar Cela";
             // 
             // Exit_button
             // 
@@ -155,10 +149,9 @@
             this.Exit_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Exit_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Exit_button.ForeColor = System.Drawing.SystemColors.Window;
-            this.Exit_button.Location = new System.Drawing.Point(724, 0);
-            this.Exit_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Exit_button.Location = new System.Drawing.Point(543, 0);
             this.Exit_button.Name = "Exit_button";
-            this.Exit_button.Size = new System.Drawing.Size(75, 70);
+            this.Exit_button.Size = new System.Drawing.Size(56, 57);
             this.Exit_button.TabIndex = 3;
             this.Exit_button.Text = "X";
             this.Exit_button.UseVisualStyleBackColor = false;
@@ -170,21 +163,44 @@
             this.Checkup_Box.BackColor = System.Drawing.Color.Transparent;
             this.Checkup_Box.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Checkup_Box.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.Checkup_Box.Location = new System.Drawing.Point(353, 330);
-            this.Checkup_Box.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Checkup_Box.Location = new System.Drawing.Point(265, 298);
             this.Checkup_Box.Name = "Checkup_Box";
-            this.Checkup_Box.Size = new System.Drawing.Size(83, 22);
+            this.Checkup_Box.Size = new System.Drawing.Size(70, 19);
             this.Checkup_Box.TabIndex = 43;
             this.Checkup_Box.Text = "Limpeza";
             this.Checkup_Box.UseVisualStyleBackColor = false;
             // 
+            // Cell_listbox
+            // 
+            this.Cell_listbox.BackColor = System.Drawing.Color.LightGray;
+            this.Cell_listbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Cell_listbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cell_listbox.FormattingEnabled = true;
+            this.Cell_listbox.Location = new System.Drawing.Point(343, 76);
+            this.Cell_listbox.Name = "Cell_listbox";
+            this.Cell_listbox.Size = new System.Drawing.Size(70, 21);
+            this.Cell_listbox.TabIndex = 56;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
+            this.label4.Location = new System.Drawing.Point(293, 78);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(42, 15);
+            this.label4.TabIndex = 57;
+            this.label4.Text = "Cela :";
+            // 
             // Cell_Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(799, 442);
+            this.ClientSize = new System.Drawing.Size(599, 359);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.Cell_listbox);
             this.Controls.Add(this.Checkup_Box);
-            this.Controls.Add(this.Animallist_textbox);
+            this.Controls.Add(this.CellDescription_textbox);
             this.Controls.Add(this.Regist_button);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.Cellnumber_Box);
@@ -192,7 +208,6 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Cell_Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cell_Menu";
@@ -206,7 +221,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox Animallist_textbox;
+        private System.Windows.Forms.TextBox CellDescription_textbox;
         private System.Windows.Forms.Button Regist_button;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox Cellnumber_Box;
@@ -216,5 +231,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Exit_button;
         private System.Windows.Forms.CheckBox Checkup_Box;
+        private System.Windows.Forms.ComboBox Cell_listbox;
+        private System.Windows.Forms.Label label4;
     }
 }
