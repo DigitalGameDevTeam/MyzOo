@@ -100,10 +100,10 @@ namespace MyzOo
 
             // Assuming Food has an 'Id' property
             int selectedFoodId = Convert.ToInt32(Food_listbox.SelectedItem);
-            Food selectedFood = Food.FoodList.FirstOrDefault(food => food.Id == selectedFoodId);
+            //Food selectedFood = Food.FoodList.FirstOrDefault(food => food.Id == selectedFoodId);
 
 
-            animal.SetData(Id, Name, Date, Checkup, IsDeceased, gender, selectedCell, selectedFood);
+            animal.SetData(Id, Name, Date, Checkup, IsDeceased, gender, selectedCell /*selectedFood*/);
 
         }
 

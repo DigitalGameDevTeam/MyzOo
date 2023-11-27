@@ -11,18 +11,17 @@ namespace MyzOo.Models
 {
     internal class Food
     {
-        public int Id { get; set; }
         public string Description { get; set; }
-        public TypeFood TypeFood { get; set; }
+        public int TypeFood { get; set; }
         public int Stock { get; set; }
 
         public static List<Food> FoodList = new List<Food>();
 
         // Save animal data
-        public void SetData(int Id, string Description, TypeFood typeFood, int Stock)
+        public void SetData(int id, string description, int typeFood, int stock)
         {
             FoodCrud food = new FoodCrud();
-            food.SetData(Id, Description, typeFood, Stock);
+            food.SetData(id, description, typeFood, stock);
 
         }
     }

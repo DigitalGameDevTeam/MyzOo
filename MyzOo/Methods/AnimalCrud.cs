@@ -1,13 +1,8 @@
 ﻿using FireSharp.Response;
 using MyzOo.Models;
-using MyzOo.Models;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
 using static MyzOo.Models.Animal;
 
 namespace MyzOo.Methods
@@ -17,7 +12,7 @@ namespace MyzOo.Methods
         Firebase conn = new Firebase();
 
         //set datas to database
-        public void SetData(int id, string name, DateTime birthday, bool checkup, bool isDeceased, Gender animalGender, Cell animalCell, Food animalFood)
+        public void SetData(int id, string name, DateTime birthday, bool checkup, bool isDeceased, Gender animalGender, Cell animalCell /*Food animalFood*/)
         {
             try
             {
@@ -29,10 +24,10 @@ namespace MyzOo.Methods
                     Checkup = checkup,
                     IsDeceased = isDeceased,
                     AnimalGender = animalGender,
-                    AnimalCell = animalCell,
-                    AnimalFood = animalFood
+                    AnimalCell = animalCell
+                    /*AnimalFood = animalFood*/
                 };
-                var SetData = conn.client.Set("animals/" + name, set);
+                var SetData = conn.client.Set("animals/" + id, set);
             }
             catch (Exception)
             {
@@ -56,7 +51,7 @@ namespace MyzOo.Methods
                     IsDeceased = isDeceased,
                     AnimalGender = animalGender
                 };
-                var SetData = conn.client.Set("animals/" + name, set);
+                var SetData = conn.client.Set("animals/" + id, set);
             }
             catch (Exception)
             {
@@ -65,11 +60,11 @@ namespace MyzOo.Methods
         }
 
         //Delete datas
-        public void DeleteTeam(string Name)
+        public void DeleteData(string id)
         {
             try
             {
-                var SetData = conn.client.Delete("people/" + Name);
+                var SetData = conn.client.Delete("animals/" + id);
             }
             catch (Exception)
             {
@@ -82,13 +77,35 @@ namespace MyzOo.Methods
         {
             try
             {
-                FirebaseResponse al = conn.client.Get("people");
+                FirebaseResponse al = conn.client.Get("animals");
                 Dictionary<string, Animal> ListData = JsonConvert.DeserializeObject<Dictionary<string, Animal>>(al.Body.ToString());
                 return ListData;
             }
             catch (Exception)
             {
-                Console.WriteLine("bir hata ile karşılaşıldı");
+                Console.WriteLine("Error");
+                return null;
+            }
+        }
+
+        public Animal GetAnimal(int id)
+        {
+            try
+            {
+                var GetData = conn.client.Get("animals/" + id);
+
+                if (GetData.Body == "null")
+                {
+                    Console.WriteLine($"No data found for animal with ID {id}");
+                    return null;
+                }
+
+                Animal animal = JsonConvert.DeserializeObject<Animal>(GetData.Body.ToString());
+                return animal;
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Error");
                 return null;
             }
         }

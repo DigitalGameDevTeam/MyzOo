@@ -1,9 +1,13 @@
-﻿using MyzOo.Models;
+﻿using MyzOo.Methods;
+using MyzOo.Models;
+using Newtonsoft.Json;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static MyzOo.Models.Animal;
 
 namespace MyzOo.Models
 {
@@ -14,10 +18,15 @@ namespace MyzOo.Models
 
         public static List<TypeFood> TypeFoodList = new List<TypeFood>();
 
-        public TypeFood ()
+        public void SetData(int id, string type)
         {
-            Id = 1;
-            Type = "carne";
+            TypeFoodCrud typeFoodCrud = new TypeFoodCrud();
+            typeFoodCrud.SetData(id, type);
+        }
+        public static List<TypeFood> LoadData()
+        {
+            TypeFoodCrud typeFoodCrud = new TypeFoodCrud();
+            return typeFoodCrud.LoadData();
         }
     }
 }

@@ -23,7 +23,10 @@ namespace MyzOo.View
         }
         private void Food_Menu_Load(object sender, EventArgs e)
         {
-            
+            foreach (var data in TypeFood.LoadData())
+            {
+                TypeFood_listbox.Items.Add(data.Type);
+            }
         }
         private void Exit_button_Click(object sender, EventArgs e)
         {
@@ -46,7 +49,12 @@ namespace MyzOo.View
         {
             string Name = Name_Box.Text;
             string Desciption = Food_desciption_textbox.Text;
-            TypeFood typeFood = (TypeFood)Enum.Parse(typeof(TypeFood), TypeFood_listbox.SelectedItem.ToString()); 
+
+            // Instead of TypeFood_listbox.SelectedItem.ToString(), use TypeFood_listbox.Text
+            string typeName = TypeFood_listbox.Text;
+            TypeFood typeFood = TypeFood.LoadData().FirstOrDefault(tf => tf.Type == typeName);
+            //TypeFood typeFood = TypeFood.TypeFoodList.FirstOrDefault(tf => tf.Type == typeName);   
+
             int Stock = Convert.ToInt32(Stock_textbox.Text);
 
             // Create an instance of the Random class
@@ -56,8 +64,7 @@ namespace MyzOo.View
             int Id = random.Next(1000, 10000);
 
             FoodCrud food = new FoodCrud();
-            food.SetData(Id, Desciption, typeFood, Stock);
-
+            food.SetData(Id, Desciption, typeFood.Id, Stock);
 
             MessageBox.Show($"Registo realizado com sucesso '{Name} {Desciption}' ", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -70,6 +77,11 @@ namespace MyzOo.View
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TypeFood_listbox_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

@@ -14,18 +14,17 @@ namespace MyzOo.Methods
         Firebase conn = new Firebase();
 
         //set datas to database
-        public void SetData(int id, string description, TypeFood typefood, int stock)
+        public void SetData(int id, string description, int typefood, int stock)
         {
             try
             {
                 Food set = new Food()
-                {
-                    Id = id,               
+                {              
                     Description = description,
                     TypeFood = typefood,
                     Stock = stock
                 };
-                var SetData = conn.client.Set("foods/" + description, set);
+                var SetData = conn.client.Set("foods/" + id, set);
             }
             catch (Exception)
             {
@@ -34,18 +33,17 @@ namespace MyzOo.Methods
         }
 
         //Update datas
-        public void UpdateData(int id, string description, TypeFood typefood, int stock)
+        public void UpdateData(int id, string description, int typefood, int stock)
         {
             try
             {
                 Food set = new Food()
                 {
-                    Id = id,
                     Description = description,
                     TypeFood = typefood,
                     Stock= stock
                 };
-                var SetData = conn.client.Set("foods/" + description, set);
+                var SetData = conn.client.Set("foods/" + id, set);
             }
             catch (Exception)
             {
@@ -58,7 +56,7 @@ namespace MyzOo.Methods
         {
             try
             {
-                var SetData = conn.client.Delete("food/" + Description);
+                var SetData = conn.client.Delete("foods/" + Description);
             }
             catch (Exception)
             {
