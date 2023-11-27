@@ -64,7 +64,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 57);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // Maximize_button
             // 
@@ -164,7 +163,6 @@
             this.Ver_Menu_Button.TabIndex = 8;
             this.Ver_Menu_Button.Text = "Ver Celas";
             this.Ver_Menu_Button.UseVisualStyleBackColor = false;
-            this.Ver_Menu_Button.Click += new System.EventHandler(this.Ver_Menu_Button_Click);
             // 
             // AnimalList_Menu_button
             // 
@@ -289,7 +287,6 @@
             this.VerComida_button.TabIndex = 9;
             this.VerComida_button.Text = "Ver Comida";
             this.VerComida_button.UseVisualStyleBackColor = false;
-            this.VerComida_button.Click += new System.EventHandler(this.VerComida_button_Click);
             // 
             // VerEmployee_button
             // 
@@ -307,7 +304,6 @@
             this.VerEmployee_button.TabIndex = 10;
             this.VerEmployee_button.Text = "Ver Funcionário";
             this.VerEmployee_button.UseVisualStyleBackColor = false;
-            this.VerEmployee_button.Click += new System.EventHandler(this.VerEmployee_button_Click);
             // 
             // Name_Box
             // 
