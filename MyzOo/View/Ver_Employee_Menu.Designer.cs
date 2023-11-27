@@ -236,6 +236,7 @@
             this.Minimize_button.TabIndex = 49;
             this.Minimize_button.Text = "-";
             this.Minimize_button.UseVisualStyleBackColor = false;
+            this.Minimize_button.Click += new System.EventHandler(this.Minimize_button_Click);
             // 
             // label4
             // 

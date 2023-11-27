@@ -35,6 +35,7 @@ namespace MyzOo.View
                     Cellnumber_Box.Enabled = true;
                     CellDescription_textbox.Enabled = true;
                     Checkup_Box.Enabled = true;
+                    Cell_listbox.Enabled = true;
                     break;
                 case 2:
                     op = 1;
@@ -43,6 +44,7 @@ namespace MyzOo.View
                     Cellnumber_Box.Enabled = false;
                     CellDescription_textbox.Enabled = false;
                     Checkup_Box.Enabled = false;
+                    Cell_listbox.Enabled = false;
                     break;
 
             }
@@ -52,7 +54,8 @@ namespace MyzOo.View
         {
             Cellnumber_Box.Enabled = false;
             CellDescription_textbox.Enabled = false;
-            Checkup_Box.Enabled = false; 
+            Checkup_Box.Enabled = false;
+            Cell_listbox.Enabled = false;
         }
     }
 }

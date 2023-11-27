@@ -50,24 +50,8 @@ namespace MyzOo
             List<Food> food = Food.FoodList;
             List<Cell> cell = Cell.CellList;
 
-            bool verifyFood = Food.VerifyFood(food);
-            bool verifyCell = Cell.VerifyCell(cell);
-
             Animal_Menu animal_Menu = new Animal_Menu();
             animal_Menu.Show();
-
-            /* Verification
-            if (verifyFood)
-            {
-                if (verifyCell)
-                {
-                    Animal_Menu animal_Menu = new Animal_Menu();
-                    animal_Menu.Show();
-
-                }
-                else MessageBox.Show("Tens que adicionar uma Cela", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-            else MessageBox.Show("Tens que adicionar Comida", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning); */
 
         }
 
@@ -125,6 +109,27 @@ namespace MyzOo
             //open animallist_menu
             AnimalList_Menu animalList_Menu = new AnimalList_Menu();
             animalList_Menu.Show();
+            this.Hide();
+        }
+
+        private void Ver_Menu_Button_Click(object sender, EventArgs e)
+        {
+            VerCela_Menu verCela_Menu = new VerCela_Menu();
+            verCela_Menu.Show();
+            this.Hide();
+        }
+
+        private void VerComida_button_Click(object sender, EventArgs e)
+        {
+            FoodList_menu foodList_Menu = new FoodList_menu();
+            foodList_Menu.Show();
+            this.Hide();
+        }
+
+        private void VerEmployee_button_Click(object sender, EventArgs e)
+        {
+            Ver_Employee_Menu ver_Employee_Menu = new Ver_Employee_Menu();
+            ver_Employee_Menu.Show();
             this.Hide();
         }
     }

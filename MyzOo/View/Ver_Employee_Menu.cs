@@ -32,6 +32,7 @@ namespace MyzOo.View
                     Checkup_Box.Enabled = true;
                     Admin_listbox.Enabled = true;
                     Pass_textbox.Enabled = true;
+                    Cell_listbox.Enabled = true;
                     break;
                 case 2:
                     op = 1;
@@ -43,6 +44,7 @@ namespace MyzOo.View
                     Checkup_Box.Enabled = false;
                     Admin_listbox.Enabled = false;
                     Pass_textbox.Enabled = false;
+                    Cell_listbox.Enabled = false;
 
 
                     break;
@@ -60,6 +62,7 @@ namespace MyzOo.View
             Checkup_Box.Enabled = false;
             Admin_listbox.Enabled = false;
             Pass_textbox.Enabled = false;
+            Cell_listbox.Enabled = false;
         }
         private void Exit_button_Click(object sender, EventArgs e)
         {
@@ -69,6 +72,10 @@ namespace MyzOo.View
             this.Hide();
         }
 
-      
+        private void Minimize_button_Click(object sender, EventArgs e)
+        {
+            //minimize the form
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }

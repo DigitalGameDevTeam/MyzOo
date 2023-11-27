@@ -31,13 +31,14 @@ namespace MyzOo.View
             switch (op)
             {
                 case 1:
-                    op = 0;
+                    op = 2;
                     label1.Text = "Editar Comida";
                     Edit_button.Text = "Inspecionar";
                     Name_Box.Enabled = true;
                     Food_desciption_textbox.Enabled = true;
                     Stock_textbox.Enabled = true;
-                break;
+                    Cell_listbox.Enabled = true;
+                    break;
                 case 2:
                     op = 1;
                     label1.Text = "Inspecionar Comida";
@@ -45,7 +46,8 @@ namespace MyzOo.View
                     Name_Box.Enabled = false;
                     Food_desciption_textbox.Enabled = false;
                     Stock_textbox.Enabled = false;
-                break;
+                    Cell_listbox.Enabled = false;
+                    break;
 
             }
         }
@@ -55,6 +57,7 @@ namespace MyzOo.View
             Name_Box.Enabled = false;
             Food_desciption_textbox.Enabled = false;
             Stock_textbox.Enabled = false;
+            Cell_listbox.Enabled = false;
         }
 
         private void Cell_listbox_SelectedIndexChanged(object sender, EventArgs e)

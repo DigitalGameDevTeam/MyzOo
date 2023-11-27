@@ -99,7 +99,7 @@
             "Elefante ",
             "Bixu Feio",
             "Rato"});
-            this.Animal_ListBox.Location = new System.Drawing.Point(12, 85);
+            this.Animal_ListBox.Location = new System.Drawing.Point(516, 85);
             this.Animal_ListBox.Name = "Animal_ListBox";
             this.Animal_ListBox.Size = new System.Drawing.Size(228, 290);
             this.Animal_ListBox.TabIndex = 2;
