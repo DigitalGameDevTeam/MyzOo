@@ -55,7 +55,6 @@
             this.Regist_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
             this.Regist_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Regist_button.ForeColor = System.Drawing.Color.Black;
-            this.Regist_button.Location = new System.Drawing.Point(495, 310);
             this.Regist_button.Location = new System.Drawing.Point(495, 324);
             this.Regist_button.Name = "Regist_button";
             this.Regist_button.Size = new System.Drawing.Size(75, 23);
@@ -69,7 +68,6 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label6.Location = new System.Drawing.Point(425, 288);
             this.label6.Location = new System.Drawing.Point(427, 294);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(44, 15);
@@ -81,7 +79,6 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label3.Location = new System.Drawing.Point(229, 101);
             this.label3.Location = new System.Drawing.Point(229, 135);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(134, 15);
@@ -94,7 +91,6 @@
             this.Name_Box.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Name_Box.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
             this.Name_Box.ForeColor = System.Drawing.Color.Black;
-            this.Name_Box.Location = new System.Drawing.Point(343, 71);
             this.Name_Box.Location = new System.Drawing.Point(343, 105);
             this.Name_Box.Name = "Name_Box";
             this.Name_Box.Size = new System.Drawing.Size(227, 14);
@@ -105,7 +101,6 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label2.Location = new System.Drawing.Point(229, 71);
             this.label2.Location = new System.Drawing.Point(229, 105);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(115, 15);
@@ -169,7 +164,6 @@
             this.Food_desciption_textbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Food_desciption_textbox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
             this.Food_desciption_textbox.ForeColor = System.Drawing.Color.Black;
-            this.Food_desciption_textbox.Location = new System.Drawing.Point(239, 119);
             this.Food_desciption_textbox.Location = new System.Drawing.Point(239, 153);
             this.Food_desciption_textbox.Multiline = true;
             this.Food_desciption_textbox.Name = "Food_desciption_textbox";
@@ -183,7 +177,6 @@
             this.Stock_textbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Stock_textbox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
             this.Stock_textbox.ForeColor = System.Drawing.Color.Black;
-            this.Stock_textbox.Location = new System.Drawing.Point(477, 288);
             this.Stock_textbox.Location = new System.Drawing.Point(477, 294);
             this.Stock_textbox.Name = "Stock_textbox";
             this.Stock_textbox.Size = new System.Drawing.Size(93, 14);
@@ -200,6 +193,8 @@
             this.TypeFood_listbox.Name = "TypeFood_listbox";
             this.TypeFood_listbox.Size = new System.Drawing.Size(165, 21);
             this.TypeFood_listbox.TabIndex = 36;
+            this.TypeFood_listbox.SelectedIndexChanged += new System.EventHandler(this.TypeFood_listbox_SelectedIndexChanged_1);
+            // 
             // Cell_listbox
             // 
             this.Cell_listbox.BackColor = System.Drawing.Color.LightGray;
@@ -216,11 +211,6 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label4.Location = new System.Drawing.Point(229, 257);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(84, 15);
-            this.label4.TabIndex = 37;
-            this.label4.Text = "Tipo Comida:";
             this.label4.Location = new System.Drawing.Point(268, 78);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(60, 15);

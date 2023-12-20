@@ -85,5 +85,10 @@ namespace MyzOo.View
         {
 
         }
+
+        private void TypeFood_listbox_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

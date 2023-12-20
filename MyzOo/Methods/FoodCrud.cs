@@ -19,7 +19,7 @@ namespace MyzOo.Methods
             try
             {
                 Food set = new Food()
-                {              
+                {
                     Description = description,
                     TypeFood = typefood,
                     Stock = stock
@@ -41,7 +41,7 @@ namespace MyzOo.Methods
                 {
                     Description = description,
                     TypeFood = typefood,
-                    Stock= stock
+                    Stock = stock
                 };
                 var SetData = conn.client.Set("foods/" + id, set);
             }
@@ -64,14 +64,22 @@ namespace MyzOo.Methods
             }
         }
 
-        //List of the datas
-        public Dictionary<string, Food> LoadData()
+        //List of the data
+        public List<Food> LoadData()
         {
             try
             {
                 FirebaseResponse al = conn.client.Get("foods");
-                Dictionary<string, Food> ListData = JsonConvert.DeserializeObject<Dictionary<string, Food>>(al.Body.ToString());
-                return ListData;
+                Dictionary<string, Food> listData = JsonConvert.DeserializeObject<Dictionary<string, Food>>(al.Body.ToString());
+                List<Food> allData = new List<Food>();
+
+                // verify
+                foreach (var kvp in listData)
+                {
+                    allData.Add(kvp.Value);
+                }
+
+                return allData;
             }
             catch (Exception)
             {
@@ -79,6 +87,5 @@ namespace MyzOo.Methods
                 return null;
             }
         }
-        
     }
 }

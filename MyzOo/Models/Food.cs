@@ -22,7 +22,12 @@ namespace MyzOo.Models
         {
             FoodCrud food = new FoodCrud();
             food.SetData(id, description, typeFood, stock);
+        }
 
+        public static List<Food> LoadData()
+        {
+            FoodCrud foodCrud = new FoodCrud();
+            return foodCrud.LoadData();
         }
     }
 }

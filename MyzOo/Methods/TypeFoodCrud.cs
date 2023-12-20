@@ -13,7 +13,7 @@ namespace MyzOo.Methods
     {
         Firebase conn = new Firebase();
 
-        //set datas to database
+        //set data to database
         public void SetData(int id, string type)
         {
             try
@@ -29,7 +29,7 @@ namespace MyzOo.Methods
                 Console.WriteLine("Error");
             }
         }
-        //Update datas
+        //Update data
         public void UpdateData(int id, string type)
         {
             try
@@ -46,7 +46,7 @@ namespace MyzOo.Methods
             }
         }
 
-        //Delete datas
+        //Delete data
         public void DeleteTeam(int id)
         {
             try
@@ -59,7 +59,7 @@ namespace MyzOo.Methods
             }
         }
 
-        //List of the datas
+        //List of the data
         public List<TypeFood> LoadData()
         {
             try

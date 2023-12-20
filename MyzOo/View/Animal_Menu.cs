@@ -20,26 +20,17 @@ namespace MyzOo
         }
         private void Animal_Menu_Load(object sender, EventArgs e)
         {
-            List<Cell> cell = Cell.CellList;
-            List<Food> food = MyzOo.Models.Food.FoodList;
-
-            /*if (food != null)
+            foreach (var data in Food.LoadData())
             {
-                foreach (Food foods in food)
-                {
-                    Food_listbox.Items.Add(foods.Id);
-                }
+                Food_listbox.Items.Add(data.Description);
             }
-            else
-            {
-                MessageBox.Show("Vazio", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }*/
 
             // Add cell
+            /*
             foreach (Cell cells in cell)
             {
                 Cell_listbox.Items.Add(cells.Number);
-            }
+            }*/
 
 
             //Animal animal = new Animal();
