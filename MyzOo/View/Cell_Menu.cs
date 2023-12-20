@@ -1,5 +1,7 @@
-﻿using MyzOo.Models;
+﻿using MyzOo.Methods;
+using MyzOo.Models;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -42,7 +44,9 @@ namespace MyzOo.View
             int number = Convert.ToInt32(Cellnumber_Box.Text);
             bool cleaning = Checkup_Box.Checked;
 
-            Cell cell= new Cell(number, cleaning);
+            CellCrud cell = new CellCrud();
+            cell.SetData(number, cleaning);
+
 
             MessageBox.Show("Registo realizado com sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 

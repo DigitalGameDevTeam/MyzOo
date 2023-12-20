@@ -12,20 +12,20 @@ namespace MyzOo.Methods
         Firebase conn = new Firebase();
 
         //set datas to database
-        public void SetData(int id, string name, DateTime birthday, bool checkup, bool isDeceased, Gender animalGender, Cell animalCell /*Food animalFood*/)
+        public void SetData(int id, string name, DateTime birthday, bool checkup, bool isDeceased, Gender animalGender, Cell animalCell, string animalFood)
         {
             try
             {
                 Animal set = new Animal()
                 {
-                    Id = id,
+                    //Id = id,
                     Name = name,
                     Birthday = birthday,
                     Checkup = checkup,
                     IsDeceased = isDeceased,
                     AnimalGender = animalGender,
-                    AnimalCell = animalCell
-                    /*AnimalFood = animalFood*/
+                    AnimalCell = animalCell,
+                    AnimalFood = animalFood
                 };
                 var SetData = conn.client.Set("animals/" + id, set);
             }
@@ -36,13 +36,13 @@ namespace MyzOo.Methods
         }
 
         //Update datas
-        public void UpdateData(int id, string name, DateTime birthday, bool checkup, bool isDeceased, Gender animalGender, Cell animalCell, Food animalFood)
+        public void UpdateData(int id, string name, DateTime birthday, bool checkup, bool isDeceased, Gender animalGender, Cell animalCell, string animalFood)
         {
             try
             {
                 Animal set = new Animal()
                 {
-                    Id = id,
+                    //Id = id,
                     Name = name,
                     Birthday = birthday,
                     Checkup = checkup,

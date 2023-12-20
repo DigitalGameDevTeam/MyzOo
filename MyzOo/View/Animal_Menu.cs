@@ -67,7 +67,6 @@ namespace MyzOo
 
         private void Regist_button_Click(object sender, EventArgs e)
         {
-            Firebase conn = new Firebase();
             Animal animal = new Animal();
 
             // Create an instance of the Random class
@@ -84,18 +83,18 @@ namespace MyzOo
             Animal.Gender gender;
             Enum.TryParse(Gender_listbox.Text, out gender);
 
+            // Food
+            string foodName = Food_listbox.Text;
+            Food animalFood = Food.LoadData().FirstOrDefault(tf => tf.Description == foodName);
+
             // Retrieve selected cell and food values
 
             int selectedCellNumber = Convert.ToInt32(Cell_listbox.SelectedItem);
             Cell selectedCell = Cell.CellList.FirstOrDefault(cell => cell.Number == selectedCellNumber);
 
-            // Assuming Food has an 'Id' property
-            int selectedFoodId = Convert.ToInt32(Food_listbox.SelectedItem);
-            //Food selectedFood = Food.FoodList.FirstOrDefault(food => food.Id == selectedFoodId);
 
-
-            animal.SetData(Id, Name, Date, Checkup, IsDeceased, gender, selectedCell /*selectedFood*/);
-
+            animal.SetData(Id, Name, Date, Checkup, IsDeceased, gender, selectedCell, animalFood.Description);
+            this.Hide();
         }
 
         private void Cell_listbox_SelectedIndexChanged(object sender, EventArgs e)

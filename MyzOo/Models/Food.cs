@@ -17,7 +17,6 @@ namespace MyzOo.Models
 
         public static List<Food> FoodList = new List<Food>();
 
-        // Save animal data
         public void SetData(int id, string description, int typeFood, int stock)
         {
             FoodCrud food = new FoodCrud();
