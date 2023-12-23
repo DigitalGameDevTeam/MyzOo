@@ -10,27 +10,17 @@ namespace MyzOo.Models
 {
     internal class Cell
     {
+        public int Id { get; set; }
         public int Number {  get; set; }
         public bool Cleaning { get; set; }
+        public string Description { get; set; }
+
         public static List<Cell> CellList = new List<Cell>();
 
-        /*public Cell (int number, bool cleaning)
-        {
-            Number = number;
-            Cleaning = cleaning;
-        }
-
-        public static bool VerifyCell(List<Cell> cells)
-        {
-            if (cells.Count > 0)
-                return true;
-            else return false;
-        }*/
-
-        public void SetData(int number, bool cleaning)
+        public void SetData(int id, int number, bool cleaning, string description)
         {
             CellCrud cell = new CellCrud();
-            cell.SetData(number, cleaning);
+            cell.SetData(id, number, cleaning, description);
         }
 
         public static List<Cell> LoadData()

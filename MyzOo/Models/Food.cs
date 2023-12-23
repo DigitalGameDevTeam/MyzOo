@@ -1,5 +1,7 @@
-﻿using MyzOo.Methods;
+﻿using FireSharp.Response;
+using MyzOo.Methods;
 using MyzOo.Models;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +13,7 @@ namespace MyzOo.Models
 {
     internal class Food
     {
+        public int Id { get; set; }
         public string Description { get; set; }
         public int TypeFood { get; set; }
         public int Stock { get; set; }

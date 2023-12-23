@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyzOo.Methods;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,11 +13,18 @@ namespace MyzOo.Models
         public string Role { get; set; }
         public int Salary { get; set; }
 
-    public Job (int id, string role, int salary)
+        public static List<Job> JobList = new List<Job>();
+
+        public void SetData(int id, string Role, int Salary)
         {
-            Id = id;
-            Role = role;
-            Salary = salary;
+            JobCrud job = new JobCrud();
+            job.SetData(id, Role, Salary);
+        }
+
+        public static List<Job> LoadData()
+        {
+            JobCrud jobCrud = new JobCrud();
+            return jobCrud.LoadData();
         }
     }
 }

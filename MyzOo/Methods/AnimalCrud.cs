@@ -3,7 +3,6 @@ using MyzOo.Models;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using static MyzOo.Models.Animal;
 
 namespace MyzOo.Methods
 {
@@ -12,13 +11,12 @@ namespace MyzOo.Methods
         Firebase conn = new Firebase();
 
         //set datas to database
-        public void SetData(int id, string name, DateTime birthday, bool checkup, bool isDeceased, Gender animalGender, Cell animalCell, string animalFood)
+        public void SetData(int id, string name, DateTime birthday, bool checkup, bool isDeceased, string animalGender, int animalCell, string animalFood)
         {
             try
             {
                 Animal set = new Animal()
                 {
-                    //Id = id,
                     Name = name,
                     Birthday = birthday,
                     Checkup = checkup,
@@ -36,13 +34,12 @@ namespace MyzOo.Methods
         }
 
         //Update datas
-        public void UpdateData(int id, string name, DateTime birthday, bool checkup, bool isDeceased, Gender animalGender, Cell animalCell, string animalFood)
+        public void UpdateData(int id, string name, DateTime birthday, bool checkup, bool isDeceased, string animalGender, int animalCell, string animalFood)
         {
             try
             {
                 Animal set = new Animal()
                 {
-                    //Id = id,
                     Name = name,
                     Birthday = birthday,
                     Checkup = checkup,

@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MyzOo.View;
 
 namespace MyzOo
 {
@@ -20,21 +21,25 @@ namespace MyzOo
         }
         private void Animal_Menu_Load(object sender, EventArgs e)
         {
-            foreach (var data in Food.LoadData())
+            foreach (var food in Food.LoadData())
             {
-                Food_listbox.Items.Add(data.Description);
+                Food_listbox.Items.Add(food.Description);
             }
 
-            // Add cell
-            /*
-            foreach (Cell cells in cell)
+            foreach (var cell in Cell.LoadData())
             {
-                Cell_listbox.Items.Add(cells.Number);
-            }*/
+                Cell_listbox.Items.Add(cell.Number);
+            }
 
+            
+            Animal.Gender[] genders = (Animal.Gender[])Enum.GetValues(typeof(Animal.Gender));
 
-            //Animal animal = new Animal();
+            foreach (var gender in genders)
+            {
+                Gender_listbox.Items.Add(gender);
+            }
         }
+
         private void Exit_button_Click(object sender, EventArgs e)
         {
             //hide this Menu
@@ -80,20 +85,24 @@ namespace MyzOo
             DateTime Date = Birthday_Calendar.SelectionRange.Start;
             bool Checkup = Checkup_Box.Checked;
             bool IsDeceased = Decease_Box.Checked;
-            Animal.Gender gender;
-            Enum.TryParse(Gender_listbox.Text, out gender);
 
+            string gender = Gender_listbox.Text;
+            //Animal.Gender gender;
+            //Enum.TryParse(Gender_listbox.Text, out gender);
+
+            // Retrieve selected cell and food values
             // Food
             string foodName = Food_listbox.Text;
             Food animalFood = Food.LoadData().FirstOrDefault(tf => tf.Description == foodName);
 
-            // Retrieve selected cell and food values
+            // Cell
+            int callDescription = Convert.ToInt32(Cell_listbox.Text);
+            Cell animalCell = Cell.LoadData().FirstOrDefault(tf => tf.Number == callDescription);
 
-            int selectedCellNumber = Convert.ToInt32(Cell_listbox.SelectedItem);
-            Cell selectedCell = Cell.CellList.FirstOrDefault(cell => cell.Number == selectedCellNumber);
 
+            
 
-            animal.SetData(Id, Name, Date, Checkup, IsDeceased, gender, selectedCell, animalFood.Description);
+            animal.SetData(Id, Name, Date, Checkup, IsDeceased, gender, animalCell.Number, animalFood.Description);
             this.Hide();
         }
 

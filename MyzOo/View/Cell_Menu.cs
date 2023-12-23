@@ -1,14 +1,5 @@
 ﻿using MyzOo.Methods;
-using MyzOo.Models;
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MyzOo.View
@@ -40,12 +31,18 @@ namespace MyzOo.View
 
         private void Regist_button_Click(object sender, EventArgs e)
         {
+            // Create an instance of the Random class
+            Random random = new Random();
 
+            // Generate a random ID with 4 numbers
+            int id = random.Next(1000, 10000);
+            
             int number = Convert.ToInt32(Cellnumber_Box.Text);
             bool cleaning = Checkup_Box.Checked;
+            string description = CellDescription_textbox.Text;
 
             CellCrud cell = new CellCrud();
-            cell.SetData(number, cleaning);
+            cell.SetData(id, number, cleaning, description);
 
 
             MessageBox.Show("Registo realizado com sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);

@@ -42,9 +42,8 @@ namespace MyzOo
             label1.ForeColor = Color.White;
 
             TypeFood typeFood = new TypeFood();
-            typeFood.SetData(0, "carne");
-            typeFood.SetData(5, "peixe");
-            typeFood.SetData(6, "peixe2");
+            typeFood.SetData(1, "carne");
+            typeFood.SetData(2, "peixe");
         }
 
         private void AnimalMenu_button_Click(object sender, EventArgs e)

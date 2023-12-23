@@ -14,16 +14,17 @@ namespace MyzOo.Methods
         Firebase conn = new Firebase();
 
         //set datas to database
-        public void SetData(int number, bool cleaning)
+        public void SetData(int id, int number, bool cleaning, string description)
         {
             try
             {
                 Cell set = new Cell()
                 {
                     Number = number,
-                    Cleaning = cleaning
+                    Cleaning = cleaning,
+                    Description = description
                 };
-                var SetData = conn.client.Set("cells/" + number, set);
+                var SetData = conn.client.Set("cells/" + id, set);
             }
             catch (Exception)
             {
@@ -32,16 +33,17 @@ namespace MyzOo.Methods
         }
 
         //Update datas
-        public void UpdateData(int number, bool cleaning)
+        public void UpdateData(int id, int number, bool cleaning, string description)
         {
             try
             {
                 Cell set = new Cell()
                 {
                     Number = number,
-                    Cleaning = cleaning
+                    Cleaning = cleaning,
+                    Description = description
                 };
-                var SetData = conn.client.Set("cells/" + number, set);
+                var SetData = conn.client.Set("cells/" + id, set);
             }
             catch (Exception)
             {
@@ -50,11 +52,11 @@ namespace MyzOo.Methods
         }
 
         //Delete datas
-        public void DeleteTeam(string Description)
+        public void DeleteData(int id)
         {
             try
             {
-                var SetData = conn.client.Delete("cells/" + Description);
+                var SetData = conn.client.Delete("cells/" + id);
             }
             catch (Exception)
             {

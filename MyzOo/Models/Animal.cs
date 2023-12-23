@@ -25,17 +25,16 @@ namespace MyzOo.Models
             Male,
             Female,
         }
-        public Gender AnimalGender { get; set; }
+        public string AnimalGender { get; set; }
 
-        // Reference to Cell and Food
-        public Cell AnimalCell { get; set; }
+        public int AnimalCell { get; set; }
         public string AnimalFood { get; set; }
         
 
         public static List<Animal> AnimalList = new List<Animal>();
 
         // Save animal data
-        public void SetData(int Id, string Name, DateTime Date, bool Checkup, bool IsDecease, Gender gender, Cell cell, string food)
+        public void SetData(int Id, string Name, DateTime Date, bool Checkup, bool IsDecease, string gender, int cell, string food)
         {
             AnimalCrud animal = new AnimalCrud();
             animal.SetData(Id, Name, Date, Checkup, IsDecease, gender, cell, food);
