@@ -39,8 +39,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Exit_button = new System.Windows.Forms.Button();
             this.Checkup_Box = new System.Windows.Forms.CheckBox();
-            this.Cell_listbox = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -51,10 +49,10 @@
             this.CellDescription_textbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.CellDescription_textbox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
             this.CellDescription_textbox.ForeColor = System.Drawing.Color.Black;
-            this.CellDescription_textbox.Location = new System.Drawing.Point(239, 162);
+            this.CellDescription_textbox.Location = new System.Drawing.Point(239, 126);
             this.CellDescription_textbox.Multiline = true;
             this.CellDescription_textbox.Name = "CellDescription_textbox";
-            this.CellDescription_textbox.Size = new System.Drawing.Size(331, 121);
+            this.CellDescription_textbox.Size = new System.Drawing.Size(331, 150);
             this.CellDescription_textbox.TabIndex = 42;
             this.CellDescription_textbox.TextChanged += new System.EventHandler(this.Animallist_textbox_TextChanged);
             // 
@@ -79,7 +77,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label3.Location = new System.Drawing.Point(229, 144);
+            this.label3.Location = new System.Drawing.Point(229, 108);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(116, 15);
             this.label3.TabIndex = 39;
@@ -91,7 +89,7 @@
             this.Cellnumber_Box.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Cellnumber_Box.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
             this.Cellnumber_Box.ForeColor = System.Drawing.Color.Black;
-            this.Cellnumber_Box.Location = new System.Drawing.Point(343, 114);
+            this.Cellnumber_Box.Location = new System.Drawing.Point(343, 78);
             this.Cellnumber_Box.Name = "Cellnumber_Box";
             this.Cellnumber_Box.Size = new System.Drawing.Size(70, 14);
             this.Cellnumber_Box.TabIndex = 38;
@@ -102,7 +100,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label2.Location = new System.Drawing.Point(229, 114);
+            this.label2.Location = new System.Drawing.Point(229, 78);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(109, 15);
             this.label2.TabIndex = 37;
@@ -170,35 +168,11 @@
             this.Checkup_Box.Text = "Limpeza";
             this.Checkup_Box.UseVisualStyleBackColor = false;
             // 
-            // Cell_listbox
-            // 
-            this.Cell_listbox.BackColor = System.Drawing.Color.LightGray;
-            this.Cell_listbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Cell_listbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cell_listbox.FormattingEnabled = true;
-            this.Cell_listbox.Location = new System.Drawing.Point(343, 76);
-            this.Cell_listbox.Name = "Cell_listbox";
-            this.Cell_listbox.Size = new System.Drawing.Size(70, 21);
-            this.Cell_listbox.TabIndex = 56;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label4.Location = new System.Drawing.Point(293, 78);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(42, 15);
-            this.label4.TabIndex = 57;
-            this.label4.Text = "Cela :";
-            // 
             // Cell_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(599, 359);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.Cell_listbox);
             this.Controls.Add(this.Checkup_Box);
             this.Controls.Add(this.CellDescription_textbox);
             this.Controls.Add(this.Regist_button);
@@ -208,6 +182,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Cell_Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cell_Menu";
@@ -231,7 +206,5 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Exit_button;
         private System.Windows.Forms.CheckBox Checkup_Box;
-        private System.Windows.Forms.ComboBox Cell_listbox;
-        private System.Windows.Forms.Label label4;
     }
 }
