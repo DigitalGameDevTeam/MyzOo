@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main_Menu));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Maximize_button = new System.Windows.Forms.Button();
             this.Minimize_button = new System.Windows.Forms.Button();
             this.Exit_button = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -55,7 +54,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel1.Controls.Add(this.Maximize_button);
             this.panel1.Controls.Add(this.Minimize_button);
             this.panel1.Controls.Add(this.Exit_button);
             this.panel1.Controls.Add(this.label1);
@@ -65,22 +63,6 @@
             this.panel1.Size = new System.Drawing.Size(800, 57);
             this.panel1.TabIndex = 0;
             // 
-            // Maximize_button
-            // 
-            this.Maximize_button.BackColor = System.Drawing.Color.Transparent;
-            this.Maximize_button.FlatAppearance.BorderSize = 0;
-            this.Maximize_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
-            this.Maximize_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Maximize_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Maximize_button.ForeColor = System.Drawing.SystemColors.Window;
-            this.Maximize_button.Location = new System.Drawing.Point(688, 0);
-            this.Maximize_button.Name = "Maximize_button";
-            this.Maximize_button.Size = new System.Drawing.Size(56, 57);
-            this.Maximize_button.TabIndex = 7;
-            this.Maximize_button.Text = "+";
-            this.Maximize_button.UseVisualStyleBackColor = false;
-            this.Maximize_button.Click += new System.EventHandler(this.Maximize_button_Click);
-            // 
             // Minimize_button
             // 
             this.Minimize_button.BackColor = System.Drawing.Color.Transparent;
@@ -89,7 +71,7 @@
             this.Minimize_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Minimize_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Minimize_button.ForeColor = System.Drawing.SystemColors.Window;
-            this.Minimize_button.Location = new System.Drawing.Point(631, 0);
+            this.Minimize_button.Location = new System.Drawing.Point(688, 0);
             this.Minimize_button.Name = "Minimize_button";
             this.Minimize_button.Size = new System.Drawing.Size(56, 57);
             this.Minimize_button.TabIndex = 3;
@@ -377,7 +359,6 @@
         private System.Windows.Forms.Button Food_Menu_button;
         private System.Windows.Forms.Button Cell_Menu_button;
         private System.Windows.Forms.Button Ver_Animal_Menu_button;
-        private System.Windows.Forms.Button Maximize_button;
         private System.Windows.Forms.Button Employee_Menu_button;
         private System.Windows.Forms.Button AnimalList_Menu_button;
         private System.Windows.Forms.Button Ver_Menu_Button;
