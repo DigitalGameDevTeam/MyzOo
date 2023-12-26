@@ -219,6 +219,10 @@
             this.Food_listbox.Size = new System.Drawing.Size(210, 21);
             this.Food_listbox.TabIndex = 20;
             // 
+            // backgroundWorker1
+            // 
+            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
+            // 
             // Decease_Box
             // 
             this.Decease_Box.AutoSize = true;

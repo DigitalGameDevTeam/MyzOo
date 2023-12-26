@@ -43,6 +43,8 @@ namespace MyzOo
         private void Exit_button_Click(object sender, EventArgs e)
         {
             //hide this Menu
+            Main_Menu main_Menu = new Main_Menu();
+            main_Menu.Show();
             this.Hide();
         }
         private void Food_list_SelectedItemChanged(object sender, EventArgs e)
@@ -117,6 +119,11 @@ namespace MyzOo
         }
 
         private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
 
         }
