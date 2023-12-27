@@ -40,10 +40,6 @@ namespace MyzOo
             //set Menu Colors
             panel1.BackColor = Color.DeepSkyBlue;
             label1.ForeColor = Color.White;
-
-            TypeFood typeFood = new TypeFood();
-            typeFood.SetData(1, "carne");
-            typeFood.SetData(2, "peixe");
         }
 
         private void AnimalMenu_button_Click(object sender, EventArgs e)
@@ -56,7 +52,6 @@ namespace MyzOo
 
             Animal_Menu animal_Menu = new Animal_Menu();
             animal_Menu.Show();
-
         }
 
         private void Food_Menu_button_Click(object sender, EventArgs e)
@@ -105,7 +100,6 @@ namespace MyzOo
             Employee_Menu employee_Menu = new Employee_Menu();
             employee_Menu.Show();
             this.Hide();
-            
         }
 
         private void AnimalList_Menu_button_Click(object sender, EventArgs e)

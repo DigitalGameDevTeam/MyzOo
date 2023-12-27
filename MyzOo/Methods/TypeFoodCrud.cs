@@ -68,11 +68,9 @@ namespace MyzOo.Methods
                 Dictionary<string, TypeFood> listData = JsonConvert.DeserializeObject<Dictionary<string, TypeFood>>(al.Body.ToString());
                 List<TypeFood> allData = new List<TypeFood>();
 
+                // verify
                 foreach (var kvp in listData)
                 {
-                    int id = Convert.ToInt32(kvp.Key);
-                    kvp.Value.Id = id;
-
                     allData.Add(kvp.Value);
                 }
 

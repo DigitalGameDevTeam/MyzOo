@@ -17,10 +17,22 @@ namespace MyzOo.Models
 
         public static List<Cell> CellList = new List<Cell>();
 
+        CellCrud cell = new CellCrud();
+
         public void SetData(int id, int number, bool cleaning, string description)
         {
-            CellCrud cell = new CellCrud();
+            
             cell.SetData(id, number, cleaning, description);
+        }
+
+        public void UpdateDate(int id, int number, bool cleaning, string description)
+        {
+            cell.UpdateData(id, number, cleaning, description);
+        }
+
+        public void Delete(int id)
+        {
+            cell.DeleteData(id);
         }
 
         public static List<Cell> LoadData()

@@ -123,6 +123,12 @@
     <Compile Include="View\Food_Menu.Designer.cs">
       <DependentUpon>Food_Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\List.Designer.cs">
+      <DependentUpon>List.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Main_Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +178,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Food_Menu.resx">
       <DependentUpon>Food_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\List.resx">
+      <DependentUpon>List.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Main_Menu.resx">
       <DependentUpon>Main_Menu.cs</DependentUpon>
