@@ -52,6 +52,8 @@ namespace MyzOo
 
             Animal_Menu animal_Menu = new Animal_Menu();
             animal_Menu.Show();
+            this.Hide();
+
         }
 
         private void Food_Menu_button_Click(object sender, EventArgs e)
@@ -107,6 +109,27 @@ namespace MyzOo
             //open animallist_menu
             AnimalList_Menu animalList_Menu = new AnimalList_Menu();
             animalList_Menu.Show();
+            this.Hide();
+        }
+
+        private void VerComida_button_Click(object sender, EventArgs e)
+        {
+            FoodList_menu foodList_Menu = new FoodList_menu();
+            foodList_Menu.Show();
+            this.Hide();
+        }
+
+        private void Ver_Menu_Button_Click(object sender, EventArgs e)
+        {
+            VerCela_Menu verCela_menu = new VerCela_Menu(); 
+            verCela_menu.Show();
+            this.Hide();
+        }
+
+        private void VerEmployee_button_Click(object sender, EventArgs e)
+        {
+            Ver_Employee_Menu ver_Employee_Menu = new Ver_Employee_Menu();
+            ver_Employee_Menu.Show();
             this.Hide();
         }
     }

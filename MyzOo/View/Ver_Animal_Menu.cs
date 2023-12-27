@@ -59,6 +59,8 @@ namespace MyzOo.View
         private void Exit_button_Click(object sender, EventArgs e)
         {
             //hide this menu 
+            Main_Menu main_Menu = new Main_Menu();
+            main_Menu.Show();
             this.Hide();
         }
 
