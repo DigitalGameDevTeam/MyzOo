@@ -33,14 +33,8 @@
             this.Minimize_button = new System.Windows.Forms.Button();
             this.Exit_button = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.List_Box = new System.Windows.Forms.ListBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -99,25 +93,20 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Display";
             // 
-            // Animal_ListBox
+            // List_Box
             // 
-            this.Animal_ListBox.FormattingEnabled = true;
-            this.Animal_ListBox.Items.AddRange(new object[] {
-            "Elefante ",
-            "Bixu Feio",
-            "Rato"});
-            this.Animal_ListBox.Location = new System.Drawing.Point(516, 85);
-            this.Animal_ListBox.Name = "Animal_ListBox";
-            this.Animal_ListBox.Size = new System.Drawing.Size(228, 290);
-            this.Animal_ListBox.TabIndex = 2;
-            this.Animal_ListBox.SelectedIndexChanged += new System.EventHandler(this.Animal_ListBox_SelectedIndexChanged);
+            this.List_Box.FormattingEnabled = true;
+            this.List_Box.Location = new System.Drawing.Point(10, 73);
+            this.List_Box.Name = "List_Box";
+            this.List_Box.Size = new System.Drawing.Size(778, 355);
+            this.List_Box.TabIndex = 2;
             // 
             // AnimalList_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.Animal_ListBox);
+            this.Controls.Add(this.List_Box);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -127,9 +116,7 @@
             this.Load += new System.EventHandler(this.AnimalList_Menu_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -139,6 +126,6 @@
         private System.Windows.Forms.Button Minimize_button;
         private System.Windows.Forms.Button Exit_button;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListBox Animal_ListBox;
+        private System.Windows.Forms.ListBox List_Box;
     }
 }
