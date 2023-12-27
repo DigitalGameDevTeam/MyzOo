@@ -138,6 +138,7 @@
             this.label1.Size = new System.Drawing.Size(369, 60);
             this.label1.TabIndex = 2;
             this.label1.Text = "Adicionar Cela";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Exit_button
             // 
