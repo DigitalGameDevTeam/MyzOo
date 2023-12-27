@@ -44,7 +44,6 @@ namespace MyzOo.View
             CellCrud cell = new CellCrud();
             cell.SetData(id, number, cleaning, description);
 
-
             MessageBox.Show("Registo realizado com sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             this.Hide();

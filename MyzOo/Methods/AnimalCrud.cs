@@ -57,7 +57,7 @@ namespace MyzOo.Methods
         }
 
         //Delete datas
-        public void DeleteData(string id)
+        public void DeleteData(int id)
         {
             try
             {
@@ -70,13 +70,21 @@ namespace MyzOo.Methods
         }
 
         //List of the datas
-        public Dictionary<string, Animal> LoadData()
+        public List<Animal> LoadData()
         {
             try
             {
                 FirebaseResponse al = conn.client.Get("animals");
-                Dictionary<string, Animal> ListData = JsonConvert.DeserializeObject<Dictionary<string, Animal>>(al.Body.ToString());
-                return ListData;
+                Dictionary<string, Animal> listData = JsonConvert.DeserializeObject<Dictionary<string, Animal>>(al.Body.ToString());
+                List<Animal> allData = new List<Animal>();
+
+                // verify
+                foreach (var kvp in listData)
+                {
+                    allData.Add(kvp.Value);
+                }
+
+                return allData;
             }
             catch (Exception)
             {
