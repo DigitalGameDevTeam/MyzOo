@@ -137,5 +137,26 @@ namespace MyzOo
             ver_Employee_Menu.Show();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Food_List food_List = new Food_List();
+            food_List.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            EmployeeList_Menu employeeList_Menu = new EmployeeList_Menu();
+            employeeList_Menu.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Cell_List cell_List = new Cell_List();
+            cell_List.Show();
+            this.Hide();
+        }
     }
 }

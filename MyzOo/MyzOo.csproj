@@ -105,6 +105,12 @@
     <Compile Include="Models\Event.cs" />
     <Compile Include="Models\Food.cs" />
     <Compile Include="Models\Location.cs" />
+    <Compile Include="View\Cell_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cell_List.Designer.cs">
+      <DependentUpon>Cell_List.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Cell_Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +123,12 @@
     <Compile Include="View\Display.Designer.cs">
       <DependentUpon>Display.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\EmployeeList_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\EmployeeList_Menu.Designer.cs">
+      <DependentUpon>EmployeeList_Menu.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Employee_Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +140,12 @@
     </Compile>
     <Compile Include="View\FoodList_menu.Designer.cs">
       <DependentUpon>FoodList_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Food_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Food_List.Designer.cs">
+      <DependentUpon>Food_List.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Food_Menu.cs">
       <SubType>Form</SubType>
@@ -173,17 +191,26 @@
     <EmbeddedResource Include="View\Animal_Menu.resx">
       <DependentUpon>Animal_Menu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\Cell_List.resx">
+      <DependentUpon>Cell_List.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Cell_Menu.resx">
       <DependentUpon>Cell_Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Display.resx">
       <DependentUpon>Display.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\EmployeeList_Menu.resx">
+      <DependentUpon>EmployeeList_Menu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Employee_Menu.resx">
       <DependentUpon>Employee_Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FoodList_menu.resx">
       <DependentUpon>FoodList_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Food_List.resx">
+      <DependentUpon>Food_List.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Food_Menu.resx">
       <DependentUpon>Food_Menu.cs</DependentUpon>
