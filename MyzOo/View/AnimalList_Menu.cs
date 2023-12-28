@@ -53,9 +53,11 @@ namespace MyzOo.View
             if (sender is card clickedCard)
             {
                 int animalID = clickedCard.Id;
-                // Now, you have the animalID for the clicked card
-                // Do something with the animalID
-                MessageBox.Show($"Animal ID: {animalID}");
+                //MessageBox.Show($"Animal ID: {animalID}");
+
+                Ver_Animal_Menu ver_Animal_Menu = new Ver_Animal_Menu(animalID);
+                ver_Animal_Menu.Show();
+                this.Hide();
             }
         }
 

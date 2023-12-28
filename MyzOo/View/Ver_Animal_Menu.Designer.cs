@@ -58,6 +58,7 @@
             this.Food_listbox.Name = "Food_listbox";
             this.Food_listbox.Size = new System.Drawing.Size(210, 21);
             this.Food_listbox.TabIndex = 32;
+            this.Food_listbox.SelectedIndexChanged += new System.EventHandler(this.Food_listbox_SelectedIndexChanged);
             // 
             // Cell_listbox
             // 

@@ -28,5 +28,11 @@ namespace MyzOo.Models
             CellCrud cellCrud = new CellCrud();
             return cellCrud.LoadData();
         }
+
+        public static Cell GetCell(int id)
+        {
+            CellCrud cellCrud = new CellCrud();
+            return cellCrud.GetCell(id);
+        }
     }
 }
