@@ -39,11 +39,7 @@ namespace MyzOo
         {
             //set Menu Colors
             panel1.BackColor = Color.DeepSkyBlue;
-            label1.ForeColor = Color.White;
-
-            TypeFood typeFood = new TypeFood();
-            typeFood.SetData(1, "carne");
-            typeFood.SetData(2, "peixe");
+            label1.ForeColor = Color.White;      
         }
 
         private void AnimalMenu_button_Click(object sender, EventArgs e)

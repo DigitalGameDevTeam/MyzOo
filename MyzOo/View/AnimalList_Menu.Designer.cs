@@ -114,6 +114,7 @@
             this.card1.profileImage = null;
             this.card1.Size = new System.Drawing.Size(762, 81);
             this.card1.TabIndex = 0;
+            this.card1.Load += new System.EventHandler(this.card1_Load_1);
             // 
             // AnimalList_Menu
             // 

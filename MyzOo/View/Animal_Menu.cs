@@ -105,6 +105,10 @@ namespace MyzOo
             
 
             animal.SetData(Id, Name, Date, Checkup, IsDeceased, gender, animalCell.Number, animalFood.Description);
+
+
+            Main_Menu main_Menu = new Main_Menu();
+            main_Menu.Show();
             this.Hide();
         }
 

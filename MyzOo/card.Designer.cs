@@ -53,6 +53,7 @@
             this.Card_Edit_Button.TabIndex = 3;
             this.Card_Edit_Button.Text = "Editar";
             this.Card_Edit_Button.UseVisualStyleBackColor = false;
+            this.Card_Edit_Button.Click += new System.EventHandler(this.Card_Edit_Button_Click);
             // 
             // Card_Delete_Button
             // 
@@ -84,6 +85,9 @@
             this.Controls.Add(this.Card_Name);
             this.Name = "card";
             this.Size = new System.Drawing.Size(762, 81);
+            this.MouseEnter += new System.EventHandler(this.card_MouseEnter);
+            this.MouseLeave += new System.EventHandler(this.card_MouseLeave);
+            this.MouseHover += new System.EventHandler(this.card_MouseHover);
             ((System.ComponentModel.ISupportInitialize)(this.Card_pictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MyzOo.Models;
 using MyzOo.View;
 
 namespace MyzOo.View
@@ -29,18 +30,32 @@ namespace MyzOo.View
         {
             card[] cardList = new card[20];
 
-            for (int i = 0; i < cardList.Length; i++)
+            int count = 0;
+
+            flowLayoutPanel1.Controls.Clear();
+
+            foreach (var animal in Animal.LoadData())
             {
 
-                cardList[i] = new card();
-                cardList[i].Name = "Teste";
+                cardList[count] = new card();
+                cardList[count].Id = animal.Id;
+                cardList[count].Name = animal.Name;
 
-                //if(flowLayoutPanel1.Controls.Count > 0)
-                //{
-                //    flowLayoutPanel1.Controls.Clear();
-                //}
-                //else
-                flowLayoutPanel1.Controls.Add(cardList[i]);
+                flowLayoutPanel1.Controls.Add(cardList[count]);
+
+                cardList[count].Click += Card_Click;
+                    
+            }
+        }
+
+        private void Card_Click(object sender, EventArgs e)
+        {
+            if (sender is card clickedCard)
+            {
+                int animalID = clickedCard.Id;
+                // Now, you have the animalID for the clicked card
+                // Do something with the animalID
+                MessageBox.Show($"Animal ID: {animalID}");
             }
         }
 
@@ -75,6 +90,11 @@ namespace MyzOo.View
         }
 
         private void card1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void card1_Load_1(object sender, EventArgs e)
         {
 
         }

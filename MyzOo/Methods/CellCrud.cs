@@ -20,6 +20,7 @@ namespace MyzOo.Methods
             {
                 Cell set = new Cell()
                 {
+                    Id = id,
                     Number = number,
                     Cleaning = cleaning,
                     Description = description
@@ -39,6 +40,7 @@ namespace MyzOo.Methods
             {
                 Cell set = new Cell()
                 {
+                    Id = id,
                     Number = number,
                     Cleaning = cleaning,
                     Description = description

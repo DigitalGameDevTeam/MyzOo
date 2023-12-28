@@ -40,5 +40,12 @@ namespace MyzOo.Models
             animal.SetData(Id, Name, Date, Checkup, IsDecease, gender, cell, food);
 
         }
+
+        public static List<Animal> LoadData()
+        {
+            AnimalCrud animalCrud = new AnimalCrud();
+            return animalCrud.LoadData();
+        }
+
     }
 }

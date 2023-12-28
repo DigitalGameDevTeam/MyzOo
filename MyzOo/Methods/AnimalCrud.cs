@@ -3,6 +3,7 @@ using MyzOo.Models;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Windows;
 
 namespace MyzOo.Methods
 {
@@ -17,6 +18,7 @@ namespace MyzOo.Methods
             {
                 Animal set = new Animal()
                 {
+                    Id = id,
                     Name = name,
                     Birthday = birthday,
                     Checkup = checkup,
@@ -40,6 +42,7 @@ namespace MyzOo.Methods
             {
                 Animal set = new Animal()
                 {
+                    Id = id,
                     Name = name,
                     Birthday = birthday,
                     Checkup = checkup,
@@ -70,13 +73,28 @@ namespace MyzOo.Methods
         }
 
         //List of the datas
-        public Dictionary<string, Animal> LoadData()
+        public List<Animal> LoadData()
         {
             try
             {
                 FirebaseResponse al = conn.client.Get("animals");
                 Dictionary<string, Animal> ListData = JsonConvert.DeserializeObject<Dictionary<string, Animal>>(al.Body.ToString());
-                return ListData;
+                List<Animal> allData = new List<Animal>();
+
+                if (ListData != null)
+                {
+                    // verify
+                    foreach (var kvp in ListData)
+                    {
+                        allData.Add(kvp.Value);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Vazio", "Aviso", MessageBoxButton.OK, MessageBoxImage.Warning);
+                }
+
+                return allData;
             }
             catch (Exception)
             {

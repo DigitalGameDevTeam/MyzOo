@@ -19,7 +19,8 @@ namespace MyzOo.Methods
             try
             {
                 TypeFood set = new TypeFood()
-                {             
+                {
+                    Id = id,
                     Type = type
                 };
                 var SetData = conn.client.Set("typefood/" + id, set);
@@ -36,6 +37,7 @@ namespace MyzOo.Methods
             {
                 TypeFood set = new TypeFood()
                 {
+                    Id = id,
                     Type = type
                 };
                 var UpdateData = conn.client.Update("typefood/" + id, set);

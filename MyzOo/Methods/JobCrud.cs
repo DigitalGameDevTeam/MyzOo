@@ -21,6 +21,7 @@ namespace MyzOo.Methods
             {
                 Job set = new Job()
                 {
+                    Id = id,
                     Role = role,
                     Salary = salary
                 };
@@ -39,6 +40,7 @@ namespace MyzOo.Methods
             {
                 Job set = new Job()
                 {
+                    Id = id,
                     Role = role,
                     Salary = salary
                 };

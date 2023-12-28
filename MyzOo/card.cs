@@ -17,18 +17,16 @@ namespace MyzOo
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private string _name;
         private Image _profileImage;
+        private int _id;
+
+        [Category("Custom Props")]
+        public int Id
+        {
+            get { return _id; }
+            set { _id = value; }
+        }
 
         [Category("Custom Props")]
         public string Name
@@ -42,6 +40,38 @@ namespace MyzOo
         {
             get { return _profileImage; }
             set { _profileImage = value; Card_pictureBox.Image = value; }
+        }
+
+
+
+        private void card_MouseEnter(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Silver;
+        }
+
+        private void card_MouseHover(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void card_MouseLeave(object sender, EventArgs e)
+        {
+            this.BackColor = Color.White;
+        }
+
+        private void Card_Edit_Button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

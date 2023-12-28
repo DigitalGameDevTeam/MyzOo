@@ -20,6 +20,7 @@ namespace MyzOo.Methods
             {
                 Food set = new Food()
                 {
+                    Id = id,
                     Description = description,
                     TypeFood = typefood,
                     Stock = stock
@@ -39,6 +40,7 @@ namespace MyzOo.Methods
             {
                 Food set = new Food()
                 {
+                    Id = id,
                     Description = description,
                     TypeFood = typefood,
                     Stock = stock
