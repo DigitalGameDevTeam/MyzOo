@@ -43,7 +43,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.Exit_button = new System.Windows.Forms.Button();
-            this.Edit_button = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.Gender_listbox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -54,9 +55,9 @@
             this.Food_listbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Food_listbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Food_listbox.FormattingEnabled = true;
-            this.Food_listbox.Location = new System.Drawing.Point(361, 335);
+            this.Food_listbox.Location = new System.Drawing.Point(344, 308);
             this.Food_listbox.Name = "Food_listbox";
-            this.Food_listbox.Size = new System.Drawing.Size(210, 21);
+            this.Food_listbox.Size = new System.Drawing.Size(224, 21);
             this.Food_listbox.TabIndex = 32;
             this.Food_listbox.SelectedIndexChanged += new System.EventHandler(this.Food_listbox_SelectedIndexChanged);
             // 
@@ -66,7 +67,7 @@
             this.Cell_listbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Cell_listbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Cell_listbox.FormattingEnabled = true;
-            this.Cell_listbox.Location = new System.Drawing.Point(347, 300);
+            this.Cell_listbox.Location = new System.Drawing.Point(344, 275);
             this.Cell_listbox.Name = "Cell_listbox";
             this.Cell_listbox.Size = new System.Drawing.Size(224, 21);
             this.Cell_listbox.TabIndex = 31;
@@ -74,7 +75,7 @@
             // Birthday_Calendar
             // 
             this.Birthday_Calendar.BackColor = System.Drawing.Color.LightGray;
-            this.Birthday_Calendar.Location = new System.Drawing.Point(344, 120);
+            this.Birthday_Calendar.Location = new System.Drawing.Point(344, 101);
             this.Birthday_Calendar.Name = "Birthday_Calendar";
             this.Birthday_Calendar.SelectionRange = new System.Windows.Forms.SelectionRange(new System.DateTime(2023, 11, 15, 0, 0, 0, 0), new System.DateTime(2023, 11, 21, 0, 0, 0, 0));
             this.Birthday_Calendar.ShowToday = false;
@@ -101,7 +102,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label7.Location = new System.Drawing.Point(237, 337);
+            this.label7.Location = new System.Drawing.Point(219, 310);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(121, 15);
             this.label7.TabIndex = 28;
@@ -113,7 +114,7 @@
             this.Checkup_Box.BackColor = System.Drawing.Color.Transparent;
             this.Checkup_Box.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Checkup_Box.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.Checkup_Box.Location = new System.Drawing.Point(139, 294);
+            this.Checkup_Box.Location = new System.Drawing.Point(72, 288);
             this.Checkup_Box.Name = "Checkup_Box";
             this.Checkup_Box.Size = new System.Drawing.Size(73, 19);
             this.Checkup_Box.TabIndex = 27;
@@ -125,7 +126,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label6.Location = new System.Drawing.Point(237, 300);
+            this.label6.Location = new System.Drawing.Point(238, 277);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(103, 15);
             this.label6.TabIndex = 26;
@@ -136,7 +137,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label3.Location = new System.Drawing.Point(230, 120);
+            this.label3.Location = new System.Drawing.Point(230, 101);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(104, 15);
             this.label3.TabIndex = 25;
@@ -149,7 +150,7 @@
             this.Name_Box.Enabled = false;
             this.Name_Box.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
             this.Name_Box.ForeColor = System.Drawing.Color.Black;
-            this.Name_Box.Location = new System.Drawing.Point(344, 90);
+            this.Name_Box.Location = new System.Drawing.Point(344, 71);
             this.Name_Box.Name = "Name_Box";
             this.Name_Box.Size = new System.Drawing.Size(227, 14);
             this.Name_Box.TabIndex = 24;
@@ -159,7 +160,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label2.Location = new System.Drawing.Point(230, 90);
+            this.label2.Location = new System.Drawing.Point(230, 71);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(110, 15);
             this.label2.TabIndex = 23;
@@ -168,7 +169,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 82);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 63);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(200, 200);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -214,28 +215,35 @@
             this.Exit_button.UseVisualStyleBackColor = false;
             this.Exit_button.Click += new System.EventHandler(this.Exit_button_Click);
             // 
-            // Edit_button
+            // label5
             // 
-            this.Edit_button.BackColor = System.Drawing.Color.Transparent;
-            this.Edit_button.FlatAppearance.BorderSize = 0;
-            this.Edit_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
-            this.Edit_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
-            this.Edit_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Edit_button.ForeColor = System.Drawing.Color.Black;
-            this.Edit_button.Location = new System.Drawing.Point(22, 292);
-            this.Edit_button.Name = "Edit_button";
-            this.Edit_button.Size = new System.Drawing.Size(75, 23);
-            this.Edit_button.TabIndex = 33;
-            this.Edit_button.Text = "Editar";
-            this.Edit_button.UseVisualStyleBackColor = false;
-            this.Edit_button.Click += new System.EventHandler(this.Edit_button_Click);
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
+            this.label5.Location = new System.Drawing.Point(272, 341);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(62, 15);
+            this.label5.TabIndex = 34;
+            this.label5.Text = "Genero : ";
+            // 
+            // Gender_listbox
+            // 
+            this.Gender_listbox.BackColor = System.Drawing.Color.LightGray;
+            this.Gender_listbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Gender_listbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Gender_listbox.FormattingEnabled = true;
+            this.Gender_listbox.Location = new System.Drawing.Point(344, 341);
+            this.Gender_listbox.Name = "Gender_listbox";
+            this.Gender_listbox.Size = new System.Drawing.Size(224, 21);
+            this.Gender_listbox.TabIndex = 33;
             // 
             // Ver_Animal_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(599, 417);
-            this.Controls.Add(this.Edit_button);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.Gender_listbox);
             this.Controls.Add(this.Food_listbox);
             this.Controls.Add(this.Cell_listbox);
             this.Controls.Add(this.Birthday_Calendar);
@@ -278,6 +286,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Exit_button;
-        private System.Windows.Forms.Button Edit_button;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox Gender_listbox;
     }
 }

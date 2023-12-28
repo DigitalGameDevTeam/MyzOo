@@ -69,7 +69,7 @@ namespace MyzOo
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Card_Delete_Button_Click(object sender, EventArgs e)
         {
 
         }

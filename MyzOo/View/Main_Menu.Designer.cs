@@ -43,7 +43,6 @@
             this.AnimalMenu_button = new System.Windows.Forms.Button();
             this.Food_Menu_button = new System.Windows.Forms.Button();
             this.Cell_Menu_button = new System.Windows.Forms.Button();
-            this.Ver_Animal_Menu_button = new System.Windows.Forms.Button();
             this.VerComida_button = new System.Windows.Forms.Button();
             this.VerEmployee_button = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -262,23 +261,6 @@
             this.Cell_Menu_button.UseVisualStyleBackColor = false;
             this.Cell_Menu_button.Click += new System.EventHandler(this.Cell_Menu_button_Click);
             // 
-            // Ver_Animal_Menu_button
-            // 
-            this.Ver_Animal_Menu_button.BackColor = System.Drawing.Color.Silver;
-            this.Ver_Animal_Menu_button.FlatAppearance.BorderSize = 0;
-            this.Ver_Animal_Menu_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.Ver_Animal_Menu_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.Ver_Animal_Menu_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Ver_Animal_Menu_button.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Ver_Animal_Menu_button.ForeColor = System.Drawing.Color.Black;
-            this.Ver_Animal_Menu_button.Location = new System.Drawing.Point(664, 105);
-            this.Ver_Animal_Menu_button.Name = "Ver_Animal_Menu_button";
-            this.Ver_Animal_Menu_button.Size = new System.Drawing.Size(129, 36);
-            this.Ver_Animal_Menu_button.TabIndex = 8;
-            this.Ver_Animal_Menu_button.Text = "Ver Animal";
-            this.Ver_Animal_Menu_button.UseVisualStyleBackColor = false;
-            this.Ver_Animal_Menu_button.Click += new System.EventHandler(this.Ver_Animal_Menu_button_Click);
-            // 
             // VerComida_button
             // 
             this.VerComida_button.AutoSize = true;
@@ -326,7 +308,6 @@
             this.Controls.Add(this.VerEmployee_button);
             this.Controls.Add(this.AnimalList_Menu_button);
             this.Controls.Add(this.VerComida_button);
-            this.Controls.Add(this.Ver_Animal_Menu_button);
             this.Controls.Add(this.Cell_Menu_button);
             this.Controls.Add(this.Food_Menu_button);
             this.Controls.Add(this.AnimalMenu_button);
@@ -359,7 +340,6 @@
         private System.Windows.Forms.PictureBox Perfil_image_picture;
         private System.Windows.Forms.Button Food_Menu_button;
         private System.Windows.Forms.Button Cell_Menu_button;
-        private System.Windows.Forms.Button Ver_Animal_Menu_button;
         private System.Windows.Forms.Button Employee_Menu_button;
         private System.Windows.Forms.Button AnimalList_Menu_button;
         private System.Windows.Forms.Button Ver_Menu_Button;

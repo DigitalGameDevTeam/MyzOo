@@ -129,7 +129,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label3.Location = new System.Drawing.Point(230, 101);
+            this.label3.Location = new System.Drawing.Point(234, 101);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(104, 15);
             this.label3.TabIndex = 4;
@@ -140,7 +140,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label6.Location = new System.Drawing.Point(237, 281);
+            this.label6.Location = new System.Drawing.Point(231, 281);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(103, 15);
             this.label6.TabIndex = 10;
@@ -165,7 +165,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label7.Location = new System.Drawing.Point(237, 318);
+            this.label7.Location = new System.Drawing.Point(213, 318);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(121, 15);
             this.label7.TabIndex = 13;
@@ -215,9 +215,9 @@
             this.Food_listbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Food_listbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Food_listbox.FormattingEnabled = true;
-            this.Food_listbox.Location = new System.Drawing.Point(361, 316);
+            this.Food_listbox.Location = new System.Drawing.Point(347, 316);
             this.Food_listbox.Name = "Food_listbox";
-            this.Food_listbox.Size = new System.Drawing.Size(210, 21);
+            this.Food_listbox.Size = new System.Drawing.Size(224, 21);
             this.Food_listbox.TabIndex = 20;
             // 
             // backgroundWorker1
@@ -241,9 +241,9 @@
             this.Gender_listbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Gender_listbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Gender_listbox.FormattingEnabled = true;
-            this.Gender_listbox.Location = new System.Drawing.Point(361, 351);
+            this.Gender_listbox.Location = new System.Drawing.Point(347, 351);
             this.Gender_listbox.Name = "Gender_listbox";
-            this.Gender_listbox.Size = new System.Drawing.Size(210, 21);
+            this.Gender_listbox.Size = new System.Drawing.Size(224, 21);
             this.Gender_listbox.TabIndex = 22;
             // 
             // label5
@@ -251,11 +251,11 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label5.Location = new System.Drawing.Point(300, 353);
+            this.label5.Location = new System.Drawing.Point(276, 353);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(58, 15);
+            this.label5.Size = new System.Drawing.Size(62, 15);
             this.label5.TabIndex = 23;
-            this.label5.Text = "Genero: ";
+            this.label5.Text = "Genero : ";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // Animal_Menu
