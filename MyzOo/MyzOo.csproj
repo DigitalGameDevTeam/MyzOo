@@ -125,12 +125,6 @@
     <Compile Include="View\Cell_Menu.Designer.cs">
       <DependentUpon>Cell_Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Display.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="View\Display.Designer.cs">
-      <DependentUpon>Display.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\EmployeeList_Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,9 +201,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Cell_Menu.resx">
       <DependentUpon>Cell_Menu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\Display.resx">
-      <DependentUpon>Display.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\EmployeeList_Menu.resx">
       <DependentUpon>EmployeeList_Menu.cs</DependentUpon>
