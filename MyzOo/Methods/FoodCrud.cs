@@ -20,6 +20,7 @@ namespace MyzOo.Methods
             {
                 Food set = new Food()
                 {
+                    Id = id,
                     Description = description,
                     TypeFood = typefood,
                     Stock = stock
@@ -39,6 +40,7 @@ namespace MyzOo.Methods
             {
                 Food set = new Food()
                 {
+                    Id = id,
                     Description = description,
                     TypeFood = typefood,
                     Stock = stock
@@ -80,6 +82,28 @@ namespace MyzOo.Methods
                 }
                 
                 return allData;
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Error");
+                return null;
+            }
+        }
+
+        public Food GetFood(int id)
+        {
+            try
+            {
+                var GetData = conn.client.Get("foods/" + id);
+
+                if (GetData.Body == "null")
+                {
+                    Console.WriteLine($"No data found for foods with ID {id}");
+                    return null;
+                }
+
+                Food food = JsonConvert.DeserializeObject<Food>(GetData.Body.ToString());
+                return food;
             }
             catch (Exception)
             {

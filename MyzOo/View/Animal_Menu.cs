@@ -30,8 +30,7 @@ namespace MyzOo
             {
                 Cell_listbox.Items.Add(cell.Number);
             }
-
-            
+        
             Animal.Gender[] genders = (Animal.Gender[])Enum.GetValues(typeof(Animal.Gender));
 
             foreach (var gender in genders)
@@ -105,6 +104,10 @@ namespace MyzOo
             
 
             animal.SetData(Id, Name, Date, Checkup, IsDeceased, gender, animalCell.Number, animalFood.Description);
+
+
+            Main_Menu main_Menu = new Main_Menu();
+            main_Menu.Show();
             this.Hide();
         }
 
@@ -124,6 +127,11 @@ namespace MyzOo
         }
 
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

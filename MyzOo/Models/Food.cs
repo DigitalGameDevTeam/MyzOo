@@ -31,5 +31,11 @@ namespace MyzOo.Models
             FoodCrud foodCrud = new FoodCrud();
             return foodCrud.LoadData();
         }
+
+        public static Food GetFood(int id)
+        {
+            FoodCrud foodCrud = new FoodCrud();
+            return foodCrud.GetFood(id);
+        }
     }
 }

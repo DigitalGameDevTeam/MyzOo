@@ -22,6 +22,7 @@ namespace MyzOo.Methods
             {
                 Employee set = new Employee()
                 {
+                    Id = id,
                     Name = name,
                     Birthday = birthday,
                     Checkup = checkup,
@@ -44,6 +45,7 @@ namespace MyzOo.Methods
             {
                 Employee set = new Employee()
                 {
+                    Id = id,
                     Name = name,
                     Birthday = birthday,
                     Checkup = checkup,

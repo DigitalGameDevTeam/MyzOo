@@ -78,12 +78,20 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="card.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="card.Designer.cs">
+      <DependentUpon>card.cs</DependentUpon>
+    </Compile>
     <Compile Include="Methods\AnimalCrud.cs" />
     <Compile Include="Methods\CellCrud.cs" />
+    <Compile Include="Methods\ClientCrud.cs" />
     <Compile Include="Methods\EmployeeCrud.cs" />
     <Compile Include="Methods\FoodCrud.cs" />
     <Compile Include="Methods\JobCrud.cs" />
     <Compile Include="Methods\TypeFoodCrud.cs" />
+    <Compile Include="Models\Client.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\Firebase.cs" />
     <Compile Include="Models\TypeFood.cs" />
@@ -185,6 +193,9 @@
     <Compile Include="View\Ver_Employee_Menu.Designer.cs">
       <DependentUpon>Ver_Employee_Menu.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="card.resx">
+      <DependentUpon>card.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\AnimalList_Menu.resx">
       <DependentUpon>AnimalList_Menu.cs</DependentUpon>
     </EmbeddedResource>

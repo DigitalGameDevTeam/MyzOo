@@ -33,12 +33,42 @@ namespace MyzOo.Models
 
         public static List<Animal> AnimalList = new List<Animal>();
 
+        
+        AnimalCrud animal = new AnimalCrud();
+
         // Save animal data
         public void SetData(int Id, string Name, DateTime Date, bool Checkup, bool IsDecease, string gender, int cell, string food)
         {
-            AnimalCrud animal = new AnimalCrud();
+            
             animal.SetData(Id, Name, Date, Checkup, IsDecease, gender, cell, food);
 
         }
+
+        public void UpdateData(int Id, string Name, DateTime Date, bool Checkup, bool IsDecease, string gender, int cell, string food)
+        {
+
+            animal.UpdateData(Id, Name, Date, Checkup, IsDecease, gender, cell, food);
+
+        }
+
+        public void DeleteData(int Id, string Name)
+        {
+
+            animal.DeleteData(Id, Name);
+
+        }
+
+        public static List<Animal> LoadData()
+        {
+            AnimalCrud animalCrud = new AnimalCrud();
+            return animalCrud.LoadData();
+        }
+
+        public static Animal GetAnimal(int id) 
+        {
+            AnimalCrud animalCrud = new AnimalCrud();
+            return animalCrud.GetAnimal(id);
+        }
+
     }
 }

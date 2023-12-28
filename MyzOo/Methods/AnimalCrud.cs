@@ -3,6 +3,8 @@ using MyzOo.Models;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Windows;
+using System.Xml.Linq;
 
 namespace MyzOo.Methods
 {
@@ -17,6 +19,7 @@ namespace MyzOo.Methods
             {
                 Animal set = new Animal()
                 {
+                    Id = id,
                     Name = name,
                     Birthday = birthday,
                     Checkup = checkup,
@@ -26,6 +29,9 @@ namespace MyzOo.Methods
                     AnimalFood = animalFood
                 };
                 var SetData = conn.client.Set("animals/" + id, set);
+
+                MessageBox.Show("Animal Criado com sucesso", "Aviso", MessageBoxButton.OK, MessageBoxImage.Warning);
+
             }
             catch (Exception)
             {
@@ -40,6 +46,7 @@ namespace MyzOo.Methods
             {
                 Animal set = new Animal()
                 {
+                    Id = id,
                     Name = name,
                     Birthday = birthday,
                     Checkup = checkup,
@@ -48,7 +55,10 @@ namespace MyzOo.Methods
                     IsDeceased = isDeceased,
                     AnimalGender = animalGender
                 };
-                var SetData = conn.client.Set("animals/" + id, set);
+                var SetData = conn.client.Update("animals/" + id, set);
+
+                MessageBox.Show($"Animal {name} Atualizado com sucesso", "Aviso", MessageBoxButton.OK, MessageBoxImage.Warning);
+
             }
             catch (Exception)
             {
@@ -57,11 +67,13 @@ namespace MyzOo.Methods
         }
 
         //Delete datas
-        public void DeleteData(string id)
+        public void DeleteData(int id, string name)
         {
             try
             {
                 var SetData = conn.client.Delete("animals/" + id);
+
+                MessageBox.Show($"Animal {name} Apagado com sucesso", "Aviso", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
             catch (Exception)
             {
@@ -70,13 +82,28 @@ namespace MyzOo.Methods
         }
 
         //List of the datas
-        public Dictionary<string, Animal> LoadData()
+        public List<Animal> LoadData()
         {
             try
             {
                 FirebaseResponse al = conn.client.Get("animals");
                 Dictionary<string, Animal> ListData = JsonConvert.DeserializeObject<Dictionary<string, Animal>>(al.Body.ToString());
-                return ListData;
+                List<Animal> allData = new List<Animal>();
+
+                if (ListData != null)
+                {
+                    // verify
+                    foreach (var kvp in ListData)
+                    {
+                        allData.Add(kvp.Value);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Vazio", "Aviso", MessageBoxButton.OK, MessageBoxImage.Warning);
+                }
+
+                return allData;
             }
             catch (Exception)
             {

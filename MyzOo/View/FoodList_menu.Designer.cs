@@ -40,9 +40,9 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Name_Box = new System.Windows.Forms.TextBox();
             this.Edit_button = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -58,6 +58,7 @@
             this.label1.Size = new System.Drawing.Size(505, 60);
             this.label1.TabIndex = 2;
             this.label1.Text = "Inspecionar Comida";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Exit_button
             // 
@@ -180,16 +181,6 @@
             this.label2.TabIndex = 48;
             this.label2.Text = "Nome da Comida :";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 64);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 47;
-            this.pictureBox1.TabStop = false;
-            // 
             // Name_Box
             // 
             this.Name_Box.BackColor = System.Drawing.Color.LightGray;
@@ -218,6 +209,16 @@
             this.Edit_button.Text = "Editar";
             this.Edit_button.UseVisualStyleBackColor = false;
             this.Edit_button.Click += new System.EventHandler(this.Edit_button_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 64);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 47;
+            this.pictureBox1.TabStop = false;
             // 
             // FoodList_menu
             // 
@@ -263,8 +264,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox Name_Box;
         private System.Windows.Forms.Button Edit_button;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

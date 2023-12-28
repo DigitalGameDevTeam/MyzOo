@@ -13,13 +13,13 @@ namespace MyzOo.Methods
     {
         Firebase conn = new Firebase();
 
-        //set datas to database
         public void SetData(int id, int number, bool cleaning, string description)
         {
             try
             {
                 Cell set = new Cell()
                 {
+                    Id = id,
                     Number = number,
                     Cleaning = cleaning,
                     Description = description
@@ -32,13 +32,13 @@ namespace MyzOo.Methods
             }
         }
 
-        //Update datas
         public void UpdateData(int id, int number, bool cleaning, string description)
         {
             try
             {
                 Cell set = new Cell()
                 {
+                    Id = id,
                     Number = number,
                     Cleaning = cleaning,
                     Description = description
@@ -51,7 +51,6 @@ namespace MyzOo.Methods
             }
         }
 
-        //Delete datas
         public void DeleteData(int id)
         {
             try
@@ -64,7 +63,6 @@ namespace MyzOo.Methods
             }
         }
 
-        //List of the data
         public List<Cell> LoadData()
         {
             try
@@ -80,6 +78,28 @@ namespace MyzOo.Methods
                 }
 
                 return allData;
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Error");
+                return null;
+            }
+        }
+
+        public Cell GetCell(int id)
+        {
+            try
+            {
+                var GetData = conn.client.Get("cells/" + id);
+
+                if (GetData.Body == "null")
+                {
+                    Console.WriteLine($"No data found for Cell with ID {id}");
+                    return null;
+                }
+
+                Cell cell = JsonConvert.DeserializeObject<Cell>(GetData.Body.ToString());
+                return cell;
             }
             catch (Exception)
             {
