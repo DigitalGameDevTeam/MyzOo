@@ -44,6 +44,20 @@ namespace MyzOo.Models
 
         }
 
+        public void UpdateData(int Id, string Name, DateTime Date, bool Checkup, bool IsDecease, string gender, int cell, string food)
+        {
+
+            animal.UpdateData(Id, Name, Date, Checkup, IsDecease, gender, cell, food);
+
+        }
+
+        public void DeleteData(int Id, string Name)
+        {
+
+            animal.DeleteData(Id, Name);
+
+        }
+
         public static List<Animal> LoadData()
         {
             AnimalCrud animalCrud = new AnimalCrud();

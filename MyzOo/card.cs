@@ -35,15 +35,6 @@ namespace MyzOo
             set {  _name = value; Card_Name.Text = value; } 
         }
 
-        [Category("Custom Props")]
-        public Image profileImage
-        {
-            get { return _profileImage; }
-            set { _profileImage = value; Card_pictureBox.Image = value; }
-        }
-
-
-
         private void card_MouseEnter(object sender, EventArgs e)
         {
             this.BackColor = Color.Silver;

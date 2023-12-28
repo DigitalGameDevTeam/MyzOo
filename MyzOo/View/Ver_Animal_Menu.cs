@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static MyzOo.Models.Animal;
 
 namespace MyzOo.View
 {
@@ -61,32 +62,6 @@ namespace MyzOo.View
         }
         private void Edit_button_Click(object sender, EventArgs e)
         {
-           
-            //switch (op)
-            //{
-            //    //change Menu to Editar
-            //    case 1:
-            //        op = 2;
-            //        label1.Text = "Editar Animal";
-            //        Edit_button.Text = "Inspecionar";
-            //        Name_Box.Enabled = true;
-            //        Birthday_Calendar.Enabled = true;
-            //        Cell_listbox.Enabled = true;
-            //        Food_listbox.Enabled = true;
-            //        Checkup_Box.Enabled = true;
-            //        break;
-            //    //change Menu to Inspecionar
-            //    case 2:
-            //        op = 1;
-            //        label1.Text = "Inspecionar Animal";
-            //        Edit_button.Text = "Editar";
-            //        Name_Box.Enabled = false;
-            //        Birthday_Calendar.Enabled = false;
-            //        Cell_listbox.Enabled = false;
-            //        Food_listbox.Enabled = false;
-            //        Checkup_Box.Enabled = false;
-            //        break;
-            //}
         }
 
         private void Exit_button_Click(object sender, EventArgs e)
@@ -99,11 +74,49 @@ namespace MyzOo.View
 
         private void Regist_button_Click(object sender, EventArgs e)
         {
+            Animal animal = new Animal();
 
+            int Id = animalID;
+
+            // Animal Info
+            string Name = Name_Box.Text;
+            DateTime Date = Birthday_Calendar.SelectionRange.Start;
+            bool Checkup = Checkup_Box.Checked;
+            bool IsDeceased = Decease_Box.Checked;
+
+            string gender = Gender_listbox.Text;
+
+            // Retrieve selected cell and food values
+            // Food
+            string foodName = Food_listbox.Text;
+            Food animalFood = Food.LoadData().FirstOrDefault(tf => tf.Description == foodName);
+
+            // Cell
+            int callDescription = Convert.ToInt32(Cell_listbox.Text);
+            Cell animalCell = Cell.LoadData().FirstOrDefault(tf => tf.Number == callDescription);
+
+            animal.UpdateData(Id, Name, Date, Checkup, IsDeceased, gender, animalCell.Number, animalFood.Description);
+
+            AnimalList_Menu animalList_Menu = new AnimalList_Menu();
+            animalList_Menu.Show();
+            this.Hide();
         }
 
         private void Food_listbox_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void Delete_Button_Click(object sender, EventArgs e)
+        {
+            int Id = animalID;
+            string Name = Name_Box.Text;
+
+            animal.DeleteData(Id, Name);
+
+            AnimalList_Menu animalList_Menu = new AnimalList_Menu();
+            animalList_Menu.Show();
+            this.Hide();
 
         }
     }

@@ -30,8 +30,7 @@ namespace MyzOo
             {
                 Cell_listbox.Items.Add(cell.Number);
             }
-
-            
+        
             Animal.Gender[] genders = (Animal.Gender[])Enum.GetValues(typeof(Animal.Gender));
 
             foreach (var gender in genders)

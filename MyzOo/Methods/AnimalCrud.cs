@@ -4,6 +4,7 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Windows;
+using System.Xml.Linq;
 
 namespace MyzOo.Methods
 {
@@ -28,6 +29,9 @@ namespace MyzOo.Methods
                     AnimalFood = animalFood
                 };
                 var SetData = conn.client.Set("animals/" + id, set);
+
+                MessageBox.Show("Animal Criado com sucesso", "Aviso", MessageBoxButton.OK, MessageBoxImage.Warning);
+
             }
             catch (Exception)
             {
@@ -51,7 +55,10 @@ namespace MyzOo.Methods
                     IsDeceased = isDeceased,
                     AnimalGender = animalGender
                 };
-                var SetData = conn.client.Set("animals/" + id, set);
+                var SetData = conn.client.Update("animals/" + id, set);
+
+                MessageBox.Show($"Animal {name} Atualizado com sucesso", "Aviso", MessageBoxButton.OK, MessageBoxImage.Warning);
+
             }
             catch (Exception)
             {
@@ -60,11 +67,13 @@ namespace MyzOo.Methods
         }
 
         //Delete datas
-        public void DeleteData(string id)
+        public void DeleteData(int id, string name)
         {
             try
             {
                 var SetData = conn.client.Delete("animals/" + id);
+
+                MessageBox.Show($"Animal {name} Apagado com sucesso", "Aviso", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
             catch (Exception)
             {
