@@ -37,7 +37,7 @@ namespace MyzOo.View
             // Generate a random ID with 4 numbers
             int id = random.Next(1000, 10000);
             
-            int number = Convert.ToInt32(Cellnumber_Box.Text);
+            int number = (int)Cell_Number.Value;
             bool cleaning = Checkup_Box.Checked;
             string description = CellDescription_textbox.Text;
 

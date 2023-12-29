@@ -32,15 +32,16 @@
             this.CellDescription_textbox = new System.Windows.Forms.TextBox();
             this.Regist_button = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.Cellnumber_Box = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.Exit_button = new System.Windows.Forms.Button();
             this.Checkup_Box = new System.Windows.Forms.CheckBox();
+            this.Cell_Number = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Cell_Number)).BeginInit();
             this.SuspendLayout();
             // 
             // CellDescription_textbox
@@ -64,7 +65,7 @@
             this.Regist_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
             this.Regist_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Regist_button.ForeColor = System.Drawing.Color.Black;
-            this.Regist_button.Location = new System.Drawing.Point(495, 323);
+            this.Regist_button.Location = new System.Drawing.Point(495, 310);
             this.Regist_button.Name = "Regist_button";
             this.Regist_button.Size = new System.Drawing.Size(75, 23);
             this.Regist_button.TabIndex = 41;
@@ -82,18 +83,6 @@
             this.label3.Size = new System.Drawing.Size(116, 15);
             this.label3.TabIndex = 39;
             this.label3.Text = "Descrição da Cela:";
-            // 
-            // Cellnumber_Box
-            // 
-            this.Cellnumber_Box.BackColor = System.Drawing.Color.LightGray;
-            this.Cellnumber_Box.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Cellnumber_Box.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.Cellnumber_Box.ForeColor = System.Drawing.Color.Black;
-            this.Cellnumber_Box.Location = new System.Drawing.Point(343, 78);
-            this.Cellnumber_Box.Name = "Cellnumber_Box";
-            this.Cellnumber_Box.Size = new System.Drawing.Size(70, 14);
-            this.Cellnumber_Box.TabIndex = 38;
-            this.Cellnumber_Box.TextChanged += new System.EventHandler(this.Cellnumber_Box_TextChanged);
             // 
             // label2
             // 
@@ -162,35 +151,43 @@
             this.Checkup_Box.BackColor = System.Drawing.Color.Transparent;
             this.Checkup_Box.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Checkup_Box.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.Checkup_Box.Location = new System.Drawing.Point(265, 298);
+            this.Checkup_Box.Location = new System.Drawing.Point(73, 282);
             this.Checkup_Box.Name = "Checkup_Box";
             this.Checkup_Box.Size = new System.Drawing.Size(70, 19);
             this.Checkup_Box.TabIndex = 43;
             this.Checkup_Box.Text = "Limpeza";
             this.Checkup_Box.UseVisualStyleBackColor = false;
             // 
-            // Cell_Menu
+            // Cell_Number
+            // 
+            this.Cell_Number.Location = new System.Drawing.Point(344, 77);
+            this.Cell_Number.Name = "Cell_Number";
+            this.Cell_Number.Size = new System.Drawing.Size(120, 20);
+            this.Cell_Number.TabIndex = 44;
+            // 
+            // CellData_Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(599, 359);
+            this.Controls.Add(this.Cell_Number);
             this.Controls.Add(this.Checkup_Box);
             this.Controls.Add(this.CellDescription_textbox);
             this.Controls.Add(this.Regist_button);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.Cellnumber_Box);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Cell_Menu";
+            this.Name = "CellData_Register";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cell_Menu";
             this.Load += new System.EventHandler(this.Cell_Menu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Cell_Number)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,12 +197,12 @@
         private System.Windows.Forms.TextBox CellDescription_textbox;
         private System.Windows.Forms.Button Regist_button;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox Cellnumber_Box;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Exit_button;
         private System.Windows.Forms.CheckBox Checkup_Box;
+        private System.Windows.Forms.NumericUpDown Cell_Number;
     }
 }
