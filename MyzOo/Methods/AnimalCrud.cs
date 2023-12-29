@@ -30,7 +30,7 @@ namespace MyzOo.Methods
                 };
                 var SetData = conn.client.Set("animals/" + id, set);
 
-                MessageBox.Show("Animal Criado com sucesso", "Aviso", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show($"Animal {name} Registado com sucesso", "Aviso", MessageBoxButton.OK, MessageBoxImage.Warning);
 
             }
             catch (Exception)

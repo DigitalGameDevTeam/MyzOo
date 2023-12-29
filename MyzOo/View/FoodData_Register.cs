@@ -65,8 +65,6 @@ namespace MyzOo.View
             FoodCrud food = new FoodCrud();
             food.SetData(Id, description, typeFood.Type, Stock);
 
-            MessageBox.Show($"Registo realizado com sucesso '{description}' ", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
             Main_Menu main_Menu = new Main_Menu();
             main_Menu.Show();
             this.Hide();
