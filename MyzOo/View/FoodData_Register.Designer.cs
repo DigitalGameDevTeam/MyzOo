@@ -35,13 +35,14 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.Exit_button = new System.Windows.Forms.Button();
-            this.Stock_textbox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.TypeFood_listbox = new System.Windows.Forms.ComboBox();
             this.Food_desciption_textbox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.Stock_Number = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Stock_Number)).BeginInit();
             this.SuspendLayout();
             // 
             // Regist_button
@@ -122,18 +123,6 @@
             this.Exit_button.UseVisualStyleBackColor = false;
             this.Exit_button.Click += new System.EventHandler(this.Exit_button_Click);
             // 
-            // Stock_textbox
-            // 
-            this.Stock_textbox.BackColor = System.Drawing.Color.LightGray;
-            this.Stock_textbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Stock_textbox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.Stock_textbox.ForeColor = System.Drawing.Color.Black;
-            this.Stock_textbox.Location = new System.Drawing.Point(471, 280);
-            this.Stock_textbox.Name = "Stock_textbox";
-            this.Stock_textbox.Size = new System.Drawing.Size(116, 14);
-            this.Stock_textbox.TabIndex = 34;
-            this.Stock_textbox.TextChanged += new System.EventHandler(this.Stock_textbox_TextChanged);
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -179,16 +168,23 @@
             this.label3.TabIndex = 57;
             this.label3.Text = "Descrição da Comida:";
             // 
+            // Stock_Number
+            // 
+            this.Stock_Number.Location = new System.Drawing.Point(467, 279);
+            this.Stock_Number.Name = "Stock_Number";
+            this.Stock_Number.Size = new System.Drawing.Size(120, 20);
+            this.Stock_Number.TabIndex = 61;
+            // 
             // Food_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(599, 359);
+            this.Controls.Add(this.Stock_Number);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.TypeFood_listbox);
             this.Controls.Add(this.Food_desciption_textbox);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.Stock_textbox);
             this.Controls.Add(this.Regist_button);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.pictureBox1);
@@ -202,6 +198,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Stock_Number)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -214,10 +211,10 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Exit_button;
-        private System.Windows.Forms.TextBox Stock_textbox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox TypeFood_listbox;
         private System.Windows.Forms.TextBox Food_desciption_textbox;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.NumericUpDown Stock_Number;
     }
 }

@@ -54,7 +54,7 @@ namespace MyzOo.View
             TypeFood typeFood = TypeFood.LoadData().FirstOrDefault(tf => tf.Type == typeName);
             //TypeFood typeFood = TypeFood.TypeFoodList.FirstOrDefault(tf => tf.Type == typeName);   
 
-            int Stock = Convert.ToInt32(Stock_textbox.Text);
+            int Stock = (int)Stock_Number.Value;
 
             // Create an instance of the Random class
             Random random = new Random();
