@@ -15,15 +15,27 @@ namespace MyzOo.Models
     {
         public int Id { get; set; }
         public string Description { get; set; }
-        public int TypeFood { get; set; }
+        public string TypeFood { get; set; }
         public int Stock { get; set; }
 
         public static List<Food> FoodList = new List<Food>();
 
-        public void SetData(int id, string description, int typeFood, int stock)
+        public void SetData(int id, string description, string typeFood, int stock)
         {
             FoodCrud food = new FoodCrud();
             food.SetData(id, description, typeFood, stock);
+        }
+
+        public void UpdateData(int id, string description, string typeFood, int stock)
+        {
+            FoodCrud food = new FoodCrud();
+            food.UpdateData(id, description, typeFood, stock);
+        }
+
+        public void DeleteData(int id, string description)
+        {
+            FoodCrud food = new FoodCrud();
+            food.DeleteData(id, description);
         }
 
         public static List<Food> LoadData()

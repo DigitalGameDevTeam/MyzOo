@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MyzOo.View
 {
-    public partial class Food_List : Form
+    public partial class EmployeeList : Form
     {
-        public Food_List()
+        public EmployeeList()
         {
             InitializeComponent();
         }
@@ -27,6 +27,11 @@ namespace MyzOo.View
         private void Minimize_button_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

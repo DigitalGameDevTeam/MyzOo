@@ -4,9 +4,9 @@ using System.Windows.Forms;
 
 namespace MyzOo.View
 {
-    public partial class Cell_Menu : Form
+    public partial class CellData_Register : Form
     {
-        public Cell_Menu()
+        public CellData_Register()
         {
             InitializeComponent();
         }

@@ -5,6 +5,8 @@ using MyzOo.View;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Windows;
+using System.Xml.Linq;
 
 namespace MyzOo.Methods
 
@@ -14,7 +16,7 @@ namespace MyzOo.Methods
         Firebase conn = new Firebase();
 
         //set datas to database
-        public void SetData(int id, string description, int typefood, int stock)
+        public void SetData(int id, string description, string typefood, int stock)
         {
             try
             {
@@ -26,6 +28,9 @@ namespace MyzOo.Methods
                     Stock = stock
                 };
                 var SetData = conn.client.Set("foods/" + id, set);
+
+                MessageBox.Show($"Comida {description} Registada com sucesso", "Aviso", MessageBoxButton.OK, MessageBoxImage.Warning);
+
             }
             catch (Exception)
             {
@@ -34,7 +39,7 @@ namespace MyzOo.Methods
         }
 
         //Update datas
-        public void UpdateData(int id, string description, int typefood, int stock)
+        public void UpdateData(int id, string description, string typefood, int stock)
         {
             try
             {
@@ -45,7 +50,10 @@ namespace MyzOo.Methods
                     TypeFood = typefood,
                     Stock = stock
                 };
-                var SetData = conn.client.Set("foods/" + id, set);
+                var SetData = conn.client.Update("foods/" + id, set);
+
+                MessageBox.Show($"Comida {description} Atualizada com sucesso", "Aviso", MessageBoxButton.OK, MessageBoxImage.Warning);
+
             }
             catch (Exception)
             {
@@ -54,11 +62,14 @@ namespace MyzOo.Methods
         }
 
         //Delete datas
-        public void DeleteTeam(string Description)
+        public void DeleteData(int id, string description)
         {
             try
             {
-                var SetData = conn.client.Delete("foods/" + Description);
+                var SetData = conn.client.Delete("foods/" + id);
+
+                MessageBox.Show($"Comida {description} Apagado com sucesso", "Aviso", MessageBoxButton.OK, MessageBoxImage.Warning);
+
             }
             catch (Exception)
             {
@@ -75,12 +86,19 @@ namespace MyzOo.Methods
                 Dictionary<string, Food> listData = JsonConvert.DeserializeObject<Dictionary<string, Food>>(al.Body.ToString());
                 List<Food> allData = new List<Food>();
 
-                // verify
-                foreach (var kvp in listData)
+                if (listData != null)
                 {
-                    allData.Add(kvp.Value);
+                    // verify
+                    foreach (var kvp in listData)
+                    {
+                        allData.Add(kvp.Value);
+                    }
                 }
-                
+                else
+                {
+                    MessageBox.Show("Vazio", "Aviso", MessageBoxButton.OK, MessageBoxImage.Warning);
+                }
+
                 return allData;
             }
             catch (Exception)

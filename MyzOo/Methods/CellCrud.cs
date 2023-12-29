@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace MyzOo.Methods
 {
@@ -25,6 +26,9 @@ namespace MyzOo.Methods
                     Description = description
                 };
                 var SetData = conn.client.Set("cells/" + id, set);
+
+                MessageBox.Show($"Cela {number} Registada com sucesso", "Aviso", MessageBoxButton.OK, MessageBoxImage.Warning);
+
             }
             catch (Exception)
             {
@@ -43,7 +47,10 @@ namespace MyzOo.Methods
                     Cleaning = cleaning,
                     Description = description
                 };
-                var SetData = conn.client.Set("cells/" + id, set);
+                var SetData = conn.client.Update("cells/" + id, set);
+
+                MessageBox.Show($"Cela {number} Atualizada com sucesso", "Aviso", MessageBoxButton.OK, MessageBoxImage.Warning);
+
             }
             catch (Exception)
             {
@@ -56,6 +63,9 @@ namespace MyzOo.Methods
             try
             {
                 var SetData = conn.client.Delete("cells/" + id);
+
+                MessageBox.Show($"Cela {id} Apagada com sucesso", "Aviso", MessageBoxButton.OK, MessageBoxImage.Warning);
+
             }
             catch (Exception)
             {

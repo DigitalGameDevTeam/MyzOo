@@ -1,6 +1,6 @@
 ﻿namespace MyzOo.View
 {
-    partial class AnimalList_Menu
+    partial class AnimalList
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnimalList_Menu));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnimalList));
             this.panel1 = new System.Windows.Forms.Panel();
             this.Minimize_button = new System.Windows.Forms.Button();
             this.Exit_button = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.card1 = new MyzOo.card();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -97,6 +97,15 @@
             this.label1.Text = "Lista de Animais";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // card1
+            // 
+            this.card1.Id = 0;
+            this.card1.Location = new System.Drawing.Point(3, 3);
+            this.card1.Name = "card1";
+            this.card1.Size = new System.Drawing.Size(762, 81);
+            this.card1.TabIndex = 0;
+            this.card1.Load += new System.EventHandler(this.card1_Load_1);
+            // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
@@ -106,14 +115,6 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(788, 375);
             this.flowLayoutPanel1.TabIndex = 2;
             this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
-            // 
-            // card1
-            // 
-            this.card1.Location = new System.Drawing.Point(3, 3);
-            this.card1.Name = "card1";
-            this.card1.Size = new System.Drawing.Size(762, 81);
-            this.card1.TabIndex = 0;
-            this.card1.Load += new System.EventHandler(this.card1_Load_1);
             // 
             // AnimalList_Menu
             // 
@@ -141,7 +142,7 @@
         private System.Windows.Forms.Button Minimize_button;
         private System.Windows.Forms.Button Exit_button;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private card card1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

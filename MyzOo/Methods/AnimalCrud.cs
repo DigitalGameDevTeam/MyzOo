@@ -87,13 +87,13 @@ namespace MyzOo.Methods
             try
             {
                 FirebaseResponse al = conn.client.Get("animals");
-                Dictionary<string, Animal> ListData = JsonConvert.DeserializeObject<Dictionary<string, Animal>>(al.Body.ToString());
+                Dictionary<string, Animal> listData = JsonConvert.DeserializeObject<Dictionary<string, Animal>>(al.Body.ToString());
                 List<Animal> allData = new List<Animal>();
 
-                if (ListData != null)
+                if (listData != null)
                 {
                     // verify
-                    foreach (var kvp in ListData)
+                    foreach (var kvp in listData)
                     {
                         allData.Add(kvp.Value);
                     }

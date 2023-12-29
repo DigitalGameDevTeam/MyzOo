@@ -1,6 +1,6 @@
 ﻿namespace MyzOo.View
 {
-    partial class Cell_List
+    partial class CellList
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cell_List));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CellList));
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Minimize_button = new System.Windows.Forms.Button();
             this.Exit_button = new System.Windows.Forms.Button();
-            this.List_Box = new System.Windows.Forms.ListBox();
+            this.card1 = new MyzOo.card();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -93,30 +95,39 @@
             this.Exit_button.UseVisualStyleBackColor = false;
             this.Exit_button.Click += new System.EventHandler(this.Exit_button_Click);
             // 
-            // List_Box
+            // card1
             // 
-            this.List_Box.FormattingEnabled = true;
-            this.List_Box.Items.AddRange(new object[] {
-            " "});
-            this.List_Box.Location = new System.Drawing.Point(10, 84);
-            this.List_Box.Name = "List_Box";
-            this.List_Box.Size = new System.Drawing.Size(778, 355);
-            this.List_Box.TabIndex = 4;
+            this.card1.Id = 0;
+            this.card1.Location = new System.Drawing.Point(3, 3);
+            this.card1.Name = "card1";
+            this.card1.Size = new System.Drawing.Size(762, 81);
+            this.card1.TabIndex = 0;
             // 
-            // Cell_List
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.Controls.Add(this.card1);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 63);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(788, 375);
+            this.flowLayoutPanel1.TabIndex = 4;
+            // 
+            // CellList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.List_Box);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Cell_List";
+            this.Name = "CellList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cell_List";
+            this.Load += new System.EventHandler(this.CellList_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -127,6 +138,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button Minimize_button;
         private System.Windows.Forms.Button Exit_button;
-        private System.Windows.Forms.ListBox List_Box;
+        private card card1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

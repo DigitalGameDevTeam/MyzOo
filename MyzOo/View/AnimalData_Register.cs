@@ -13,9 +13,9 @@ using MyzOo.View;
 
 namespace MyzOo
 {
-    public partial class Animal_Menu : Form
+    public partial class AnimalData_Register : Form
     {
-        public Animal_Menu()
+        public AnimalData_Register()
         {
             InitializeComponent();
         }
@@ -100,11 +100,7 @@ namespace MyzOo
             int callDescription = Convert.ToInt32(Cell_listbox.Text);
             Cell animalCell = Cell.LoadData().FirstOrDefault(tf => tf.Number == callDescription);
 
-
-            
-
             animal.SetData(Id, Name, Date, Checkup, IsDeceased, gender, animalCell.Number, animalFood.Description);
-
 
             Main_Menu main_Menu = new Main_Menu();
             main_Menu.Show();

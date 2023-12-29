@@ -8,33 +8,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static MyzOo.Models.Animal;
 
 namespace MyzOo.View
 {
-    public partial class Ver_Animal_Menu : Form
+    public partial class AnimalData_Menu : Form
     {
-        int op = 1;
-        private int animalID;
+        private int animalId;
         private Animal animal;
-        private Cell cell;
-        private Food food;
 
-        public Ver_Animal_Menu(int animalID)
+        public AnimalData_Menu(int id)
         {
             InitializeComponent();
-            this.animalID = animalID;
+            animalId = id;
         }
         private void Ver_Animal_Menu_Load(object sender, EventArgs e)
         {
-            //prevents user from interact with objects when open the form
             Name_Box.Enabled = true;
             Birthday_Calendar.Enabled = true;
             Cell_listbox.Enabled = true;
             Food_listbox.Enabled = true;
             Checkup_Box.Enabled = true;
 
-            animal = Animal.GetAnimal(this.animalID);
+            animal = Animal.GetAnimal(this.animalId);
 
             foreach (var food in Food.LoadData())
             {
@@ -60,29 +55,17 @@ namespace MyzOo.View
             Checkup_Box.Checked = animal.Checkup;
             Gender_listbox.Text = animal.AnimalGender;
         }
-        private void Edit_button_Click(object sender, EventArgs e)
-        {
-        }
 
-        private void Exit_button_Click(object sender, EventArgs e)
+        private void Update_Button_Click(object sender, EventArgs e)
         {
-            //hide this menu 
-            AnimalList_Menu animalList_Menu = new AnimalList_Menu();
-            animalList_Menu.Show();
-            this.Hide();
-        }
 
-        private void Regist_button_Click(object sender, EventArgs e)
-        {
-            Animal animal = new Animal();
-
-            int Id = animalID;
+            int id = animalId;
 
             // Animal Info
-            string Name = Name_Box.Text;
-            DateTime Date = Birthday_Calendar.SelectionRange.Start;
-            bool Checkup = Checkup_Box.Checked;
-            bool IsDeceased = Decease_Box.Checked;
+            string name = Name_Box.Text;
+            DateTime date = Birthday_Calendar.SelectionRange.Start;
+            bool checkup = Checkup_Box.Checked;
+            bool isDeceased = Decease_Box.Checked;
 
             string gender = Gender_listbox.Text;
 
@@ -95,9 +78,29 @@ namespace MyzOo.View
             int callDescription = Convert.ToInt32(Cell_listbox.Text);
             Cell animalCell = Cell.LoadData().FirstOrDefault(tf => tf.Number == callDescription);
 
-            animal.UpdateData(Id, Name, Date, Checkup, IsDeceased, gender, animalCell.Number, animalFood.Description);
+            animal.UpdateData(id, name, date, checkup, isDeceased, gender, animalCell.Number, animalFood.Description);
 
-            AnimalList_Menu animalList_Menu = new AnimalList_Menu();
+            AnimalList animalList_Menu = new AnimalList();
+            animalList_Menu.Show();
+            this.Hide();
+        }
+
+        private void Delete_Button_Click(object sender, EventArgs e)
+        {
+            int id = animalId;
+            string name = Name_Box.Text;
+
+            animal.DeleteData(id, name);
+
+            AnimalList animalList_Menu = new AnimalList();
+            animalList_Menu.Show();
+            this.Hide();
+        }
+
+        private void Exit_button_Click(object sender, EventArgs e)
+        {
+            //hide this menu 
+            AnimalList animalList_Menu = new AnimalList();
             animalList_Menu.Show();
             this.Hide();
         }
@@ -107,17 +110,9 @@ namespace MyzOo.View
 
         }
 
-        private void Delete_Button_Click(object sender, EventArgs e)
+        private void Edit_button_Click(object sender, EventArgs e)
         {
-            int Id = animalID;
-            string Name = Name_Box.Text;
-
-            animal.DeleteData(Id, Name);
-
-            AnimalList_Menu animalList_Menu = new AnimalList_Menu();
-            animalList_Menu.Show();
-            this.Hide();
-
         }
+
     }
 }

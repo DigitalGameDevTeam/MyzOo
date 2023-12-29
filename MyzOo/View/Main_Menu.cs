@@ -50,7 +50,7 @@ namespace MyzOo
             List<Food> food = Food.FoodList;
             List<Cell> cell = Cell.CellList;
 
-            Animal_Menu animal_Menu = new Animal_Menu();
+            AnimalData_Register animal_Menu = new AnimalData_Register();
             animal_Menu.Show();
             this.Hide();
 
@@ -67,7 +67,7 @@ namespace MyzOo
         private void Cell_Menu_button_Click(object sender, EventArgs e)
         {
             //open Cell_Menu
-            Cell_Menu cell_Menu = new Cell_Menu();
+            CellData_Register cell_Menu = new CellData_Register();
             cell_Menu.Show();
             this.Hide();
         }
@@ -108,49 +108,43 @@ namespace MyzOo
         private void AnimalList_Menu_button_Click(object sender, EventArgs e)
         {
             //open animallist_menu
-            AnimalList_Menu animalList_Menu = new AnimalList_Menu();
+            AnimalList animalList_Menu = new AnimalList();
             animalList_Menu.Show();
             this.Hide();
         }
 
         private void VerComida_button_Click(object sender, EventArgs e)
         {
-            FoodList_menu foodList_Menu = new FoodList_menu();
-            foodList_Menu.Show();
-            this.Hide();
         }
 
         private void Ver_Menu_Button_Click(object sender, EventArgs e)
         {
-            VerCela_Menu verCela_menu = new VerCela_Menu(); 
-            verCela_menu.Show();
-            this.Hide();
         }
 
         private void VerEmployee_button_Click(object sender, EventArgs e)
         {
-            Ver_Employee_Menu ver_Employee_Menu = new Ver_Employee_Menu();
+            EmployeeData_Menu ver_Employee_Menu = new EmployeeData_Menu();
             ver_Employee_Menu.Show();
             this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Food_List food_List = new Food_List();
+            FoodList food_List = new FoodList();
             food_List.Show();
             this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            EmployeeList_Menu employeeList_Menu = new EmployeeList_Menu();
+            EmployeeList employeeList_Menu = new EmployeeList();
             employeeList_Menu.Show();
             this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Cell_List cell_List = new Cell_List();
+            CellList cell_List = new CellList();
             cell_List.Show();
             this.Hide();
         }

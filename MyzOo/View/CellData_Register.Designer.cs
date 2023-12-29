@@ -1,6 +1,6 @@
 ﻿namespace MyzOo.View
 {
-    partial class Cell_Menu
+    partial class CellData_Register
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cell_Menu));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CellData_Register));
             this.CellDescription_textbox = new System.Windows.Forms.TextBox();
             this.Regist_button = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();

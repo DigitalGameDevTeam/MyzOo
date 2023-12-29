@@ -31,18 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Food_Menu));
             this.Regist_button = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.Name_Box = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.Exit_button = new System.Windows.Forms.Button();
-            this.Food_desciption_textbox = new System.Windows.Forms.TextBox();
             this.Stock_textbox = new System.Windows.Forms.TextBox();
-            this.TypeFood_listbox = new System.Windows.Forms.ComboBox();
-            this.Cell_listbox = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.TypeFood_listbox = new System.Windows.Forms.ComboBox();
+            this.Food_desciption_textbox = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -55,7 +52,7 @@
             this.Regist_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
             this.Regist_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Regist_button.ForeColor = System.Drawing.Color.Black;
-            this.Regist_button.Location = new System.Drawing.Point(495, 324);
+            this.Regist_button.Location = new System.Drawing.Point(512, 324);
             this.Regist_button.Name = "Regist_button";
             this.Regist_button.Size = new System.Drawing.Size(75, 23);
             this.Regist_button.TabIndex = 29;
@@ -68,44 +65,11 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label6.Location = new System.Drawing.Point(427, 294);
+            this.label6.Location = new System.Drawing.Point(421, 280);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(44, 15);
             this.label6.TabIndex = 26;
             this.label6.Text = "Stock:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label3.Location = new System.Drawing.Point(229, 135);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(134, 15);
-            this.label3.TabIndex = 25;
-            this.label3.Text = "Descrição da Comida:";
-            // 
-            // Name_Box
-            // 
-            this.Name_Box.BackColor = System.Drawing.Color.LightGray;
-            this.Name_Box.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Name_Box.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.Name_Box.ForeColor = System.Drawing.Color.Black;
-            this.Name_Box.Location = new System.Drawing.Point(343, 105);
-            this.Name_Box.Name = "Name_Box";
-            this.Name_Box.Size = new System.Drawing.Size(227, 14);
-            this.Name_Box.TabIndex = 24;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label2.Location = new System.Drawing.Point(229, 105);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(115, 15);
-            this.label2.TabIndex = 23;
-            this.label2.Text = "Nome da Comida :";
             // 
             // pictureBox1
             // 
@@ -158,30 +122,28 @@
             this.Exit_button.UseVisualStyleBackColor = false;
             this.Exit_button.Click += new System.EventHandler(this.Exit_button_Click);
             // 
-            // Food_desciption_textbox
-            // 
-            this.Food_desciption_textbox.BackColor = System.Drawing.Color.LightGray;
-            this.Food_desciption_textbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Food_desciption_textbox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.Food_desciption_textbox.ForeColor = System.Drawing.Color.Black;
-            this.Food_desciption_textbox.Location = new System.Drawing.Point(239, 153);
-            this.Food_desciption_textbox.Multiline = true;
-            this.Food_desciption_textbox.Name = "Food_desciption_textbox";
-            this.Food_desciption_textbox.Size = new System.Drawing.Size(331, 121);
-            this.Food_desciption_textbox.TabIndex = 33;
-            this.Food_desciption_textbox.TextChanged += new System.EventHandler(this.Food_desciption_textbox_TextChanged);
-            // 
             // Stock_textbox
             // 
             this.Stock_textbox.BackColor = System.Drawing.Color.LightGray;
             this.Stock_textbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Stock_textbox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
             this.Stock_textbox.ForeColor = System.Drawing.Color.Black;
-            this.Stock_textbox.Location = new System.Drawing.Point(477, 294);
+            this.Stock_textbox.Location = new System.Drawing.Point(471, 280);
             this.Stock_textbox.Name = "Stock_textbox";
-            this.Stock_textbox.Size = new System.Drawing.Size(93, 14);
+            this.Stock_textbox.Size = new System.Drawing.Size(116, 14);
             this.Stock_textbox.TabIndex = 34;
             this.Stock_textbox.TextChanged += new System.EventHandler(this.Stock_textbox_TextChanged);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
+            this.label4.Location = new System.Drawing.Point(223, 84);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(60, 15);
+            this.label4.TabIndex = 60;
+            this.label4.Text = "Comida :";
             // 
             // TypeFood_listbox
             // 
@@ -189,33 +151,33 @@
             this.TypeFood_listbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.TypeFood_listbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.TypeFood_listbox.FormattingEnabled = true;
-            this.TypeFood_listbox.Location = new System.Drawing.Point(346, 78);
+            this.TypeFood_listbox.Location = new System.Drawing.Point(289, 78);
             this.TypeFood_listbox.Name = "TypeFood_listbox";
-            this.TypeFood_listbox.Size = new System.Drawing.Size(165, 21);
-            this.TypeFood_listbox.TabIndex = 36;
-            this.TypeFood_listbox.SelectedIndexChanged += new System.EventHandler(this.TypeFood_listbox_SelectedIndexChanged_1);
+            this.TypeFood_listbox.Size = new System.Drawing.Size(298, 21);
+            this.TypeFood_listbox.TabIndex = 59;
             // 
-            // Cell_listbox
+            // Food_desciption_textbox
             // 
-            this.Cell_listbox.BackColor = System.Drawing.Color.LightGray;
-            this.Cell_listbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Cell_listbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cell_listbox.FormattingEnabled = true;
-            this.Cell_listbox.Location = new System.Drawing.Point(346, 78);
-            this.Cell_listbox.Name = "Cell_listbox";
-            this.Cell_listbox.Size = new System.Drawing.Size(224, 21);
-            this.Cell_listbox.TabIndex = 45;
+            this.Food_desciption_textbox.BackColor = System.Drawing.Color.LightGray;
+            this.Food_desciption_textbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Food_desciption_textbox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
+            this.Food_desciption_textbox.ForeColor = System.Drawing.Color.Black;
+            this.Food_desciption_textbox.Location = new System.Drawing.Point(226, 129);
+            this.Food_desciption_textbox.Multiline = true;
+            this.Food_desciption_textbox.Name = "Food_desciption_textbox";
+            this.Food_desciption_textbox.Size = new System.Drawing.Size(361, 121);
+            this.Food_desciption_textbox.TabIndex = 58;
             // 
-            // label4
+            // label3
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label4.Location = new System.Drawing.Point(268, 78);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 15);
-            this.label4.TabIndex = 46;
-            this.label4.Text = "Comida :";
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
+            this.label3.Location = new System.Drawing.Point(223, 111);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(134, 15);
+            this.label3.TabIndex = 57;
+            this.label3.Text = "Descrição da Comida:";
             // 
             // Food_Menu
             // 
@@ -224,14 +186,11 @@
             this.ClientSize = new System.Drawing.Size(599, 359);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.TypeFood_listbox);
-            this.Controls.Add(this.Cell_listbox);
-            this.Controls.Add(this.Stock_textbox);
             this.Controls.Add(this.Food_desciption_textbox);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.Stock_textbox);
             this.Controls.Add(this.Regist_button);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.Name_Box);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -251,17 +210,14 @@
         #endregion
         private System.Windows.Forms.Button Regist_button;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox Name_Box;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Exit_button;
-        private System.Windows.Forms.TextBox Food_desciption_textbox;
         private System.Windows.Forms.TextBox Stock_textbox;
-        private System.Windows.Forms.ComboBox TypeFood_listbox;
-        private System.Windows.Forms.ComboBox Cell_listbox;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox TypeFood_listbox;
+        private System.Windows.Forms.TextBox Food_desciption_textbox;
+        private System.Windows.Forms.Label label3;
     }
 }
