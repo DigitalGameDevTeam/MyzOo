@@ -37,7 +37,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.Name_Box = new System.Windows.Forms.TextBox();
-            this.Ver_Menu_Button = new System.Windows.Forms.Button();
             this.AnimalList_Menu_button = new System.Windows.Forms.Button();
             this.Employee_Menu_button = new System.Windows.Forms.Button();
             this.AnimalMenu_button = new System.Windows.Forms.Button();
@@ -153,24 +152,6 @@
             this.Name_Box.Name = "Name_Box";
             this.Name_Box.Size = new System.Drawing.Size(167, 14);
             this.Name_Box.TabIndex = 25;
-            // 
-            // Ver_Menu_Button
-            // 
-            this.Ver_Menu_Button.AutoSize = true;
-            this.Ver_Menu_Button.BackColor = System.Drawing.Color.Silver;
-            this.Ver_Menu_Button.FlatAppearance.BorderSize = 0;
-            this.Ver_Menu_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.Ver_Menu_Button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.Ver_Menu_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Ver_Menu_Button.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Ver_Menu_Button.ForeColor = System.Drawing.Color.Black;
-            this.Ver_Menu_Button.Location = new System.Drawing.Point(664, 277);
-            this.Ver_Menu_Button.Name = "Ver_Menu_Button";
-            this.Ver_Menu_Button.Size = new System.Drawing.Size(124, 36);
-            this.Ver_Menu_Button.TabIndex = 8;
-            this.Ver_Menu_Button.Text = "Ver Celas";
-            this.Ver_Menu_Button.UseVisualStyleBackColor = false;
-            this.Ver_Menu_Button.Click += new System.EventHandler(this.Ver_Menu_Button_Click);
             // 
             // AnimalList_Menu_button
             // 
@@ -344,7 +325,6 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Employee_Menu_button);
-            this.Controls.Add(this.Ver_Menu_Button);
             this.Controls.Add(this.VerEmployee_button);
             this.Controls.Add(this.AnimalList_Menu_button);
             this.Controls.Add(this.Cell_Menu_button);
@@ -381,7 +361,6 @@
         private System.Windows.Forms.Button Cell_Menu_button;
         private System.Windows.Forms.Button Employee_Menu_button;
         private System.Windows.Forms.Button AnimalList_Menu_button;
-        private System.Windows.Forms.Button Ver_Menu_Button;
         private System.Windows.Forms.Button VerEmployee_button;
         private System.Windows.Forms.TextBox Name_Box;
         private System.Windows.Forms.Label label2;
