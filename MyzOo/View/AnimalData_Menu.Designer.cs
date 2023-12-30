@@ -1,6 +1,6 @@
 ﻿namespace MyzOo.View
 {
-    partial class Ver_Animal_Menu
+    partial class AnimalData_Menu
     {
         /// <summary>
         /// Required designer variable.
@@ -28,11 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ver_Animal_Menu));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnimalData_Menu));
             this.Food_listbox = new System.Windows.Forms.ComboBox();
             this.Cell_listbox = new System.Windows.Forms.ComboBox();
             this.Birthday_Calendar = new System.Windows.Forms.MonthCalendar();
-            this.Regist_button = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.Checkup_Box = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -46,7 +45,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.Gender_listbox = new System.Windows.Forms.ComboBox();
             this.Decease_Box = new System.Windows.Forms.CheckBox();
-            this.Delete_button = new System.Windows.Forms.Button();
+            this.Update_Button = new System.Windows.Forms.Button();
+            this.Delete_Button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -82,23 +82,6 @@
             this.Birthday_Calendar.SelectionRange = new System.Windows.Forms.SelectionRange(new System.DateTime(2023, 11, 15, 0, 0, 0, 0), new System.DateTime(2023, 11, 21, 0, 0, 0, 0));
             this.Birthday_Calendar.ShowToday = false;
             this.Birthday_Calendar.TabIndex = 30;
-            // 
-            // Regist_button
-            // 
-            this.Regist_button.BackColor = System.Drawing.Color.Lime;
-            this.Regist_button.FlatAppearance.BorderSize = 0;
-            this.Regist_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
-            this.Regist_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
-            this.Regist_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Regist_button.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F);
-            this.Regist_button.ForeColor = System.Drawing.Color.Black;
-            this.Regist_button.Location = new System.Drawing.Point(454, 370);
-            this.Regist_button.Name = "Regist_button";
-            this.Regist_button.Size = new System.Drawing.Size(124, 39);
-            this.Regist_button.TabIndex = 29;
-            this.Regist_button.Text = "Atualizar";
-            this.Regist_button.UseVisualStyleBackColor = false;
-            this.Regist_button.Click += new System.EventHandler(this.Regist_button_Click);
             // 
             // label7
             // 
@@ -253,36 +236,53 @@
             this.Decease_Box.Text = "Doente";
             this.Decease_Box.UseVisualStyleBackColor = false;
             // 
-            // Delete_button
+            // Update_Button
             // 
-            this.Delete_button.BackColor = System.Drawing.Color.Red;
-            this.Delete_button.FlatAppearance.BorderSize = 0;
-            this.Delete_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
-            this.Delete_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
-            this.Delete_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Delete_button.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Delete_button.ForeColor = System.Drawing.Color.White;
-            this.Delete_button.Location = new System.Drawing.Point(354, 370);
-            this.Delete_button.Name = "Delete_button";
-            this.Delete_button.Size = new System.Drawing.Size(94, 39);
-            this.Delete_button.TabIndex = 36;
-            this.Delete_button.Text = "Apagar";
-            this.Delete_button.UseVisualStyleBackColor = false;
-            this.Delete_button.Click += new System.EventHandler(this.Delete_Button_Click);
+            this.Update_Button.BackColor = System.Drawing.Color.Lime;
+            this.Update_Button.FlatAppearance.BorderSize = 0;
+            this.Update_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.Update_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
+            this.Update_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Update_Button.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F);
+            this.Update_Button.ForeColor = System.Drawing.Color.Black;
+            this.Update_Button.Location = new System.Drawing.Point(454, 370);
+            this.Update_Button.Name = "Update_Button";
+            this.Update_Button.Size = new System.Drawing.Size(124, 39);
+            this.Update_Button.TabIndex = 29;
+            this.Update_Button.Text = "Atualizar";
+            this.Update_Button.UseVisualStyleBackColor = false;
+            this.Update_Button.Click += new System.EventHandler(this.Update_Button_Click);
             // 
-            // Ver_Animal_Menu
+            // Delete_Button
+            // 
+            this.Delete_Button.BackColor = System.Drawing.Color.Red;
+            this.Delete_Button.FlatAppearance.BorderSize = 0;
+            this.Delete_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.Delete_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
+            this.Delete_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Delete_Button.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Delete_Button.ForeColor = System.Drawing.Color.White;
+            this.Delete_Button.Location = new System.Drawing.Point(354, 370);
+            this.Delete_Button.Name = "Delete_Button";
+            this.Delete_Button.Size = new System.Drawing.Size(94, 39);
+            this.Delete_Button.TabIndex = 36;
+            this.Delete_Button.Text = "Apagar";
+            this.Delete_Button.UseVisualStyleBackColor = false;
+            this.Delete_Button.Click += new System.EventHandler(this.Delete_Button_Click);
+            // 
+            // AnimalData_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(599, 417);
-            this.Controls.Add(this.Delete_button);
+            this.Controls.Add(this.Delete_Button);
             this.Controls.Add(this.Decease_Box);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.Gender_listbox);
             this.Controls.Add(this.Food_listbox);
             this.Controls.Add(this.Cell_listbox);
             this.Controls.Add(this.Birthday_Calendar);
-            this.Controls.Add(this.Regist_button);
+            this.Controls.Add(this.Update_Button);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.Checkup_Box);
             this.Controls.Add(this.label6);
@@ -293,7 +293,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Ver_Animal_Menu";
+            this.Name = "AnimalData_Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ver_Animal_Menu";
             this.Load += new System.EventHandler(this.Ver_Animal_Menu_Load);
@@ -310,7 +310,6 @@
         private System.Windows.Forms.ComboBox Food_listbox;
         private System.Windows.Forms.ComboBox Cell_listbox;
         private System.Windows.Forms.MonthCalendar Birthday_Calendar;
-        private System.Windows.Forms.Button Regist_button;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.CheckBox Checkup_Box;
         private System.Windows.Forms.Label label6;
@@ -324,6 +323,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox Gender_listbox;
         private System.Windows.Forms.CheckBox Decease_Box;
-        private System.Windows.Forms.Button Delete_button;
+        private System.Windows.Forms.Button Update_Button;
+        private System.Windows.Forms.Button Delete_Button;
     }
 }

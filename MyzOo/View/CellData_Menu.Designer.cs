@@ -1,6 +1,6 @@
 ﻿namespace MyzOo.View
 {
-    partial class VerCela_Menu
+    partial class CellData_Menu
     {
         /// <summary>
         /// Required designer variable.
@@ -28,22 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VerCela_Menu));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CellData_Menu));
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Exit_button = new System.Windows.Forms.Button();
             this.Checkup_Box = new System.Windows.Forms.CheckBox();
             this.CellDescription_textbox = new System.Windows.Forms.TextBox();
-            this.Regist_button = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.Cellnumber_Box = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Edit_button = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.Cell_listbox = new System.Windows.Forms.ComboBox();
+            this.Delete_Button = new System.Windows.Forms.Button();
+            this.Update_Button = new System.Windows.Forms.Button();
+            this.Cellnumber_Number = new System.Windows.Forms.NumericUpDown();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cellnumber_Number)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -91,7 +90,7 @@
             this.Checkup_Box.BackColor = System.Drawing.Color.Transparent;
             this.Checkup_Box.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Checkup_Box.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.Checkup_Box.Location = new System.Drawing.Point(265, 304);
+            this.Checkup_Box.Location = new System.Drawing.Point(63, 312);
             this.Checkup_Box.Name = "Checkup_Box";
             this.Checkup_Box.Size = new System.Drawing.Size(70, 19);
             this.Checkup_Box.TabIndex = 51;
@@ -104,55 +103,29 @@
             this.CellDescription_textbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.CellDescription_textbox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
             this.CellDescription_textbox.ForeColor = System.Drawing.Color.Black;
-            this.CellDescription_textbox.Location = new System.Drawing.Point(239, 168);
+            this.CellDescription_textbox.Location = new System.Drawing.Point(232, 148);
             this.CellDescription_textbox.Multiline = true;
             this.CellDescription_textbox.Name = "CellDescription_textbox";
-            this.CellDescription_textbox.Size = new System.Drawing.Size(331, 121);
+            this.CellDescription_textbox.Size = new System.Drawing.Size(355, 121);
             this.CellDescription_textbox.TabIndex = 50;
-            // 
-            // Regist_button
-            // 
-            this.Regist_button.BackColor = System.Drawing.Color.Transparent;
-            this.Regist_button.FlatAppearance.BorderSize = 0;
-            this.Regist_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
-            this.Regist_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
-            this.Regist_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Regist_button.ForeColor = System.Drawing.Color.Black;
-            this.Regist_button.Location = new System.Drawing.Point(495, 329);
-            this.Regist_button.Name = "Regist_button";
-            this.Regist_button.Size = new System.Drawing.Size(75, 23);
-            this.Regist_button.TabIndex = 49;
-            this.Regist_button.Text = "Confirmar";
-            this.Regist_button.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label3.Location = new System.Drawing.Point(229, 150);
+            this.label3.Location = new System.Drawing.Point(229, 130);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(116, 15);
             this.label3.TabIndex = 48;
             this.label3.Text = "Descrição da Cela:";
-            // 
-            // Cellnumber_Box
-            // 
-            this.Cellnumber_Box.BackColor = System.Drawing.Color.LightGray;
-            this.Cellnumber_Box.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Cellnumber_Box.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.Cellnumber_Box.ForeColor = System.Drawing.Color.Black;
-            this.Cellnumber_Box.Location = new System.Drawing.Point(343, 120);
-            this.Cellnumber_Box.Name = "Cellnumber_Box";
-            this.Cellnumber_Box.Size = new System.Drawing.Size(70, 14);
-            this.Cellnumber_Box.TabIndex = 47;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label2.Location = new System.Drawing.Point(229, 120);
+            this.label2.Location = new System.Drawing.Point(236, 100);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(109, 15);
             this.label2.TabIndex = 46;
@@ -168,69 +141,71 @@
             this.pictureBox1.TabIndex = 45;
             this.pictureBox1.TabStop = false;
             // 
-            // Edit_button
+            // Delete_Button
             // 
-            this.Edit_button.BackColor = System.Drawing.Color.Transparent;
-            this.Edit_button.FlatAppearance.BorderSize = 0;
-            this.Edit_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
-            this.Edit_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
-            this.Edit_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Edit_button.ForeColor = System.Drawing.Color.Black;
-            this.Edit_button.Location = new System.Drawing.Point(22, 288);
-            this.Edit_button.Name = "Edit_button";
-            this.Edit_button.Size = new System.Drawing.Size(75, 23);
-            this.Edit_button.TabIndex = 59;
-            this.Edit_button.Text = "Editar";
-            this.Edit_button.UseVisualStyleBackColor = false;
-            this.Edit_button.Click += new System.EventHandler(this.Edit_button_Click);
+            this.Delete_Button.BackColor = System.Drawing.Color.Red;
+            this.Delete_Button.FlatAppearance.BorderSize = 0;
+            this.Delete_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.Delete_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
+            this.Delete_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Delete_Button.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Delete_Button.ForeColor = System.Drawing.Color.White;
+            this.Delete_Button.Location = new System.Drawing.Point(363, 312);
+            this.Delete_Button.Name = "Delete_Button";
+            this.Delete_Button.Size = new System.Drawing.Size(94, 39);
+            this.Delete_Button.TabIndex = 63;
+            this.Delete_Button.Text = "Apagar";
+            this.Delete_Button.UseVisualStyleBackColor = false;
+            this.Delete_Button.Click += new System.EventHandler(this.Delete_Button_Click);
             // 
-            // label4
+            // Update_Button
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label4.Location = new System.Drawing.Point(293, 84);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(42, 15);
-            this.label4.TabIndex = 61;
-            this.label4.Text = "Cela :";
+            this.Update_Button.BackColor = System.Drawing.Color.Lime;
+            this.Update_Button.FlatAppearance.BorderSize = 0;
+            this.Update_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.Update_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
+            this.Update_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Update_Button.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F);
+            this.Update_Button.ForeColor = System.Drawing.Color.Black;
+            this.Update_Button.Location = new System.Drawing.Point(463, 312);
+            this.Update_Button.Name = "Update_Button";
+            this.Update_Button.Size = new System.Drawing.Size(124, 39);
+            this.Update_Button.TabIndex = 62;
+            this.Update_Button.Text = "Atualizar";
+            this.Update_Button.UseVisualStyleBackColor = false;
+            this.Update_Button.Click += new System.EventHandler(this.Update_Button_Click);
             // 
-            // Cell_listbox
+            // Cellnumber_Number
             // 
-            this.Cell_listbox.BackColor = System.Drawing.Color.LightGray;
-            this.Cell_listbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Cell_listbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cell_listbox.FormattingEnabled = true;
-            this.Cell_listbox.Location = new System.Drawing.Point(343, 82);
-            this.Cell_listbox.Name = "Cell_listbox";
-            this.Cell_listbox.Size = new System.Drawing.Size(70, 21);
-            this.Cell_listbox.TabIndex = 60;
+            this.Cellnumber_Number.Location = new System.Drawing.Point(351, 99);
+            this.Cellnumber_Number.Name = "Cellnumber_Number";
+            this.Cellnumber_Number.Size = new System.Drawing.Size(236, 20);
+            this.Cellnumber_Number.TabIndex = 64;
             // 
-            // VerCela_Menu
+            // CellData_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(599, 368);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.Cell_listbox);
-            this.Controls.Add(this.Edit_button);
+            this.Controls.Add(this.Cellnumber_Number);
+            this.Controls.Add(this.Delete_Button);
+            this.Controls.Add(this.Update_Button);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Checkup_Box);
             this.Controls.Add(this.CellDescription_textbox);
-            this.Controls.Add(this.Regist_button);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.Cellnumber_Box);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "VerCela_Menu";
+            this.Name = "CellData_Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VerCela_Menu";
             this.Load += new System.EventHandler(this.VerCela_Menu_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cellnumber_Number)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -243,13 +218,11 @@
         private System.Windows.Forms.Button Exit_button;
         private System.Windows.Forms.CheckBox Checkup_Box;
         private System.Windows.Forms.TextBox CellDescription_textbox;
-        private System.Windows.Forms.Button Regist_button;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox Cellnumber_Box;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button Edit_button;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox Cell_listbox;
+        private System.Windows.Forms.Button Delete_Button;
+        private System.Windows.Forms.Button Update_Button;
+        private System.Windows.Forms.NumericUpDown Cellnumber_Number;
     }
 }

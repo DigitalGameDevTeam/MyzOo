@@ -1,6 +1,6 @@
 ﻿namespace MyzOo.View
 {
-    partial class FoodList_menu
+    partial class FoodData_Menu
     {
         /// <summary>
         /// Required designer variable.
@@ -28,23 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FoodList_menu));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FoodData_Menu));
             this.label1 = new System.Windows.Forms.Label();
             this.Exit_button = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.Cell_listbox = new System.Windows.Forms.ComboBox();
-            this.Stock_textbox = new System.Windows.Forms.TextBox();
+            this.TypeFood_listbox = new System.Windows.Forms.ComboBox();
             this.Food_desciption_textbox = new System.Windows.Forms.TextBox();
-            this.Regist_button = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.Name_Box = new System.Windows.Forms.TextBox();
-            this.Edit_button = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Delete_Button = new System.Windows.Forms.Button();
+            this.Update_Button = new System.Windows.Forms.Button();
+            this.Stock_Number = new System.Windows.Forms.NumericUpDown();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Stock_Number)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -92,34 +91,23 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label4.Location = new System.Drawing.Point(281, 79);
+            this.label4.Location = new System.Drawing.Point(230, 85);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(60, 15);
             this.label4.TabIndex = 56;
             this.label4.Text = "Comida :";
             // 
-            // Cell_listbox
+            // TypeFood_listbox
             // 
-            this.Cell_listbox.BackColor = System.Drawing.Color.LightGray;
-            this.Cell_listbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Cell_listbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cell_listbox.FormattingEnabled = true;
-            this.Cell_listbox.Location = new System.Drawing.Point(347, 79);
-            this.Cell_listbox.Name = "Cell_listbox";
-            this.Cell_listbox.Size = new System.Drawing.Size(224, 21);
-            this.Cell_listbox.TabIndex = 55;
-            this.Cell_listbox.SelectedIndexChanged += new System.EventHandler(this.Cell_listbox_SelectedIndexChanged);
-            // 
-            // Stock_textbox
-            // 
-            this.Stock_textbox.BackColor = System.Drawing.Color.LightGray;
-            this.Stock_textbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Stock_textbox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.Stock_textbox.ForeColor = System.Drawing.Color.Black;
-            this.Stock_textbox.Location = new System.Drawing.Point(478, 295);
-            this.Stock_textbox.Name = "Stock_textbox";
-            this.Stock_textbox.Size = new System.Drawing.Size(93, 14);
-            this.Stock_textbox.TabIndex = 54;
+            this.TypeFood_listbox.BackColor = System.Drawing.Color.LightGray;
+            this.TypeFood_listbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.TypeFood_listbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.TypeFood_listbox.FormattingEnabled = true;
+            this.TypeFood_listbox.Location = new System.Drawing.Point(296, 79);
+            this.TypeFood_listbox.Name = "TypeFood_listbox";
+            this.TypeFood_listbox.Size = new System.Drawing.Size(291, 21);
+            this.TypeFood_listbox.TabIndex = 55;
+            this.TypeFood_listbox.SelectedIndexChanged += new System.EventHandler(this.Cell_listbox_SelectedIndexChanged);
             // 
             // Food_desciption_textbox
             // 
@@ -127,33 +115,18 @@
             this.Food_desciption_textbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Food_desciption_textbox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
             this.Food_desciption_textbox.ForeColor = System.Drawing.Color.Black;
-            this.Food_desciption_textbox.Location = new System.Drawing.Point(240, 154);
+            this.Food_desciption_textbox.Location = new System.Drawing.Point(233, 130);
             this.Food_desciption_textbox.Multiline = true;
             this.Food_desciption_textbox.Name = "Food_desciption_textbox";
-            this.Food_desciption_textbox.Size = new System.Drawing.Size(331, 121);
+            this.Food_desciption_textbox.Size = new System.Drawing.Size(354, 121);
             this.Food_desciption_textbox.TabIndex = 53;
-            // 
-            // Regist_button
-            // 
-            this.Regist_button.BackColor = System.Drawing.Color.Transparent;
-            this.Regist_button.FlatAppearance.BorderSize = 0;
-            this.Regist_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
-            this.Regist_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
-            this.Regist_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Regist_button.ForeColor = System.Drawing.Color.Black;
-            this.Regist_button.Location = new System.Drawing.Point(496, 325);
-            this.Regist_button.Name = "Regist_button";
-            this.Regist_button.Size = new System.Drawing.Size(75, 23);
-            this.Regist_button.TabIndex = 52;
-            this.Regist_button.Text = "Confirmar";
-            this.Regist_button.UseVisualStyleBackColor = false;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label6.Location = new System.Drawing.Point(428, 295);
+            this.label6.Location = new System.Drawing.Point(417, 274);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(44, 15);
             this.label6.TabIndex = 51;
@@ -164,51 +137,11 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label3.Location = new System.Drawing.Point(230, 136);
+            this.label3.Location = new System.Drawing.Point(230, 112);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(134, 15);
             this.label3.TabIndex = 50;
             this.label3.Text = "Descrição da Comida:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label2.Location = new System.Drawing.Point(230, 106);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(115, 15);
-            this.label2.TabIndex = 48;
-            this.label2.Text = "Nome da Comida :";
-            // 
-            // Name_Box
-            // 
-            this.Name_Box.BackColor = System.Drawing.Color.LightGray;
-            this.Name_Box.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Name_Box.Enabled = false;
-            this.Name_Box.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.Name_Box.ForeColor = System.Drawing.Color.Black;
-            this.Name_Box.Location = new System.Drawing.Point(347, 107);
-            this.Name_Box.Name = "Name_Box";
-            this.Name_Box.Size = new System.Drawing.Size(227, 14);
-            this.Name_Box.TabIndex = 57;
-            this.Name_Box.TextChanged += new System.EventHandler(this.Name_Box_TextChanged);
-            // 
-            // Edit_button
-            // 
-            this.Edit_button.BackColor = System.Drawing.Color.Transparent;
-            this.Edit_button.FlatAppearance.BorderSize = 0;
-            this.Edit_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
-            this.Edit_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
-            this.Edit_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Edit_button.ForeColor = System.Drawing.Color.Black;
-            this.Edit_button.Location = new System.Drawing.Point(38, 270);
-            this.Edit_button.Name = "Edit_button";
-            this.Edit_button.Size = new System.Drawing.Size(75, 23);
-            this.Edit_button.TabIndex = 58;
-            this.Edit_button.Text = "Editar";
-            this.Edit_button.UseVisualStyleBackColor = false;
-            this.Edit_button.Click += new System.EventHandler(this.Edit_button_Click);
             // 
             // pictureBox1
             // 
@@ -220,32 +153,73 @@
             this.pictureBox1.TabIndex = 47;
             this.pictureBox1.TabStop = false;
             // 
-            // FoodList_menu
+            // Delete_Button
+            // 
+            this.Delete_Button.BackColor = System.Drawing.Color.Red;
+            this.Delete_Button.FlatAppearance.BorderSize = 0;
+            this.Delete_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.Delete_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
+            this.Delete_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Delete_Button.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Delete_Button.ForeColor = System.Drawing.Color.White;
+            this.Delete_Button.Location = new System.Drawing.Point(363, 308);
+            this.Delete_Button.Name = "Delete_Button";
+            this.Delete_Button.Size = new System.Drawing.Size(94, 39);
+            this.Delete_Button.TabIndex = 58;
+            this.Delete_Button.Text = "Apagar";
+            this.Delete_Button.UseVisualStyleBackColor = false;
+            this.Delete_Button.Click += new System.EventHandler(this.Delete_Button_Click);
+            // 
+            // Update_Button
+            // 
+            this.Update_Button.BackColor = System.Drawing.Color.Lime;
+            this.Update_Button.FlatAppearance.BorderSize = 0;
+            this.Update_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.Update_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
+            this.Update_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Update_Button.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F);
+            this.Update_Button.ForeColor = System.Drawing.Color.Black;
+            this.Update_Button.Location = new System.Drawing.Point(463, 308);
+            this.Update_Button.Name = "Update_Button";
+            this.Update_Button.Size = new System.Drawing.Size(124, 39);
+            this.Update_Button.TabIndex = 57;
+            this.Update_Button.Text = "Atualizar";
+            this.Update_Button.UseVisualStyleBackColor = false;
+            this.Update_Button.Click += new System.EventHandler(this.Update_Button_Click);
+            // 
+            // Stock_Number
+            // 
+            this.Stock_Number.Location = new System.Drawing.Point(467, 273);
+            this.Stock_Number.Name = "Stock_Number";
+            this.Stock_Number.Size = new System.Drawing.Size(120, 20);
+            this.Stock_Number.TabIndex = 59;
+            this.Stock_Number.ValueChanged += new System.EventHandler(this.Stock_Number_ValueChanged);
+            // 
+            // FoodData_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(599, 359);
-            this.Controls.Add(this.Edit_button);
-            this.Controls.Add(this.Name_Box);
+            this.Controls.Add(this.Stock_Number);
+            this.Controls.Add(this.Delete_Button);
+            this.Controls.Add(this.Update_Button);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.Cell_listbox);
-            this.Controls.Add(this.Stock_textbox);
+            this.Controls.Add(this.TypeFood_listbox);
             this.Controls.Add(this.Food_desciption_textbox);
-            this.Controls.Add(this.Regist_button);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "FoodList_menu";
+            this.Name = "FoodData_Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FoodList_menu";
             this.Load += new System.EventHandler(this.FoodList_menu_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Stock_Number)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -257,15 +231,13 @@
         private System.Windows.Forms.Button Exit_button;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox Cell_listbox;
-        private System.Windows.Forms.TextBox Stock_textbox;
+        private System.Windows.Forms.ComboBox TypeFood_listbox;
         private System.Windows.Forms.TextBox Food_desciption_textbox;
-        private System.Windows.Forms.Button Regist_button;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox Name_Box;
-        private System.Windows.Forms.Button Edit_button;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button Delete_Button;
+        private System.Windows.Forms.Button Update_Button;
+        private System.Windows.Forms.NumericUpDown Stock_Number;
     }
 }

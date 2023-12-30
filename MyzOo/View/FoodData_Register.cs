@@ -47,7 +47,6 @@ namespace MyzOo.View
 
         private void Regist_button_Click(object sender, EventArgs e)
         {
-            string name = Name_Box.Text;
             string description = Food_desciption_textbox.Text;
 
             // Instead of TypeFood_listbox.SelectedItem.ToString(), use TypeFood_listbox.Text
@@ -55,7 +54,7 @@ namespace MyzOo.View
             TypeFood typeFood = TypeFood.LoadData().FirstOrDefault(tf => tf.Type == typeName);
             //TypeFood typeFood = TypeFood.TypeFoodList.FirstOrDefault(tf => tf.Type == typeName);   
 
-            int Stock = Convert.ToInt32(Stock_textbox.Text);
+            int Stock = (int)Stock_Number.Value;
 
             // Create an instance of the Random class
             Random random = new Random();
@@ -64,10 +63,10 @@ namespace MyzOo.View
             int Id = random.Next(1000, 10000);
 
             FoodCrud food = new FoodCrud();
-            food.SetData(Id, description, typeFood.Id, Stock);
+            food.SetData(Id, description, typeFood.Type, Stock);
 
-            MessageBox.Show($"Registo realizado com sucesso '{name} {description}' ", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+            Main_Menu main_Menu = new Main_Menu();
+            main_Menu.Show();
             this.Hide();
         }
 

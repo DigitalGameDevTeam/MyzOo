@@ -4,9 +4,9 @@ using System.Windows.Forms;
 
 namespace MyzOo.View
 {
-    public partial class Cell_Menu : Form
+    public partial class CellData_Register : Form
     {
-        public Cell_Menu()
+        public CellData_Register()
         {
             InitializeComponent();
         }
@@ -37,15 +37,12 @@ namespace MyzOo.View
             // Generate a random ID with 4 numbers
             int id = random.Next(1000, 10000);
             
-            int number = Convert.ToInt32(Cellnumber_Box.Text);
+            int number = (int)Cell_Number.Value;
             bool cleaning = Checkup_Box.Checked;
             string description = CellDescription_textbox.Text;
 
             CellCrud cell = new CellCrud();
             cell.SetData(id, number, cleaning, description);
-
-
-            MessageBox.Show("Registo realizado com sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             this.Hide();
         }

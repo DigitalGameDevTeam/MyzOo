@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyzOo.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,44 +8,40 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MyzOo.Models;
-using MyzOo.View;
 
 namespace MyzOo.View
 {
-    
-    public partial class AnimalList_Menu : Form
+    public partial class CellList : Form
     {
-        
-        public AnimalList_Menu()
+        public CellList()
         {
             InitializeComponent();
         }
 
-        private void AnimalList_Menu_Load(object sender, EventArgs e)
+        private void CellList_Load(object sender, EventArgs e)
         {
             populateItems();
         }
 
         private void populateItems()
         {
-            card[] cardList = new card[20];
+            card[] cardList = new card[1000];
 
             int count = 0;
 
             flowLayoutPanel1.Controls.Clear();
 
-            foreach (var animal in Animal.LoadData())
+            foreach (var cell in Cell.LoadData())
             {
 
                 cardList[count] = new card();
-                cardList[count].Id = animal.Id;
-                cardList[count].Name = animal.Name;
+                cardList[count].Id = cell.Id;
+                cardList[count].Name = cell.Number.ToString();
 
                 flowLayoutPanel1.Controls.Add(cardList[count]);
 
                 cardList[count].Click += Card_Click;
-                    
+
             }
         }
 
@@ -52,11 +49,10 @@ namespace MyzOo.View
         {
             if (sender is card clickedCard)
             {
-                int animalID = clickedCard.Id;
-                //MessageBox.Show($"Animal ID: {animalID}");
+                int cellId = clickedCard.Id;
 
-                Ver_Animal_Menu ver_Animal_Menu = new Ver_Animal_Menu(animalID);
-                ver_Animal_Menu.Show();
+                CellData_Menu cellData = new CellData_Menu(cellId);
+                cellData.Show();
                 this.Hide();
             }
         }
@@ -72,33 +68,7 @@ namespace MyzOo.View
 
         private void Minimize_button_Click(object sender, EventArgs e)
         {
-            //minimize the form
             this.WindowState = FormWindowState.Minimized;
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void card1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void card1_Load_1(object sender, EventArgs e)
-        {
-
         }
     }
 }

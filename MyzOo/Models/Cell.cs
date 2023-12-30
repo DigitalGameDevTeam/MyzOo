@@ -23,6 +23,18 @@ namespace MyzOo.Models
             cell.SetData(id, number, cleaning, description);
         }
 
+        public void UpdateData(int id, int number, bool cleaning, string description)
+        {
+            CellCrud cell = new CellCrud();
+            cell.UpdateData(id, number, cleaning, description);
+        }
+
+        public void DeleteData(int id)
+        {
+            CellCrud cell = new CellCrud();
+            cell.DeleteData(id);
+        }
+
         public static List<Cell> LoadData()
         {
             CellCrud cellCrud = new CellCrud();

@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace MyzOo.View
 {
-    public partial class Ver_Employee_Menu : Form
+    public partial class EmployeeData_Menu : Form
     {
         int op = 1;
-        public Ver_Employee_Menu()
+        public EmployeeData_Menu()
         {
             InitializeComponent();
         }
