@@ -14,6 +14,7 @@ namespace MyzOo
         {
             InitializeComponent();
             firebase = new Firebase();
+  
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -21,6 +22,7 @@ namespace MyzOo
             panel1.BackColor = Color.DeepSkyBlue;
             Close_button.ForeColor = Color.DeepSkyBlue;
             label1.ForeColor = Color.White;
+            textBox2.BackColor = Color.FromArgb(241, 247, 255);
         }
 
         private void Close_button_Click(object sender, EventArgs e)
@@ -71,7 +73,6 @@ namespace MyzOo
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-
         }
 
         private void label2_Click(object sender, EventArgs e)
