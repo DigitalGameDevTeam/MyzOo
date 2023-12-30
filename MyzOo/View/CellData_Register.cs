@@ -11,16 +11,6 @@ namespace MyzOo.View
             InitializeComponent();
         }
 
-        private void Animallist_textbox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Cellnumber_Box_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void Exit_button_Click(object sender, EventArgs e)
         {
             //hide this Menu and open Main Menu
@@ -53,6 +43,16 @@ namespace MyzOo.View
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Animallist_textbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Cellnumber_Box_TextChanged(object sender, EventArgs e)
         {
 
         }

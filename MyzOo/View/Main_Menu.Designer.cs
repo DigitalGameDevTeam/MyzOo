@@ -33,10 +33,6 @@
             this.Minimize_button = new System.Windows.Forms.Button();
             this.Exit_button = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.Perfil_image_picture = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.Name_Box = new System.Windows.Forms.TextBox();
             this.AnimalList_Menu_button = new System.Windows.Forms.Button();
             this.Employee_Menu_button = new System.Windows.Forms.Button();
             this.AnimalMenu_button = new System.Windows.Forms.Button();
@@ -46,8 +42,10 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.Name_Box = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Perfil_image_picture)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -107,52 +105,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "My zOo";
             // 
-            // Perfil_image_picture
-            // 
-            this.Perfil_image_picture.Image = ((System.Drawing.Image)(resources.GetObject("Perfil_image_picture.Image")));
-            this.Perfil_image_picture.Location = new System.Drawing.Point(13, 6);
-            this.Perfil_image_picture.Name = "Perfil_image_picture";
-            this.Perfil_image_picture.Size = new System.Drawing.Size(166, 159);
-            this.Perfil_image_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Perfil_image_picture.TabIndex = 6;
-            this.Perfil_image_picture.TabStop = false;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.SystemColors.GrayText;
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.Name_Box);
-            this.panel2.Controls.Add(this.Perfil_image_picture);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 57);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 393);
-            this.panel2.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(12, 175);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 15);
-            this.label2.TabIndex = 26;
-            this.label2.Text = "Nome: ";
-            // 
-            // Name_Box
-            // 
-            this.Name_Box.BackColor = System.Drawing.Color.Gray;
-            this.Name_Box.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Name_Box.Enabled = false;
-            this.Name_Box.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.Name_Box.ForeColor = System.Drawing.Color.White;
-            this.Name_Box.Location = new System.Drawing.Point(12, 193);
-            this.Name_Box.Name = "Name_Box";
-            this.Name_Box.Size = new System.Drawing.Size(167, 14);
-            this.Name_Box.TabIndex = 25;
-            // 
             // AnimalList_Menu_button
             // 
             this.AnimalList_Menu_button.AutoSize = true;
@@ -181,7 +133,7 @@
             this.Employee_Menu_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Employee_Menu_button.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Employee_Menu_button.ForeColor = System.Drawing.Color.Black;
-            this.Employee_Menu_button.Location = new System.Drawing.Point(264, 169);
+            this.Employee_Menu_button.Location = new System.Drawing.Point(602, 163);
             this.Employee_Menu_button.Name = "Employee_Menu_button";
             this.Employee_Menu_button.Size = new System.Drawing.Size(186, 36);
             this.Employee_Menu_button.TabIndex = 6;
@@ -253,7 +205,7 @@
             this.VerEmployee_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.VerEmployee_button.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.VerEmployee_button.ForeColor = System.Drawing.Color.Black;
-            this.VerEmployee_button.Location = new System.Drawing.Point(275, 291);
+            this.VerEmployee_button.Location = new System.Drawing.Point(630, 247);
             this.VerEmployee_button.Name = "VerEmployee_button";
             this.VerEmployee_button.Size = new System.Drawing.Size(161, 33);
             this.VerEmployee_button.TabIndex = 10;
@@ -289,7 +241,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(264, 211);
+            this.button2.Location = new System.Drawing.Point(602, 205);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(186, 36);
             this.button2.TabIndex = 12;
@@ -314,6 +266,42 @@
             this.button3.Text = "Lista Celas";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // Name_Box
+            // 
+            this.Name_Box.BackColor = System.Drawing.Color.Gray;
+            this.Name_Box.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Name_Box.Enabled = false;
+            this.Name_Box.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
+            this.Name_Box.ForeColor = System.Drawing.Color.White;
+            this.Name_Box.Location = new System.Drawing.Point(12, 28);
+            this.Name_Box.Name = "Name_Box";
+            this.Name_Box.Size = new System.Drawing.Size(167, 14);
+            this.Name_Box.TabIndex = 25;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label2.Location = new System.Drawing.Point(10, 6);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(49, 15);
+            this.label2.TabIndex = 26;
+            this.label2.Text = "Nome: ";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.GrayText;
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.Name_Box);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 57);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 393);
+            this.panel2.TabIndex = 1;
             // 
             // Main_Menu
             // 
@@ -340,7 +328,6 @@
             this.Load += new System.EventHandler(this.Main_Menu_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Perfil_image_picture)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
@@ -351,21 +338,20 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Exit_button;
         private System.Windows.Forms.Button Minimize_button;
         private System.Windows.Forms.Button AnimalMenu_button;
-        private System.Windows.Forms.PictureBox Perfil_image_picture;
         private System.Windows.Forms.Button Food_Menu_button;
         private System.Windows.Forms.Button Cell_Menu_button;
         private System.Windows.Forms.Button Employee_Menu_button;
         private System.Windows.Forms.Button AnimalList_Menu_button;
         private System.Windows.Forms.Button VerEmployee_button;
-        private System.Windows.Forms.TextBox Name_Box;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox Name_Box;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel2;
     }
 }
