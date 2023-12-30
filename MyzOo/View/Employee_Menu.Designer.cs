@@ -35,22 +35,18 @@
             this.Minimize_button = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Regist_button = new System.Windows.Forms.Button();
-            this.insertImage_Button = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.Name_Box = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.Checkup_Box = new System.Windows.Forms.CheckBox();
             this.label7 = new System.Windows.Forms.Label();
             this.Birthday_Calendar = new System.Windows.Forms.MonthCalendar();
             this.Cell_listbox = new System.Windows.Forms.ComboBox();
             this.Food_listbox = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.profilePicture = new System.Windows.Forms.PictureBox();
+            this.Name_Box = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.profilePicture)).BeginInit();
             this.SuspendLayout();
             // 
             // button2
@@ -83,13 +79,14 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("MS Reference Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(12, 0);
+            this.label4.Location = new System.Drawing.Point(10, 7);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(301, 60);
+            this.label4.Size = new System.Drawing.Size(350, 50);
             this.label4.TabIndex = 2;
-            this.label4.Text = "Funcionário";
+            this.label4.Text = "Registar funcionario";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // Minimize_button
             // 
@@ -109,7 +106,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel1.BackColor = System.Drawing.Color.SteelBlue;
             this.panel1.Controls.Add(this.Minimize_button);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.Exit_button);
@@ -121,62 +118,40 @@
             // 
             // Regist_button
             // 
-            this.Regist_button.BackColor = System.Drawing.Color.Transparent;
+            this.Regist_button.BackColor = System.Drawing.Color.SteelBlue;
             this.Regist_button.FlatAppearance.BorderSize = 0;
             this.Regist_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
             this.Regist_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
             this.Regist_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Regist_button.ForeColor = System.Drawing.Color.Black;
-            this.Regist_button.Location = new System.Drawing.Point(510, 374);
+            this.Regist_button.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Regist_button.ForeColor = System.Drawing.Color.White;
+            this.Regist_button.Location = new System.Drawing.Point(19, 303);
             this.Regist_button.Name = "Regist_button";
-            this.Regist_button.Size = new System.Drawing.Size(75, 23);
+            this.Regist_button.Size = new System.Drawing.Size(107, 33);
             this.Regist_button.TabIndex = 42;
-            this.Regist_button.Text = "Registrar";
+            this.Regist_button.Text = "Finalizar";
             this.Regist_button.UseVisualStyleBackColor = false;
-            // 
-            // insertImage_Button
-            // 
-            this.insertImage_Button.Location = new System.Drawing.Point(30, 296);
-            this.insertImage_Button.Margin = new System.Windows.Forms.Padding(2);
-            this.insertImage_Button.Name = "insertImage_Button";
-            this.insertImage_Button.Size = new System.Drawing.Size(85, 23);
-            this.insertImage_Button.TabIndex = 50;
-            this.insertImage_Button.Text = "Inserir Imagem";
-            this.insertImage_Button.UseVisualStyleBackColor = true;
-            this.insertImage_Button.Click += new System.EventHandler(this.insertImage_Button_Click);
+            this.Regist_button.Click += new System.EventHandler(this.Regist_button_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label2.Location = new System.Drawing.Point(218, 90);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(12, 88);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(136, 15);
+            this.label2.Size = new System.Drawing.Size(129, 15);
             this.label2.TabIndex = 36;
             this.label2.Text = "Nome do Funcionário :";
-            // 
-            // Name_Box
-            // 
-            this.Name_Box.BackColor = System.Drawing.Color.LightGray;
-            this.Name_Box.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Name_Box.Enabled = false;
-            this.Name_Box.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.Name_Box.ForeColor = System.Drawing.Color.Black;
-            this.Name_Box.Location = new System.Drawing.Point(343, 91);
-            this.Name_Box.Name = "Name_Box";
-            this.Name_Box.Size = new System.Drawing.Size(227, 14);
-            this.Name_Box.TabIndex = 37;
-            this.Name_Box.TextChanged += new System.EventHandler(this.Name_Box_TextChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label3.Location = new System.Drawing.Point(218, 112);
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(325, 88);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(130, 15);
+            this.label3.Size = new System.Drawing.Size(115, 15);
             this.label3.TabIndex = 38;
             this.label3.Text = "Data de Aniversário :";
             // 
@@ -184,35 +159,21 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label6.Location = new System.Drawing.Point(292, 304);
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(12, 132);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(60, 15);
+            this.label6.Size = new System.Drawing.Size(55, 15);
             this.label6.TabIndex = 39;
             this.label6.Text = "Função : ";
-            // 
-            // Checkup_Box
-            // 
-            this.Checkup_Box.AutoSize = true;
-            this.Checkup_Box.BackColor = System.Drawing.Color.Transparent;
-            this.Checkup_Box.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Checkup_Box.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.Checkup_Box.Location = new System.Drawing.Point(12, 374);
-            this.Checkup_Box.Name = "Checkup_Box";
-            this.Checkup_Box.Size = new System.Drawing.Size(73, 19);
-            this.Checkup_Box.TabIndex = 40;
-            this.Checkup_Box.Text = "Checkup";
-            this.Checkup_Box.UseVisualStyleBackColor = false;
-            this.Checkup_Box.CheckedChanged += new System.EventHandler(this.Checkup_Box_CheckedChanged);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label7.Location = new System.Drawing.Point(211, 327);
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(16, 229);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(147, 15);
+            this.label7.Size = new System.Drawing.Size(136, 15);
             this.label7.TabIndex = 41;
             this.label7.Text = "Nivel de Administração :";
             this.label7.Click += new System.EventHandler(this.label7_Click);
@@ -220,7 +181,8 @@
             // Birthday_Calendar
             // 
             this.Birthday_Calendar.BackColor = System.Drawing.Color.LightGray;
-            this.Birthday_Calendar.Location = new System.Drawing.Point(350, 112);
+            this.Birthday_Calendar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Birthday_Calendar.Location = new System.Drawing.Point(328, 112);
             this.Birthday_Calendar.Name = "Birthday_Calendar";
             this.Birthday_Calendar.SelectionRange = new System.Windows.Forms.SelectionRange(new System.DateTime(2023, 11, 15, 0, 0, 0, 0), new System.DateTime(2023, 11, 21, 0, 0, 0, 0));
             this.Birthday_Calendar.ShowToday = false;
@@ -233,7 +195,7 @@
             this.Cell_listbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Cell_listbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Cell_listbox.FormattingEnabled = true;
-            this.Cell_listbox.Location = new System.Drawing.Point(347, 300);
+            this.Cell_listbox.Location = new System.Drawing.Point(15, 150);
             this.Cell_listbox.Name = "Cell_listbox";
             this.Cell_listbox.Size = new System.Drawing.Size(224, 21);
             this.Cell_listbox.TabIndex = 44;
@@ -244,9 +206,9 @@
             this.Food_listbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Food_listbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Food_listbox.FormattingEnabled = true;
-            this.Food_listbox.Location = new System.Drawing.Point(347, 325);
+            this.Food_listbox.Location = new System.Drawing.Point(19, 247);
             this.Food_listbox.Name = "Food_listbox";
-            this.Food_listbox.Size = new System.Drawing.Size(224, 21);
+            this.Food_listbox.Size = new System.Drawing.Size(220, 21);
             this.Food_listbox.TabIndex = 45;
             // 
             // button1
@@ -263,52 +225,48 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label5.Location = new System.Drawing.Point(259, 353);
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(16, 184);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(96, 15);
+            this.label5.Size = new System.Drawing.Size(83, 15);
             this.label5.TabIndex = 47;
             this.label5.Text = "Palavra Passe :";
             // 
-            // textBox1
+            // Name_Box
             // 
-            this.textBox1.BackColor = System.Drawing.Color.LightGray;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Enabled = false;
-            this.textBox1.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.textBox1.ForeColor = System.Drawing.Color.Black;
-            this.textBox1.Location = new System.Drawing.Point(347, 353);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(223, 14);
-            this.textBox1.TabIndex = 48;
+            this.Name_Box.BackColor = System.Drawing.Color.LightGray;
+            this.Name_Box.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Name_Box.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
+            this.Name_Box.ForeColor = System.Drawing.Color.Black;
+            this.Name_Box.Location = new System.Drawing.Point(15, 106);
+            this.Name_Box.Name = "Name_Box";
+            this.Name_Box.Size = new System.Drawing.Size(224, 14);
+            this.Name_Box.TabIndex = 37;
+            this.Name_Box.TextChanged += new System.EventHandler(this.Name_Box_TextChanged);
             // 
-            // profilePicture
+            // textBox2
             // 
-            this.profilePicture.Image = ((System.Drawing.Image)(resources.GetObject("profilePicture.Image")));
-            this.profilePicture.Location = new System.Drawing.Point(30, 97);
-            this.profilePicture.Margin = new System.Windows.Forms.Padding(2);
-            this.profilePicture.Name = "profilePicture";
-            this.profilePicture.Size = new System.Drawing.Size(172, 190);
-            this.profilePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.profilePicture.TabIndex = 49;
-            this.profilePicture.TabStop = false;
-            this.profilePicture.Click += new System.EventHandler(this.profilePicture_Click);
+            this.textBox2.BackColor = System.Drawing.Color.LightGray;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
+            this.textBox2.ForeColor = System.Drawing.Color.Black;
+            this.textBox2.Location = new System.Drawing.Point(19, 202);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(220, 14);
+            this.textBox2.TabIndex = 49;
             // 
             // Employee_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(599, 417);
-            this.Controls.Add(this.insertImage_Button);
-            this.Controls.Add(this.profilePicture);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(599, 362);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Food_listbox);
             this.Controls.Add(this.Cell_listbox);
             this.Controls.Add(this.Birthday_Calendar);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.Checkup_Box);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.Name_Box);
@@ -318,14 +276,13 @@
             this.Controls.Add(this.button2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Employee_Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Employee_Menu";
             this.Load += new System.EventHandler(this.Employee_Menu_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.profilePicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -339,19 +296,16 @@
         private System.Windows.Forms.Button Minimize_button;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button Regist_button;
-        private System.Windows.Forms.Button insertImage_Button;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox Name_Box;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.CheckBox Checkup_Box;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.MonthCalendar Birthday_Calendar;
         private System.Windows.Forms.ComboBox Cell_listbox;
         private System.Windows.Forms.ComboBox Food_listbox;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.PictureBox profilePicture;
+        private System.Windows.Forms.TextBox Name_Box;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
