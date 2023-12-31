@@ -14,11 +14,11 @@ using System.Windows.Forms;
 
 namespace MyzOo.View
 {
-    public partial class Employee_Menu : Form
+    public partial class EmployeeData_Register : Form
     {
         private DateTime birthDateEmployee;
 
-        public Employee_Menu()
+        public EmployeeData_Register()
         {
             InitializeComponent();
             this.FillEmployeeFunctionListBox();

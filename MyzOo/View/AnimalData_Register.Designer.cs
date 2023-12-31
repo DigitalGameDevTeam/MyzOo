@@ -32,12 +32,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.Exit_button = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.Name_Box = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.Checkup_Box = new System.Windows.Forms.CheckBox();
             this.label7 = new System.Windows.Forms.Label();
             this.Regist_button = new System.Windows.Forms.Button();
             this.Birthday_Calendar = new System.Windows.Forms.MonthCalendar();
@@ -48,7 +46,6 @@
             this.Gender_listbox = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -91,22 +88,12 @@
             this.Exit_button.UseVisualStyleBackColor = false;
             this.Exit_button.Click += new System.EventHandler(this.Exit_button_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 63);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label2.Location = new System.Drawing.Point(230, 71);
+            this.label2.Location = new System.Drawing.Point(19, 72);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(110, 15);
             this.label2.TabIndex = 2;
@@ -118,9 +105,9 @@
             this.Name_Box.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Name_Box.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
             this.Name_Box.ForeColor = System.Drawing.Color.Black;
-            this.Name_Box.Location = new System.Drawing.Point(344, 71);
+            this.Name_Box.Location = new System.Drawing.Point(22, 90);
             this.Name_Box.Name = "Name_Box";
-            this.Name_Box.Size = new System.Drawing.Size(227, 14);
+            this.Name_Box.Size = new System.Drawing.Size(224, 14);
             this.Name_Box.TabIndex = 3;
             this.Name_Box.TextChanged += new System.EventHandler(this.Name_Box_TextChanged);
             // 
@@ -129,7 +116,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label3.Location = new System.Drawing.Point(234, 101);
+            this.label3.Location = new System.Drawing.Point(341, 68);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(104, 15);
             this.label3.TabIndex = 4;
@@ -140,32 +127,18 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label6.Location = new System.Drawing.Point(231, 281);
+            this.label6.Location = new System.Drawing.Point(19, 120);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(103, 15);
             this.label6.TabIndex = 10;
             this.label6.Text = "Cela do Animal :";
-            // 
-            // Checkup_Box
-            // 
-            this.Checkup_Box.AutoSize = true;
-            this.Checkup_Box.BackColor = System.Drawing.Color.Transparent;
-            this.Checkup_Box.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Checkup_Box.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.Checkup_Box.Location = new System.Drawing.Point(79, 273);
-            this.Checkup_Box.Name = "Checkup_Box";
-            this.Checkup_Box.Size = new System.Drawing.Size(73, 19);
-            this.Checkup_Box.TabIndex = 12;
-            this.Checkup_Box.Text = "Checkup";
-            this.Checkup_Box.UseVisualStyleBackColor = false;
-            this.Checkup_Box.CheckedChanged += new System.EventHandler(this.Checkup_Box_CheckedChanged);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label7.Location = new System.Drawing.Point(213, 318);
+            this.label7.Location = new System.Drawing.Point(19, 176);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(121, 15);
             this.label7.TabIndex = 13;
@@ -173,15 +146,16 @@
             // 
             // Regist_button
             // 
-            this.Regist_button.BackColor = System.Drawing.Color.Transparent;
+            this.Regist_button.BackColor = System.Drawing.Color.SteelBlue;
             this.Regist_button.FlatAppearance.BorderSize = 0;
             this.Regist_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
             this.Regist_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
             this.Regist_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Regist_button.ForeColor = System.Drawing.Color.Black;
-            this.Regist_button.Location = new System.Drawing.Point(512, 382);
+            this.Regist_button.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.Regist_button.ForeColor = System.Drawing.Color.White;
+            this.Regist_button.Location = new System.Drawing.Point(22, 342);
             this.Regist_button.Name = "Regist_button";
-            this.Regist_button.Size = new System.Drawing.Size(75, 23);
+            this.Regist_button.Size = new System.Drawing.Size(107, 33);
             this.Regist_button.TabIndex = 17;
             this.Regist_button.Text = "Registrar";
             this.Regist_button.UseVisualStyleBackColor = false;
@@ -190,7 +164,7 @@
             // Birthday_Calendar
             // 
             this.Birthday_Calendar.BackColor = System.Drawing.Color.LightGray;
-            this.Birthday_Calendar.Location = new System.Drawing.Point(344, 101);
+            this.Birthday_Calendar.Location = new System.Drawing.Point(344, 92);
             this.Birthday_Calendar.Name = "Birthday_Calendar";
             this.Birthday_Calendar.SelectionRange = new System.Windows.Forms.SelectionRange(new System.DateTime(2023, 11, 15, 0, 0, 0, 0), new System.DateTime(2023, 11, 21, 0, 0, 0, 0));
             this.Birthday_Calendar.ShowToday = false;
@@ -203,7 +177,7 @@
             this.Cell_listbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Cell_listbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Cell_listbox.FormattingEnabled = true;
-            this.Cell_listbox.Location = new System.Drawing.Point(347, 281);
+            this.Cell_listbox.Location = new System.Drawing.Point(22, 138);
             this.Cell_listbox.Name = "Cell_listbox";
             this.Cell_listbox.Size = new System.Drawing.Size(224, 21);
             this.Cell_listbox.TabIndex = 19;
@@ -215,7 +189,7 @@
             this.Food_listbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Food_listbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Food_listbox.FormattingEnabled = true;
-            this.Food_listbox.Location = new System.Drawing.Point(347, 316);
+            this.Food_listbox.Location = new System.Drawing.Point(22, 194);
             this.Food_listbox.Name = "Food_listbox";
             this.Food_listbox.Size = new System.Drawing.Size(224, 21);
             this.Food_listbox.TabIndex = 20;
@@ -227,7 +201,7 @@
             // Decease_Box
             // 
             this.Decease_Box.AutoSize = true;
-            this.Decease_Box.Location = new System.Drawing.Point(79, 299);
+            this.Decease_Box.Location = new System.Drawing.Point(22, 302);
             this.Decease_Box.Name = "Decease_Box";
             this.Decease_Box.Size = new System.Drawing.Size(61, 17);
             this.Decease_Box.TabIndex = 21;
@@ -241,7 +215,7 @@
             this.Gender_listbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Gender_listbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Gender_listbox.FormattingEnabled = true;
-            this.Gender_listbox.Location = new System.Drawing.Point(347, 351);
+            this.Gender_listbox.Location = new System.Drawing.Point(22, 257);
             this.Gender_listbox.Name = "Gender_listbox";
             this.Gender_listbox.Size = new System.Drawing.Size(224, 21);
             this.Gender_listbox.TabIndex = 22;
@@ -251,14 +225,14 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label5.Location = new System.Drawing.Point(276, 353);
+            this.label5.Location = new System.Drawing.Point(19, 230);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(62, 15);
             this.label5.TabIndex = 23;
             this.label5.Text = "Genero : ";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // Animal_Menu
+            // AnimalData_Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -272,22 +246,19 @@
             this.Controls.Add(this.Birthday_Calendar);
             this.Controls.Add(this.Regist_button);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.Checkup_Box);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.Name_Box);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Animal_Menu";
+            this.Name = "AnimalData_Register";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Animal_Menu";
             this.Load += new System.EventHandler(this.Animal_Menu_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -297,13 +268,11 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button Exit_button;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox Name_Box;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.CheckBox Checkup_Box;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button Regist_button;
         private System.Windows.Forms.MonthCalendar Birthday_Calendar;

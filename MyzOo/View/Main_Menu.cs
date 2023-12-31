@@ -50,10 +50,12 @@ namespace MyzOo
             List<Food> food = Food.FoodList;
             List<Cell> cell = Cell.CellList;
 
+            
             AnimalData_Register animal_Menu = new AnimalData_Register();
-            animal_Menu.Show();
             this.Hide();
-
+            animal_Menu.Show();
+            this.Dispose();
+            this.Close();
         }
 
         private void Food_Menu_button_Click(object sender, EventArgs e)

@@ -21,16 +21,30 @@ namespace MyzOo
         }
         private void Animal_Menu_Load(object sender, EventArgs e)
         {
+            this.FillAnimalFoodListBox();
+            this.FillAnimalCellListBox();
+            this.FillAnimalGenderListBox();
+          
+        }
+
+        private void FillAnimalFoodListBox()
+        {
             foreach (var food in Food.LoadData())
             {
                 Food_listbox.Items.Add(food.Description);
             }
+        }
 
+        private void FillAnimalCellListBox()
+        {
             foreach (var cell in Cell.LoadData())
             {
                 Cell_listbox.Items.Add(cell.Number);
             }
-        
+        }
+
+        private void FillAnimalGenderListBox()
+        {
             Animal.Gender[] genders = (Animal.Gender[])Enum.GetValues(typeof(Animal.Gender));
 
             foreach (var gender in genders)
@@ -42,9 +56,12 @@ namespace MyzOo
         private void Exit_button_Click(object sender, EventArgs e)
         {
             //hide this Menu
+            
             Main_Menu main_Menu = new Main_Menu();
             main_Menu.Show();
             this.Hide();
+            this.Dispose();
+            this.Close();
         }
         private void Food_list_SelectedItemChanged(object sender, EventArgs e)
         {
@@ -102,9 +119,11 @@ namespace MyzOo
 
             animal.SetData(Id, Name, Date, Checkup, IsDeceased, gender, animalCell.Number, animalFood.Description);
 
+            this.Close();
             Main_Menu main_Menu = new Main_Menu();
             main_Menu.Show();
             this.Hide();
+            
         }
 
         private void Cell_listbox_SelectedIndexChanged(object sender, EventArgs e)

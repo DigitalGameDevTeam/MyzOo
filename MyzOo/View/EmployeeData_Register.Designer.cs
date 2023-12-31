@@ -1,6 +1,6 @@
 ﻿namespace MyzOo.View
 {
-    partial class Employee_Menu
+    partial class EmployeeData_Register
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Employee_Menu));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeeData_Register));
             this.button2 = new System.Windows.Forms.Button();
             this.Exit_button = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();

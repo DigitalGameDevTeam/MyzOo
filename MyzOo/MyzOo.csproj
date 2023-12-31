@@ -135,11 +135,11 @@
     <Compile Include="View\EmployeeList.Designer.cs">
       <DependentUpon>EmployeeList.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Employee_Menu.cs">
+    <Compile Include="View\EmployeeData_Register.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Employee_Menu.Designer.cs">
-      <DependentUpon>Employee_Menu.cs</DependentUpon>
+    <Compile Include="View\EmployeeData_Register.Designer.cs">
+      <DependentUpon>EmployeeData_Register.cs</DependentUpon>
     </Compile>
     <Compile Include="View\FoodData_Menu.cs">
       <SubType>Form</SubType>
@@ -209,8 +209,8 @@
     <EmbeddedResource Include="View\EmployeeList.resx">
       <DependentUpon>EmployeeList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Employee_Menu.resx">
-      <DependentUpon>Employee_Menu.cs</DependentUpon>
+    <EmbeddedResource Include="View\EmployeeData_Register.resx">
+      <DependentUpon>EmployeeData_Register.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FoodData_Menu.resx">
       <DependentUpon>FoodData_Menu.cs</DependentUpon>
