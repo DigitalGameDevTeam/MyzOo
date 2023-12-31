@@ -227,16 +227,6 @@
     <EmbeddedResource Include="View\Start_Menu.resx">
       <DependentUpon>Start_Menu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="View\CellData_Menu.resx">
       <DependentUpon>CellData_Menu.cs</DependentUpon>
     </EmbeddedResource>
@@ -259,36 +249,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Rectangle 48.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Group 29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Group 30.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Group 291.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Group 301.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Group 32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Group 292.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Group 33.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\png-transparent-computer-icons-user-profile-barcelona-miscellaneous-blue-logo-thumbnail.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pngwing.com.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />

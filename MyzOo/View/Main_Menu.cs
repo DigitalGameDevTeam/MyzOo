@@ -99,7 +99,7 @@ namespace MyzOo
         private void Employee_Menu_button_Click(object sender, EventArgs e)
         {
             //Open Employee_Menu
-            Employee_Menu employee_Menu = new Employee_Menu();
+            EmployeeData_Register employee_Menu = new EmployeeData_Register();
             employee_Menu.Show();
             this.Hide();
             
