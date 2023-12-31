@@ -101,7 +101,6 @@ namespace MyzOo
             // Animal Info
             string Name = Name_Box.Text;
             DateTime Date = Birthday_Calendar.SelectionRange.Start;
-            bool Checkup = Checkup_Box.Checked;
             bool IsDeceased = Decease_Box.Checked;
 
             string gender = Gender_listbox.Text;
@@ -117,7 +116,7 @@ namespace MyzOo
             int callDescription = Convert.ToInt32(Cell_listbox.Text);
             Cell animalCell = Cell.LoadData().FirstOrDefault(tf => tf.Number == callDescription);
 
-            animal.SetData(Id, Name, Date, Checkup, IsDeceased, gender, animalCell.Number, animalFood.Description);
+            animal.SetData(Id, Name, Date, IsDeceased, gender, animalCell.Number, animalFood.Description);
 
             this.Close();
             Main_Menu main_Menu = new Main_Menu();

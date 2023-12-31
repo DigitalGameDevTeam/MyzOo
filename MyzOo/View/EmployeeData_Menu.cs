@@ -25,7 +25,6 @@ namespace MyzOo.View
                 case 1:
                     op = 2;
                     label4.Text = "Editar Funcionário";
-                    Edit_button.Text = "Inspecionar";
                     Name_Box.Enabled = true;
                     Birthday_Calendar.Enabled = true;
                     Func_listbox.Enabled = true;
@@ -37,7 +36,6 @@ namespace MyzOo.View
                 case 2:
                     op = 1;
                     label4.Text = "Ver Funcionário";
-                    Edit_button.Text = "Editar";
                     Name_Box.Enabled = false;
                     Birthday_Calendar.Enabled = false;
                     Func_listbox.Enabled = false;

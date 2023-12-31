@@ -33,12 +33,10 @@
             this.Cell_listbox = new System.Windows.Forms.ComboBox();
             this.Birthday_Calendar = new System.Windows.Forms.MonthCalendar();
             this.label7 = new System.Windows.Forms.Label();
-            this.Checkup_Box = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.Name_Box = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.Exit_button = new System.Windows.Forms.Button();
@@ -47,7 +45,6 @@
             this.Decease_Box = new System.Windows.Forms.CheckBox();
             this.Update_Button = new System.Windows.Forms.Button();
             this.Delete_Button = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,7 +54,7 @@
             this.Food_listbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Food_listbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Food_listbox.FormattingEnabled = true;
-            this.Food_listbox.Location = new System.Drawing.Point(354, 308);
+            this.Food_listbox.Location = new System.Drawing.Point(12, 209);
             this.Food_listbox.Name = "Food_listbox";
             this.Food_listbox.Size = new System.Drawing.Size(224, 21);
             this.Food_listbox.TabIndex = 32;
@@ -69,7 +66,7 @@
             this.Cell_listbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Cell_listbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Cell_listbox.FormattingEnabled = true;
-            this.Cell_listbox.Location = new System.Drawing.Point(354, 275);
+            this.Cell_listbox.Location = new System.Drawing.Point(12, 148);
             this.Cell_listbox.Name = "Cell_listbox";
             this.Cell_listbox.Size = new System.Drawing.Size(224, 21);
             this.Cell_listbox.TabIndex = 31;
@@ -88,31 +85,18 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label7.Location = new System.Drawing.Point(229, 310);
+            this.label7.Location = new System.Drawing.Point(9, 182);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(121, 15);
             this.label7.TabIndex = 28;
             this.label7.Text = "Comida do Animal :";
-            // 
-            // Checkup_Box
-            // 
-            this.Checkup_Box.AutoSize = true;
-            this.Checkup_Box.BackColor = System.Drawing.Color.Transparent;
-            this.Checkup_Box.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Checkup_Box.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.Checkup_Box.Location = new System.Drawing.Point(72, 288);
-            this.Checkup_Box.Name = "Checkup_Box";
-            this.Checkup_Box.Size = new System.Drawing.Size(73, 19);
-            this.Checkup_Box.TabIndex = 27;
-            this.Checkup_Box.Text = "Checkup";
-            this.Checkup_Box.UseVisualStyleBackColor = false;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label6.Location = new System.Drawing.Point(248, 277);
+            this.label6.Location = new System.Drawing.Point(9, 130);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(103, 15);
             this.label6.TabIndex = 26;
@@ -123,7 +107,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label3.Location = new System.Drawing.Point(240, 101);
+            this.label3.Location = new System.Drawing.Point(351, 77);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(104, 15);
             this.label3.TabIndex = 25;
@@ -136,7 +120,7 @@
             this.Name_Box.Enabled = false;
             this.Name_Box.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
             this.Name_Box.ForeColor = System.Drawing.Color.Black;
-            this.Name_Box.Location = new System.Drawing.Point(354, 71);
+            this.Name_Box.Location = new System.Drawing.Point(12, 101);
             this.Name_Box.Name = "Name_Box";
             this.Name_Box.Size = new System.Drawing.Size(227, 14);
             this.Name_Box.TabIndex = 24;
@@ -146,25 +130,15 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label2.Location = new System.Drawing.Point(240, 71);
+            this.label2.Location = new System.Drawing.Point(10, 75);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(110, 15);
             this.label2.TabIndex = 23;
             this.label2.Text = "Nome do Animal :";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 63);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 22;
-            this.pictureBox1.TabStop = false;
-            // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel1.BackColor = System.Drawing.Color.SteelBlue;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.Exit_button);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -206,7 +180,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label5.Location = new System.Drawing.Point(282, 341);
+            this.label5.Location = new System.Drawing.Point(9, 248);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(62, 15);
             this.label5.TabIndex = 34;
@@ -218,7 +192,7 @@
             this.Gender_listbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Gender_listbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Gender_listbox.FormattingEnabled = true;
-            this.Gender_listbox.Location = new System.Drawing.Point(354, 341);
+            this.Gender_listbox.Location = new System.Drawing.Point(12, 266);
             this.Gender_listbox.Name = "Gender_listbox";
             this.Gender_listbox.Size = new System.Drawing.Size(224, 21);
             this.Gender_listbox.TabIndex = 33;
@@ -229,7 +203,7 @@
             this.Decease_Box.BackColor = System.Drawing.Color.Transparent;
             this.Decease_Box.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Decease_Box.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.Decease_Box.Location = new System.Drawing.Point(72, 313);
+            this.Decease_Box.Location = new System.Drawing.Point(13, 313);
             this.Decease_Box.Name = "Decease_Box";
             this.Decease_Box.Size = new System.Drawing.Size(64, 19);
             this.Decease_Box.TabIndex = 35;
@@ -238,14 +212,14 @@
             // 
             // Update_Button
             // 
-            this.Update_Button.BackColor = System.Drawing.Color.Lime;
+            this.Update_Button.BackColor = System.Drawing.Color.SteelBlue;
             this.Update_Button.FlatAppearance.BorderSize = 0;
             this.Update_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
             this.Update_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
             this.Update_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Update_Button.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F);
-            this.Update_Button.ForeColor = System.Drawing.Color.Black;
-            this.Update_Button.Location = new System.Drawing.Point(454, 370);
+            this.Update_Button.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.Update_Button.ForeColor = System.Drawing.Color.White;
+            this.Update_Button.Location = new System.Drawing.Point(13, 366);
             this.Update_Button.Name = "Update_Button";
             this.Update_Button.Size = new System.Drawing.Size(124, 39);
             this.Update_Button.TabIndex = 29;
@@ -260,9 +234,9 @@
             this.Delete_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
             this.Delete_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
             this.Delete_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Delete_Button.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Delete_Button.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.Delete_Button.ForeColor = System.Drawing.Color.White;
-            this.Delete_Button.Location = new System.Drawing.Point(354, 370);
+            this.Delete_Button.Location = new System.Drawing.Point(487, 366);
             this.Delete_Button.Name = "Delete_Button";
             this.Delete_Button.Size = new System.Drawing.Size(94, 39);
             this.Delete_Button.TabIndex = 36;
@@ -284,12 +258,10 @@
             this.Controls.Add(this.Birthday_Calendar);
             this.Controls.Add(this.Update_Button);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.Checkup_Box);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.Name_Box);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -297,7 +269,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ver_Animal_Menu";
             this.Load += new System.EventHandler(this.Ver_Animal_Menu_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -311,12 +282,10 @@
         private System.Windows.Forms.ComboBox Cell_listbox;
         private System.Windows.Forms.MonthCalendar Birthday_Calendar;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.CheckBox Checkup_Box;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox Name_Box;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Exit_button;

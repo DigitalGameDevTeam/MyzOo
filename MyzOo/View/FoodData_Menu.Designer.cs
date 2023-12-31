@@ -37,12 +37,10 @@
             this.Food_desciption_textbox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Delete_Button = new System.Windows.Forms.Button();
             this.Update_Button = new System.Windows.Forms.Button();
             this.Stock_Number = new System.Windows.Forms.NumericUpDown();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Stock_Number)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,7 +50,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(12, 0);
+            this.label1.Location = new System.Drawing.Point(2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(505, 60);
             this.label1.TabIndex = 2;
@@ -77,7 +75,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel1.BackColor = System.Drawing.Color.SteelBlue;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.Exit_button);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -91,7 +89,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label4.Location = new System.Drawing.Point(230, 85);
+            this.label4.Location = new System.Drawing.Point(9, 71);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(60, 15);
             this.label4.TabIndex = 56;
@@ -103,9 +101,9 @@
             this.TypeFood_listbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.TypeFood_listbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.TypeFood_listbox.FormattingEnabled = true;
-            this.TypeFood_listbox.Location = new System.Drawing.Point(296, 79);
+            this.TypeFood_listbox.Location = new System.Drawing.Point(12, 89);
             this.TypeFood_listbox.Name = "TypeFood_listbox";
-            this.TypeFood_listbox.Size = new System.Drawing.Size(291, 21);
+            this.TypeFood_listbox.Size = new System.Drawing.Size(197, 21);
             this.TypeFood_listbox.TabIndex = 55;
             this.TypeFood_listbox.SelectedIndexChanged += new System.EventHandler(this.Cell_listbox_SelectedIndexChanged);
             // 
@@ -115,10 +113,10 @@
             this.Food_desciption_textbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Food_desciption_textbox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
             this.Food_desciption_textbox.ForeColor = System.Drawing.Color.Black;
-            this.Food_desciption_textbox.Location = new System.Drawing.Point(233, 130);
+            this.Food_desciption_textbox.Location = new System.Drawing.Point(225, 93);
             this.Food_desciption_textbox.Multiline = true;
             this.Food_desciption_textbox.Name = "Food_desciption_textbox";
-            this.Food_desciption_textbox.Size = new System.Drawing.Size(354, 121);
+            this.Food_desciption_textbox.Size = new System.Drawing.Size(355, 121);
             this.Food_desciption_textbox.TabIndex = 53;
             // 
             // label6
@@ -126,7 +124,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label6.Location = new System.Drawing.Point(417, 274);
+            this.label6.Location = new System.Drawing.Point(12, 127);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(44, 15);
             this.label6.TabIndex = 51;
@@ -137,21 +135,11 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label3.Location = new System.Drawing.Point(230, 112);
+            this.label3.Location = new System.Drawing.Point(222, 74);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(134, 15);
             this.label3.TabIndex = 50;
             this.label3.Text = "Descrição da Comida:";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 64);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 47;
-            this.pictureBox1.TabStop = false;
             // 
             // Delete_Button
             // 
@@ -160,11 +148,11 @@
             this.Delete_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
             this.Delete_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
             this.Delete_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Delete_Button.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Delete_Button.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.Delete_Button.ForeColor = System.Drawing.Color.White;
-            this.Delete_Button.Location = new System.Drawing.Point(363, 308);
+            this.Delete_Button.Location = new System.Drawing.Point(486, 317);
             this.Delete_Button.Name = "Delete_Button";
-            this.Delete_Button.Size = new System.Drawing.Size(94, 39);
+            this.Delete_Button.Size = new System.Drawing.Size(94, 33);
             this.Delete_Button.TabIndex = 58;
             this.Delete_Button.Text = "Apagar";
             this.Delete_Button.UseVisualStyleBackColor = false;
@@ -172,16 +160,16 @@
             // 
             // Update_Button
             // 
-            this.Update_Button.BackColor = System.Drawing.Color.Lime;
+            this.Update_Button.BackColor = System.Drawing.Color.SteelBlue;
             this.Update_Button.FlatAppearance.BorderSize = 0;
             this.Update_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
             this.Update_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
             this.Update_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Update_Button.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F);
-            this.Update_Button.ForeColor = System.Drawing.Color.Black;
-            this.Update_Button.Location = new System.Drawing.Point(463, 308);
+            this.Update_Button.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.Update_Button.ForeColor = System.Drawing.Color.White;
+            this.Update_Button.Location = new System.Drawing.Point(12, 323);
             this.Update_Button.Name = "Update_Button";
-            this.Update_Button.Size = new System.Drawing.Size(124, 39);
+            this.Update_Button.Size = new System.Drawing.Size(107, 33);
             this.Update_Button.TabIndex = 57;
             this.Update_Button.Text = "Atualizar";
             this.Update_Button.UseVisualStyleBackColor = false;
@@ -189,9 +177,9 @@
             // 
             // Stock_Number
             // 
-            this.Stock_Number.Location = new System.Drawing.Point(467, 273);
+            this.Stock_Number.Location = new System.Drawing.Point(15, 145);
             this.Stock_Number.Name = "Stock_Number";
-            this.Stock_Number.Size = new System.Drawing.Size(120, 20);
+            this.Stock_Number.Size = new System.Drawing.Size(197, 20);
             this.Stock_Number.TabIndex = 59;
             this.Stock_Number.ValueChanged += new System.EventHandler(this.Stock_Number_ValueChanged);
             // 
@@ -199,7 +187,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(599, 359);
+            this.ClientSize = new System.Drawing.Size(599, 368);
             this.Controls.Add(this.Stock_Number);
             this.Controls.Add(this.Delete_Button);
             this.Controls.Add(this.Update_Button);
@@ -208,7 +196,6 @@
             this.Controls.Add(this.Food_desciption_textbox);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -218,7 +205,6 @@
             this.Load += new System.EventHandler(this.FoodList_menu_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Stock_Number)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -235,7 +221,6 @@
         private System.Windows.Forms.TextBox Food_desciption_textbox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button Delete_Button;
         private System.Windows.Forms.Button Update_Button;
         private System.Windows.Forms.NumericUpDown Stock_Number;

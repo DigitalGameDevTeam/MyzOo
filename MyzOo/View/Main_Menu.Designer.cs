@@ -51,7 +51,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel1.BackColor = System.Drawing.Color.SteelBlue;
             this.panel1.Controls.Add(this.Minimize_button);
             this.panel1.Controls.Add(this.Exit_button);
             this.panel1.Controls.Add(this.label1);
@@ -126,13 +126,13 @@
             // Employee_Menu_button
             // 
             this.Employee_Menu_button.AutoSize = true;
-            this.Employee_Menu_button.BackColor = System.Drawing.Color.Silver;
+            this.Employee_Menu_button.BackColor = System.Drawing.Color.SteelBlue;
             this.Employee_Menu_button.FlatAppearance.BorderSize = 0;
             this.Employee_Menu_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Employee_Menu_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Employee_Menu_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Employee_Menu_button.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Employee_Menu_button.ForeColor = System.Drawing.Color.Black;
+            this.Employee_Menu_button.ForeColor = System.Drawing.Color.White;
             this.Employee_Menu_button.Location = new System.Drawing.Point(602, 163);
             this.Employee_Menu_button.Name = "Employee_Menu_button";
             this.Employee_Menu_button.Size = new System.Drawing.Size(186, 36);
@@ -144,13 +144,13 @@
             // AnimalMenu_button
             // 
             this.AnimalMenu_button.AutoSize = true;
-            this.AnimalMenu_button.BackColor = System.Drawing.Color.Silver;
+            this.AnimalMenu_button.BackColor = System.Drawing.Color.SteelBlue;
             this.AnimalMenu_button.FlatAppearance.BorderSize = 0;
             this.AnimalMenu_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.AnimalMenu_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.AnimalMenu_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AnimalMenu_button.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AnimalMenu_button.ForeColor = System.Drawing.Color.Black;
+            this.AnimalMenu_button.ForeColor = System.Drawing.Color.White;
             this.AnimalMenu_button.Location = new System.Drawing.Point(264, 63);
             this.AnimalMenu_button.Name = "AnimalMenu_button";
             this.AnimalMenu_button.Size = new System.Drawing.Size(158, 36);
@@ -162,13 +162,13 @@
             // Food_Menu_button
             // 
             this.Food_Menu_button.AutoSize = true;
-            this.Food_Menu_button.BackColor = System.Drawing.Color.Silver;
+            this.Food_Menu_button.BackColor = System.Drawing.Color.SteelBlue;
             this.Food_Menu_button.FlatAppearance.BorderSize = 0;
             this.Food_Menu_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Food_Menu_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Food_Menu_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Food_Menu_button.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Food_Menu_button.ForeColor = System.Drawing.Color.Black;
+            this.Food_Menu_button.ForeColor = System.Drawing.Color.White;
             this.Food_Menu_button.Location = new System.Drawing.Point(452, 63);
             this.Food_Menu_button.Name = "Food_Menu_button";
             this.Food_Menu_button.Size = new System.Drawing.Size(158, 36);
@@ -180,13 +180,13 @@
             // Cell_Menu_button
             // 
             this.Cell_Menu_button.AutoSize = true;
-            this.Cell_Menu_button.BackColor = System.Drawing.Color.Silver;
+            this.Cell_Menu_button.BackColor = System.Drawing.Color.SteelBlue;
             this.Cell_Menu_button.FlatAppearance.BorderSize = 0;
             this.Cell_Menu_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Cell_Menu_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Cell_Menu_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Cell_Menu_button.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cell_Menu_button.ForeColor = System.Drawing.Color.Black;
+            this.Cell_Menu_button.ForeColor = System.Drawing.Color.White;
             this.Cell_Menu_button.Location = new System.Drawing.Point(631, 63);
             this.Cell_Menu_button.Name = "Cell_Menu_button";
             this.Cell_Menu_button.Size = new System.Drawing.Size(157, 36);
@@ -269,7 +269,7 @@
             // 
             // Name_Box
             // 
-            this.Name_Box.BackColor = System.Drawing.Color.Gray;
+            this.Name_Box.BackColor = System.Drawing.Color.White;
             this.Name_Box.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Name_Box.Enabled = false;
             this.Name_Box.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
@@ -294,7 +294,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.GrayText;
+            this.panel2.BackColor = System.Drawing.Color.Black;
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.Name_Box);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
@@ -302,6 +302,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(200, 393);
             this.panel2.TabIndex = 1;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // Main_Menu
             // 

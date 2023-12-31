@@ -33,13 +33,11 @@
             this.Regist_button = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.Exit_button = new System.Windows.Forms.Button();
             this.Checkup_Box = new System.Windows.Forms.CheckBox();
             this.Cell_Number = new System.Windows.Forms.NumericUpDown();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Cell_Number)).BeginInit();
             this.SuspendLayout();
@@ -50,7 +48,7 @@
             this.CellDescription_textbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.CellDescription_textbox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
             this.CellDescription_textbox.ForeColor = System.Drawing.Color.Black;
-            this.CellDescription_textbox.Location = new System.Drawing.Point(239, 126);
+            this.CellDescription_textbox.Location = new System.Drawing.Point(225, 93);
             this.CellDescription_textbox.Multiline = true;
             this.CellDescription_textbox.Name = "CellDescription_textbox";
             this.CellDescription_textbox.Size = new System.Drawing.Size(331, 150);
@@ -59,15 +57,16 @@
             // 
             // Regist_button
             // 
-            this.Regist_button.BackColor = System.Drawing.Color.Transparent;
+            this.Regist_button.BackColor = System.Drawing.Color.SteelBlue;
             this.Regist_button.FlatAppearance.BorderSize = 0;
             this.Regist_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
             this.Regist_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
             this.Regist_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Regist_button.ForeColor = System.Drawing.Color.Black;
-            this.Regist_button.Location = new System.Drawing.Point(495, 310);
+            this.Regist_button.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.Regist_button.ForeColor = System.Drawing.Color.White;
+            this.Regist_button.Location = new System.Drawing.Point(12, 323);
             this.Regist_button.Name = "Regist_button";
-            this.Regist_button.Size = new System.Drawing.Size(75, 23);
+            this.Regist_button.Size = new System.Drawing.Size(107, 33);
             this.Regist_button.TabIndex = 41;
             this.Regist_button.Text = "Registrar";
             this.Regist_button.UseVisualStyleBackColor = false;
@@ -78,7 +77,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label3.Location = new System.Drawing.Point(229, 108);
+            this.label3.Location = new System.Drawing.Point(222, 74);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(116, 15);
             this.label3.TabIndex = 39;
@@ -89,25 +88,15 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label2.Location = new System.Drawing.Point(229, 78);
+            this.label2.Location = new System.Drawing.Point(9, 71);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(109, 15);
             this.label2.TabIndex = 37;
             this.label2.Text = "Número da Cela :";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(11, 76);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 36;
-            this.pictureBox1.TabStop = false;
-            // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel1.BackColor = System.Drawing.Color.SteelBlue;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.Exit_button);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -122,7 +111,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(12, 0);
+            this.label1.Location = new System.Drawing.Point(2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(369, 60);
             this.label1.TabIndex = 2;
@@ -151,7 +140,7 @@
             this.Checkup_Box.BackColor = System.Drawing.Color.Transparent;
             this.Checkup_Box.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Checkup_Box.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.Checkup_Box.Location = new System.Drawing.Point(73, 282);
+            this.Checkup_Box.Location = new System.Drawing.Point(12, 115);
             this.Checkup_Box.Name = "Checkup_Box";
             this.Checkup_Box.Size = new System.Drawing.Size(70, 19);
             this.Checkup_Box.TabIndex = 43;
@@ -160,23 +149,22 @@
             // 
             // Cell_Number
             // 
-            this.Cell_Number.Location = new System.Drawing.Point(344, 77);
+            this.Cell_Number.Location = new System.Drawing.Point(12, 89);
             this.Cell_Number.Name = "Cell_Number";
-            this.Cell_Number.Size = new System.Drawing.Size(120, 20);
+            this.Cell_Number.Size = new System.Drawing.Size(197, 20);
             this.Cell_Number.TabIndex = 44;
             // 
             // CellData_Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(599, 359);
+            this.ClientSize = new System.Drawing.Size(599, 368);
             this.Controls.Add(this.Cell_Number);
             this.Controls.Add(this.Checkup_Box);
             this.Controls.Add(this.CellDescription_textbox);
             this.Controls.Add(this.Regist_button);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -184,7 +172,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cell_Menu";
             this.Load += new System.EventHandler(this.Cell_Menu_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Cell_Number)).EndInit();
@@ -198,7 +185,6 @@
         private System.Windows.Forms.Button Regist_button;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Exit_button;

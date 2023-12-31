@@ -73,5 +73,10 @@ namespace MyzOo.View
         private void Edit_button_Click(object sender, EventArgs e)
         {
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

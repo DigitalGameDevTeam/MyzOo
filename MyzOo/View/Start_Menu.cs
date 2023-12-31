@@ -3,6 +3,7 @@ using MyzOo.Models;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Windows.Media;
 
 namespace MyzOo
 {
@@ -17,11 +18,16 @@ namespace MyzOo
         }
         private void Form1_Load(object sender, EventArgs e)
         {
+            this.textBox1.AutoSize = false;
+            this.textBox1.Size = new System.Drawing.Size(142, 27);
+
+            this.textBox2.AutoSize = false;
+            this.textBox2.Size = new System.Drawing.Size(142, 27);
             //set form colors
-            panel1.BackColor = Color.DeepSkyBlue;
+            /*panel1.BackColor = Color.DeepSkyBlue;
             Close_button.ForeColor = Color.DeepSkyBlue;
             label1.ForeColor = Color.White;
-            textBox2.BackColor = Color.FromArgb(241, 247, 255);
+            textBox2.BackColor = Color.FromArgb(241, 247, 255);*/
         }
 
         private void Close_button_Click(object sender, EventArgs e)
@@ -76,7 +82,6 @@ namespace MyzOo
 
         private void label2_Click(object sender, EventArgs e)
         {
-            label2.Text = "Username";
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -92,6 +97,50 @@ namespace MyzOo
         private void label5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox1_Enter(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "Username")
+            {
+                textBox1.Text = "";
+
+                textBox1.ForeColor = System.Drawing.Color.Black;
+            }
+        }
+
+        private void textBox1_Leave(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "")
+            {
+                textBox1.Text = "Username";
+
+                textBox1.ForeColor = System.Drawing.Color.Silver;
+            }
+        }
+
+        private void textBox2_Enter(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "Password")
+            {
+                textBox1.Text = "";
+
+                textBox1.ForeColor = System.Drawing.Color.Black;
+            }
+        }
+
+        private void textBox2_Leave(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "")
+            {
+                textBox1.Text = "Password";
+
+                textBox1.ForeColor = System.Drawing.Color.Silver;
+            }
+        }
+
+        private void textBox1_MouseLeave(object sender, EventArgs e)
+        {         
         }
     }
 }

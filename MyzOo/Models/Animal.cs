@@ -17,7 +17,6 @@ namespace MyzOo.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public DateTime Birthday { get; set; }
-        public bool Checkup { get; set; }
         public bool IsDeceased { get; set; }
 
         internal enum Gender
@@ -37,17 +36,17 @@ namespace MyzOo.Models
         AnimalCrud animal = new AnimalCrud();
 
         // Save animal data
-        public void SetData(int Id, string Name, DateTime Date, bool Checkup, bool IsDecease, string gender, int cell, string food)
+        public void SetData(int Id, string Name, DateTime Date, bool IsDecease, string gender, int cell, string food)
         {
             
-            animal.SetData(Id, Name, Date, Checkup, IsDecease, gender, cell, food);
+            animal.SetData(Id, Name, Date, IsDecease, gender, cell, food);
 
         }
 
-        public void UpdateData(int Id, string Name, DateTime Date, bool Checkup, bool IsDecease, string gender, int cell, string food)
+        public void UpdateData(int Id, string Name, DateTime Date, bool IsDecease, string gender, int cell, string food)
         {
 
-            animal.UpdateData(Id, Name, Date, Checkup, IsDecease, gender, cell, food);
+            animal.UpdateData(Id, Name, Date, IsDecease, gender, cell, food);
 
         }
 

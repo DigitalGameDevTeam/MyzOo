@@ -27,7 +27,6 @@ namespace MyzOo.View
             Birthday_Calendar.Enabled = true;
             Cell_listbox.Enabled = true;
             Food_listbox.Enabled = true;
-            Checkup_Box.Enabled = true;
 
             animal = Animal.GetAnimal(this.animalId);
 
@@ -51,8 +50,8 @@ namespace MyzOo.View
             Name_Box.Text = animal.Name;
             Birthday_Calendar.SelectionStart = animal.Birthday;
             Cell_listbox.Text = animal.AnimalCell.ToString();
-            Food_listbox.Text = animal.AnimalFood;
-            Checkup_Box.Checked = animal.Checkup;
+            Food_listbox.Text = animal.AnimalFood.ToString();
+            Decease_Box.Checked = animal.IsDeceased;
             Gender_listbox.Text = animal.AnimalGender;
         }
 
@@ -64,7 +63,6 @@ namespace MyzOo.View
             // Animal Info
             string name = Name_Box.Text;
             DateTime date = Birthday_Calendar.SelectionRange.Start;
-            bool checkup = Checkup_Box.Checked;
             bool isDeceased = Decease_Box.Checked;
 
             string gender = Gender_listbox.Text;
@@ -78,7 +76,7 @@ namespace MyzOo.View
             int callDescription = Convert.ToInt32(Cell_listbox.Text);
             Cell animalCell = Cell.LoadData().FirstOrDefault(tf => tf.Number == callDescription);
 
-            animal.UpdateData(id, name, date, checkup, isDeceased, gender, animalCell.Number, animalFood.Description);
+            animal.UpdateData(id, name, date, isDeceased, gender, animalCell.Number, animalFood.Description);
 
             AnimalList animalList_Menu = new AnimalList();
             animalList_Menu.Show();
