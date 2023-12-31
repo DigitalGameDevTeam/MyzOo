@@ -48,6 +48,7 @@ namespace MyzOo.Methods
             }
         }
 
+        // Load data into a List instance
         public List<Client> LoadData()
         {
             try
@@ -71,15 +72,6 @@ namespace MyzOo.Methods
                 Console.WriteLine("Error");
                 return null;
             }
-        }
-        public void UpdateData(int id, string username, string password)
-        {
-            return;
-        }
-
-        public void DeleteData(int id)
-        {
-            return;
         }
     }
 }

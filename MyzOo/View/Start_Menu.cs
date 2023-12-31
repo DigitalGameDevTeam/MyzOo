@@ -14,7 +14,6 @@ namespace MyzOo
         {
             InitializeComponent();
             firebase = new Firebase();
-  
         }
         private void Form1_Load(object sender, EventArgs e)
         {

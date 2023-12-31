@@ -30,7 +30,6 @@ namespace MyzOo.Methods
                 var SetData = conn.client.Set("foods/" + id, set);
 
                 MessageBox.Show($"Comida {description} Registada com sucesso", "Aviso", MessageBoxButton.OK, MessageBoxImage.Warning);
-
             }
             catch (Exception)
             {

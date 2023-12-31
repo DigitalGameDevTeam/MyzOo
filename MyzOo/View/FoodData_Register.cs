@@ -58,8 +58,9 @@ namespace MyzOo.View
 
             // Create an instance of the Random class
             Random random = new Random();
-
-            // Generate a random ID with 4 numbers
+            
+            // - Guid.NewGuid();
+            // TODO
             int Id = random.Next(1000, 10000);
 
             FoodCrud food = new FoodCrud();

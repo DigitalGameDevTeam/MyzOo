@@ -16,7 +16,7 @@ namespace MyzOo.Methods
         Firebase conn = new Firebase();
 
         //set datas to database
-        public void SetData(int id, string name, DateTime birthday, bool checkup, string password, int adminLevel, string employeeJob)
+        public void SetData(string id, string name, DateTime birthday, string password, int adminLevel, int employeeJob)
         {
             try
             {
@@ -25,7 +25,6 @@ namespace MyzOo.Methods
                     Id = id,
                     Name = name,
                     Birthday = birthday,
-                    Checkup = checkup,
                     Password = password,
                     Adminlevel = adminLevel,
                     EmployeeJob = employeeJob
@@ -39,7 +38,7 @@ namespace MyzOo.Methods
         }
 
         //Update datas
-        public void UpdateData(int id, string name, DateTime birthday, bool checkup, string password, int adminLevel, string employeeJob)
+        public void UpdateData(string id, string name, DateTime birthday, string password, int adminLevel, int employeeJob)
         {
             try
             {
@@ -48,7 +47,6 @@ namespace MyzOo.Methods
                     Id = id,
                     Name = name,
                     Birthday = birthday,
-                    Checkup = checkup,
                     Password = password,
                     Adminlevel = adminLevel,
                     EmployeeJob = employeeJob

@@ -10,20 +10,19 @@ namespace MyzOo.Models
 {
     internal class Employee
     {
-        public int Id { get; set; }
+        public string Id { get; set; }
         public string Name { get; set; }
         public DateTime Birthday { get; set; }
-        public bool Checkup { get; set; }
         public string Password { get; set; }
         public int Adminlevel { get; set; }  
-        public string EmployeeJob { get; set; }
+        public int EmployeeJob { get; set; }
 
         public static List<Employee> EmployeeList = new List<Employee>();
 
-        public void SetData(int id, string name, DateTime birthday, bool checkup, string password, int adminLevel, string employeeJob)
+        public void SetData(string id, string name, DateTime birthday, string password, int adminLevel, int employeeJob)
         {
             EmployeeCrud employee = new EmployeeCrud();
-            employee.SetData(id, name, birthday, checkup, password, adminLevel, employeeJob);
+            employee.SetData(id, name, birthday, password, adminLevel, employeeJob);
         }
 
         public static List<Employee> LoadData()

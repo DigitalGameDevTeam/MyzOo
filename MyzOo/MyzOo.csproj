@@ -87,13 +87,17 @@
     <Compile Include="Methods\AnimalCrud.cs" />
     <Compile Include="Methods\CellCrud.cs" />
     <Compile Include="Methods\ClientCrud.cs" />
+    <Compile Include="Methods\EmployeeAdminLevelCrud.cs" />
     <Compile Include="Methods\EmployeeCrud.cs" />
     <Compile Include="Methods\FoodCrud.cs" />
+    <Compile Include="Methods\EmployeeFunctionCrud.cs" />
     <Compile Include="Methods\JobCrud.cs" />
     <Compile Include="Methods\TypeFoodCrud.cs" />
     <Compile Include="Models\Client.cs" />
     <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\EmployeeAdminLevel.cs" />
     <Compile Include="Models\Firebase.cs" />
+    <Compile Include="Models\EmployeeFunction.cs" />
     <Compile Include="Models\TypeFood.cs" />
     <Compile Include="Models\Job.cs" />
     <Compile Include="View\AnimalList.cs">
