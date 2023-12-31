@@ -18,14 +18,13 @@ namespace MyzOo
         }
 
         private string _name;
-        private Image _profileImage;
         private int _id;
 
         [Category("Custom Props")]
         public int Id
         {
             get { return _id; }
-            set { _id = value; }
+            set { _id = value; Card_Id.Text = value.ToString(); }
         }
 
         [Category("Custom Props")]
@@ -61,6 +60,11 @@ namespace MyzOo
         }
 
         private void Card_Delete_Button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Card_Id_Click(object sender, EventArgs e)
         {
 
         }
