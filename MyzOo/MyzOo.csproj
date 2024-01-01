@@ -84,6 +84,12 @@
     <Compile Include="card.Designer.cs">
       <DependentUpon>card.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\EventList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\EventList.Designer.cs">
+      <DependentUpon>EventList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Methods\AnimalCrud.cs" />
     <Compile Include="Methods\CellCrud.cs" />
     <Compile Include="Methods\ClientCrud.cs" />
@@ -141,6 +147,18 @@
     <Compile Include="View\EmployeeData_Register.Designer.cs">
       <DependentUpon>EmployeeData_Register.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Event_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Event_Menu.Designer.cs">
+      <DependentUpon>Event_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Event_Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Event_Register.Designer.cs">
+      <DependentUpon>Event_Register.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FoodData_Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -194,6 +212,9 @@
     <EmbeddedResource Include="card.resx">
       <DependentUpon>card.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\EventList.resx">
+      <DependentUpon>EventList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\AnimalList.resx">
       <DependentUpon>AnimalList.cs</DependentUpon>
     </EmbeddedResource>
@@ -211,6 +232,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\EmployeeData_Register.resx">
       <DependentUpon>EmployeeData_Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Event_Menu.resx">
+      <DependentUpon>Event_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Event_Register.resx">
+      <DependentUpon>Event_Register.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FoodData_Menu.resx">
       <DependentUpon>FoodData_Menu.cs</DependentUpon>

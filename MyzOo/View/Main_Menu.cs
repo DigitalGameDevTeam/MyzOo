@@ -163,5 +163,19 @@ namespace MyzOo
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            EventList eventList = new EventList();
+            eventList.Show();
+            this.Hide();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Event_Register event_Register = new Event_Register();
+            event_Register.Show();
+            this.Hide();
+        }
     }
 }
