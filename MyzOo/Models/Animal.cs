@@ -14,7 +14,7 @@ namespace MyzOo.Models
 {
     internal class Animal
     {
-        public int Id { get; set; }
+        public string Id { get; set; }
         public string Name { get; set; }
         public DateTime Birthday { get; set; }
         public bool IsDeceased { get; set; }
@@ -36,21 +36,21 @@ namespace MyzOo.Models
         AnimalCrud animal = new AnimalCrud();
 
         // Save animal data
-        public void SetData(int Id, string Name, DateTime Date, bool IsDecease, string gender, int cell, string food)
+        public void SetData(string Id, string Name, DateTime Date, bool IsDecease, string gender, int cell, string food)
         {
             
             animal.SetData(Id, Name, Date, IsDecease, gender, cell, food);
 
         }
 
-        public void UpdateData(int Id, string Name, DateTime Date, bool IsDecease, string gender, int cell, string food)
+        public void UpdateData(string Id, string Name, DateTime Date, bool IsDecease, string gender, int cell, string food)
         {
 
             animal.UpdateData(Id, Name, Date, IsDecease, gender, cell, food);
 
         }
 
-        public void DeleteData(int Id, string Name)
+        public void DeleteData(string Id, string Name)
         {
 
             animal.DeleteData(Id, Name);
@@ -63,7 +63,7 @@ namespace MyzOo.Models
             return animalCrud.LoadData();
         }
 
-        public static Animal GetAnimal(int id) 
+        public static Animal GetAnimal(string id) 
         {
             AnimalCrud animalCrud = new AnimalCrud();
             return animalCrud.GetAnimal(id);

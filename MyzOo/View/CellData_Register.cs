@@ -21,11 +21,8 @@ namespace MyzOo.View
 
         private void Regist_button_Click(object sender, EventArgs e)
         {
-            // Create an instance of the Random class
-            Random random = new Random();
-
             // Generate a random ID with 4 numbers
-            int id = random.Next(1000, 10000);
+            string id = Guid.NewGuid().ToString();
             
             int number = (int)Cell_Number.Value;
             bool cleaning = Checkup_Box.Checked;

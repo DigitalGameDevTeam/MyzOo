@@ -14,7 +14,7 @@ namespace MyzOo.Methods
     {
         Firebase conn = new Firebase();
 
-        public void SetData(int id, int number, bool cleaning, string description)
+        public void SetData(string id, int number, bool cleaning, string description)
         {
             try
             {
@@ -36,7 +36,7 @@ namespace MyzOo.Methods
             }
         }
 
-        public void UpdateData(int id, int number, bool cleaning, string description)
+        public void UpdateData(string id, int number, bool cleaning, string description)
         {
             try
             {
@@ -58,7 +58,7 @@ namespace MyzOo.Methods
             }
         }
 
-        public void DeleteData(int id)
+        public void DeleteData(string id)
         {
             try
             {
@@ -96,7 +96,7 @@ namespace MyzOo.Methods
             }
         }
 
-        public Cell GetCell(int id)
+        public Cell GetCell(string id)
         {
             try
             {

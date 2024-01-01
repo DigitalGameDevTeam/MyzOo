@@ -13,10 +13,10 @@ namespace MyzOo.View
 {
     public partial class AnimalData_Menu : Form
     {
-        private int animalId;
+        private string animalId;
         private Animal animal;
 
-        public AnimalData_Menu(int id)
+        public AnimalData_Menu(string id)
         {
             InitializeComponent();
             animalId = id;
@@ -58,7 +58,7 @@ namespace MyzOo.View
         private void Update_Button_Click(object sender, EventArgs e)
         {
 
-            int id = animalId;
+            string id = animalId;
 
             // Animal Info
             string name = Name_Box.Text;
@@ -85,7 +85,7 @@ namespace MyzOo.View
 
         private void Delete_Button_Click(object sender, EventArgs e)
         {
-            int id = animalId;
+            string id = animalId;
             string name = Name_Box.Text;
 
             animal.DeleteData(id, name);

@@ -13,7 +13,7 @@ namespace MyzOo.Methods
         Firebase conn = new Firebase();
 
         //set datas to database
-        public void SetData(int id, string name, DateTime birthday, bool isDeceased, string animalGender, int animalCell, string animalFood)
+        public void SetData(string id, string name, DateTime birthday, bool isDeceased, string animalGender, int animalCell, string animalFood)
         {
             try
             {
@@ -39,7 +39,7 @@ namespace MyzOo.Methods
         }
 
         //Update datas
-        public void UpdateData(int id, string name, DateTime birthday, bool isDeceased, string animalGender, int animalCell, string animalFood)
+        public void UpdateData(string id, string name, DateTime birthday, bool isDeceased, string animalGender, int animalCell, string animalFood)
         {
             try
             {
@@ -65,7 +65,7 @@ namespace MyzOo.Methods
         }
 
         //Delete datas
-        public void DeleteData(int id, string name)
+        public void DeleteData(string id, string name)
         {
             try
             {
@@ -110,7 +110,7 @@ namespace MyzOo.Methods
             }
         }
 
-        public Animal GetAnimal(int id)
+        public Animal GetAnimal(string id)
         {
             try
             {

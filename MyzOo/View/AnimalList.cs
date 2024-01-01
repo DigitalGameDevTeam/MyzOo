@@ -52,7 +52,7 @@ namespace MyzOo.View
         {
             if (sender is card clickedCard)
             {
-                int animalID = clickedCard.Id;
+                string animalID = clickedCard.Id;
 
                 AnimalData_Menu ver_Animal_Menu = new AnimalData_Menu(animalID);
                 ver_Animal_Menu.Show();

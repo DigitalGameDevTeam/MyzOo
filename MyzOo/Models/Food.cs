@@ -13,26 +13,26 @@ namespace MyzOo.Models
 {
     internal class Food
     {
-        public int Id { get; set; }
+        public string Id { get; set; }
         public string Description { get; set; }
         public string TypeFood { get; set; }
         public int Stock { get; set; }
 
         public static List<Food> FoodList = new List<Food>();
 
-        public void SetData(int id, string description, string typeFood, int stock)
+        public void SetData(string id, string description, string typeFood, int stock)
         {
             FoodCrud food = new FoodCrud();
             food.SetData(id, description, typeFood, stock);
         }
 
-        public void UpdateData(int id, string description, string typeFood, int stock)
+        public void UpdateData(string id, string description, string typeFood, int stock)
         {
             FoodCrud food = new FoodCrud();
             food.UpdateData(id, description, typeFood, stock);
         }
 
-        public void DeleteData(int id, string description)
+        public void DeleteData(string id, string description)
         {
             FoodCrud food = new FoodCrud();
             food.DeleteData(id, description);
@@ -44,7 +44,7 @@ namespace MyzOo.Models
             return foodCrud.LoadData();
         }
 
-        public static Food GetFood(int id)
+        public static Food GetFood(string id)
         {
             FoodCrud foodCrud = new FoodCrud();
             return foodCrud.GetFood(id);

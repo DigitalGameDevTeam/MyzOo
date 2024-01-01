@@ -18,10 +18,10 @@ namespace MyzOo
         }
 
         private string _name;
-        private int _id;
+        private string _id;
 
         [Category("Custom Props")]
-        public int Id
+        public string Id
         {
             get { return _id; }
             set { _id = value; Card_Id.Text = value.ToString(); }

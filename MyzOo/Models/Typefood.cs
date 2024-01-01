@@ -13,12 +13,12 @@ namespace MyzOo.Models
 {
     internal class TypeFood
     {
-        public int Id { get; set; }
+        public string Id { get; set; }
         public string Type { get; set; }
 
         public static List<TypeFood> TypeFoodList = new List<TypeFood>();
 
-        public void SetData(int id, string type)
+        public void SetData(string id, string type)
         {
             TypeFoodCrud typeFoodCrud = new TypeFoodCrud();
             typeFoodCrud.SetData(id, type);

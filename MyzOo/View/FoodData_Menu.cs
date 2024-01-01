@@ -15,10 +15,10 @@ namespace MyzOo.View
     public partial class FoodData_Menu : Form
     {
 
-        private int foodID;
+        private string foodID;
         private Food food;
 
-        public FoodData_Menu(int foodId)
+        public FoodData_Menu(string foodId)
         {
             InitializeComponent();
             foodID = foodId;
@@ -56,7 +56,7 @@ namespace MyzOo.View
 
         private void Update_Button_Click(object sender, EventArgs e)
         {
-            int id = foodID;
+            string id = foodID;
 
             // Food Info
             string description = Food_desciption_textbox.Text;
@@ -78,7 +78,7 @@ namespace MyzOo.View
 
         private void Delete_Button_Click(object sender, EventArgs e)
         {
-            int id = foodID;
+            string id = foodID;
             string description = Food_desciption_textbox.Text;
 
             food.DeleteData(id, description);

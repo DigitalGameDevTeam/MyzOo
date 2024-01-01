@@ -9,13 +9,13 @@ namespace MyzOo.Models
 {
     internal class Job
     {
-        public int Id { get; set; }
+        public string Id { get; set; }
         public string Role { get; set; }
         public int Salary { get; set; }
 
         public static List<Job> JobList = new List<Job>();
 
-        public void SetData(int id, string Role, int Salary)
+        public void SetData(string id, string Role, int Salary)
         {
             JobCrud job = new JobCrud();
             job.SetData(id, Role, Salary);

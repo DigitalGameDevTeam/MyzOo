@@ -16,7 +16,7 @@ namespace MyzOo.Methods
         Firebase conn = new Firebase();
 
         //set datas to database
-        public void SetData(int id, string description, string typefood, int stock)
+        public void SetData(string id, string description, string typefood, int stock)
         {
             try
             {
@@ -38,7 +38,7 @@ namespace MyzOo.Methods
         }
 
         //Update datas
-        public void UpdateData(int id, string description, string typefood, int stock)
+        public void UpdateData(string id, string description, string typefood, int stock)
         {
             try
             {
@@ -61,7 +61,7 @@ namespace MyzOo.Methods
         }
 
         //Delete datas
-        public void DeleteData(int id, string description)
+        public void DeleteData(string id, string description)
         {
             try
             {
@@ -107,7 +107,7 @@ namespace MyzOo.Methods
             }
         }
 
-        public Food GetFood(int id)
+        public Food GetFood(string id)
         {
             try
             {

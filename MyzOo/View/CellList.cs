@@ -49,7 +49,7 @@ namespace MyzOo.View
         {
             if (sender is card clickedCard)
             {
-                int cellId = clickedCard.Id;
+                string cellId = clickedCard.Id;
 
                 CellData_Menu cellData = new CellData_Menu(cellId);
                 cellData.Show();

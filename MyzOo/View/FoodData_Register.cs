@@ -54,17 +54,17 @@ namespace MyzOo.View
             TypeFood typeFood = TypeFood.LoadData().FirstOrDefault(tf => tf.Type == typeName);
             //TypeFood typeFood = TypeFood.TypeFoodList.FirstOrDefault(tf => tf.Type == typeName);   
 
-            int Stock = (int)Stock_Number.Value;
+            int stock = (int)Stock_Number.Value;
 
             // Create an instance of the Random class
             Random random = new Random();
             
             // - Guid.NewGuid();
             // TODO
-            int Id = random.Next(1000, 10000);
+            string id = Guid.NewGuid().ToString();
 
             FoodCrud food = new FoodCrud();
-            food.SetData(Id, description, typeFood.Type, Stock);
+            food.SetData(id, description, typeFood.Type, stock);
 
             Main_Menu main_Menu = new Main_Menu();
             main_Menu.Show();

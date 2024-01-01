@@ -14,7 +14,7 @@ namespace MyzOo.Methods
         Firebase conn = new Firebase();
 
         //set data to database
-        public void SetData(int id, string type)
+        public void SetData(string id, string type)
         {
             try
             {
@@ -31,7 +31,7 @@ namespace MyzOo.Methods
             }
         }
         //Update data
-        public void UpdateData(int id, string type)
+        public void UpdateData(string id, string type)
         {
             try
             {
@@ -49,7 +49,7 @@ namespace MyzOo.Methods
         }
 
         //Delete data
-        public void DeleteData(int id)
+        public void DeleteData(string id)
         {
             try
             {
@@ -72,7 +72,7 @@ namespace MyzOo.Methods
 
                 foreach (var kvp in listData)
                 {
-                    int id = Convert.ToInt32(kvp.Key);
+                    string id = kvp.Key;
                     kvp.Value.Id = id;
 
                     allData.Add(kvp.Value);

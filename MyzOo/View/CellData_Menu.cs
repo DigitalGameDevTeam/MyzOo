@@ -13,10 +13,10 @@ namespace MyzOo.View
 {
     public partial class CellData_Menu : Form
     {
-        private int cellId;
+        private string cellId;
         private Cell cell;
 
-        public CellData_Menu(int id)
+        public CellData_Menu(string id)
         {
             InitializeComponent();
             cellId = id;
@@ -37,7 +37,7 @@ namespace MyzOo.View
 
         private void Update_Button_Click(object sender, EventArgs e)
         {
-            int id = cellId;
+            string id = cellId;
 
             int number = (int)Cellnumber_Number.Value;
             string description = CellDescription_textbox.Text;
@@ -52,7 +52,7 @@ namespace MyzOo.View
 
         private void Delete_Button_Click(object sender, EventArgs e)
         {
-            int id = cellId;
+            string id = cellId;
             int number = cell.Number;
 
             cell.DeleteData(id);
