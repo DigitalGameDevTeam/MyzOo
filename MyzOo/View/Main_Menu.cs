@@ -37,9 +37,7 @@ namespace MyzOo
 
         private void Main_Menu_Load(object sender, EventArgs e)
         {
-            //set Menu Colors
-            panel1.BackColor = Color.DeepSkyBlue;
-            label1.ForeColor = Color.White;      
+                
         }
 
         private void AnimalMenu_button_Click(object sender, EventArgs e)
@@ -157,6 +155,11 @@ namespace MyzOo
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

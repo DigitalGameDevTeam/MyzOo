@@ -6,7 +6,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace MyzOo
 {
@@ -17,6 +19,11 @@ namespace MyzOo
             InitializeComponent();
         }
 
+        private void card_Load(object sender, EventArgs e)
+        {
+           
+        }
+
         private string _name;
         private string _id;
 
@@ -24,7 +31,7 @@ namespace MyzOo
         public string Id
         {
             get { return _id; }
-            set { _id = value; Card_Id.Text = value.ToString(); }
+            set { _id = value; /*Card_Id.Text = value.ToString();*/ }
         }
 
         [Category("Custom Props")]
@@ -36,17 +43,26 @@ namespace MyzOo
 
         private void card_MouseEnter(object sender, EventArgs e)
         {
-            this.BackColor = Color.Silver;
+            this.BackColor = Color.MidnightBlue;
+        }
+
+        private void card_MouseLeave(object sender, EventArgs e)
+        {
+            this.BackColor = Color.SteelBlue;
+        }
+
+        private void Card_Name_Enter(object sender, EventArgs e)
+        {
+        }
+
+        private void Card_Name_Leave(object sender, EventArgs e)
+        {
+            
         }
 
         private void card_MouseHover(object sender, EventArgs e)
         {
             
-        }
-
-        private void card_MouseLeave(object sender, EventArgs e)
-        {
-            this.BackColor = Color.White;
         }
 
         private void Card_Edit_Button_Click(object sender, EventArgs e)
@@ -67,6 +83,22 @@ namespace MyzOo
         private void Card_Id_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Card_Name_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Card_Name_MouseEnter(object sender, EventArgs e)
+        {
+            this.BackColor = Color.MidnightBlue;
+
+        }
+
+        private void Card_Name_MouseLeave(object sender, EventArgs e)
+        {
+            this.BackColor = Color.SteelBlue;
         }
     }
 }

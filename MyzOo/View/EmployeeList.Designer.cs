@@ -33,13 +33,15 @@
             this.Minimize_button = new System.Windows.Forms.Button();
             this.Exit_button = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.List_Box = new System.Windows.Forms.ListBox();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.card1 = new MyzOo.card();
             this.panel1.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel1.BackColor = System.Drawing.Color.SteelBlue;
             this.panel1.Controls.Add(this.Minimize_button);
             this.panel1.Controls.Add(this.Exit_button);
             this.panel1.Controls.Add(this.label1);
@@ -94,30 +96,40 @@
             this.label1.Text = "Lista de Funcionários";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // List_Box
+            // flowLayoutPanel1
             // 
-            this.List_Box.FormattingEnabled = true;
-            this.List_Box.Items.AddRange(new object[] {
-            " "});
-            this.List_Box.Location = new System.Drawing.Point(10, 72);
-            this.List_Box.Name = "List_Box";
-            this.List_Box.Size = new System.Drawing.Size(778, 355);
-            this.List_Box.TabIndex = 3;
+            this.flowLayoutPanel1.Controls.Add(this.card1);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 63);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(788, 375);
+            this.flowLayoutPanel1.TabIndex = 3;
             // 
-            // EmployeeList_Menu
+            // card1
+            // 
+            this.card1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.card1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.card1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.card1.Id = null;
+            this.card1.Location = new System.Drawing.Point(3, 3);
+            this.card1.Name = "card1";
+            this.card1.Size = new System.Drawing.Size(762, 81);
+            this.card1.TabIndex = 0;
+            // 
+            // EmployeeList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.List_Box);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "EmployeeList_Menu";
+            this.Name = "EmployeeList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EmployeeList_Menu";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -128,6 +140,7 @@
         private System.Windows.Forms.Button Minimize_button;
         private System.Windows.Forms.Button Exit_button;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListBox List_Box;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private card card1;
     }
 }
