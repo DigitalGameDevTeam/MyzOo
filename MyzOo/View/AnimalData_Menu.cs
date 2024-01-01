@@ -48,7 +48,7 @@ namespace MyzOo.View
             }
 
             Name_Box.Text = animal.Name;
-            Birthday_Calendar.SelectionStart = animal.Birthday;
+            Birthday_Calendar.Value = animal.Birthday;
             Cell_listbox.Text = animal.AnimalCell.ToString();
             Food_listbox.Text = animal.AnimalFood.ToString();
             Decease_Box.Checked = animal.IsDeceased;
@@ -62,7 +62,7 @@ namespace MyzOo.View
 
             // Animal Info
             string name = Name_Box.Text;
-            DateTime date = Birthday_Calendar.SelectionRange.Start;
+            DateTime date = Birthday_Calendar.Value;
             bool isDeceased = Decease_Box.Checked;
 
             string gender = Gender_listbox.Text;

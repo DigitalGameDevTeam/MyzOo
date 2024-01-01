@@ -96,8 +96,8 @@ namespace MyzOo
             string id = Guid.NewGuid().ToString();
 
             // Animal Info
-            string name = Name_Box.Text;
-            DateTime date = Birthday_Calendar.SelectionRange.Start;
+            string name = Name_box.Text;
+            DateTime date = Birthday_Calendar.Value;
             bool isDeceased = Decease_Box.Checked;
 
             string gender = Gender_listbox.Text;
@@ -110,7 +110,7 @@ namespace MyzOo
             int callDescription = Convert.ToInt32(Cell_listbox.Text);
             Cell animalCell = Cell.LoadData().FirstOrDefault(tf => tf.Number == callDescription);
 
-            animal.SetData(id, Name, date, isDeceased, gender, animalCell.Number, animalFood.Description);
+            animal.SetData(id, name, date, isDeceased, gender, animalCell.Number, animalFood.Description);
 
             this.Close();
             Main_Menu main_Menu = new Main_Menu();
@@ -140,6 +140,11 @@ namespace MyzOo
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Name_box_TextChanged_1(object sender, EventArgs e)
         {
 
         }
