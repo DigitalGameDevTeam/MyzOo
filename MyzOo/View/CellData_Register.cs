@@ -33,7 +33,7 @@ namespace MyzOo.View
             CellCrud cell = new CellCrud();
             cell.SetData(id, number, cleaning, description);
 
-            Main_Menu main_Menu = new Main_Menu();
+            Main_Menu main_Menu = new Main_Menu(userId);
             main_Menu.Show();
 
             this.Hide();
