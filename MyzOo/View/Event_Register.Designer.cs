@@ -74,6 +74,7 @@ namespace MyzOo.View
             this.Regist_button.TabIndex = 31;
             this.Regist_button.Text = "Registrar";
             this.Regist_button.UseVisualStyleBackColor = false;
+            this.Regist_button.Click += new System.EventHandler(this.Regist_button_Click);
             // 
             // label3
             // 
