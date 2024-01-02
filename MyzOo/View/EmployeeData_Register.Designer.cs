@@ -39,13 +39,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.Birthday_Calendar = new System.Windows.Forms.MonthCalendar();
             this.Cell_listbox = new System.Windows.Forms.ComboBox();
             this.Food_listbox = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.Name_Box = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.Birthday_Calendar = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -178,17 +178,6 @@
             this.label7.Text = "Nivel de Administração :";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
-            // Birthday_Calendar
-            // 
-            this.Birthday_Calendar.BackColor = System.Drawing.Color.LightGray;
-            this.Birthday_Calendar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Birthday_Calendar.Location = new System.Drawing.Point(344, 89);
-            this.Birthday_Calendar.Name = "Birthday_Calendar";
-            this.Birthday_Calendar.SelectionRange = new System.Windows.Forms.SelectionRange(new System.DateTime(2023, 11, 15, 0, 0, 0, 0), new System.DateTime(2023, 11, 21, 0, 0, 0, 0));
-            this.Birthday_Calendar.ShowToday = false;
-            this.Birthday_Calendar.TabIndex = 43;
-            this.Birthday_Calendar.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.Birthday_Calendar_DateChanged);
-            // 
             // Cell_listbox
             // 
             this.Cell_listbox.BackColor = System.Drawing.Color.LightGray;
@@ -255,17 +244,24 @@
             this.textBox2.Size = new System.Drawing.Size(220, 14);
             this.textBox2.TabIndex = 49;
             // 
+            // Birthday_Calendar
+            // 
+            this.Birthday_Calendar.Location = new System.Drawing.Point(344, 89);
+            this.Birthday_Calendar.Name = "Birthday_Calendar";
+            this.Birthday_Calendar.Size = new System.Drawing.Size(200, 20);
+            this.Birthday_Calendar.TabIndex = 50;
+            // 
             // EmployeeData_Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(599, 368);
+            this.Controls.Add(this.Birthday_Calendar);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Food_listbox);
             this.Controls.Add(this.Cell_listbox);
-            this.Controls.Add(this.Birthday_Calendar);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
@@ -300,12 +296,12 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.MonthCalendar Birthday_Calendar;
         private System.Windows.Forms.ComboBox Cell_listbox;
         private System.Windows.Forms.ComboBox Food_listbox;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox Name_Box;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.DateTimePicker Birthday_Calendar;
     }
 }

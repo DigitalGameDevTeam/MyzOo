@@ -35,7 +35,7 @@ namespace MyzOo.View
             {
 
                 cardList[count] = new card();
-                cardList[count].Id = food.Id;
+                //cardList[count].Id = food.Id;
                 cardList[count].Name = food.Description;
 
                 flowLayoutPanel1.Controls.Add(cardList[count]);

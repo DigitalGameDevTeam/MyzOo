@@ -33,8 +33,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.Minimize_button = new System.Windows.Forms.Button();
             this.Exit_button = new System.Windows.Forms.Button();
-            this.card1 = new MyzOo.card();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.card1 = new MyzOo.card();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -53,7 +53,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel1.BackColor = System.Drawing.Color.SteelBlue;
             this.panel1.Controls.Add(this.Minimize_button);
             this.panel1.Controls.Add(this.Exit_button);
             this.panel1.Controls.Add(this.label1);
@@ -95,14 +95,6 @@
             this.Exit_button.UseVisualStyleBackColor = false;
             this.Exit_button.Click += new System.EventHandler(this.Exit_button_Click);
             // 
-            // card1
-            // 
-            this.card1.Id = "";
-            this.card1.Location = new System.Drawing.Point(3, 3);
-            this.card1.Name = "card1";
-            this.card1.Size = new System.Drawing.Size(762, 81);
-            this.card1.TabIndex = 0;
-            // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
@@ -111,6 +103,17 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(788, 375);
             this.flowLayoutPanel1.TabIndex = 4;
+            // 
+            // card1
+            // 
+            this.card1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.card1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.card1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.card1.Id = "";
+            this.card1.Location = new System.Drawing.Point(3, 3);
+            this.card1.Name = "card1";
+            this.card1.Size = new System.Drawing.Size(762, 81);
+            this.card1.TabIndex = 0;
             // 
             // CellList
             // 

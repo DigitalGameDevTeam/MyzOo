@@ -37,9 +37,7 @@ namespace MyzOo
 
         private void Main_Menu_Load(object sender, EventArgs e)
         {
-            //set Menu Colors
-            panel1.BackColor = Color.DeepSkyBlue;
-            label1.ForeColor = Color.White;      
+                
         }
 
         private void AnimalMenu_button_Click(object sender, EventArgs e)
@@ -161,14 +159,23 @@ namespace MyzOo
 
         }
 
-        private void Name_Box_TextChanged(object sender, EventArgs e)
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
+            EventList eventList = new EventList();
+            eventList.Show();
+            this.Hide();
+        }
 
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Event_Register event_Register = new Event_Register();
+            event_Register.Show();
+            this.Hide();
         }
     }
 }

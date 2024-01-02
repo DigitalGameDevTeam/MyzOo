@@ -41,7 +41,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel1.BackColor = System.Drawing.Color.SteelBlue;
             this.panel1.Controls.Add(this.Minimize_button);
             this.panel1.Controls.Add(this.Exit_button);
             this.panel1.Controls.Add(this.label1);
@@ -99,6 +99,9 @@
             // 
             // card1
             // 
+            this.card1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.card1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.card1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.card1.Id = "";
             this.card1.Location = new System.Drawing.Point(3, 3);
             this.card1.Name = "card1";
@@ -116,7 +119,7 @@
             this.flowLayoutPanel1.TabIndex = 2;
             this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
-            // AnimalList_Menu
+            // AnimalList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -125,7 +128,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "AnimalList_Menu";
+            this.Name = "AnimalList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "A";
             this.Load += new System.EventHandler(this.AnimalList_Menu_Load);

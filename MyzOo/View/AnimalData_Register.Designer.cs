@@ -33,17 +33,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Exit_button = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.Name_Box = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.Regist_button = new System.Windows.Forms.Button();
-            this.Birthday_Calendar = new System.Windows.Forms.MonthCalendar();
             this.Cell_listbox = new System.Windows.Forms.ComboBox();
             this.Food_listbox = new System.Windows.Forms.ComboBox();
             this.Decease_Box = new System.Windows.Forms.CheckBox();
             this.Gender_listbox = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.Name_box = new System.Windows.Forms.TextBox();
+            this.Birthday_Calendar = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -98,18 +98,6 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Nome do Animal :";
             // 
-            // Name_Box
-            // 
-            this.Name_Box.BackColor = System.Drawing.Color.LightGray;
-            this.Name_Box.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Name_Box.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.Name_Box.ForeColor = System.Drawing.Color.Black;
-            this.Name_Box.Location = new System.Drawing.Point(12, 89);
-            this.Name_Box.Name = "Name_Box";
-            this.Name_Box.Size = new System.Drawing.Size(224, 14);
-            this.Name_Box.TabIndex = 3;
-            this.Name_Box.TextChanged += new System.EventHandler(this.Name_Box_TextChanged);
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -159,16 +147,6 @@
             this.Regist_button.Text = "Registrar";
             this.Regist_button.UseVisualStyleBackColor = false;
             this.Regist_button.Click += new System.EventHandler(this.Regist_button_Click);
-            // 
-            // Birthday_Calendar
-            // 
-            this.Birthday_Calendar.BackColor = System.Drawing.Color.LightGray;
-            this.Birthday_Calendar.Location = new System.Drawing.Point(344, 89);
-            this.Birthday_Calendar.Name = "Birthday_Calendar";
-            this.Birthday_Calendar.SelectionRange = new System.Windows.Forms.SelectionRange(new System.DateTime(2023, 11, 15, 0, 0, 0, 0), new System.DateTime(2023, 11, 21, 0, 0, 0, 0));
-            this.Birthday_Calendar.ShowToday = false;
-            this.Birthday_Calendar.TabIndex = 18;
-            this.Birthday_Calendar.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.Birthday_Calendar_DateChanged);
             // 
             // Cell_listbox
             // 
@@ -227,23 +205,39 @@
             this.label5.Text = "Genero : ";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
+            // Name_box
+            // 
+            this.Name_box.BackColor = System.Drawing.Color.LightGray;
+            this.Name_box.Location = new System.Drawing.Point(12, 89);
+            this.Name_box.Name = "Name_box";
+            this.Name_box.Size = new System.Drawing.Size(224, 20);
+            this.Name_box.TabIndex = 24;
+            this.Name_box.TextChanged += new System.EventHandler(this.Name_box_TextChanged_1);
+            // 
+            // Birthday_Calendar
+            // 
+            this.Birthday_Calendar.Location = new System.Drawing.Point(344, 89);
+            this.Birthday_Calendar.Name = "Birthday_Calendar";
+            this.Birthday_Calendar.Size = new System.Drawing.Size(200, 20);
+            this.Birthday_Calendar.TabIndex = 25;
+            // 
             // AnimalData_Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(599, 368);
+            this.Controls.Add(this.Birthday_Calendar);
+            this.Controls.Add(this.Name_box);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.Gender_listbox);
             this.Controls.Add(this.Decease_Box);
             this.Controls.Add(this.Food_listbox);
             this.Controls.Add(this.Cell_listbox);
-            this.Controls.Add(this.Birthday_Calendar);
             this.Controls.Add(this.Regist_button);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.Name_Box);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -265,16 +259,16 @@
         private System.Windows.Forms.Button Exit_button;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox Name_Box;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button Regist_button;
-        private System.Windows.Forms.MonthCalendar Birthday_Calendar;
         private System.Windows.Forms.ComboBox Cell_listbox;
         private System.Windows.Forms.ComboBox Food_listbox;
         private System.Windows.Forms.CheckBox Decease_Box;
         private System.Windows.Forms.ComboBox Gender_listbox;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox Name_box;
+        private System.Windows.Forms.DateTimePicker Birthday_Calendar;
     }
 }
