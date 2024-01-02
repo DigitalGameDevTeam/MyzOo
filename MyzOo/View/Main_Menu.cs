@@ -121,13 +121,6 @@ namespace MyzOo
         {
         }
 
-        private void VerEmployee_button_Click(object sender, EventArgs e)
-        {
-            EmployeeData_Menu ver_Employee_Menu = new EmployeeData_Menu();
-            ver_Employee_Menu.Show();
-            this.Hide();
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             FoodList food_List = new FoodList();

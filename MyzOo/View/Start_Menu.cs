@@ -18,11 +18,8 @@ namespace MyzOo
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.textBox1.AutoSize = false;
-            this.textBox1.Size = new System.Drawing.Size(142, 27);
 
-            this.textBox2.AutoSize = false;
-            this.textBox2.Size = new System.Drawing.Size(142, 27);
+
             //set form colors
             /*panel1.BackColor = Color.DeepSkyBlue;
             Close_button.ForeColor = Color.DeepSkyBlue;
@@ -50,7 +47,7 @@ namespace MyzOo
 
             if (!string.IsNullOrEmpty(email) && !string.IsNullOrEmpty(password))
             {
-                ClientCrud cc = new ClientCrud();
+                EmployeeCrud cc = new EmployeeCrud();
                 string loginResult = cc.Login(email, password);
 
                 if (loginResult != null)

@@ -35,7 +35,6 @@
             this.Admin_listbox = new System.Windows.Forms.ComboBox();
             this.Func_listbox = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.Checkup_Box = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.Name_Box = new System.Windows.Forms.TextBox();
@@ -46,9 +45,8 @@
             this.Exit_button = new System.Windows.Forms.Button();
             this.Regist_button = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.Cell_listbox = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.Birthday_Calendar = new System.Windows.Forms.DateTimePicker();
+            this.Delete_Button = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,20 +54,20 @@
             // 
             this.Pass_textbox.BackColor = System.Drawing.Color.LightGray;
             this.Pass_textbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Pass_textbox.Enabled = false;
             this.Pass_textbox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
             this.Pass_textbox.ForeColor = System.Drawing.Color.Black;
-            this.Pass_textbox.Location = new System.Drawing.Point(11, 286);
+            this.Pass_textbox.Location = new System.Drawing.Point(12, 254);
             this.Pass_textbox.Name = "Pass_textbox";
-            this.Pass_textbox.Size = new System.Drawing.Size(223, 14);
+            this.Pass_textbox.Size = new System.Drawing.Size(224, 14);
             this.Pass_textbox.TabIndex = 66;
+            this.Pass_textbox.TextChanged += new System.EventHandler(this.Pass_textbox_TextChanged);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label5.Location = new System.Drawing.Point(9, 268);
+            this.label5.Location = new System.Drawing.Point(10, 236);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(96, 15);
             this.label5.TabIndex = 65;
@@ -91,7 +89,7 @@
             this.Admin_listbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Admin_listbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Admin_listbox.FormattingEnabled = true;
-            this.Admin_listbox.Location = new System.Drawing.Point(11, 235);
+            this.Admin_listbox.Location = new System.Drawing.Point(12, 203);
             this.Admin_listbox.Name = "Admin_listbox";
             this.Admin_listbox.Size = new System.Drawing.Size(224, 21);
             this.Admin_listbox.TabIndex = 63;
@@ -102,7 +100,7 @@
             this.Func_listbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Func_listbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Func_listbox.FormattingEnabled = true;
-            this.Func_listbox.Location = new System.Drawing.Point(11, 184);
+            this.Func_listbox.Location = new System.Drawing.Point(12, 152);
             this.Func_listbox.Name = "Func_listbox";
             this.Func_listbox.Size = new System.Drawing.Size(224, 21);
             this.Func_listbox.TabIndex = 62;
@@ -112,31 +110,18 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label7.Location = new System.Drawing.Point(9, 217);
+            this.label7.Location = new System.Drawing.Point(10, 185);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(147, 15);
             this.label7.TabIndex = 59;
             this.label7.Text = "Nivel de Administração :";
-            // 
-            // Checkup_Box
-            // 
-            this.Checkup_Box.AutoSize = true;
-            this.Checkup_Box.BackColor = System.Drawing.Color.Transparent;
-            this.Checkup_Box.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Checkup_Box.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.Checkup_Box.Location = new System.Drawing.Point(12, 319);
-            this.Checkup_Box.Name = "Checkup_Box";
-            this.Checkup_Box.Size = new System.Drawing.Size(73, 19);
-            this.Checkup_Box.TabIndex = 58;
-            this.Checkup_Box.Text = "Checkup";
-            this.Checkup_Box.UseVisualStyleBackColor = false;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label6.Location = new System.Drawing.Point(9, 166);
+            this.label6.Location = new System.Drawing.Point(10, 134);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(60, 15);
             this.label6.TabIndex = 57;
@@ -160,7 +145,7 @@
             this.Name_Box.Enabled = false;
             this.Name_Box.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
             this.Name_Box.ForeColor = System.Drawing.Color.Black;
-            this.Name_Box.Location = new System.Drawing.Point(12, 137);
+            this.Name_Box.Location = new System.Drawing.Point(13, 105);
             this.Name_Box.Name = "Name_Box";
             this.Name_Box.Size = new System.Drawing.Size(227, 14);
             this.Name_Box.TabIndex = 55;
@@ -170,7 +155,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label2.Location = new System.Drawing.Point(9, 119);
+            this.label2.Location = new System.Drawing.Point(10, 87);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(136, 15);
             this.label2.TabIndex = 54;
@@ -212,9 +197,9 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(400, 60);
+            this.label4.Size = new System.Drawing.Size(459, 60);
             this.label4.TabIndex = 2;
-            this.label4.Text = "Ver Funcionário";
+            this.label4.Text = "Editar Funcionário";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // Exit_button
@@ -242,7 +227,7 @@
             this.Regist_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Regist_button.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.Regist_button.ForeColor = System.Drawing.Color.White;
-            this.Regist_button.Location = new System.Drawing.Point(12, 344);
+            this.Regist_button.Location = new System.Drawing.Point(24, 321);
             this.Regist_button.Name = "Regist_button";
             this.Regist_button.Size = new System.Drawing.Size(107, 33);
             this.Regist_button.TabIndex = 60;
@@ -259,28 +244,6 @@
             this.button2.Text = "Registar funcionário";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // Cell_listbox
-            // 
-            this.Cell_listbox.BackColor = System.Drawing.Color.LightGray;
-            this.Cell_listbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Cell_listbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cell_listbox.FormattingEnabled = true;
-            this.Cell_listbox.Location = new System.Drawing.Point(12, 89);
-            this.Cell_listbox.Name = "Cell_listbox";
-            this.Cell_listbox.Size = new System.Drawing.Size(228, 21);
-            this.Cell_listbox.TabIndex = 70;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label1.Location = new System.Drawing.Point(9, 71);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 15);
-            this.label1.TabIndex = 71;
-            this.label1.Text = "Funcionário :";
-            // 
             // Birthday_Calendar
             // 
             this.Birthday_Calendar.Location = new System.Drawing.Point(344, 89);
@@ -288,21 +251,35 @@
             this.Birthday_Calendar.Size = new System.Drawing.Size(200, 20);
             this.Birthday_Calendar.TabIndex = 72;
             // 
+            // Delete_Button
+            // 
+            this.Delete_Button.BackColor = System.Drawing.Color.Red;
+            this.Delete_Button.FlatAppearance.BorderSize = 0;
+            this.Delete_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.Delete_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
+            this.Delete_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Delete_Button.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.Delete_Button.ForeColor = System.Drawing.Color.White;
+            this.Delete_Button.Location = new System.Drawing.Point(450, 321);
+            this.Delete_Button.Name = "Delete_Button";
+            this.Delete_Button.Size = new System.Drawing.Size(94, 33);
+            this.Delete_Button.TabIndex = 73;
+            this.Delete_Button.Text = "Apagar";
+            this.Delete_Button.UseVisualStyleBackColor = false;
+            // 
             // EmployeeData_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(599, 390);
+            this.Controls.Add(this.Delete_Button);
             this.Controls.Add(this.Birthday_Calendar);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.Cell_listbox);
             this.Controls.Add(this.Pass_textbox);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Admin_listbox);
             this.Controls.Add(this.Func_listbox);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.Checkup_Box);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.Name_Box);
@@ -330,7 +307,6 @@
         private System.Windows.Forms.ComboBox Admin_listbox;
         private System.Windows.Forms.ComboBox Func_listbox;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.CheckBox Checkup_Box;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox Name_Box;
@@ -341,8 +317,7 @@
         private System.Windows.Forms.Button Exit_button;
         private System.Windows.Forms.Button Regist_button;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ComboBox Cell_listbox;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker Birthday_Calendar;
+        private System.Windows.Forms.Button Delete_Button;
     }
 }

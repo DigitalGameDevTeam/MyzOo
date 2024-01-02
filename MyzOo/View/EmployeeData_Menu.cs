@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyzOo.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,11 +14,16 @@ namespace MyzOo.View
     public partial class EmployeeData_Menu : Form
     {
         int op = 1;
-        public EmployeeData_Menu()
+
+        private string employeeID;
+        private Employee employee;
+
+        public EmployeeData_Menu(string employeeId)
         {
             InitializeComponent();
+            employeeID = employeeId;
         }
-
+        
         private void Edit_button_Click(object sender, EventArgs e)
         {
            switch (op)
@@ -28,10 +34,9 @@ namespace MyzOo.View
                     Name_Box.Enabled = true;
                     Birthday_Calendar.Enabled = true;
                     Func_listbox.Enabled = true;
-                    Checkup_Box.Enabled = true;
                     Admin_listbox.Enabled = true;
                     Pass_textbox.Enabled = true;
-                    Cell_listbox.Enabled = true;
+                    Delete_Button.Enabled = true;
                     break;
                 case 2:
                     op = 1;
@@ -39,11 +44,9 @@ namespace MyzOo.View
                     Name_Box.Enabled = false;
                     Birthday_Calendar.Enabled = false;
                     Func_listbox.Enabled = false;
-                    Checkup_Box.Enabled = false;
                     Admin_listbox.Enabled = false;
                     Pass_textbox.Enabled = false;
-                    Cell_listbox.Enabled = false;
-
+                    Delete_Button.Enabled = false;
 
                     break;
 
@@ -57,10 +60,10 @@ namespace MyzOo.View
             Name_Box.Enabled = false;
             Birthday_Calendar.Enabled = false;
             Func_listbox.Enabled = false;
-            Checkup_Box.Enabled = false;
             Admin_listbox.Enabled = false;
             Pass_textbox.Enabled = false;
-            Cell_listbox.Enabled = false;
+            Delete_Button.Enabled = false;
+
         }
         private void Exit_button_Click(object sender, EventArgs e)
         {
@@ -77,6 +80,11 @@ namespace MyzOo.View
         }
 
         private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Pass_textbox_TextChanged(object sender, EventArgs e)
         {
 
         }
