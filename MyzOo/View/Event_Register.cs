@@ -46,15 +46,11 @@ namespace MyzOo.View
 
             int numAttendees = (int)Convert.ToInt64(NumAttendees.Text);
 
+            string location = Location.Text;
 
-            //string gender = Gender_listbox.Text;
-            // Retrieve selected cell and food values
-            // Food
-            //string foodName = Food_listbox.Text;
-            //Food animalFood = Food.LoadData().FirstOrDefault(tf => tf.Description == foodName);
 
-            events.SetData(id, description, hourBegin, date, duration, numAttendees, location, selectedAnimalIds)
-            this.Close();
+            events.SetData(id, description, hourBegin, date, duration, numAttendees, location, selectedAnimalIds);
+
             Main_Menu main_Menu = new Main_Menu();
             main_Menu.Show();
             this.Hide();
@@ -94,7 +90,7 @@ namespace MyzOo.View
 
         private void Event_Register_Load(object sender, EventArgs e)
         {
-
+            this.populateAnimals();
         }
     }
 }

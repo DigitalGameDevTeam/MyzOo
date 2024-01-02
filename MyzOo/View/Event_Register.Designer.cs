@@ -45,11 +45,12 @@ namespace MyzOo.View
             this.Event_Time = new System.Windows.Forms.DateTimePicker();
             this.NumAttendees = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.card1 = new MyzOo.card();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.Location = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.card1 = new MyzOo.card();
             this.panel1.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Event_Date
@@ -203,6 +204,33 @@ namespace MyzOo.View
             this.label2.TabIndex = 47;
             this.label2.Text = "Limite de Pessoas para o Evento :";
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.card1);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(333, 191);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(250, 172);
+            this.flowLayoutPanel1.TabIndex = 50;
+            // 
+            // Location
+            // 
+            this.Location.BackColor = System.Drawing.Color.LightGray;
+            this.Location.Location = new System.Drawing.Point(12, 302);
+            this.Location.Name = "Location";
+            this.Location.Size = new System.Drawing.Size(224, 20);
+            this.Location.TabIndex = 52;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
+            this.label6.Location = new System.Drawing.Point(9, 284);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(81, 15);
+            this.label6.TabIndex = 51;
+            this.label6.Text = "Localização :";
+            // 
             // card1
             // 
             this.card1.BackColor = System.Drawing.Color.SteelBlue;
@@ -210,45 +238,18 @@ namespace MyzOo.View
             this.card1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.card1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.card1.Id = "";
-            this.card1.Location = new System.Drawing.Point(333, 191);
+            this.card1.Location = new System.Drawing.Point(3, 3);
             this.card1.Name = "card1";
             this.card1.Size = new System.Drawing.Size(250, 58);
             this.card1.TabIndex = 49;
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(333, 191);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(250, 172);
-            this.flowLayoutPanel1.TabIndex = 50;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.LightGray;
-            this.textBox2.Location = new System.Drawing.Point(12, 311);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(224, 20);
-            this.textBox2.TabIndex = 52;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label6.Location = new System.Drawing.Point(9, 293);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(81, 15);
-            this.label6.TabIndex = 51;
-            this.label6.Text = "Localização :";
             // 
             // Event_Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(599, 405);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.Location);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.card1);
             this.Controls.Add(this.NumAttendees);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Event_Time);
@@ -270,6 +271,7 @@ namespace MyzOo.View
             this.Load += new System.EventHandler(this.Event_Register_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -293,7 +295,7 @@ namespace MyzOo.View
         private Label label2;
         private card card1;
         private FlowLayoutPanel flowLayoutPanel1;
-        private TextBox textBox2;
+        private TextBox Location;
         private Label label6;
     }
 }
