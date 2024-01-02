@@ -92,7 +92,6 @@
     </Compile>
     <Compile Include="Methods\AnimalCrud.cs" />
     <Compile Include="Methods\CellCrud.cs" />
-    <Compile Include="Methods\ClientCrud.cs" />
     <Compile Include="Methods\EmployeeAdminLevelCrud.cs" />
     <Compile Include="Methods\EmployeeCrud.cs" />
     <Compile Include="Methods\EventCrud.cs" />

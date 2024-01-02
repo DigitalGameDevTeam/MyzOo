@@ -54,9 +54,10 @@
             this.Food_listbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Food_listbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Food_listbox.FormattingEnabled = true;
-            this.Food_listbox.Location = new System.Drawing.Point(12, 209);
+            this.Food_listbox.Location = new System.Drawing.Point(16, 257);
+            this.Food_listbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Food_listbox.Name = "Food_listbox";
-            this.Food_listbox.Size = new System.Drawing.Size(224, 21);
+            this.Food_listbox.Size = new System.Drawing.Size(303, 24);
             this.Food_listbox.TabIndex = 32;
             this.Food_listbox.SelectedIndexChanged += new System.EventHandler(this.Food_listbox_SelectedIndexChanged);
             // 
@@ -66,9 +67,10 @@
             this.Cell_listbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Cell_listbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Cell_listbox.FormattingEnabled = true;
-            this.Cell_listbox.Location = new System.Drawing.Point(12, 148);
+            this.Cell_listbox.Location = new System.Drawing.Point(16, 182);
+            this.Cell_listbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Cell_listbox.Name = "Cell_listbox";
-            this.Cell_listbox.Size = new System.Drawing.Size(224, 21);
+            this.Cell_listbox.Size = new System.Drawing.Size(303, 24);
             this.Cell_listbox.TabIndex = 31;
             // 
             // label7
@@ -76,9 +78,10 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label7.Location = new System.Drawing.Point(9, 182);
+            this.label7.Location = new System.Drawing.Point(12, 224);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(121, 15);
+            this.label7.Size = new System.Drawing.Size(145, 18);
             this.label7.TabIndex = 28;
             this.label7.Text = "Comida do Animal :";
             // 
@@ -87,9 +90,10 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label6.Location = new System.Drawing.Point(9, 130);
+            this.label6.Location = new System.Drawing.Point(12, 160);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(103, 15);
+            this.label6.Size = new System.Drawing.Size(122, 18);
             this.label6.TabIndex = 26;
             this.label6.Text = "Cela do Animal :";
             // 
@@ -98,9 +102,10 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label3.Location = new System.Drawing.Point(351, 77);
+            this.label3.Location = new System.Drawing.Point(468, 95);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(104, 15);
+            this.label3.Size = new System.Drawing.Size(126, 18);
             this.label3.TabIndex = 25;
             this.label3.Text = "Data do Animal :";
             // 
@@ -111,9 +116,10 @@
             this.Name_Box.Enabled = false;
             this.Name_Box.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
             this.Name_Box.ForeColor = System.Drawing.Color.Black;
-            this.Name_Box.Location = new System.Drawing.Point(12, 101);
+            this.Name_Box.Location = new System.Drawing.Point(16, 124);
+            this.Name_Box.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name_Box.Name = "Name_Box";
-            this.Name_Box.Size = new System.Drawing.Size(227, 14);
+            this.Name_Box.Size = new System.Drawing.Size(303, 17);
             this.Name_Box.TabIndex = 24;
             // 
             // label2
@@ -121,9 +127,10 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label2.Location = new System.Drawing.Point(10, 75);
+            this.label2.Location = new System.Drawing.Point(13, 92);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 15);
+            this.label2.Size = new System.Drawing.Size(133, 18);
             this.label2.TabIndex = 23;
             this.label2.Text = "Nome do Animal :";
             // 
@@ -134,8 +141,9 @@
             this.panel1.Controls.Add(this.Exit_button);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(599, 57);
+            this.panel1.Size = new System.Drawing.Size(799, 70);
             this.panel1.TabIndex = 21;
             // 
             // label1
@@ -144,9 +152,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(2, 0);
+            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(488, 60);
+            this.label1.Size = new System.Drawing.Size(609, 74);
             this.label1.TabIndex = 2;
             this.label1.Text = "Inspecionar Animal";
             // 
@@ -158,9 +167,10 @@
             this.Exit_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Exit_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Exit_button.ForeColor = System.Drawing.SystemColors.Window;
-            this.Exit_button.Location = new System.Drawing.Point(543, 0);
+            this.Exit_button.Location = new System.Drawing.Point(724, 0);
+            this.Exit_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Exit_button.Name = "Exit_button";
-            this.Exit_button.Size = new System.Drawing.Size(56, 57);
+            this.Exit_button.Size = new System.Drawing.Size(75, 70);
             this.Exit_button.TabIndex = 3;
             this.Exit_button.Text = "X";
             this.Exit_button.UseVisualStyleBackColor = false;
@@ -171,9 +181,10 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label5.Location = new System.Drawing.Point(9, 248);
+            this.label5.Location = new System.Drawing.Point(12, 305);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 15);
+            this.label5.Size = new System.Drawing.Size(75, 18);
             this.label5.TabIndex = 34;
             this.label5.Text = "Genero : ";
             // 
@@ -183,9 +194,10 @@
             this.Gender_listbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Gender_listbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Gender_listbox.FormattingEnabled = true;
-            this.Gender_listbox.Location = new System.Drawing.Point(12, 266);
+            this.Gender_listbox.Location = new System.Drawing.Point(16, 327);
+            this.Gender_listbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Gender_listbox.Name = "Gender_listbox";
-            this.Gender_listbox.Size = new System.Drawing.Size(224, 21);
+            this.Gender_listbox.Size = new System.Drawing.Size(303, 24);
             this.Gender_listbox.TabIndex = 33;
             // 
             // Decease_Box
@@ -194,9 +206,10 @@
             this.Decease_Box.BackColor = System.Drawing.Color.Transparent;
             this.Decease_Box.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Decease_Box.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.Decease_Box.Location = new System.Drawing.Point(13, 313);
+            this.Decease_Box.Location = new System.Drawing.Point(17, 385);
+            this.Decease_Box.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Decease_Box.Name = "Decease_Box";
-            this.Decease_Box.Size = new System.Drawing.Size(64, 19);
+            this.Decease_Box.Size = new System.Drawing.Size(77, 22);
             this.Decease_Box.TabIndex = 35;
             this.Decease_Box.Text = "Doente";
             this.Decease_Box.UseVisualStyleBackColor = false;
@@ -210,9 +223,10 @@
             this.Update_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Update_Button.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.Update_Button.ForeColor = System.Drawing.Color.White;
-            this.Update_Button.Location = new System.Drawing.Point(13, 366);
+            this.Update_Button.Location = new System.Drawing.Point(17, 450);
+            this.Update_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Update_Button.Name = "Update_Button";
-            this.Update_Button.Size = new System.Drawing.Size(124, 39);
+            this.Update_Button.Size = new System.Drawing.Size(165, 48);
             this.Update_Button.TabIndex = 29;
             this.Update_Button.Text = "Atualizar";
             this.Update_Button.UseVisualStyleBackColor = false;
@@ -227,9 +241,10 @@
             this.Delete_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Delete_Button.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.Delete_Button.ForeColor = System.Drawing.Color.White;
-            this.Delete_Button.Location = new System.Drawing.Point(487, 366);
+            this.Delete_Button.Location = new System.Drawing.Point(649, 450);
+            this.Delete_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Delete_Button.Name = "Delete_Button";
-            this.Delete_Button.Size = new System.Drawing.Size(94, 39);
+            this.Delete_Button.Size = new System.Drawing.Size(125, 48);
             this.Delete_Button.TabIndex = 36;
             this.Delete_Button.Text = "Apagar";
             this.Delete_Button.UseVisualStyleBackColor = false;
@@ -237,16 +252,17 @@
             // 
             // Birthday_Calendar
             // 
-            this.Birthday_Calendar.Location = new System.Drawing.Point(354, 101);
+            this.Birthday_Calendar.Location = new System.Drawing.Point(472, 124);
+            this.Birthday_Calendar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Birthday_Calendar.Name = "Birthday_Calendar";
-            this.Birthday_Calendar.Size = new System.Drawing.Size(200, 20);
+            this.Birthday_Calendar.Size = new System.Drawing.Size(265, 22);
             this.Birthday_Calendar.TabIndex = 37;
             // 
             // AnimalData_Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(599, 417);
+            this.ClientSize = new System.Drawing.Size(799, 513);
             this.Controls.Add(this.Birthday_Calendar);
             this.Controls.Add(this.Delete_Button);
             this.Controls.Add(this.Decease_Box);
@@ -263,6 +279,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AnimalData_Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ver_Animal_Menu";

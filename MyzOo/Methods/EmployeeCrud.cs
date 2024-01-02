@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Xml.Linq;
 
 namespace MyzOo.Methods
@@ -72,11 +73,13 @@ namespace MyzOo.Methods
         }
 
         //Delete datas
-        public void DeleteTeam(string Description)
+        public void DeleteData(string id, string name)
         {
             try
             {
-                var SetData = conn.client.Delete("employees/" + Description);
+                var SetData = conn.client.Delete("employees/" + id);
+
+                MessageBox.Show($"Funcionario {name} Apagado com sucesso", "Aviso", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
             catch (Exception)
             {
