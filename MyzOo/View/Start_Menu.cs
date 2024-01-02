@@ -47,8 +47,6 @@ namespace MyzOo
 
                 if (loginResult != null)
                 {
-                    CurrentUser currentUser = new CurrentUser();
-                    currentUser.Id = loginResult;
 
                     // Open the Main_Menu form and set the current user
                     Main_Menu mainMenuForm = new Main_Menu();
