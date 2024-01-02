@@ -84,6 +84,7 @@
     <Compile Include="card.Designer.cs">
       <DependentUpon>card.cs</DependentUpon>
     </Compile>
+    <Compile Include="Methods\CurrentUser.cs" />
     <Compile Include="View\EventList.cs">
       <SubType>Form</SubType>
     </Compile>

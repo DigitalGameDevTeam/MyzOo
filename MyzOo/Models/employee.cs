@@ -30,5 +30,12 @@ namespace MyzOo.Models
             EmployeeCrud employeeCrud = new EmployeeCrud();
             return employeeCrud.LoadData();
         }
+
+        public void DeleteData(string Id, string Name)
+        {
+            EmployeeCrud employee = new EmployeeCrud();
+            employee.DeleteData(Id, Name);
+        }
+
     }
 }

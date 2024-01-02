@@ -1,4 +1,5 @@
-﻿using MyzOo.Models;
+﻿using MyzOo.Methods;
+using MyzOo.Models;
 using MyzOo.View;
 using System;
 using System.Collections.Generic;
@@ -11,11 +12,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace MyzOo
 {
-    public partial class Main_Menu : Form
+    public partial class Main_Menu : Form 
     {
         int st = 1;
+
+
+
         public Main_Menu()
         {
             InitializeComponent();
@@ -27,6 +32,7 @@ namespace MyzOo
             Start_Menu start_Menu = new Start_Menu();
             this.Hide();
             start_Menu.Show();
+
         }
 
         private void Minimize_button_Click(object sender, EventArgs e)
@@ -37,7 +43,7 @@ namespace MyzOo
 
         private void Main_Menu_Load(object sender, EventArgs e)
         {
-                
+
         }
 
         private void AnimalMenu_button_Click(object sender, EventArgs e)

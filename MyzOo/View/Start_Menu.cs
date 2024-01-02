@@ -1,5 +1,6 @@
 ﻿using MyzOo.Methods;
 using MyzOo.Models;
+using MyzOo.View;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
@@ -29,15 +30,9 @@ namespace MyzOo
 
         private void Close_button_Click(object sender, EventArgs e)
         {
-            //Close the app
+
+
             Environment.Exit(0);
-        }
-        private void Login_button_Click(object sender, EventArgs e)
-        {
-            //close Start_Menu and open Main_Menu
-            Main_Menu main_Menu = new Main_Menu();
-            main_Menu.Show();
-            this.Hide();
         }
 
         private async void button1_Click(object sender, EventArgs e)
@@ -52,9 +47,12 @@ namespace MyzOo
 
                 if (loginResult != null)
                 {
-                    // Login successful, open Main_Menu
-                    Main_Menu mainMenu = new Main_Menu();
-                    mainMenu.Show();
+                    CurrentUser currentUser = new CurrentUser();
+                    currentUser.Id = loginResult;
+
+                    // Open the Main_Menu form and set the current user
+                    Main_Menu mainMenuForm = new Main_Menu();
+                    mainMenuForm.Show();
                     this.Hide();
                 }
                 else
@@ -67,6 +65,11 @@ namespace MyzOo
                 MessageBox.Show("Escreva Email e Password");
             }
         }
+
+
+
+
+
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {

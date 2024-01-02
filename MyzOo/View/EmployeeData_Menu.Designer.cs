@@ -260,12 +260,13 @@
             this.Delete_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Delete_Button.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.Delete_Button.ForeColor = System.Drawing.Color.White;
-            this.Delete_Button.Location = new System.Drawing.Point(450, 321);
+            this.Delete_Button.Location = new System.Drawing.Point(437, 321);
             this.Delete_Button.Name = "Delete_Button";
-            this.Delete_Button.Size = new System.Drawing.Size(94, 33);
+            this.Delete_Button.Size = new System.Drawing.Size(107, 33);
             this.Delete_Button.TabIndex = 73;
             this.Delete_Button.Text = "Apagar";
             this.Delete_Button.UseVisualStyleBackColor = false;
+            this.Delete_Button.Click += new System.EventHandler(this.Delete_Button_Click);
             // 
             // EmployeeData_Menu
             // 
