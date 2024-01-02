@@ -163,6 +163,7 @@ namespace MyzOo.View
             this.label5.Size = new System.Drawing.Size(198, 15);
             this.label5.TabIndex = 41;
             this.label5.Text = "Duração Prevista para o Evento :";
+     
             // 
             // label7
             // 
