@@ -17,12 +17,13 @@ namespace MyzOo.View
     public partial class EmployeeData_Register : Form
     {
         private DateTime birthDateEmployee;
-
-        public EmployeeData_Register()
+        string userId;
+        public EmployeeData_Register(string userID)
         {
             InitializeComponent();
             this.FillEmployeeFunctionListBox();
             this.FillEmployeeAdminLevelListBox();
+            userId = userID;
         }
 
         // Fills employee function list box
@@ -56,7 +57,7 @@ namespace MyzOo.View
         private void Exit_button_Click(object sender, EventArgs e)
         { 
             //Hide this Menu and open Main_Men
-            Main_Menu main_Menu = new Main_Menu();
+            Main_Menu main_Menu = new Main_Menu(userId);
             main_Menu.Show();
             this.Hide();
         }
@@ -109,6 +110,11 @@ namespace MyzOo.View
         }
 
         private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Cell_listbox_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

@@ -14,14 +14,18 @@ namespace MyzOo.View
 {
     public partial class Event_Register : Form
     {
-        public Event_Register()
+        string userId;
+        private List<int> selectedAnimalIds = new List<int>();
+
+        public Event_Register(string userID)
         {
             InitializeComponent();
+            this.userId = userId;
         }
 
         private void Exit_button_Click(object sender, EventArgs e)
         {
-            Main_Menu main_Menu = new Main_Menu();
+            Main_Menu main_Menu = new Main_Menu(userId);
             main_Menu.Show();
             this.Hide();
         }
@@ -34,21 +38,61 @@ namespace MyzOo.View
             string id = Guid.NewGuid().ToString();
 
             // Animal Info
-            string description = Name_box.Text;
+            string description = Description.Text;
 
-            //string gender = Gender_listbox.Text;
-            // Retrieve selected cell and food values
-            // Food
-            //string foodName = Food_listbox.Text;
-            //Food animalFood = Food.LoadData().FirstOrDefault(tf => tf.Description == foodName);
+            DateTime hourBegin = Event_Date.Value;
+            DateTime date = Event_Time.Value;
 
-            events.SetData(id, description, hourBegin, duration, numAttendees, location, animalId);
+            int duration = (int)Convert.ToInt64(Duration.Text);
 
-            this.Close();
-            Main_Menu main_Menu = new Main_Menu();
+            int numAttendees = (int)Convert.ToInt64(NumAttendees.Text);
+
+            string location = Location.Text;
+
+
+            events.SetData(id, description, hourBegin, date, duration, numAttendees, location, selectedAnimalIds);
+
+
+            Main_Menu main_Menu = new Main_Menu(userId);
             main_Menu.Show();
             this.Hide();
 
+        }
+
+        private void populateAnimals()
+        {
+            card[] cardList = new card[1000];
+
+            int count = 0;
+
+            flowLayoutPanel1.Controls.Clear();
+
+            foreach (var animal in Animal.LoadData())
+            {
+
+                cardList[count] = new card();
+                cardList[count].Id = animal.Id;
+                cardList[count].Name = animal.Name;
+
+                flowLayoutPanel1.Controls.Add(cardList[count]);
+
+                cardList[count].Click += Card_Click;
+
+            }
+        }
+
+        private void Card_Click(object sender, EventArgs e)
+        {
+            if (sender is card clickedCard)
+            {
+                int animalID = Convert.ToInt32(clickedCard.Id);
+                selectedAnimalIds.Add(animalID);
+            }
+        }
+
+        private void Event_Register_Load(object sender, EventArgs e)
+        {
+            this.populateAnimals();
         }
     }
 }

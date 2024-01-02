@@ -31,7 +31,7 @@ namespace MyzOo.View
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Event_Register));
-            this.Birthday_Calendar = new System.Windows.Forms.DateTimePicker();
+            this.Event_Date = new System.Windows.Forms.DateTimePicker();
             this.Regist_button = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -42,22 +42,22 @@ namespace MyzOo.View
             this.Duration = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.Hour = new System.Windows.Forms.DateTimePicker();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Event_Time = new System.Windows.Forms.DateTimePicker();
+            this.NumAttendees = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.card1 = new MyzOo.card();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.Location = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.card1 = new MyzOo.card();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // Birthday_Calendar
+            // Event_Date
             // 
-            this.Birthday_Calendar.Location = new System.Drawing.Point(344, 87);
-            this.Birthday_Calendar.Name = "Birthday_Calendar";
-            this.Birthday_Calendar.Size = new System.Drawing.Size(200, 20);
-            this.Birthday_Calendar.TabIndex = 38;
+            this.Event_Date.Location = new System.Drawing.Point(344, 87);
+            this.Event_Date.Name = "Event_Date";
+            this.Event_Date.Size = new System.Drawing.Size(200, 20);
+            this.Event_Date.TabIndex = 38;
             // 
             // Regist_button
             // 
@@ -177,21 +177,21 @@ namespace MyzOo.View
             this.label7.TabIndex = 46;
             this.label7.Text = "Hora do Evento :";
             // 
-            // Hour
+            // Event_Time
             // 
-            this.Hour.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.Hour.Location = new System.Drawing.Point(344, 149);
-            this.Hour.Name = "Hour";
-            this.Hour.Size = new System.Drawing.Size(200, 20);
-            this.Hour.TabIndex = 4;
+            this.Event_Time.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.Event_Time.Location = new System.Drawing.Point(344, 149);
+            this.Event_Time.Name = "Event_Time";
+            this.Event_Time.Size = new System.Drawing.Size(200, 20);
+            this.Event_Time.TabIndex = 4;
             // 
-            // textBox1
+            // NumAttendees
             // 
-            this.textBox1.BackColor = System.Drawing.Color.LightGray;
-            this.textBox1.Location = new System.Drawing.Point(12, 201);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(224, 20);
-            this.textBox1.TabIndex = 48;
+            this.NumAttendees.BackColor = System.Drawing.Color.LightGray;
+            this.NumAttendees.Location = new System.Drawing.Point(12, 201);
+            this.NumAttendees.Name = "NumAttendees";
+            this.NumAttendees.Size = new System.Drawing.Size(224, 20);
+            this.NumAttendees.TabIndex = 48;
             // 
             // label2
             // 
@@ -203,6 +203,32 @@ namespace MyzOo.View
             this.label2.Size = new System.Drawing.Size(202, 15);
             this.label2.TabIndex = 47;
             this.label2.Text = "Limite de Pessoas para o Evento :";
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(333, 191);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(250, 172);
+            this.flowLayoutPanel1.TabIndex = 50;
+            // 
+            // Location
+            // 
+            this.Location.BackColor = System.Drawing.Color.LightGray;
+            this.Location.Location = new System.Drawing.Point(12, 302);
+            this.Location.Name = "Location";
+            this.Location.Size = new System.Drawing.Size(224, 20);
+            this.Location.TabIndex = 52;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
+            this.label6.Location = new System.Drawing.Point(9, 284);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(81, 15);
+            this.label6.TabIndex = 51;
+            this.label6.Text = "Localização :";
             // 
             // card1
             // 
@@ -216,49 +242,23 @@ namespace MyzOo.View
             this.card1.Size = new System.Drawing.Size(250, 58);
             this.card1.TabIndex = 49;
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(333, 191);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(250, 172);
-            this.flowLayoutPanel1.TabIndex = 50;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.LightGray;
-            this.textBox2.Location = new System.Drawing.Point(12, 311);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(224, 20);
-            this.textBox2.TabIndex = 52;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label6.Location = new System.Drawing.Point(9, 293);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(81, 15);
-            this.label6.TabIndex = 51;
-            this.label6.Text = "Localização :";
-            // 
             // Event_Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(599, 405);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.Location);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.card1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.NumAttendees);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.Hour);
+            this.Controls.Add(this.Event_Time);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.Duration);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.Description);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.Birthday_Calendar);
+            this.Controls.Add(this.Event_Date);
             this.Controls.Add(this.Regist_button);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
@@ -268,6 +268,7 @@ namespace MyzOo.View
             this.Name = "Event_Register";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Event_Register";
+            this.Load += new System.EventHandler(this.Event_Register_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -277,7 +278,7 @@ namespace MyzOo.View
 
         #endregion
 
-        private System.Windows.Forms.DateTimePicker Birthday_Calendar;
+        private System.Windows.Forms.DateTimePicker Event_Date;
         private System.Windows.Forms.Button Regist_button;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
@@ -288,12 +289,12 @@ namespace MyzOo.View
         private System.Windows.Forms.TextBox Duration;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DateTimePicker Hour;
-        private TextBox textBox1;
+        private System.Windows.Forms.DateTimePicker Event_Time;
+        private TextBox NumAttendees;
         private Label label2;
         private card card1;
         private FlowLayoutPanel flowLayoutPanel1;
-        private TextBox textBox2;
+        private TextBox Location;
         private Label label6;
     }
 }

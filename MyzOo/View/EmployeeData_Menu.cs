@@ -15,11 +15,11 @@ namespace MyzOo.View
     public partial class EmployeeData_Menu : Form
     {
         int op = 1;
-
+        private DateTime birthDateEmployee;
         public string employeeID;
         private Employee employee;
-
-        public EmployeeData_Menu(string employeeId)
+        string userId;
+        public EmployeeData_Menu(string employeeId, string userID)
         {
             InitializeComponent();
             employeeID = employeeId;
@@ -27,17 +27,43 @@ namespace MyzOo.View
 
             employee = employeecrud.GetEmployee(employeeID);
 
+            this.FillEmployeeFunctionListBox();
+            this.FillEmployeeAdminLevelListBox();
+            userId = userID;
         }
         
 
         private void Ver_Employee_Menu_Load(object sender, EventArgs e)
         {
             Name_Box.Text = employee.Name;
+
+
+        }
+
+        private void FillEmployeeFunctionListBox()
+        {
+            List<EmployeeFunction> allEmployeeFunction = EmployeeFunction.LoadData();
+            foreach (EmployeeFunction function in allEmployeeFunction)
+            {
+                if (function != null)
+                    Func_listbox.Items.Add(function.description);
+            }
+        }
+
+        // Fills employee admin list box
+        private void FillEmployeeAdminLevelListBox()
+        {
+            List<EmployeeAdminLevel> allEmployeeFunction = EmployeeAdminLevel.LoadData();
+            foreach (EmployeeAdminLevel admin in allEmployeeFunction)
+            {
+                if (admin != null)
+                    Admin_listbox.Items.Add(admin.description);
+            }
         }
         private void Exit_button_Click(object sender, EventArgs e)
         {
             //Hide this Menu and open Main_Men
-            Main_Menu main_Menu = new Main_Menu();
+            Main_Menu main_Menu = new Main_Menu(userId);
             main_Menu.Show();
             this.Hide();
         }
@@ -68,9 +94,30 @@ namespace MyzOo.View
                 employee.DeleteData(id, name);
             }
  
-            EmployeeList EmployeeList_Menu = new EmployeeList();
+            EmployeeList EmployeeList_Menu = new EmployeeList(userId);
             EmployeeList_Menu.Show();
             this.Hide();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Regist_button_Click(object sender, EventArgs e)
+        {
+            EmployeeCrud employeeCrud = new EmployeeCrud();
+            EmployeeAdminLevelCrud al = new EmployeeAdminLevelCrud();
+            EmployeeFunctionCrud fc = new EmployeeFunctionCrud();
+            employeeCrud.SetData(
+                Guid.NewGuid().ToString(),
+                Name_Box.Text,
+                this.birthDateEmployee,
+                Client.encryptSHA512(Pass_textbox.Text),
+                Int32.Parse(al.getIdByDescription(Func_listbox.SelectedItem.ToString())),
+                Int32.Parse(fc.getIdByDescription(Admin_listbox.SelectedItem.ToString()))
+                );
+            MessageBox.Show("Empregado registado com sucesso", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

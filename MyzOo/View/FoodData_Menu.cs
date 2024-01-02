@@ -17,16 +17,17 @@ namespace MyzOo.View
 
         private string foodID;
         private Food food;
-
-        public FoodData_Menu(string foodId)
+        string userId;
+        public FoodData_Menu(string foodId, string userId)
         {
             InitializeComponent();
             foodID = foodId;
+            this.userId = userId;
         }
 
         private void Exit_button_Click(object sender, EventArgs e)
         {
-            FoodList foodList = new FoodList();
+            FoodList foodList = new FoodList(userId);
             foodList.Show();
             this.Hide();
         }
@@ -71,7 +72,7 @@ namespace MyzOo.View
 
             food.UpdateData(id, description, typeFood, stock);
 
-            FoodList foodList = new FoodList();
+            FoodList foodList = new FoodList(userId);
             foodList.Show();
             this.Hide();
         }
@@ -83,7 +84,7 @@ namespace MyzOo.View
 
             food.DeleteData(id, description);
 
-            FoodList foodList = new FoodList();
+            FoodList foodList = new FoodList(userId);
             foodList.Show();
             this.Hide();
         }

@@ -15,10 +15,11 @@ namespace MyzOo.View
     
     public partial class AnimalList : Form
     {
-        
-        public AnimalList()
+        string userId;
+        public AnimalList(string userID)
         {
             InitializeComponent();
+            userId = userID;
         }
 
         private void AnimalList_Menu_Load(object sender, EventArgs e)
@@ -54,7 +55,7 @@ namespace MyzOo.View
             {
                 string animalID = clickedCard.Id;
 
-                AnimalData_Menu ver_Animal_Menu = new AnimalData_Menu(animalID);
+                AnimalData_Menu ver_Animal_Menu = new AnimalData_Menu(animalID, userId);
                 ver_Animal_Menu.Show();
                 this.Hide();
             }
@@ -63,7 +64,7 @@ namespace MyzOo.View
         private void Exit_button_Click(object sender, EventArgs e)
         {
             //Hide this Menu and open Main_Men
-            Main_Menu main_Menu = new Main_Menu();
+            Main_Menu main_Menu = new Main_Menu(userId);
             main_Menu.Show();
             this.Hide();
 

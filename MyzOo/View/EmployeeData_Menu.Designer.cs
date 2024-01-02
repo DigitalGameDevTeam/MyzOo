@@ -56,10 +56,9 @@
             this.Pass_textbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Pass_textbox.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
             this.Pass_textbox.ForeColor = System.Drawing.Color.Black;
-            this.Pass_textbox.Location = new System.Drawing.Point(16, 313);
-            this.Pass_textbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Pass_textbox.Location = new System.Drawing.Point(12, 254);
             this.Pass_textbox.Name = "Pass_textbox";
-            this.Pass_textbox.Size = new System.Drawing.Size(304, 17);
+            this.Pass_textbox.Size = new System.Drawing.Size(228, 14);
             this.Pass_textbox.TabIndex = 66;
             this.Pass_textbox.TextChanged += new System.EventHandler(this.Pass_textbox_TextChanged);
             // 
@@ -68,17 +67,16 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label5.Location = new System.Drawing.Point(13, 290);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(10, 236);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(113, 18);
+            this.label5.Size = new System.Drawing.Size(99, 15);
             this.label5.TabIndex = 65;
-            this.label5.Text = "Palavra Passe :";
+            this.label5.Text = "Nova password:";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(365, 453);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(274, 368);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(0, 0);
             this.button1.TabIndex = 64;
@@ -91,10 +89,9 @@
             this.Admin_listbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Admin_listbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Admin_listbox.FormattingEnabled = true;
-            this.Admin_listbox.Location = new System.Drawing.Point(16, 250);
-            this.Admin_listbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Admin_listbox.Location = new System.Drawing.Point(12, 203);
             this.Admin_listbox.Name = "Admin_listbox";
-            this.Admin_listbox.Size = new System.Drawing.Size(304, 24);
+            this.Admin_listbox.Size = new System.Drawing.Size(229, 21);
             this.Admin_listbox.TabIndex = 63;
             // 
             // Func_listbox
@@ -103,10 +100,9 @@
             this.Func_listbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Func_listbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Func_listbox.FormattingEnabled = true;
-            this.Func_listbox.Location = new System.Drawing.Point(16, 187);
-            this.Func_listbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Func_listbox.Location = new System.Drawing.Point(12, 152);
             this.Func_listbox.Name = "Func_listbox";
-            this.Func_listbox.Size = new System.Drawing.Size(304, 24);
+            this.Func_listbox.Size = new System.Drawing.Size(229, 21);
             this.Func_listbox.TabIndex = 62;
             // 
             // label7
@@ -114,10 +110,9 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label7.Location = new System.Drawing.Point(13, 228);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(10, 185);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(177, 18);
+            this.label7.Size = new System.Drawing.Size(147, 15);
             this.label7.TabIndex = 59;
             this.label7.Text = "Nivel de Administração :";
             // 
@@ -126,10 +121,9 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label6.Location = new System.Drawing.Point(13, 165);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(10, 134);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(74, 18);
+            this.label6.Size = new System.Drawing.Size(60, 15);
             this.label6.TabIndex = 57;
             this.label6.Text = "Função : ";
             // 
@@ -138,10 +132,9 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label3.Location = new System.Drawing.Point(455, 87);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(341, 71);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(157, 18);
+            this.label3.Size = new System.Drawing.Size(130, 15);
             this.label3.TabIndex = 56;
             this.label3.Text = "Data de Aniversário :";
             // 
@@ -152,10 +145,9 @@
             this.Name_Box.Enabled = false;
             this.Name_Box.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
             this.Name_Box.ForeColor = System.Drawing.Color.Black;
-            this.Name_Box.Location = new System.Drawing.Point(17, 129);
-            this.Name_Box.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name_Box.Location = new System.Drawing.Point(13, 105);
             this.Name_Box.Name = "Name_Box";
-            this.Name_Box.Size = new System.Drawing.Size(303, 17);
+            this.Name_Box.Size = new System.Drawing.Size(227, 14);
             this.Name_Box.TabIndex = 55;
             // 
             // label2
@@ -163,10 +155,9 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label2.Location = new System.Drawing.Point(13, 107);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(10, 87);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(167, 18);
+            this.label2.Size = new System.Drawing.Size(136, 15);
             this.label2.TabIndex = 54;
             this.label2.Text = "Nome do Funcionário :";
             // 
@@ -178,10 +169,10 @@
             this.panel1.Controls.Add(this.Exit_button);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(799, 70);
+            this.panel1.Size = new System.Drawing.Size(599, 57);
             this.panel1.TabIndex = 53;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // Minimize_button
             // 
@@ -191,10 +182,9 @@
             this.Minimize_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Minimize_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Minimize_button.ForeColor = System.Drawing.SystemColors.Window;
-            this.Minimize_button.Location = new System.Drawing.Point(641, 0);
-            this.Minimize_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Minimize_button.Location = new System.Drawing.Point(481, 0);
             this.Minimize_button.Name = "Minimize_button";
-            this.Minimize_button.Size = new System.Drawing.Size(75, 70);
+            this.Minimize_button.Size = new System.Drawing.Size(56, 57);
             this.Minimize_button.TabIndex = 49;
             this.Minimize_button.Text = "-";
             this.Minimize_button.UseVisualStyleBackColor = false;
@@ -206,10 +196,9 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("MS Reference Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(3, 0);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(575, 74);
+            this.label4.Size = new System.Drawing.Size(459, 60);
             this.label4.TabIndex = 2;
             this.label4.Text = "Editar Funcionário";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -222,10 +211,9 @@
             this.Exit_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Exit_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Exit_button.ForeColor = System.Drawing.SystemColors.Window;
-            this.Exit_button.Location = new System.Drawing.Point(724, 0);
-            this.Exit_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Exit_button.Location = new System.Drawing.Point(543, 0);
             this.Exit_button.Name = "Exit_button";
-            this.Exit_button.Size = new System.Drawing.Size(75, 70);
+            this.Exit_button.Size = new System.Drawing.Size(56, 57);
             this.Exit_button.TabIndex = 3;
             this.Exit_button.Text = "X";
             this.Exit_button.UseVisualStyleBackColor = false;
@@ -240,18 +228,18 @@
             this.Regist_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Regist_button.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.Regist_button.ForeColor = System.Drawing.Color.White;
-            this.Regist_button.Location = new System.Drawing.Point(32, 395);
-            this.Regist_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Regist_button.Location = new System.Drawing.Point(24, 321);
             this.Regist_button.Name = "Regist_button";
-            this.Regist_button.Size = new System.Drawing.Size(143, 41);
+            this.Regist_button.Size = new System.Drawing.Size(107, 33);
             this.Regist_button.TabIndex = 60;
             this.Regist_button.Text = "Confirmar";
             this.Regist_button.UseVisualStyleBackColor = false;
+            this.Regist_button.Click += new System.EventHandler(this.Regist_button_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(363, 129);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Location = new System.Drawing.Point(272, 105);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(0, 0);
             this.button2.TabIndex = 51;
@@ -260,10 +248,9 @@
             // 
             // Birthday_Calendar
             // 
-            this.Birthday_Calendar.Location = new System.Drawing.Point(459, 110);
-            this.Birthday_Calendar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Birthday_Calendar.Location = new System.Drawing.Point(344, 89);
             this.Birthday_Calendar.Name = "Birthday_Calendar";
-            this.Birthday_Calendar.Size = new System.Drawing.Size(265, 22);
+            this.Birthday_Calendar.Size = new System.Drawing.Size(200, 20);
             this.Birthday_Calendar.TabIndex = 72;
             // 
             // Delete_Button
@@ -276,6 +263,7 @@
             this.Delete_Button.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.Delete_Button.ForeColor = System.Drawing.Color.White;
             this.Delete_Button.Location = new System.Drawing.Point(437, 321);
+            this.Delete_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Delete_Button.Name = "Delete_Button";
             this.Delete_Button.Size = new System.Drawing.Size(107, 33);
             this.Delete_Button.TabIndex = 73;
@@ -285,9 +273,9 @@
             // 
             // EmployeeData_Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(799, 480);
+            this.ClientSize = new System.Drawing.Size(599, 390);
             this.Controls.Add(this.Delete_Button);
             this.Controls.Add(this.Birthday_Calendar);
             this.Controls.Add(this.Pass_textbox);
@@ -305,7 +293,6 @@
             this.Controls.Add(this.button2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "EmployeeData_Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ver_Employee_Menu";

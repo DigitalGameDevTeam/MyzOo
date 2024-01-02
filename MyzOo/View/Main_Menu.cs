@@ -19,15 +19,17 @@ namespace MyzOo
     {
         int st = 1;
 
+        string userId;
 
-
-        public Main_Menu()
+        public Main_Menu(string userID)
         {
             InitializeComponent();
+            userId = userID;
         }
 
         private void Exit_button_Click(object sender, EventArgs e)
         {
+            
             //close Start_Menu and open Main_Menu
             Start_Menu start_Menu = new Start_Menu();
             this.Hide();
@@ -55,7 +57,7 @@ namespace MyzOo
             List<Cell> cell = Cell.CellList;
 
             
-            AnimalData_Register animal_Menu = new AnimalData_Register();
+            AnimalData_Register animal_Menu = new AnimalData_Register(userId);
             this.Hide();
             animal_Menu.Show();
             this.Dispose();
@@ -65,7 +67,7 @@ namespace MyzOo
         private void Food_Menu_button_Click(object sender, EventArgs e)
         {
             //open Food_Menu
-            Food_Menu food_Menu = new Food_Menu();
+            Food_Menu food_Menu = new Food_Menu(userId);
             food_Menu.Show();
             this.Hide();
         }
@@ -73,7 +75,7 @@ namespace MyzOo
         private void Cell_Menu_button_Click(object sender, EventArgs e)
         {
             //open Cell_Menu
-            CellData_Register cell_Menu = new CellData_Register();
+            CellData_Register cell_Menu = new CellData_Register(userId);
             cell_Menu.Show();
             this.Hide();
         }
@@ -96,7 +98,7 @@ namespace MyzOo
         private void Employee_Menu_button_Click(object sender, EventArgs e)
         {
             //Open Employee_Menu
-            EmployeeData_Register employee_Menu = new EmployeeData_Register();
+            EmployeeData_Register employee_Menu = new EmployeeData_Register(userId);
             employee_Menu.Show();
             this.Hide();
             
@@ -105,41 +107,41 @@ namespace MyzOo
         private void AnimalList_Menu_button_Click(object sender, EventArgs e)
         {
             //open animallist_menu
-            AnimalList animalList_Menu = new AnimalList();
+            AnimalList animalList_Menu = new AnimalList(userId);
             animalList_Menu.Show();
             this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FoodList food_List = new FoodList();
+            FoodList food_List = new FoodList(userId);
             food_List.Show();
             this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            EmployeeList employeeList_Menu = new EmployeeList();
+            EmployeeList employeeList_Menu = new EmployeeList(userId);
             employeeList_Menu.Show();
             this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            CellList cell_List = new CellList();
+            CellList cell_List = new CellList(userId);
             cell_List.Show();
             this.Hide();
         }
         private void RegistarEvento_Click_1(object sender, EventArgs e)
         {
-            Event_Register event_Register = new Event_Register();
+            Event_Register event_Register = new Event_Register(userId);
             event_Register.Show();
             this.Hide();
         }
 
         private void ListaEvento_Click_1(object sender, EventArgs e)
         {
-            EventList eventList = new EventList();
+            EventList eventList = new EventList(userId);
             eventList.Show();
             this.Hide();
         }

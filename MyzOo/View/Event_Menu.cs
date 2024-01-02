@@ -12,16 +12,22 @@ namespace MyzOo.View
 {
     public partial class Event_Menu : Form
     {
-        public Event_Menu()
+        string userId;
+        public Event_Menu(string userID)
         {
             InitializeComponent();
         }
 
         private void Exit_button_Click(object sender, EventArgs e)
         {
-            Main_Menu main_Menu = new Main_Menu();
+            Main_Menu main_Menu = new Main_Menu(userId);
             main_Menu.Show();
             this.Hide();
+        }
+
+        private void Event_Menu_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

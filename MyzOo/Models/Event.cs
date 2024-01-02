@@ -12,6 +12,7 @@ namespace MyzOo.Models
         public string Id { get; set; }
         public string Description { get; set; }
         public DateTime HourBegin { get; set; }
+        public DateTime Date {  get; set; }
         public int Duration { get; set; }
         public int NumAttendees { get; set; }
         public string Location { get; set; }
@@ -22,10 +23,10 @@ namespace MyzOo.Models
             AnimalId = new List<int>();
         }
 
-        public void SetData(string Id, string Description, DateTime Date, bool IsDecease, string gender, int cell, string food)
+        public void SetData(string Id, string Description, DateTime HourBegin, DateTime Date, int Duration, int NumAttendees, string Location, List<int> AnimalId)
         {
-            Event.SetData(Id, Description, Date, IsDecease, gender, cell, food);
-
+            EventCrud eventCrud = new EventCrud();
+            eventCrud.SetData(Id, Description, HourBegin, Date, Duration, NumAttendees, Location, AnimalId);
         }
 
         public static Event GetEvent(string id, string description)

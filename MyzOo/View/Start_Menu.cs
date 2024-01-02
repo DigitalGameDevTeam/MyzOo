@@ -1,17 +1,14 @@
 ﻿using MyzOo.Methods;
 using MyzOo.Models;
-using MyzOo.View;
 using System;
-using System.Drawing;
 using System.Windows.Forms;
-using System.Windows.Media;
 
 namespace MyzOo
 {
     public partial class Start_Menu : Form
     {
         private Firebase firebase;
-        
+
         public Start_Menu()
         {
             InitializeComponent();
@@ -49,7 +46,7 @@ namespace MyzOo
                 {
 
                     // Open the Main_Menu form and set the current user
-                    Main_Menu mainMenuForm = new Main_Menu();
+                    Main_Menu mainMenuForm = new Main_Menu(loginResult);
                     mainMenuForm.Show();
                     this.Hide();
                 }
