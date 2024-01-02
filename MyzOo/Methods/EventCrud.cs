@@ -15,7 +15,7 @@ namespace MyzOo.Methods
         Firebase conn = new Firebase();
 
         //set datas to database
-        public void SetData(string id, string descrition, DateTime hourBegin, int duration, int numAttendees, string location, List<int> animalId)
+        public void SetData(string id, string descrition, DateTime hourBegin, DateTime date, int duration, int numAttendees, string location, List<int> animalId)
         {
             try
             {
@@ -24,6 +24,7 @@ namespace MyzOo.Methods
                     Id = id,
                     Description = descrition,
                     HourBegin = hourBegin,
+                    Date = date,
                     Duration = duration,
                     NumAttendees = numAttendees,
                     Location = location,
@@ -42,7 +43,7 @@ namespace MyzOo.Methods
         }
 
         //Update datas
-        public void UpdateData(string id, string descrition, DateTime hourBegin, int duration, int numAttendees, string location, List<int> animalId)
+        public void UpdateData(string id, string descrition, DateTime hourBegin, DateTime date, int duration, int numAttendees, string location, List<int> animalId)
         {
             try
             {
@@ -51,6 +52,7 @@ namespace MyzOo.Methods
                     Id = id,
                     Description = descrition,
                     HourBegin = hourBegin,
+                    Date = date,
                     Duration = duration,
                     NumAttendees = numAttendees,
                     Location = location,
@@ -113,6 +115,7 @@ namespace MyzOo.Methods
             }
         }
 
+        // Get Event info by Id
         public Event GetEvent(string id, string description)
         {
             try
