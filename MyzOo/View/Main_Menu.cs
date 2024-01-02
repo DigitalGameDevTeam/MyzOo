@@ -121,13 +121,6 @@ namespace MyzOo
         {
         }
 
-        private void VerEmployee_button_Click(object sender, EventArgs e)
-        {
-            EmployeeData_Menu ver_Employee_Menu = new EmployeeData_Menu();
-            ver_Employee_Menu.Show();
-            this.Hide();
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             FoodList food_List = new FoodList();
@@ -162,6 +155,20 @@ namespace MyzOo
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            EventList eventList = new EventList();
+            eventList.Show();
+            this.Hide();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Event_Register event_Register = new Event_Register();
+            event_Register.Show();
+            this.Hide();
         }
     }
 }

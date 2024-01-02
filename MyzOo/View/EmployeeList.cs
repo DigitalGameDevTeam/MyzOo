@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyzOo.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,6 +17,45 @@ namespace MyzOo.View
         {
             InitializeComponent();
         }
+        private void Employee_list_Load(object sender, EventArgs e)
+        {
+            populateItems();
+        }
+
+        private void populateItems()
+        {
+            card[] cardList = new card[1000];
+
+            int count = 0;
+
+            flowLayoutPanel1.Controls.Clear();
+
+            foreach (var employee in Employee.LoadData())
+            {
+
+                cardList[count] = new card();
+                //cardList[count].Id = food.Id;
+                cardList[count].Name = employee.Name;
+
+                flowLayoutPanel1.Controls.Add(cardList[count]);
+
+                cardList[count].Click += Card_Click;
+
+            }
+        }
+
+        private void Card_Click(object sender, EventArgs e)
+        {
+            if (sender is card clickedCard)
+            {
+                string employeeID = clickedCard.Id;
+
+                EmployeeData_Menu see_Employee_Menu = new EmployeeData_Menu(employeeID);
+                see_Employee_Menu.Show();
+                this.Hide();
+            }
+        }
+
 
         private void Exit_button_Click(object sender, EventArgs e)
         {
@@ -34,7 +74,19 @@ namespace MyzOo.View
 
         }
 
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        private void List_Box_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint_1(object sender, PaintEventArgs e)
         {
 
         }

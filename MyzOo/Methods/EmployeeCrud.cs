@@ -37,6 +37,18 @@ namespace MyzOo.Methods
             }
         }
 
+        public string Login(string username, string password)
+        {
+            List<Employee> employees = this.LoadData();
+            foreach (Employee c in employees)
+            {
+                if (c.Name == username && c.Password == Client.encryptSHA512(password))
+                    return c.Id.ToString();
+            }
+
+            return null;
+        }
+
         //Update datas
         public void UpdateData(string id, string name, DateTime birthday, string password, int adminLevel, int employeeJob)
         {
@@ -88,6 +100,28 @@ namespace MyzOo.Methods
                 }
 
                 return allData;
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Error");
+                return null;
+            }
+        }
+
+        public Employee GetEmployee(string id)
+        {
+            try
+            {
+                var GetData = conn.client.Get("employees/" + id);
+
+                if (GetData.Body == "null")
+                {
+                    Console.WriteLine($"No data found for employee with ID {id}");
+                    return null;
+                }
+
+                Employee employee = JsonConvert.DeserializeObject<Employee>(GetData.Body.ToString());
+                return employee;
             }
             catch (Exception)
             {
