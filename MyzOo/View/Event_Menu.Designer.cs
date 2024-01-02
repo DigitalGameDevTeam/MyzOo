@@ -38,14 +38,16 @@ namespace MyzOo.View
             this.Update_Button = new System.Windows.Forms.Button();
             this.Birthday_Calendar = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
-            this.Name_Box = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.Description = new System.Windows.Forms.TextBox();
             this.Duration = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.Hour = new System.Windows.Forms.DateTimePicker();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.card1 = new MyzOo.card();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -138,35 +140,12 @@ namespace MyzOo.View
             this.label3.TabIndex = 41;
             this.label3.Text = "Data do Evento :";
             // 
-            // Name_Box
-            // 
-            this.Name_Box.BackColor = System.Drawing.Color.LightGray;
-            this.Name_Box.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Name_Box.Enabled = false;
-            this.Name_Box.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.Name_Box.ForeColor = System.Drawing.Color.Black;
-            this.Name_Box.Location = new System.Drawing.Point(26, 95);
-            this.Name_Box.Name = "Name_Box";
-            this.Name_Box.Size = new System.Drawing.Size(227, 14);
-            this.Name_Box.TabIndex = 40;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label2.Location = new System.Drawing.Point(23, 77);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 15);
-            this.label2.TabIndex = 39;
-            this.label2.Text = "Nome do Evento :";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
-            this.label4.Location = new System.Drawing.Point(24, 140);
+            this.label4.Location = new System.Drawing.Point(26, 85);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(133, 15);
             this.label4.TabIndex = 43;
@@ -179,7 +158,7 @@ namespace MyzOo.View
             this.Description.Enabled = false;
             this.Description.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
             this.Description.ForeColor = System.Drawing.Color.Black;
-            this.Description.Location = new System.Drawing.Point(25, 158);
+            this.Description.Location = new System.Drawing.Point(27, 103);
             this.Description.Multiline = true;
             this.Description.Name = "Description";
             this.Description.Size = new System.Drawing.Size(287, 92);
@@ -206,7 +185,7 @@ namespace MyzOo.View
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(198, 15);
             this.label5.TabIndex = 45;
-            this.label5.Text = "Duração prevista para o Evento :";
+            this.label5.Text = "Duração Prevista para o Evento :";
             // 
             // label6
             // 
@@ -221,17 +200,63 @@ namespace MyzOo.View
             // 
             // Hour
             // 
+            this.Hour.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.Hour.Location = new System.Drawing.Point(367, 158);
             this.Hour.Name = "Hour";
             this.Hour.Size = new System.Drawing.Size(200, 20);
             this.Hour.TabIndex = 48;
-            this.Hour.Format = DateTimePickerFormat.Time;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.LightGray;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Enabled = false;
+            this.textBox1.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
+            this.textBox1.ForeColor = System.Drawing.Color.Black;
+            this.textBox1.Location = new System.Drawing.Point(29, 232);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(227, 14);
+            this.textBox1.TabIndex = 50;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
+            this.label2.Location = new System.Drawing.Point(26, 214);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(202, 15);
+            this.label2.TabIndex = 49;
+            this.label2.Text = "Limite de Pessoas para o Evento :";
+            // 
+            // card1
+            // 
+            this.card1.BackColor = System.Drawing.Color.SteelBlue;
+            this.card1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.card1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.card1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.card1.Id = "";
+            this.card1.Location = new System.Drawing.Point(362, 200);
+            this.card1.Name = "card1";
+            this.card1.Size = new System.Drawing.Size(218, 40);
+            this.card1.TabIndex = 51;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(362, 200);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 143);
+            this.flowLayoutPanel1.TabIndex = 52;
             // 
             // Event_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(599, 417);
+            this.Controls.Add(this.card1);
+            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.Hour);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.Duration);
@@ -240,8 +265,6 @@ namespace MyzOo.View
             this.Controls.Add(this.label4);
             this.Controls.Add(this.Birthday_Calendar);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.Name_Box);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.Delete_Button);
             this.Controls.Add(this.Update_Button);
             this.Controls.Add(this.panel1);
@@ -266,13 +289,15 @@ namespace MyzOo.View
         private System.Windows.Forms.Button Update_Button;
         private System.Windows.Forms.DateTimePicker Birthday_Calendar;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox Name_Box;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox Description;
         private System.Windows.Forms.TextBox Duration;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DateTimePicker Hour;
+        private TextBox textBox1;
+        private Label label2;
+        private card card1;
+        private FlowLayoutPanel flowLayoutPanel1;
     }
 }
