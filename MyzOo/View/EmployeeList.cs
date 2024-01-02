@@ -34,13 +34,12 @@ namespace MyzOo.View
             {
 
                 cardList[count] = new card();
-                //cardList[count].Id = food.Id;
                 cardList[count].Name = employee.Name;
+                cardList[count].Id = employee.Id;
 
                 flowLayoutPanel1.Controls.Add(cardList[count]);
 
                 cardList[count].Click += Card_Click;
-
             }
         }
 
