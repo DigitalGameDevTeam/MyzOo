@@ -48,7 +48,6 @@ namespace MyzOo.View
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.Location = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.card1 = new MyzOo.card();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -205,10 +204,12 @@ namespace MyzOo.View
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(333, 191);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(250, 172);
             this.flowLayoutPanel1.TabIndex = 50;
+            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // Location
             // 
@@ -229,18 +230,6 @@ namespace MyzOo.View
             this.label6.TabIndex = 51;
             this.label6.Text = "Localização :";
             // 
-            // card1
-            // 
-            this.card1.BackColor = System.Drawing.Color.SteelBlue;
-            this.card1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.card1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.card1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.card1.Id = "";
-            this.card1.Location = new System.Drawing.Point(333, 191);
-            this.card1.Name = "card1";
-            this.card1.Size = new System.Drawing.Size(250, 58);
-            this.card1.TabIndex = 49;
-            // 
             // Event_Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -248,7 +237,6 @@ namespace MyzOo.View
             this.ClientSize = new System.Drawing.Size(599, 405);
             this.Controls.Add(this.Location);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.card1);
             this.Controls.Add(this.NumAttendees);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Event_Time);
@@ -291,7 +279,6 @@ namespace MyzOo.View
         private System.Windows.Forms.DateTimePicker Event_Time;
         private TextBox NumAttendees;
         private Label label2;
-        private card card1;
         private FlowLayoutPanel flowLayoutPanel1;
         private TextBox Location;
         private Label label6;

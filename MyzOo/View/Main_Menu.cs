@@ -31,7 +31,7 @@ namespace MyzOo
         {
             
             //close Start_Menu and open Main_Menu
-            Start_Menu start_Menu = new Start_Menu(userId);
+            Start_Menu start_Menu = new Start_Menu();
             this.Hide();
             start_Menu.Show();
 

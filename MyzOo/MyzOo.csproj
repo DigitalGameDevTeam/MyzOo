@@ -84,6 +84,12 @@
     <Compile Include="card.Designer.cs">
       <DependentUpon>card.cs</DependentUpon>
     </Compile>
+    <Compile Include="eventCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="eventCard.Designer.cs">
+      <DependentUpon>eventCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\EventList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -216,6 +222,9 @@
     </Compile>
     <EmbeddedResource Include="card.resx">
       <DependentUpon>card.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eventCard.resx">
+      <DependentUpon>eventCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\EventList.resx">
       <DependentUpon>EventList.cs</DependentUpon>
