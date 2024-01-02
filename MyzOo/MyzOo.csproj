@@ -84,7 +84,6 @@
     <Compile Include="card.Designer.cs">
       <DependentUpon>card.cs</DependentUpon>
     </Compile>
-    <Compile Include="Methods\CurrentUser.cs" />
     <Compile Include="View\EventList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,7 +92,6 @@
     </Compile>
     <Compile Include="Methods\AnimalCrud.cs" />
     <Compile Include="Methods\CellCrud.cs" />
-    <Compile Include="Methods\ClientCrud.cs" />
     <Compile Include="Methods\EmployeeAdminLevelCrud.cs" />
     <Compile Include="Methods\EmployeeCrud.cs" />
     <Compile Include="Methods\EventCrud.cs" />
