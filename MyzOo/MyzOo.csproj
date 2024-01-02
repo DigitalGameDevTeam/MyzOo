@@ -89,6 +89,7 @@
     <Compile Include="Methods\ClientCrud.cs" />
     <Compile Include="Methods\EmployeeAdminLevelCrud.cs" />
     <Compile Include="Methods\EmployeeCrud.cs" />
+    <Compile Include="Methods\EventCrud.cs" />
     <Compile Include="Methods\FoodCrud.cs" />
     <Compile Include="Methods\EmployeeFunctionCrud.cs" />
     <Compile Include="Methods\JobCrud.cs" />
