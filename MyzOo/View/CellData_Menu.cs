@@ -13,13 +13,16 @@ namespace MyzOo.View
 {
     public partial class CellData_Menu : Form
     {
+        string userId;
+
         private string cellId;
         private Cell cell;
 
-        public CellData_Menu(string id)
+        public CellData_Menu(string id, string userID)
         {
             InitializeComponent();
             cellId = id;
+            userId = userID;
         }
 
         private void VerCela_Menu_Load(object sender, EventArgs e)
@@ -45,7 +48,7 @@ namespace MyzOo.View
 
             cell.UpdateData(id, number, checkup, description);
 
-            CellList cellList = new CellList();
+            CellList cellList = new CellList(userId);
             cellList.Show();
             this.Hide();
         }
@@ -57,7 +60,7 @@ namespace MyzOo.View
 
             cell.DeleteData(id);
 
-            CellList cellList = new CellList();
+            CellList cellList = new CellList(userId);
             cellList.Show();
             this.Hide();
         }
@@ -65,7 +68,7 @@ namespace MyzOo.View
         private void Exit_button_Click(object sender, EventArgs e)
         {
             //hide this Menu and open Main Menu
-            CellList cellList = new CellList();
+            CellList cellList = new CellList(userId);
             cellList.Show();
             this.Hide();
         }

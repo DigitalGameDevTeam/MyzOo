@@ -17,9 +17,11 @@ namespace MyzOo.View
 {
     public partial class Food_Menu : Form
     {
-        public Food_Menu()
+        string userId;
+        public Food_Menu(string userID)
         {
             InitializeComponent();
+            userId = userID;
         }
         private void Food_Menu_Load(object sender, EventArgs e)
         {
@@ -30,7 +32,7 @@ namespace MyzOo.View
         }
         private void Exit_button_Click(object sender, EventArgs e)
         {
-            Main_Menu main_Menu = new Main_Menu();
+            Main_Menu main_Menu = new Main_Menu(userId);
             main_Menu.Show();
             this.Hide();
         }
@@ -66,7 +68,7 @@ namespace MyzOo.View
             FoodCrud food = new FoodCrud();
             food.SetData(id, description, typeFood.Type, stock);
 
-            Main_Menu main_Menu = new Main_Menu();
+            Main_Menu main_Menu = new Main_Menu(userId);
             main_Menu.Show();
             this.Hide();
         }

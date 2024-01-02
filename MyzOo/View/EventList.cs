@@ -12,9 +12,11 @@ namespace MyzOo
 {
     public partial class EventList : Form
     {
-        public EventList()
+        string userId;
+        public EventList(string userID)
         {
             InitializeComponent();
+            this.userId = userID;
         }
 
         private void Minimize_button_Click(object sender, EventArgs e)
@@ -26,9 +28,14 @@ namespace MyzOo
         private void Exit_button_Click(object sender, EventArgs e)
         {
             //Hide this Menu and open Main_Men
-            Main_Menu main_Menu = new Main_Menu();
+            Main_Menu main_Menu = new Main_Menu(userId);
             main_Menu.Show();
             this.Hide();
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

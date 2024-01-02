@@ -300,6 +300,7 @@ namespace MyzOo.View
             this.Name = "Event_Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Event_Menu";
+            this.Load += new System.EventHandler(this.Event_Menu_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

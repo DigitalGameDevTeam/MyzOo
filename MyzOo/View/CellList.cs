@@ -13,9 +13,11 @@ namespace MyzOo.View
 {
     public partial class CellList : Form
     {
-        public CellList()
+        string userId;
+        public CellList(string userID)
         {
             InitializeComponent();
+            userId = userID;
         }
 
         private void CellList_Load(object sender, EventArgs e)
@@ -51,7 +53,7 @@ namespace MyzOo.View
             {
                 string cellId = clickedCard.Id;
 
-                CellData_Menu cellData = new CellData_Menu(cellId);
+                CellData_Menu cellData = new CellData_Menu(cellId, userId);
                 cellData.Show();
                 this.Hide();
             }
@@ -60,7 +62,7 @@ namespace MyzOo.View
         private void Exit_button_Click(object sender, EventArgs e)
         {
             //Hide this Menu and open Main_Men
-            Main_Menu main_Menu = new Main_Menu();
+            Main_Menu main_Menu = new Main_Menu(userId);
             main_Menu.Show();
             this.Hide();
 
