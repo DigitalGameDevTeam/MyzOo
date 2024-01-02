@@ -1,4 +1,6 @@
-﻿namespace MyzOo.View
+﻿using System.Windows.Forms;
+
+namespace MyzOo.View
 {
     partial class Event_Register
     {
@@ -37,6 +39,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Exit_button = new System.Windows.Forms.Button();
+            this.Description = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.Duration = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.Hour = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,7 +72,7 @@
             this.Regist_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Regist_button.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.Regist_button.ForeColor = System.Drawing.Color.White;
-            this.Regist_button.Location = new System.Drawing.Point(12, 321);
+            this.Regist_button.Location = new System.Drawing.Point(12, 342);
             this.Regist_button.Name = "Regist_button";
             this.Regist_button.Size = new System.Drawing.Size(107, 33);
             this.Regist_button.TabIndex = 31;
@@ -132,11 +140,75 @@
             this.Exit_button.UseVisualStyleBackColor = false;
             this.Exit_button.Click += new System.EventHandler(this.Exit_button_Click);
             // 
+            // Description
+            // 
+            this.Description.BackColor = System.Drawing.Color.LightGray;
+            this.Description.Location = new System.Drawing.Point(12, 149);
+            this.Description.Multiline = true;
+            this.Description.Name = "Description";
+            this.Description.Size = new System.Drawing.Size(285, 83);
+            this.Description.TabIndex = 40;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
+            this.label4.Location = new System.Drawing.Point(9, 131);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(133, 15);
+            this.label4.TabIndex = 39;
+            this.label4.Text = "Descrição do Evento :";
+            // 
+            // Duration
+            // 
+            this.Duration.BackColor = System.Drawing.Color.LightGray;
+            this.Duration.Location = new System.Drawing.Point(12, 274);
+            this.Duration.Name = "Duration";
+            this.Duration.Size = new System.Drawing.Size(224, 20);
+            this.Duration.TabIndex = 42;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
+            this.label5.Location = new System.Drawing.Point(9, 256);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(198, 15);
+            this.label5.TabIndex = 41;
+            this.label5.Text = "Duração prevista para o Evento :";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
+            this.label7.Location = new System.Drawing.Point(341, 131);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(104, 15);
+            this.label7.TabIndex = 46;
+            this.label7.Text = "Hora do Evento :";
+            // 
+            // Hour
+            // 
+            this.Hour.Location = new System.Drawing.Point(344, 149);
+            this.Hour.Name = "Hour";
+            this.Hour.Size = new System.Drawing.Size(200, 20);
+            this.Hour.TabIndex = 4;
+            this.Hour.Format = DateTimePickerFormat.Time;
+            // 
             // Event_Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(599, 368);
+            this.ClientSize = new System.Drawing.Size(599, 387);
+            this.Controls.Add(this.Hour);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.Duration);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.Description);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.Birthday_Calendar);
             this.Controls.Add(this.Name_box);
             this.Controls.Add(this.Regist_button);
@@ -165,5 +237,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button Exit_button;
+        private System.Windows.Forms.TextBox Description;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox Duration;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.DateTimePicker Hour;
     }
 }
