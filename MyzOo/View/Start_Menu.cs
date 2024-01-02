@@ -8,14 +8,11 @@ namespace MyzOo
     public partial class Start_Menu : Form
     {
         private Firebase firebase;
-        string userId;
-        public Start_Menu(string userID)
+
+        public Start_Menu()
         {
             InitializeComponent();
             firebase = new Firebase();
-            
-            userId = userID;
-                
         }
         private void Form1_Load(object sender, EventArgs e)
         {
