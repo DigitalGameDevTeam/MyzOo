@@ -62,7 +62,7 @@ namespace MyzOo
 
                 if (adminLevel == 1)
                 {
-
+                    label5.Text = "Gestor";
                 }
                 else if (employeeType == 4)
                 {
@@ -217,6 +217,11 @@ namespace MyzOo
         }
 
         private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
