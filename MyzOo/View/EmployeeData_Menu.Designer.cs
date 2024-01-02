@@ -76,7 +76,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(274, 368);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(0, 0);
             this.button1.TabIndex = 64;
@@ -149,6 +149,7 @@
             this.Name_Box.Name = "Name_Box";
             this.Name_Box.Size = new System.Drawing.Size(227, 14);
             this.Name_Box.TabIndex = 55;
+            this.Name_Box.TextChanged += new System.EventHandler(this.Name_Box_TextChanged);
             // 
             // label2
             // 
@@ -239,7 +240,7 @@
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(272, 105);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(0, 0);
             this.button2.TabIndex = 51;
@@ -252,6 +253,7 @@
             this.Birthday_Calendar.Name = "Birthday_Calendar";
             this.Birthday_Calendar.Size = new System.Drawing.Size(200, 20);
             this.Birthday_Calendar.TabIndex = 72;
+
             // 
             // Delete_Button
             // 
@@ -263,7 +265,7 @@
             this.Delete_Button.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.Delete_Button.ForeColor = System.Drawing.Color.White;
             this.Delete_Button.Location = new System.Drawing.Point(437, 321);
-            this.Delete_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Delete_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Delete_Button.Name = "Delete_Button";
             this.Delete_Button.Size = new System.Drawing.Size(107, 33);
             this.Delete_Button.TabIndex = 73;
