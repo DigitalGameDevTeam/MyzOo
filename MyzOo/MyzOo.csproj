@@ -95,6 +95,7 @@
     <Compile Include="Methods\ClientCrud.cs" />
     <Compile Include="Methods\EmployeeAdminLevelCrud.cs" />
     <Compile Include="Methods\EmployeeCrud.cs" />
+    <Compile Include="Methods\EventCrud.cs" />
     <Compile Include="Methods\FoodCrud.cs" />
     <Compile Include="Methods\EmployeeFunctionCrud.cs" />
     <Compile Include="Methods\JobCrud.cs" />
@@ -106,6 +107,11 @@
     <Compile Include="Models\EmployeeFunction.cs" />
     <Compile Include="Models\TypeFood.cs" />
     <Compile Include="Models\Job.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="View\AnimalList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -276,6 +282,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoo-icon-design-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />

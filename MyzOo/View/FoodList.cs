@@ -35,7 +35,7 @@ namespace MyzOo.View
             {
 
                 cardList[count] = new card();
-                //cardList[count].Id = food.Id;
+                cardList[count].Id = food.Id;
                 cardList[count].Name = food.Description;
 
                 flowLayoutPanel1.Controls.Add(cardList[count]);
@@ -49,9 +49,9 @@ namespace MyzOo.View
         {
             if (sender is card clickedCard)
             {
-                string animalID = clickedCard.Id;
+                string foodId = clickedCard.Id;
 
-                FoodData_Menu see_Food_Menu = new FoodData_Menu(animalID);
+                FoodData_Menu see_Food_Menu = new FoodData_Menu(foodId);
                 see_Food_Menu.Show();
                 this.Hide();
             }

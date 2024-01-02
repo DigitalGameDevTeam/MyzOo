@@ -103,9 +103,11 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(788, 375);
             this.flowLayoutPanel1.TabIndex = 4;
+            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // card1
             // 
+            this.card1.BackColor = System.Drawing.Color.SteelBlue;
             this.card1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.card1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.card1.Cursor = System.Windows.Forms.Cursors.Hand;
