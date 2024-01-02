@@ -77,15 +77,6 @@ namespace MyzOo
             cell_Menu.Show();
             this.Hide();
         }
-
-        private void Ver_Animal_Menu_button_Click(object sender, EventArgs e)
-        {
-            //open Ver_Animal_Menu
-            /*Ver_Animal_Menu ver_Animal_Menu = new Ver_Animal_Menu();
-            ver_Animal_Menu.Show();
-            this.Hide();*/
-        }
-
         private void Maximize_button_Click(object sender, EventArgs e)
         {
             switch (st)
@@ -119,14 +110,6 @@ namespace MyzOo
             this.Hide();
         }
 
-        private void VerComida_button_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void Ver_Menu_Button_Click(object sender, EventArgs e)
-        {
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             FoodList food_List = new FoodList();
@@ -147,33 +130,17 @@ namespace MyzOo
             cell_List.Show();
             this.Hide();
         }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            EventList eventList = new EventList();
-            eventList.Show();
-            this.Hide();
-        }
-
-        private void button5_Click(object sender, EventArgs e)
+        private void RegistarEvento_Click_1(object sender, EventArgs e)
         {
             Event_Register event_Register = new Event_Register();
             event_Register.Show();
+            this.Hide();
+        }
+
+        private void ListaEvento_Click_1(object sender, EventArgs e)
+        {
+            EventList eventList = new EventList();
+            eventList.Show();
             this.Hide();
         }
     }
