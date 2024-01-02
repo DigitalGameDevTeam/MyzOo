@@ -16,23 +16,29 @@ namespace MyzOo.Models
         public int Duration { get; set; }
         public int NumAttendees { get; set; }
         public string Location { get; set; }
-        public List<int> AnimalId { get; set; }
+        public List<string> AnimalId { get; set; }
 
         public Event()
         {
-            AnimalId = new List<int>();
+            AnimalId = new List<string>();
         }
 
-        public void SetData(string Id, string Description, DateTime HourBegin, DateTime Date, int Duration, int NumAttendees, string Location, List<int> AnimalId)
+        public void SetData(string Id, string Description, DateTime HourBegin, DateTime Date, int Duration, int NumAttendees, string Location, List<string> AnimalId)
         {
             EventCrud eventCrud = new EventCrud();
             eventCrud.SetData(Id, Description, HourBegin, Date, Duration, NumAttendees, Location, AnimalId);
         }
 
-        public static Event GetEvent(string id, string description)
+        public static List<Event> LoadData()
         {
             EventCrud eventCrud = new EventCrud();
-            return eventCrud.GetEvent(id, description);
+            return eventCrud.LoadData();
+        }
+
+        public static Event GetEvent(string id)
+        {
+            EventCrud eventCrud = new EventCrud();
+            return eventCrud.GetEvent(id);
         }
     }
 }

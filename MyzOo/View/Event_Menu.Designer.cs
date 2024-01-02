@@ -36,7 +36,7 @@ namespace MyzOo.View
             this.label1 = new System.Windows.Forms.Label();
             this.Delete_Button = new System.Windows.Forms.Button();
             this.Update_Button = new System.Windows.Forms.Button();
-            this.Birthday_Calendar = new System.Windows.Forms.DateTimePicker();
+            this.Date = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.Description = new System.Windows.Forms.TextBox();
@@ -46,10 +46,9 @@ namespace MyzOo.View
             this.Hour = new System.Windows.Forms.DateTimePicker();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.card1 = new MyzOo.card();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.AnimalCheckedListBox = new System.Windows.Forms.CheckedListBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -124,12 +123,12 @@ namespace MyzOo.View
             this.Update_Button.Text = "Atualizar";
             this.Update_Button.UseVisualStyleBackColor = false;
             // 
-            // Birthday_Calendar
+            // Date
             // 
-            this.Birthday_Calendar.Location = new System.Drawing.Point(367, 103);
-            this.Birthday_Calendar.Name = "Birthday_Calendar";
-            this.Birthday_Calendar.Size = new System.Drawing.Size(200, 20);
-            this.Birthday_Calendar.TabIndex = 42;
+            this.Date.Location = new System.Drawing.Point(367, 103);
+            this.Date.Name = "Date";
+            this.Date.Size = new System.Drawing.Size(200, 20);
+            this.Date.TabIndex = 42;
             // 
             // label3
             // 
@@ -231,25 +230,6 @@ namespace MyzOo.View
             this.label2.TabIndex = 49;
             this.label2.Text = "Limite de Pessoas para o Evento :";
             // 
-            // card1
-            // 
-            this.card1.BackColor = System.Drawing.Color.SteelBlue;
-            this.card1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.card1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.card1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.card1.Id = "";
-            this.card1.Location = new System.Drawing.Point(362, 200);
-            this.card1.Name = "card1";
-            this.card1.Size = new System.Drawing.Size(218, 40);
-            this.card1.TabIndex = 51;
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(362, 200);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 143);
-            this.flowLayoutPanel1.TabIndex = 52;
-            // 
             // textBox2
             // 
             this.textBox2.BackColor = System.Drawing.Color.LightGray;
@@ -273,15 +253,22 @@ namespace MyzOo.View
             this.label7.TabIndex = 53;
             this.label7.Text = "Localização :";
             // 
+            // AnimalCheckedListBox
+            // 
+            this.AnimalCheckedListBox.FormattingEnabled = true;
+            this.AnimalCheckedListBox.Location = new System.Drawing.Point(367, 226);
+            this.AnimalCheckedListBox.Name = "AnimalCheckedListBox";
+            this.AnimalCheckedListBox.Size = new System.Drawing.Size(200, 109);
+            this.AnimalCheckedListBox.TabIndex = 55;
+            // 
             // Event_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(599, 417);
+            this.Controls.Add(this.AnimalCheckedListBox);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.card1);
-            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Hour);
@@ -290,7 +277,7 @@ namespace MyzOo.View
             this.Controls.Add(this.label5);
             this.Controls.Add(this.Description);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.Birthday_Calendar);
+            this.Controls.Add(this.Date);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.Delete_Button);
             this.Controls.Add(this.Update_Button);
@@ -315,7 +302,7 @@ namespace MyzOo.View
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Delete_Button;
         private System.Windows.Forms.Button Update_Button;
-        private System.Windows.Forms.DateTimePicker Birthday_Calendar;
+        private System.Windows.Forms.DateTimePicker Date;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox Description;
@@ -325,9 +312,8 @@ namespace MyzOo.View
         private System.Windows.Forms.DateTimePicker Hour;
         private TextBox textBox1;
         private Label label2;
-        private card card1;
-        private FlowLayoutPanel flowLayoutPanel1;
         private TextBox textBox2;
         private Label label7;
+        private CheckedListBox AnimalCheckedListBox;
     }
 }

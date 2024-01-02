@@ -116,6 +116,7 @@
             this.card1.Name = "card1";
             this.card1.Size = new System.Drawing.Size(762, 81);
             this.card1.TabIndex = 0;
+            this.card1.Load += new System.EventHandler(this.card1_Load);
             // 
             // EventList
             // 
@@ -129,6 +130,7 @@
             this.Name = "EventList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EventList";
+            this.Load += new System.EventHandler(this.EventList_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);

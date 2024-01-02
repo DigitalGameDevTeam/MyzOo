@@ -15,7 +15,7 @@ namespace MyzOo.Methods
         Firebase conn = new Firebase();
 
         //set datas to database
-        public void SetData(string id, string descrition, DateTime hourBegin, DateTime date, int duration, int numAttendees, string location, List<int> animalId)
+        public void SetData(string id, string descrition, DateTime hourBegin, DateTime date, int duration, int numAttendees, string location, List<string> animalId)
         {
             try
             {
@@ -43,7 +43,7 @@ namespace MyzOo.Methods
         }
 
         //Update datas
-        public void UpdateData(string id, string descrition, DateTime hourBegin, DateTime date, int duration, int numAttendees, string location, List<int> animalId)
+        public void UpdateData(string id, string descrition, DateTime hourBegin, DateTime date, int duration, int numAttendees, string location, List<string> animalId)
         {
             try
             {
@@ -116,7 +116,7 @@ namespace MyzOo.Methods
         }
 
         // Get Event info by Id
-        public Event GetEvent(string id, string description)
+        public Event GetEvent(string id)
         {
             try
             {
@@ -124,7 +124,7 @@ namespace MyzOo.Methods
 
                 if (GetData.Body == "null")
                 {
-                    Console.WriteLine($"Não foi encontrado nenhum Evento com a descrição {description}");
+                    Console.WriteLine($"Não foi encontrado nenhum Evento com a descrição {id}");
                     return null;
                 }
 

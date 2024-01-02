@@ -45,9 +45,9 @@ namespace MyzOo.View
             this.Event_Time = new System.Windows.Forms.DateTimePicker();
             this.NumAttendees = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.Location = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -163,7 +163,6 @@ namespace MyzOo.View
             this.label5.Size = new System.Drawing.Size(198, 15);
             this.label5.TabIndex = 41;
             this.label5.Text = "Duração Prevista para o Evento :";
-     
             // 
             // label7
             // 
@@ -203,15 +202,6 @@ namespace MyzOo.View
             this.label2.TabIndex = 47;
             this.label2.Text = "Limite de Pessoas para o Evento :";
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(333, 191);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(250, 172);
-            this.flowLayoutPanel1.TabIndex = 50;
-            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
-            // 
             // Location
             // 
             this.Location.BackColor = System.Drawing.Color.LightGray;
@@ -231,11 +221,21 @@ namespace MyzOo.View
             this.label6.TabIndex = 51;
             this.label6.Text = "Localização :";
             // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Location = new System.Drawing.Point(344, 218);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(200, 154);
+            this.checkedListBox1.TabIndex = 53;
+            this.checkedListBox1.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
+            // 
             // Event_Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(599, 405);
+            this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.Location);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.NumAttendees);
@@ -250,7 +250,6 @@ namespace MyzOo.View
             this.Controls.Add(this.Regist_button);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.flowLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Event_Register";
@@ -280,8 +279,8 @@ namespace MyzOo.View
         private System.Windows.Forms.DateTimePicker Event_Time;
         private TextBox NumAttendees;
         private Label label2;
-        private FlowLayoutPanel flowLayoutPanel1;
         private TextBox Location;
         private Label label6;
+        private CheckedListBox checkedListBox1;
     }
 }

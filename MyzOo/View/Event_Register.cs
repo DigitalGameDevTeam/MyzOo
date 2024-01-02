@@ -15,7 +15,7 @@ namespace MyzOo.View
     public partial class Event_Register : Form
     {
         string userId;
-        private List<int> selectedAnimalIds = new List<int>();
+        private List<string> selectedAnimalIds = new List<string>();
 
         public Event_Register(string userID)
         {
@@ -61,34 +61,47 @@ namespace MyzOo.View
 
         private void populateAnimals()
         {
-            card[] cardList = new card[1000];
-
-            int count = 0;
-
-            flowLayoutPanel1.Controls.Clear();
+            checkedListBox1.Items.Clear();
 
             foreach (var animal in Animal.LoadData())
             {
-
-                cardList[count] = new card();
-                cardList[count].Id = animal.Id;
-                cardList[count].Name = animal.Name;
-
-                flowLayoutPanel1.Controls.Add(cardList[count]);
-
-                cardList[count].Click += Card_Click;
-
+                checkedListBox1.Items.Add(animal, false);
             }
+
+            checkedListBox1.DisplayMember = "Name";
+            checkedListBox1.ValueMember = "Id";
+
+            checkedListBox1.ItemCheck += CheckedListBox_ItemCheck;
         }
 
         private void Card_Click(object sender, EventArgs e)
         {
             if (sender is card clickedCard)
             {
-                int animalID = Convert.ToInt32(clickedCard.Id);
+                string animalID = clickedCard.Id;
                 selectedAnimalIds.Add(animalID);
             }
         }
+
+        private void CheckedListBox_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            CheckedListBox checkedListBox = (CheckedListBox)sender;
+
+            if (checkedListBox1.SelectedItem is Animal selectedAnimal)
+            {
+                string animalID = selectedAnimal.Id;
+
+                if (e.NewValue == CheckState.Checked)
+                {
+                    selectedAnimalIds.Add(animalID);
+                }
+                else if (e.NewValue == CheckState.Unchecked)
+                {
+                    selectedAnimalIds.Remove(animalID);
+                }
+            }
+        }
+
 
         private void Event_Register_Load(object sender, EventArgs e)
         {
@@ -96,6 +109,11 @@ namespace MyzOo.View
         }
 
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
