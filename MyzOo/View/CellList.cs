@@ -70,5 +70,10 @@ namespace MyzOo.View
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

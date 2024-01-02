@@ -1,4 +1,6 @@
-﻿namespace MyzOo.View
+﻿using System.Windows.Forms;
+
+namespace MyzOo.View
 {
     partial class Event_Menu
     {
@@ -38,6 +40,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.Name_Box = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.Description = new System.Windows.Forms.TextBox();
+            this.Duration = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.Hour = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -137,7 +145,7 @@
             this.Name_Box.Enabled = false;
             this.Name_Box.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
             this.Name_Box.ForeColor = System.Drawing.Color.Black;
-            this.Name_Box.Location = new System.Drawing.Point(25, 103);
+            this.Name_Box.Location = new System.Drawing.Point(26, 95);
             this.Name_Box.Name = "Name_Box";
             this.Name_Box.Size = new System.Drawing.Size(227, 14);
             this.Name_Box.TabIndex = 40;
@@ -153,11 +161,83 @@
             this.label2.TabIndex = 39;
             this.label2.Text = "Nome do Evento :";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
+            this.label4.Location = new System.Drawing.Point(24, 140);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(133, 15);
+            this.label4.TabIndex = 43;
+            this.label4.Text = "Descrição do Evento :";
+            // 
+            // Description
+            // 
+            this.Description.BackColor = System.Drawing.Color.LightGray;
+            this.Description.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Description.Enabled = false;
+            this.Description.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
+            this.Description.ForeColor = System.Drawing.Color.Black;
+            this.Description.Location = new System.Drawing.Point(25, 158);
+            this.Description.Multiline = true;
+            this.Description.Name = "Description";
+            this.Description.Size = new System.Drawing.Size(287, 92);
+            this.Description.TabIndex = 44;
+            // 
+            // Duration
+            // 
+            this.Duration.BackColor = System.Drawing.Color.LightGray;
+            this.Duration.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Duration.Enabled = false;
+            this.Duration.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
+            this.Duration.ForeColor = System.Drawing.Color.Black;
+            this.Duration.Location = new System.Drawing.Point(27, 289);
+            this.Duration.Name = "Duration";
+            this.Duration.Size = new System.Drawing.Size(227, 14);
+            this.Duration.TabIndex = 46;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
+            this.label5.Location = new System.Drawing.Point(24, 271);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(198, 15);
+            this.label5.TabIndex = 45;
+            this.label5.Text = "Duração prevista para o Evento :";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
+            this.label6.Location = new System.Drawing.Point(364, 140);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(104, 15);
+            this.label6.TabIndex = 47;
+            this.label6.Text = "Hora do Evento :";
+            // 
+            // Hour
+            // 
+            this.Hour.Location = new System.Drawing.Point(367, 158);
+            this.Hour.Name = "Hour";
+            this.Hour.Size = new System.Drawing.Size(200, 20);
+            this.Hour.TabIndex = 48;
+            this.Hour.Format = DateTimePickerFormat.Time;
+            // 
             // Event_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(599, 417);
+            this.Controls.Add(this.Hour);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.Duration);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.Description);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.Birthday_Calendar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.Name_Box);
@@ -188,5 +268,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox Name_Box;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox Description;
+        private System.Windows.Forms.TextBox Duration;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DateTimePicker Hour;
     }
 }
