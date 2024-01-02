@@ -43,7 +43,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.RegistarEvento = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,7 +58,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(913, 71);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // Minimize_button
             // 
@@ -256,7 +255,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(170, 473);
             this.panel2.TabIndex = 1;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // button4
             // 
@@ -274,23 +272,25 @@
             this.button4.TabIndex = 14;
             this.button4.Text = "Lista Eventos";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.ListaEvento_Click_1);
             // 
-            // button5
+            // RegistarEvento
             // 
-            this.button5.AutoSize = true;
-            this.button5.BackColor = System.Drawing.Color.SteelBlue;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(659, 145);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(186, 36);
-            this.button5.TabIndex = 15;
-            this.button5.Text = "Registar Evento";
-            this.button5.UseVisualStyleBackColor = false;
+            this.RegistarEvento.AutoSize = true;
+            this.RegistarEvento.BackColor = System.Drawing.Color.SteelBlue;
+            this.RegistarEvento.FlatAppearance.BorderSize = 0;
+            this.RegistarEvento.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.RegistarEvento.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.RegistarEvento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RegistarEvento.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RegistarEvento.ForeColor = System.Drawing.Color.White;
+            this.RegistarEvento.Location = new System.Drawing.Point(659, 145);
+            this.RegistarEvento.Name = "RegistarEvento";
+            this.RegistarEvento.Size = new System.Drawing.Size(186, 36);
+            this.RegistarEvento.TabIndex = 15;
+            this.RegistarEvento.Text = "Registar Evento";
+            this.RegistarEvento.UseVisualStyleBackColor = false;
+            this.RegistarEvento.Click += new System.EventHandler(this.RegistarEvento_Click_1);
             // 
             // Main_Menu
             // 
@@ -298,7 +298,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(913, 544);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.RegistarEvento);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -339,6 +339,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button RegistarEvento;
     }
 }

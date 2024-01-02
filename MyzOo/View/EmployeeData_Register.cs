@@ -112,6 +112,11 @@ namespace MyzOo.View
         {
 
         }
+
+        private void Cell_listbox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
