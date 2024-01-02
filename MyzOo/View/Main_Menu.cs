@@ -10,6 +10,7 @@ using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Forms;
 
 
@@ -45,9 +46,68 @@ namespace MyzOo
 
         private void Main_Menu_Load(object sender, EventArgs e)
         {
-
+            CheckAdminLevel();
         }
 
+        private void CheckAdminLevel()
+        {
+            EmployeeCrud employeeCrud = new EmployeeCrud();
+            Employee employee = employeeCrud.GetEmployee(userId); // userId obtained from the Main_Menu constructor
+
+            if (employee != null)
+            {
+                int adminLevel = employee.Adminlevel;
+                int employeeType = employee.EmployeeJob;
+                label3.Text = employee.Name;
+
+                if (adminLevel == 1)
+                {
+                    label5.Text = "Gestor";
+                }
+                else if (employeeType == 4)
+                {
+                    Cell_Menu_button.Enabled = true;
+                    button3.Enabled = true;
+                    Food_Menu_button.Enabled = false;
+                    button1.Enabled = false;
+                    AnimalMenu_button.Enabled = false;
+                    AnimalList_Menu_button.Enabled = false;
+                    RegistarEvento.Enabled = false;
+                    button4.Enabled = false;
+                    button2.Enabled = false;
+                    Employee_Menu_button.Enabled = false;
+                    label5.Text = "Limpador De Celas";
+                }
+
+                else if (employeeType == 3)
+                {
+                    Cell_Menu_button.Enabled = true;
+                    button3.Enabled = true;
+                    Food_Menu_button.Enabled = false;
+                    button1.Enabled = false;
+                    AnimalMenu_button.Enabled = false;
+                    AnimalList_Menu_button.Enabled = false;
+                    RegistarEvento.Enabled = false;
+                    button4.Enabled = false;
+                    button2.Enabled = false;
+                    Employee_Menu_button.Enabled = false;   
+                }
+
+                else if (employeeType == 2)
+                {
+                    Cell_Menu_button.Enabled = false;
+                    button3.Enabled = false;
+                    Food_Menu_button.Enabled = true;
+                    button1.Enabled = true;
+                    AnimalMenu_button.Enabled = true;
+                    AnimalList_Menu_button.Enabled = true;
+                    RegistarEvento.Enabled = false;
+                    button4.Enabled = false;
+                    button2.Enabled = false;
+                    Employee_Menu_button.Enabled = false;
+                }
+            }
+        }
         private void AnimalMenu_button_Click(object sender, EventArgs e)
         {
             //open Animal_Menu
@@ -144,6 +204,26 @@ namespace MyzOo
             EventList eventList = new EventList(userId);
             eventList.Show();
             this.Hide();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

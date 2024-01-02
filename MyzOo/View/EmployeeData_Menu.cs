@@ -36,7 +36,7 @@ namespace MyzOo.View
         private void Ver_Employee_Menu_Load(object sender, EventArgs e)
         {
             Name_Box.Text = employee.Name;
-
+            Name_Box.Enabled = true;
 
         }
 
@@ -109,15 +109,25 @@ namespace MyzOo.View
             EmployeeCrud employeeCrud = new EmployeeCrud();
             EmployeeAdminLevelCrud al = new EmployeeAdminLevelCrud();
             EmployeeFunctionCrud fc = new EmployeeFunctionCrud();
-            employeeCrud.SetData(
-                Guid.NewGuid().ToString(),
+            employeeCrud.UpdateData(
+                employeeID,
                 Name_Box.Text,
                 this.birthDateEmployee,
                 Client.encryptSHA512(Pass_textbox.Text),
-                Int32.Parse(al.getIdByDescription(Func_listbox.SelectedItem.ToString())),
-                Int32.Parse(fc.getIdByDescription(Admin_listbox.SelectedItem.ToString()))
+                Int32.Parse(al.getIdByDescription(Admin_listbox.SelectedItem.ToString())),
+                Int32.Parse(fc.getIdByDescription(Func_listbox.SelectedItem.ToString()))
                 );
-            MessageBox.Show("Empregado registado com sucesso", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Empregado alterado com sucesso", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void Name_Box_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Birthday_Calendar_ValueChanged(object sender, DateRangeEventArgs e)
+        {
+            this.birthDateEmployee = e.Start;
         }
     }
 }
