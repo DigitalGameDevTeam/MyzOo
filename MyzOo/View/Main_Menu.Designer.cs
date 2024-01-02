@@ -38,15 +38,19 @@
             this.AnimalMenu_button = new System.Windows.Forms.Button();
             this.Food_Menu_button = new System.Windows.Forms.Button();
             this.Cell_Menu_button = new System.Windows.Forms.Button();
-            this.VerEmployee_button = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.Name_Box = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -58,7 +62,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 57);
+            this.panel1.Size = new System.Drawing.Size(827, 71);
             this.panel1.TabIndex = 0;
             // 
             // Minimize_button
@@ -115,9 +119,9 @@
             this.AnimalList_Menu_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AnimalList_Menu_button.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AnimalList_Menu_button.ForeColor = System.Drawing.Color.Black;
-            this.AnimalList_Menu_button.Location = new System.Drawing.Point(264, 105);
+            this.AnimalList_Menu_button.Location = new System.Drawing.Point(218, 238);
             this.AnimalList_Menu_button.Name = "AnimalList_Menu_button";
-            this.AnimalList_Menu_button.Size = new System.Drawing.Size(158, 36);
+            this.AnimalList_Menu_button.Size = new System.Drawing.Size(186, 36);
             this.AnimalList_Menu_button.TabIndex = 7;
             this.AnimalList_Menu_button.Text = "Lista Animal";
             this.AnimalList_Menu_button.UseVisualStyleBackColor = false;
@@ -133,7 +137,7 @@
             this.Employee_Menu_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Employee_Menu_button.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Employee_Menu_button.ForeColor = System.Drawing.Color.White;
-            this.Employee_Menu_button.Location = new System.Drawing.Point(602, 163);
+            this.Employee_Menu_button.Location = new System.Drawing.Point(577, 395);
             this.Employee_Menu_button.Name = "Employee_Menu_button";
             this.Employee_Menu_button.Size = new System.Drawing.Size(186, 36);
             this.Employee_Menu_button.TabIndex = 6;
@@ -151,9 +155,9 @@
             this.AnimalMenu_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AnimalMenu_button.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AnimalMenu_button.ForeColor = System.Drawing.Color.White;
-            this.AnimalMenu_button.Location = new System.Drawing.Point(264, 63);
+            this.AnimalMenu_button.Location = new System.Drawing.Point(577, 196);
             this.AnimalMenu_button.Name = "AnimalMenu_button";
-            this.AnimalMenu_button.Size = new System.Drawing.Size(158, 36);
+            this.AnimalMenu_button.Size = new System.Drawing.Size(186, 36);
             this.AnimalMenu_button.TabIndex = 5;
             this.AnimalMenu_button.Text = "Registar Animal";
             this.AnimalMenu_button.UseVisualStyleBackColor = false;
@@ -169,9 +173,9 @@
             this.Food_Menu_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Food_Menu_button.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Food_Menu_button.ForeColor = System.Drawing.Color.White;
-            this.Food_Menu_button.Location = new System.Drawing.Point(452, 63);
+            this.Food_Menu_button.Location = new System.Drawing.Point(218, 395);
             this.Food_Menu_button.Name = "Food_Menu_button";
-            this.Food_Menu_button.Size = new System.Drawing.Size(158, 36);
+            this.Food_Menu_button.Size = new System.Drawing.Size(186, 36);
             this.Food_Menu_button.TabIndex = 6;
             this.Food_Menu_button.Text = "Registar Comida";
             this.Food_Menu_button.UseVisualStyleBackColor = false;
@@ -187,31 +191,13 @@
             this.Cell_Menu_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Cell_Menu_button.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cell_Menu_button.ForeColor = System.Drawing.Color.White;
-            this.Cell_Menu_button.Location = new System.Drawing.Point(631, 63);
+            this.Cell_Menu_button.Location = new System.Drawing.Point(218, 196);
             this.Cell_Menu_button.Name = "Cell_Menu_button";
-            this.Cell_Menu_button.Size = new System.Drawing.Size(157, 36);
+            this.Cell_Menu_button.Size = new System.Drawing.Size(186, 36);
             this.Cell_Menu_button.TabIndex = 7;
             this.Cell_Menu_button.Text = "Registar Celas";
             this.Cell_Menu_button.UseVisualStyleBackColor = false;
             this.Cell_Menu_button.Click += new System.EventHandler(this.Cell_Menu_button_Click);
-            // 
-            // VerEmployee_button
-            // 
-            this.VerEmployee_button.AutoSize = true;
-            this.VerEmployee_button.BackColor = System.Drawing.Color.Silver;
-            this.VerEmployee_button.FlatAppearance.BorderSize = 0;
-            this.VerEmployee_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.VerEmployee_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.VerEmployee_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.VerEmployee_button.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VerEmployee_button.ForeColor = System.Drawing.Color.Black;
-            this.VerEmployee_button.Location = new System.Drawing.Point(630, 247);
-            this.VerEmployee_button.Name = "VerEmployee_button";
-            this.VerEmployee_button.Size = new System.Drawing.Size(161, 33);
-            this.VerEmployee_button.TabIndex = 10;
-            this.VerEmployee_button.Text = "Ver Funcionário";
-            this.VerEmployee_button.UseVisualStyleBackColor = false;
-            this.VerEmployee_button.Click += new System.EventHandler(this.VerEmployee_button_Click);
             // 
             // button1
             // 
@@ -223,9 +209,9 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(452, 105);
+            this.button1.Location = new System.Drawing.Point(218, 437);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(158, 36);
+            this.button1.Size = new System.Drawing.Size(186, 36);
             this.button1.TabIndex = 11;
             this.button1.Text = "Lista Comida";
             this.button1.UseVisualStyleBackColor = false;
@@ -241,7 +227,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(602, 205);
+            this.button2.Location = new System.Drawing.Point(577, 437);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(186, 36);
             this.button2.TabIndex = 12;
@@ -259,9 +245,9 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(630, 105);
+            this.button3.Location = new System.Drawing.Point(577, 238);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(158, 36);
+            this.button3.Size = new System.Drawing.Size(186, 36);
             this.button3.TabIndex = 13;
             this.button3.Text = "Lista Celas";
             this.button3.UseVisualStyleBackColor = false;
@@ -274,10 +260,11 @@
             this.Name_Box.Enabled = false;
             this.Name_Box.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
             this.Name_Box.ForeColor = System.Drawing.Color.White;
-            this.Name_Box.Location = new System.Drawing.Point(12, 28);
+            this.Name_Box.Location = new System.Drawing.Point(237, 77);
             this.Name_Box.Name = "Name_Box";
             this.Name_Box.Size = new System.Drawing.Size(167, 14);
             this.Name_Box.TabIndex = 25;
+            this.Name_Box.TextChanged += new System.EventHandler(this.Name_Box_TextChanged);
             // 
             // label2
             // 
@@ -285,7 +272,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(10, 6);
+            this.label2.Location = new System.Drawing.Point(48, 29);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(49, 15);
             this.label2.TabIndex = 26;
@@ -294,27 +281,62 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.BackColor = System.Drawing.Color.Gray;
+            this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.Name_Box);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 57);
+            this.panel2.Location = new System.Drawing.Point(0, 71);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 393);
+            this.panel2.Size = new System.Drawing.Size(148, 445);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F);
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label3.Location = new System.Drawing.Point(48, 68);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(47, 15);
+            this.label3.TabIndex = 27;
+            this.label3.Text = "Funcao";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::MyzOo.Properties.Resources.Screenshot_2;
+            this.pictureBox2.Location = new System.Drawing.Point(246, 289);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(122, 100);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 27;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MyzOo.Properties.Resources.Screenshot_1;
+            this.pictureBox1.Location = new System.Drawing.Point(618, 289);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(107, 100);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 26;
+            this.pictureBox1.TabStop = false;
             // 
             // Main_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(827, 516);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button3);
+            this.Controls.Add(this.Name_Box);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Employee_Menu_button);
-            this.Controls.Add(this.VerEmployee_button);
             this.Controls.Add(this.AnimalList_Menu_button);
             this.Controls.Add(this.Cell_Menu_button);
             this.Controls.Add(this.Food_Menu_button);
@@ -331,6 +353,8 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -347,12 +371,14 @@
         private System.Windows.Forms.Button Cell_Menu_button;
         private System.Windows.Forms.Button Employee_Menu_button;
         private System.Windows.Forms.Button AnimalList_Menu_button;
-        private System.Windows.Forms.Button VerEmployee_button;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox Name_Box;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

@@ -224,6 +224,7 @@
             this.label4.Size = new System.Drawing.Size(400, 60);
             this.label4.TabIndex = 2;
             this.label4.Text = "Ver Funcionário";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // Exit_button
             // 

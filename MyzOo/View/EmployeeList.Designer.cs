@@ -99,12 +99,13 @@
             this.List_Box.FormattingEnabled = true;
             this.List_Box.Items.AddRange(new object[] {
             " "});
-            this.List_Box.Location = new System.Drawing.Point(10, 72);
+            this.List_Box.Location = new System.Drawing.Point(10, 63);
             this.List_Box.Name = "List_Box";
             this.List_Box.Size = new System.Drawing.Size(778, 355);
             this.List_Box.TabIndex = 3;
+            this.List_Box.SelectedIndexChanged += new System.EventHandler(this.List_Box_SelectedIndexChanged);
             // 
-            // EmployeeList_Menu
+            // EmployeeList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -113,7 +114,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "EmployeeList_Menu";
+            this.Name = "EmployeeList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EmployeeList_Menu";
             this.panel1.ResumeLayout(false);

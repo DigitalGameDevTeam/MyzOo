@@ -33,5 +33,10 @@ namespace MyzOo.View
         {
 
         }
+
+        private void List_Box_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
