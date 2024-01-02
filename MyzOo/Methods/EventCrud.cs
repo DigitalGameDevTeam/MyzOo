@@ -15,23 +15,24 @@ namespace MyzOo.Methods
         Firebase conn = new Firebase();
 
         //set datas to database
-        public void SetData(string id, string name, DateTime birthday, bool isDeceased, string animalGender, int animalCell, string animalFood)
+        public void SetData(string id, string descrition, DateTime hourBegin, int duration, int numAttendees, string location, List<int> animalId)
         {
             try
             {
                 Event set = new Event()
                 {
                     Id = id,
-                    Name = name,
-                    Birthday = birthday,
-                    IsDeceased = isDeceased,
-                    AnimalGender = animalGender,
-                    AnimalCell = animalCell,
-                    AnimalFood = animalFood
+                    Description = descrition,
+                    HourBegin = hourBegin,
+                    Duration = duration,
+                    NumAttendees = numAttendees,
+                    Location = location,
+                    AnimalId = animalId
                 };
-                var SetData = conn.client.Set("animals/" + id, set);
 
-                MessageBox.Show($"Evento {description} Registado com sucesso", "Aviso", MessageBoxButton.OK, MessageBoxImage.Warning);
+                var SetData = conn.client.Set("events/" + id, set);
+
+                MessageBox.Show($"Evento {descrition} Registado com sucesso", "Aviso", MessageBoxButton.OK, MessageBoxImage.Warning);
 
             }
             catch (Exception)
@@ -41,23 +42,23 @@ namespace MyzOo.Methods
         }
 
         //Update datas
-        public void UpdateData(string id, string name, DateTime birthday, bool isDeceased, string animalGender, int animalCell, string animalFood)
+        public void UpdateData(string id, string descrition, DateTime hourBegin, int duration, int numAttendees, string location, List<int> animalId)
         {
             try
             {
-                Animal set = new Animal()
+                Event set = new Event()
                 {
                     Id = id,
-                    Name = name,
-                    Birthday = birthday,
-                    AnimalCell = animalCell,
-                    AnimalFood = animalFood,
-                    IsDeceased = isDeceased,
-                    AnimalGender = animalGender
+                    Description = descrition,
+                    HourBegin = hourBegin,
+                    Duration = duration,
+                    NumAttendees = numAttendees,
+                    Location = location,
+                    AnimalId = animalId
                 };
-                var SetData = conn.client.Update("animals/" + id, set);
+                var SetData = conn.client.Update("events/" + id, set);
 
-                MessageBox.Show($"Animal {name} Atualizado com sucesso", "Aviso", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show($"Evento {descrition} Atualizado com sucesso", "Aviso", MessageBoxButton.OK, MessageBoxImage.Warning);
 
             }
             catch (Exception)
@@ -67,13 +68,13 @@ namespace MyzOo.Methods
         }
 
         //Delete datas
-        public void DeleteData(string id, string name)
+        public void DeleteData(string id, string description)
         {
             try
             {
-                var SetData = conn.client.Delete("animals/" + id);
+                var SetData = conn.client.Delete("events/" + id);
 
-                MessageBox.Show($"Animal {name} Apagado com sucesso", "Aviso", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show($"Evento {description} Apagado com sucesso", "Aviso", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
             catch (Exception)
             {
@@ -82,13 +83,13 @@ namespace MyzOo.Methods
         }
 
         //List of the datas
-        public List<Animal> LoadData()
+        public List<Event> LoadData()
         {
             try
             {
-                FirebaseResponse al = conn.client.Get("animals");
-                Dictionary<string, Animal> listData = JsonConvert.DeserializeObject<Dictionary<string, Animal>>(al.Body.ToString());
-                List<Animal> allData = new List<Animal>();
+                FirebaseResponse al = conn.client.Get("events");
+                Dictionary<string, Event> listData = JsonConvert.DeserializeObject<Dictionary<string, Event>>(al.Body.ToString());
+                List<Event> allData = new List<Event>();
 
                 if (listData != null)
                 {
@@ -112,20 +113,20 @@ namespace MyzOo.Methods
             }
         }
 
-        public Animal GetAnimal(string id)
+        public Event GetEvent(string id, string description)
         {
             try
             {
-                var GetData = conn.client.Get("animals/" + id);
+                var GetData = conn.client.Get("events/" + id);
 
                 if (GetData.Body == "null")
                 {
-                    Console.WriteLine($"No data found for animal with ID {id}");
+                    Console.WriteLine($"Não foi encontrado nenhum Evento com a descrição {description}");
                     return null;
                 }
 
-                Animal animal = JsonConvert.DeserializeObject<Animal>(GetData.Body.ToString());
-                return animal;
+                Event events = JsonConvert.DeserializeObject<Event>(GetData.Body.ToString());
+                return events;
             }
             catch (Exception)
             {

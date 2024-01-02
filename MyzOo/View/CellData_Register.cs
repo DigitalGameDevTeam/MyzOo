@@ -36,7 +36,6 @@ namespace MyzOo.View
 
         private void Cell_Menu_Load(object sender, EventArgs e)
         {
-
         }
 
         private void label1_Click(object sender, EventArgs e)
