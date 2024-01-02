@@ -50,7 +50,6 @@ namespace MyzOo.View
             this.label6 = new System.Windows.Forms.Label();
             this.card1 = new MyzOo.card();
             this.panel1.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Event_Date
@@ -206,7 +205,6 @@ namespace MyzOo.View
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.card1);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(333, 191);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(250, 172);
@@ -238,7 +236,7 @@ namespace MyzOo.View
             this.card1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.card1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.card1.Id = "";
-            this.card1.Location = new System.Drawing.Point(3, 3);
+            this.card1.Location = new System.Drawing.Point(333, 191);
             this.card1.Name = "card1";
             this.card1.Size = new System.Drawing.Size(250, 58);
             this.card1.TabIndex = 49;
@@ -250,6 +248,7 @@ namespace MyzOo.View
             this.ClientSize = new System.Drawing.Size(599, 405);
             this.Controls.Add(this.Location);
             this.Controls.Add(this.label6);
+            this.Controls.Add(this.card1);
             this.Controls.Add(this.NumAttendees);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Event_Time);
@@ -271,7 +270,6 @@ namespace MyzOo.View
             this.Load += new System.EventHandler(this.Event_Register_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
