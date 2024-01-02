@@ -22,6 +22,12 @@ namespace MyzOo.Models
             AnimalId = new List<int>();
         }
 
+        public void SetData(string Id, string Description, DateTime Date, bool IsDecease, string gender, int cell, string food)
+        {
+            Event.SetData(Id, Description, Date, IsDecease, gender, cell, food);
+
+        }
+
         public static Event GetEvent(string id, string description)
         {
             EventCrud eventCrud = new EventCrud();
