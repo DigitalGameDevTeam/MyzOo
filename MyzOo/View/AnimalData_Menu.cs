@@ -15,11 +15,12 @@ namespace MyzOo.View
     {
         private string animalId;
         private Animal animal;
-
-        public AnimalData_Menu(string id)
+        string userId;
+        public AnimalData_Menu(string id, string userID)
         {
             InitializeComponent();
             animalId = id;
+            userId = userID;
         }
         private void Ver_Animal_Menu_Load(object sender, EventArgs e)
         {
@@ -78,7 +79,7 @@ namespace MyzOo.View
 
             animal.UpdateData(id, name, date, isDeceased, gender, animalCell.Number, animalFood.Description);
 
-            AnimalList animalList_Menu = new AnimalList();
+            AnimalList animalList_Menu = new AnimalList(userId);
             animalList_Menu.Show();
             this.Hide();
         }
@@ -90,7 +91,7 @@ namespace MyzOo.View
 
             animal.DeleteData(id, name);
 
-            AnimalList animalList_Menu = new AnimalList();
+            AnimalList animalList_Menu = new AnimalList(userId);
             animalList_Menu.Show();
             this.Hide();
         }
@@ -98,7 +99,7 @@ namespace MyzOo.View
         private void Exit_button_Click(object sender, EventArgs e)
         {
             //hide this menu 
-            AnimalList animalList_Menu = new AnimalList();
+            AnimalList animalList_Menu = new AnimalList(userId);
             animalList_Menu.Show();
             this.Hide();
         }

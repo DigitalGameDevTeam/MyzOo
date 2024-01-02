@@ -6,15 +6,17 @@ namespace MyzOo.View
 {
     public partial class CellData_Register : Form
     {
-        public CellData_Register()
+        string userId;
+        public CellData_Register(string userID)
         {
             InitializeComponent();
+            userId = userID;
         }
 
         private void Exit_button_Click(object sender, EventArgs e)
         {
             //hide this Menu and open Main Menu
-            Main_Menu main_Menu = new Main_Menu();
+            Main_Menu main_Menu = new Main_Menu(userId);
             main_Menu.Show();
             this.Hide();
         }

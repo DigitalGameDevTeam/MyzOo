@@ -14,14 +14,15 @@ namespace MyzOo.View
 {
     public partial class Event_Register : Form
     {
-        public Event_Register()
+        string userId;
+        public Event_Register(string userID)
         {
             InitializeComponent();
         }
 
         private void Exit_button_Click(object sender, EventArgs e)
         {
-            Main_Menu main_Menu = new Main_Menu();
+            Main_Menu main_Menu = new Main_Menu(userId);
             main_Menu.Show();
             this.Hide();
         }
@@ -45,7 +46,7 @@ namespace MyzOo.View
             events.SetData(id, description, hourBegin, duration, numAttendees, location, animalId);
 
             this.Close();
-            Main_Menu main_Menu = new Main_Menu();
+            Main_Menu main_Menu = new Main_Menu(userId);
             main_Menu.Show();
             this.Hide();
 

@@ -18,8 +18,8 @@ namespace MyzOo.View
         private DateTime birthDateEmployee;
         public string employeeID;
         private Employee employee;
-
-        public EmployeeData_Menu(string employeeId)
+        string userId;
+        public EmployeeData_Menu(string employeeId, string userID)
         {
             InitializeComponent();
             employeeID = employeeId;
@@ -29,6 +29,7 @@ namespace MyzOo.View
 
             this.FillEmployeeFunctionListBox();
             this.FillEmployeeAdminLevelListBox();
+            userId = userID;
         }
         
 
@@ -62,7 +63,7 @@ namespace MyzOo.View
         private void Exit_button_Click(object sender, EventArgs e)
         {
             //Hide this Menu and open Main_Men
-            Main_Menu main_Menu = new Main_Menu();
+            Main_Menu main_Menu = new Main_Menu(userId);
             main_Menu.Show();
             this.Hide();
         }
@@ -93,7 +94,7 @@ namespace MyzOo.View
                 employee.DeleteData(id, name);
             }
  
-            EmployeeList EmployeeList_Menu = new EmployeeList();
+            EmployeeList EmployeeList_Menu = new EmployeeList(userId);
             EmployeeList_Menu.Show();
             this.Hide();
         }

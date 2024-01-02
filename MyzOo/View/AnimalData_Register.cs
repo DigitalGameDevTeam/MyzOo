@@ -15,9 +15,11 @@ namespace MyzOo
 {
     public partial class AnimalData_Register : Form
     {
-        public AnimalData_Register()
+        string userId;
+        public AnimalData_Register(string userID)
         {
             InitializeComponent();
+            userId = userID;
         }
         private void Animal_Menu_Load(object sender, EventArgs e)
         {
@@ -57,7 +59,7 @@ namespace MyzOo
         {
             //hide this Menu
             
-            Main_Menu main_Menu = new Main_Menu();
+            Main_Menu main_Menu = new Main_Menu(userId);
             main_Menu.Show();
             this.Hide();
             this.Dispose();
@@ -113,7 +115,7 @@ namespace MyzOo
             animal.SetData(id, name, date, isDeceased, gender, animalCell.Number, animalFood.Description);
 
             this.Close();
-            Main_Menu main_Menu = new Main_Menu();
+            Main_Menu main_Menu = new Main_Menu(userId);
             main_Menu.Show();
             this.Hide();
             
