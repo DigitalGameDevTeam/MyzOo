@@ -58,6 +58,7 @@ namespace MyzOo
             {
                 int adminLevel = employee.Adminlevel;
                 int employeeType = employee.EmployeeJob;
+                label3.Text = employee.Name;
 
                 if (adminLevel == 1)
                 {
@@ -75,7 +76,7 @@ namespace MyzOo
                     button4.Enabled = false;
                     button2.Enabled = false;
                     Employee_Menu_button.Enabled = false;
-
+                    label5.Text = "Limpador De Celas";
                 }
 
                 else if (employeeType == 3)
@@ -203,6 +204,21 @@ namespace MyzOo
             EventList eventList = new EventList(userId);
             eventList.Show();
             this.Hide();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
